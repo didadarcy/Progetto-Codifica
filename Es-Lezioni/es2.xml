@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Scrivere e fare il check di un xml non opportunamente annidato
+    file: es2.xml
+    nome: Diana De Marinis
+    data: 11/03/2024
+-->
+<padre>Giovanni<figlia>di Carlotta</padre> </figlia>
+
