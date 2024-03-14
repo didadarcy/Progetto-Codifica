@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Esercizio
+Includere all’interno di un documento XML la
+dichiarazione del tipo, definire internamente gli elementi e
+gli attributi e validare.
+Inserire nel prologo di un documento XML la dichiarazione
+del tipo di documento e validare.
+Creare un file esterno con estensione .dtd prima di includerlo
+nel prologo XML.
+-->
+
+<!DOCTYPE TEI SYSTEM "es5.dtd" >
+
+<TEI>
+    <header type="intestazione" lang="ITA"></header>
+    <facsimile source="google.it" ref="ID04"></facsimile>
+    <testo id="ID04"></testo>
+    <testo id="ID05" type="bambino"></testo>
+</TEI>
