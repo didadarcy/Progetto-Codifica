@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- Dichiarazione della DTD TEI: -->
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<!-- Radice e dichiarazione del namespace TEI: -->
+<teiCorpus xmlns="https://tei-c.org/ns/1.0">
+    <teiHeader>
+        <!-- Descrizione del corpus: -->
+        <fileDesc>
+            <!-- Titolo del corpus: -->
+            <titleStmt>
+                <title>Edizione digitali di articoli selezionati dalla rivista <orgName>Rassegna Settimanale</orgName></title>
+                <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                <respStmt><resp>Trascrizione a cura di </resp><persName xml:id="DDM">Diana De Marinis</persName></respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>
+                    Diana De Marinis
+                </distributor>
+            </publicationStmt>            
+        </fileDesc>
+    </teiHeader>
+    <TEI>
+        <teiHeader>
+      <!-- header for first text -->
+        </teiHeader>
+        <text>
+      <!-- content of first text -->
+        </text>
+       </TEI>
+    <TEI>
+        <teiHeader>
+        <!-- header for second text -->
+        </teiHeader>
+        <text>
+        <!-- content of second text -->
+        </text>
+    </TEI>
+</teiCorpus>
