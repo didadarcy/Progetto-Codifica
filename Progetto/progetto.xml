@@ -2,31 +2,128 @@
 <!-- Dichiarazione della DTD TEI: -->
 <!DOCTYPE TEI SYSTEM "tei_all.dtd">
 <!-- Radice e dichiarazione del namespace TEI: -->
-<teiCorpus xmlns="https://tei-c.org/ns/1.0">
+<TEI xmlns="https://tei-c.org/ns/1.0">
     <teiHeader>
-        <!-- Descrizione del corpus: -->
+        <!-- Descrizione dell'edizione digitale: -->
         <fileDesc>
-            <!-- Titolo del corpus: -->
+            <!-- Titolo dell'edizione digitale: -->
             <titleStmt>
-                <title>Edizione digitali di articoli selezionati dalla rivista <orgName>Rassegna Settimanale</orgName></title>
+                <title>Edizione digitali di articoli selezionati dalla rivista 
+                    <orgName ref="#RS">Rassegna Settimanale</orgName>
+                </title>
                 <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
-                <respStmt><resp>Trascrizione a cura di </resp><persName xml:id="DDM">Diana De Marinis</persName></respStmt>
+                <respStmt>
+                    <resp>Trascrizione a cura di </resp>
+                    <persName ref="#DDM">Diana De Marinis</persName>
+                </respStmt>
             </titleStmt>
+            <!-- Informazioni sull'edizione digitale: -->
             <publicationStmt>
-                <distributor>
+                <distributor ref="#DDM">
                     Diana De Marinis
                 </distributor>
-            </publicationStmt>            
+            </publicationStmt>
+            <!-- Informazioni sul documento originale: -->
+            <sourceDesc>
+                <bibl>
+                    <!-- Titolo della rivista: -->
+                    <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title>
+                    <publisher>Casa Editrice Barbèra</publisher>
+                    <date>1878</date> 
+                </bibl>
+            </sourceDesc>            
         </fileDesc>
     </teiHeader>
+    <standOff>
+        <listPerson>
+            <person xml:id="DDM" role="Transcriber">
+                <persName>Diana De Marinis</persName>
+            </person> 
+        </listPerson>
+        <listOrg>
+            <org xml:id="RS">
+                <orgName>Rassegna Settimanale</orgName>
+            </org>
+        </listOrg>
+    </standOff>
+
+    <!-- Edizione digitale dell'articolo "L'amore cavalleresco" (volume 1, fascicolo 6)-->
     <TEI>
         <teiHeader>
-      <!-- header for first text -->
+            <fileDesc>
+                <titleStmt>
+                    <title>L'amore cavalleresco (edizione digitale)</title>
+                    <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                    <respStmt>
+                        <resp>Trascrizione a cura di </resp>
+                        <persName ref="#DDM">Diana De Marinis</persName>
+                    </respStmt>
+                </titleStmt>
+                <!-- Informazioni sull'edizione digitale: -->
+                <publicationStmt>
+                    <distributor ref="#DDM">
+                        Diana De Marinis
+                    </distributor>
+                </publicationStmt>
+                <!-- Informazioni sul documento originale: -->
+                <sourceDesc>
+                    <bibl>
+                        <!-- Titolo del documento originale -->
+                        <title level="a">
+                            L'amore cavalleresco
+                        </title>
+                        <author>
+                            <persName>
+                                Tiresias
+                            </persName>
+                        </author>
+                        <!-- Titolo della rivista: -->
+                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
+                        <publisher>Casa Editrice Barbèra</publisher>
+                        <date>1878</date>
+                        <!-- Informazioni sulla parte del documento codificata: -->
+                        <biblScope unit="volume">I</biblScope>
+                        <biblScope unit="issue">6</biblScope>
+                        <biblScope unit="page" from="94" to="97"/>
+                    </bibl>
+                </sourceDesc>
+            </fileDesc>
         </teiHeader>
         <text>
-      <!-- content of first text -->
+            <body>
+                <head>
+                    <!-- TO DO: TROVARE TAG PER TEMA-->
+                    L'AMORE CAVALLERESCO.
+                </head>
+                <p>
+                    Anche oggi, dopo tanti secoli che 1’ amore cavalleresco
+                    è seppellito nelle tombe del Medio Evo, quando noi pronunziamo queste due parole intendiamo che esse esprimano
+                    qualche cosa di sovrumano, ’qualche cosa che ci distacca
+                    dalla terra per condurci in altre regioni idealmente pure,
+                    candide, azzurre, dove gli uomini amavano come amerebbero gli angeli, se ci fossero : dove 1’ uomo e la donna si
+                    guardavano in un’ estasi celeste, ma senza desiderarsi scambievolmente, senza contaminarsi di bassi appetiti, paghi
+                    abbastanza di un sospiro e di uno sguardo, paghi che i
+                    loro spiriti si confondessero, che le loro anime si abbracciassero. La canzone del trovatore sale alla donna amata
+                    come una nuvoletta d’ incenso che l’avvolge ma non la
+                    contamina. L’ umile cantore non chiede mai nulla che possa
+                    offendere la regina dei suoi pensieri ; egli è pronto per lei
+                    ad ogni sacrifizio, e non chiede in ricambio che un po’ di
+                    pietà. Il suo amore è il principio supremo di ogni virtù,
+                    di ogni gloria, di ogni merito. La donna scelta da lui è
+                    1’ essere sacro della sua vita ; è la sorgente di ogni bene ;
+                    essa è un culto, una religione ; è un serafino tutto ali e
+                    senza corpo ; e il poeta osa appena guardarla tremebondo
+                    e pauroso, per lodarla, per esaltarla, per invocarla; il bacio
+                    è l’ultimo termine al quale egli osa aspirare, il primo e
+                    ultimo bacio che basta a tutti i suoi desideri:
+                    Toz raos talenz m’ aemplira
+                    Ma donna, sol d’un bais m’aizis,
+                    come dice il povero Cercalmont.
+                </p>
+            </body>
         </text>
-       </TEI>
+    </TEI>
+    <!-- Edizione digitale della bibliografia del fascicolo 6 del volume 1 -->
     <TEI>
         <teiHeader>
         <!-- header for second text -->
@@ -35,4 +132,70 @@
         <!-- content of second text -->
         </text>
     </TEI>
-</teiCorpus>
+
+    <!-- Edizione digitale dell'articolo "La scuola poetica siciliana" (volume 2, fascicolo 21)-->
+    <TEI>
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>La scuola poetica siciliana (edizione digitale)</title>
+                    <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                    <respStmt>
+                        <resp>Trascrizione a cura di </resp>
+                        <persName ref="#DDM">Diana De Marinis</persName>
+                    </respStmt>
+                </titleStmt>
+                <!-- Informazioni sull'edizione digitale: -->
+                <publicationStmt>
+                    <distributor ref="#DDM">
+                        Diana De Marinis
+                    </distributor>
+                </publicationStmt>
+                <!-- Informazioni sul documento originale: -->
+                <sourceDesc>
+                    <bibl>
+                        <!-- Titolo del documento originale -->
+                        <title level="a">
+                            La scuola poetica siciliana
+                        </title>
+                        <author>
+                            <persName>
+                                <forename>Napoleone</forename>
+                                <surname>Caix</surname>
+                            </persName>
+                        </author>
+                        <!-- Titolo della rivista: -->
+                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
+                        <publisher>Casa Editrice Barbèra</publisher>
+                        <date>1878</date>
+                        <!-- Informazioni sulla parte del documento codificata: -->
+                        <biblScope unit="volume">II</biblScope>
+                        <biblScope unit="issue">21</biblScope>
+                        <biblScope unit="page" from="357" to="359"/>
+                    </bibl>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <text>
+        <!-- content of second text -->
+        </text>
+    </TEI>
+    <!-- Edizione digitale della bibliografia del fascicolo 21 del volume 2 -->
+    <TEI>
+        <teiHeader>
+        <!-- header for second text -->
+        </teiHeader>
+        <text>
+        <!-- content of second text -->
+        </text>
+    </TEI>
+    <!-- Edizione digitale della sezione "notizie" del fascicolo 21 del volume 2 -->
+    <TEI>
+        <teiHeader>
+        <!-- header for second text -->
+        </teiHeader>
+        <text>
+        <!-- content of second text -->
+        </text>
+    </TEI>
+</TEI>
