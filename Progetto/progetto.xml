@@ -49,7 +49,7 @@
 
     <!-- Edizione digitale dell'articolo "L'amore cavalleresco" (volume 1, fascicolo 6)-->
     <TEI>
-        <teiHeader>
+        <teiHeader xml:lang='it'>
             <fileDesc>
                 <titleStmt>
                     <title>L'amore cavalleresco (edizione digitale)</title>
@@ -141,27 +141,43 @@
             </surface>
         </facsimile>
         
-        <text>
+        <text xml:lang='it'>
             <body>
-                <head>
-                    <!-- TO DO: TROVARE TAG PER TEMA-->
-                    L'AMORE CAVALLERESCO.
+                <fw type="header" place= "top" facs="#pag94-header">
+                    <fw rend="align(left)" type="pageNum" facs="#pag94-num">
+                        94
+                    </fw>
+                    <fw rend="align(center) case(allcaps)" facs="#pag94-title">
+                        LA RASSEGNA SETTIMANALE.
+                    </fw>
+                    <fw rend="align(right)" facs="#pag94-vol">
+                        [Vol. 1°, N° 6.
+                    </fw>
+                </fw>
+                
+                <head rend="align(center) case(allcaps)" facs="#pag94-art">
+                    L'<term>AMORE CAVALLERESCO</term>.
                 </head>
-                <p>
-                    <lb/>Anche oggi, dopo tanti secoli che 1’amore cavalleresco
-                    <lb/>è seppellito nelle tombe del Medio Evo, quando noi pro-
-                    <lb/>nunziamo queste due parole intendiamo che esse esprimano
-                    <lb/>qualche cosa di sovrumano, <!-- -->qualche cosa che ci distacca
+
+                <p facs="#pag94-p1.1">
+                    <lb/>Anche oggi, dopo tanti secoli che 1’<term xml:id="ac">amore cavalleresco</term>
+                    <lb/>è seppellito nelle tombe del <date from="476" to="1492">Medio Evo</date>, quando noi 
+                    <!-- il trattino è un elemento di punteggiatura che non divide la parola: -->
+                    pro<pc force="weak">-</pc>
+                    <!-- l'inizio di riga non coincide con l'inizio di una nuova parola: --> 
+                    <lb break="no"/>nunziamo queste due parole intendiamo che esse esprimano
+                    <lb/><gloss target="#ac">qualche cosa di sovrumano, qualche cosa che ci distacca
                     <lb/>dalla terra per condurci in altre regioni idealmente pure,
-                    <lb/>candide, azzurre, dove gli uomini amavano come amereb-
-                    <lb/>bero gli angeli, se ci fossero: dove 1’uomo e la donna si
-                    <cb/><lb/>guardavano in un’estasi celeste, ma senza desiderarsi scam-
-                    <lb/>bievolmente, senza contaminarsi di bassi appetiti, paghi
+                    <lb/>candide, azzurre, dove gli uomini amavano come amereb<pc force="weak">-</pc>
+                    <lb break="no"/>bero gli angeli, se ci fossero: dove 1’uomo e la donna si
+                    <cb facs="#pag94-p1.2"/>
+                    <lb/>guardavano in un’estasi celeste, ma senza desiderarsi scam<pc force="weak">-</pc>
+                    <lb break="no"/>bievolmente, senza contaminarsi di bassi appetiti, paghi
                     <lb/>abbastanza di un sospiro e di uno sguardo, paghi che i
-                    <lb/>loro spiriti si confondessero, che le loro anime si abbrac-
-                    <lb/>ciassero. La canzone del trovatore sale alla donna amata
+                    <lb/>loro spiriti si confondessero, che le loro anime si abbrac<pc force="weak">-</pc>
+                    <lb break="no"/>ciassero</gloss>. La <term>canzone del trovatore</term> sale alla donna amata
                     <lb/>come una nuvoletta d’incenso che l’avvolge ma non la
-                    <lb/>contamina. L’umile cantore non chiede mai nulla che possa
+                    <lb/>contamina. L’umile <term>cantore</term> non chiede mai nulla che possa
                     <lb/>offendere la regina dei suoi pensieri; egli è pronto per lei
                     <lb/>ad ogni sacrifizio, e non chiede in ricambio che un po’ di
                     <lb/>pietà. Il suo amore è il principio supremo di ogni virtù,
@@ -172,9 +188,20 @@
                     <lb/>e pauroso, per lodarla, per esaltarla, per invocarla; il bacio
                     <lb/>è l’ultimo termine al quale egli osa aspirare, il primo e
                     <lb/>ultimo bacio che basta a tutti i suoi desideri:
-                    <lb/>Toz raos talenz m’ aemplira
-                    <lb/>Ma donna, sol d’un bais m’aizis,
-                    <lb/>come dice il povero Cercalmont.
+                    <!-- Citazione poetica in occitano arcaico: -->
+                    <foreign xml:lang="pro">
+                        <quote>
+                            <lg>
+                                <l>Toz raos talenz m’ aemplira</l>
+                                <l>Ma donna, sol d’un bais m’aizis,</l>
+                            </lg>
+                        </quote>
+                    </foreign>
+                    <lb/>come dice il povero <name>Cercalmont</name>.
+                </p>
+
+                <p facs="#pag94-p2.1">
+                    
                 </p>
             </body>
         </text>
