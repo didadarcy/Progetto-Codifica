@@ -84,11 +84,63 @@
                         <!-- Informazioni sulla parte del documento codificata: -->
                         <biblScope unit="volume">I</biblScope>
                         <biblScope unit="issue">6</biblScope>
-                        <biblScope unit="page" from="94" to="97"/>
+                        <biblScope unit="page" from="94" to="95"/>
                     </bibl>
                 </sourceDesc>
             </fileDesc>
         </teiHeader>
+
+        <!-- Descrizione delle zone codificate del documento fisico: -->
+        <facsimile>
+            <!-- Pagina 94: -->
+            <surface xml:id="pag94">
+                <!-- Collegamento all'immagine della pagina: -->
+                <graphic url='imgs/Vol1-1878-1-S1-F6-pag-94.png' width='1519.666666px' height='2242.666666px' />
+                <!-- Header della pagina: -->
+                <zone ulx="39" uly="60" lrx="1483" lry="129" xml:id="pag94-header"/>
+                <!-- Titolo della pagina: -->
+                <zone ulx="562" uly="86" lrx="1007" lry="122" xml:id="pag94-title"/>
+                <!-- Volume e fascicolo: -->
+                <zone ulx="1267" uly="83" lrx="1461" lry="126" xml:id="pag94-vol"/>
+                <!-- Numero della pagina: -->
+                <zone ulx="93" uly="91" lrx="154" lry="121" xml:id="pag94-num"/>
+                <!-- Titolo dell'articolo: -->
+                <zone ulx="227" uly="1829" lrx="649" lry="1861" xml:id="pag94-art"/>
+                <!-- Porzione in basso nella prima colonna (inizio primo paragrafo): -->
+                <zone ulx="97" uly="1872" lrx="780" lry="2079" xml:id="pag94-p1.1"/>
+                <!-- Porzione in alto nella seconda colonna (fine primo paragrafo): -->
+                <zone ulx="789" uly="166" lrx="1469" lry="732" xml:id="pag94-p1.2"/>
+                <!-- Porzione in basso nella seconda colonna (inizio secondo paragrafo): -->
+                <zone ulx="791" uly="738" lrx="1473" lry="2072" xml:id="pag94-p2.1"/>
+            </surface>
+
+            <!-- Pagina 95: -->
+            <surface xml:id="pag95">
+                <!-- Collegamento all'immagine della pagina: -->
+                <graphic url='imgs/Vol1-1878-1-S1-F6-pag-95.png' width='1511.666666px' height='2211.666666px' />
+                <!-- Header della pagina: -->
+                <zone ulx="57" uly="60" lrx="1447" lry="116" xml:id="pag95-header"/>
+                <!-- Titolo della pagina: -->
+                <zone ulx="522" uly="78" lrx="979" lry="108" xml:id="pag95-title"/>
+                <!-- Data: -->
+                <zone ulx="66" uly="72" lrx="310" lry="109" xml:id="pag95-date"/>
+                <!-- Numero della pagina: -->
+                <zone ulx="1380" uly="81" lrx="1429" lry="105" xml:id="pag95-num"/>
+                <!-- Prima colonna (continua secondo paragrafo): -->
+                <zone ulx="63" uly="142" lrx="741" lry="2070" xml:id="pag95-p2.2"/>
+                <!-- Porzione in alto nella seconda colonna (fine secondo paragrafo): -->
+                <zone ulx="754" uly="145" lrx="1441" lry="604" xml:id="pag95-p2.3"/>
+                <!-- Terzo paragrafo: -->
+                <zone ulx="757" uly="609" lrx="1433" lry="1462" xml:id="pag95-p3"/>
+                <!-- Quarto paragrafo: -->
+                <zone ulx="757" uly="1465" lrx="1431" lry="1660" xml:id="pag95-p4"/>
+                <!-- Quinto paragrafo: -->
+                <zone ulx="757" uly="1660" lrx="1437" lry="2040" xml:id="pag95-p5"/>
+                <!-- Firma: -->
+                <zone ulx="1282" uly="2007" lrx="1402" lry="2032" xml:id="pag95-sign"/>
+            </surface>
+        </facsimile>
+        
         <text>
             <body>
                 <head>
@@ -96,29 +148,33 @@
                     L'AMORE CAVALLERESCO.
                 </head>
                 <p>
-                    Anche oggi, dopo tanti secoli che 1’ amore cavalleresco
-                    è seppellito nelle tombe del Medio Evo, quando noi pronunziamo queste due parole intendiamo che esse esprimano
-                    qualche cosa di sovrumano, ’qualche cosa che ci distacca
-                    dalla terra per condurci in altre regioni idealmente pure,
-                    candide, azzurre, dove gli uomini amavano come amerebbero gli angeli, se ci fossero : dove 1’ uomo e la donna si
-                    guardavano in un’ estasi celeste, ma senza desiderarsi scambievolmente, senza contaminarsi di bassi appetiti, paghi
-                    abbastanza di un sospiro e di uno sguardo, paghi che i
-                    loro spiriti si confondessero, che le loro anime si abbracciassero. La canzone del trovatore sale alla donna amata
-                    come una nuvoletta d’ incenso che l’avvolge ma non la
-                    contamina. L’ umile cantore non chiede mai nulla che possa
-                    offendere la regina dei suoi pensieri ; egli è pronto per lei
-                    ad ogni sacrifizio, e non chiede in ricambio che un po’ di
-                    pietà. Il suo amore è il principio supremo di ogni virtù,
-                    di ogni gloria, di ogni merito. La donna scelta da lui è
-                    1’ essere sacro della sua vita ; è la sorgente di ogni bene ;
-                    essa è un culto, una religione ; è un serafino tutto ali e
-                    senza corpo ; e il poeta osa appena guardarla tremebondo
-                    e pauroso, per lodarla, per esaltarla, per invocarla; il bacio
-                    è l’ultimo termine al quale egli osa aspirare, il primo e
-                    ultimo bacio che basta a tutti i suoi desideri:
-                    Toz raos talenz m’ aemplira
-                    Ma donna, sol d’un bais m’aizis,
-                    come dice il povero Cercalmont.
+                    <lb/>Anche oggi, dopo tanti secoli che 1’amore cavalleresco
+                    <lb/>è seppellito nelle tombe del Medio Evo, quando noi pro-
+                    <lb/>nunziamo queste due parole intendiamo che esse esprimano
+                    <lb/>qualche cosa di sovrumano, <!-- -->qualche cosa che ci distacca
+                    <lb/>dalla terra per condurci in altre regioni idealmente pure,
+                    <lb/>candide, azzurre, dove gli uomini amavano come amereb-
+                    <lb/>bero gli angeli, se ci fossero: dove 1’uomo e la donna si
+                    <cb/><lb/>guardavano in un’estasi celeste, ma senza desiderarsi scam-
+                    <lb/>bievolmente, senza contaminarsi di bassi appetiti, paghi
+                    <lb/>abbastanza di un sospiro e di uno sguardo, paghi che i
+                    <lb/>loro spiriti si confondessero, che le loro anime si abbrac-
+                    <lb/>ciassero. La canzone del trovatore sale alla donna amata
+                    <lb/>come una nuvoletta d’incenso che l’avvolge ma non la
+                    <lb/>contamina. L’umile cantore non chiede mai nulla che possa
+                    <lb/>offendere la regina dei suoi pensieri; egli è pronto per lei
+                    <lb/>ad ogni sacrifizio, e non chiede in ricambio che un po’ di
+                    <lb/>pietà. Il suo amore è il principio supremo di ogni virtù,
+                    <lb/>di ogni gloria, di ogni merito. La donna scelta da lui è
+                    <lb/>1’essere sacro della sua vita; è la sorgente di ogni bene;
+                    <lb/>essa è un culto, una religione; è un serafino tutto ali e
+                    <lb/>senza corpo; e il poeta osa appena guardarla tremebondo
+                    <lb/>e pauroso, per lodarla, per esaltarla, per invocarla; il bacio
+                    <lb/>è l’ultimo termine al quale egli osa aspirare, il primo e
+                    <lb/>ultimo bacio che basta a tutti i suoi desideri:
+                    <lb/>Toz raos talenz m’ aemplira
+                    <lb/>Ma donna, sol d’un bais m’aizis,
+                    <lb/>come dice il povero Cercalmont.
                 </p>
             </body>
         </text>
