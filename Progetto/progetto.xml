@@ -204,7 +204,8 @@
                     <lb/>come dice il povero <persName xml:id="tr-c">Cercalmont</persName>.
                 </p>
 
-                <p facs="#pag94-p2.1">
+                <p>
+                    <milestone unit="paragraph-part" facs="#pag94-p2.1"/>
                     <lb/>Ma questo mondo quale ci sarebbe dato dalla canzone
                     <lb/>dei trovatori è veramente esistito? Questo amore quale ci
                     <lb/>apparirebbe nella strofe cesellata dall’<ref target="#tr-c">artista di <placeName><region>Provenza</region></placeName></ref>
@@ -272,6 +273,7 @@
                     </fw>
                     <!-- Inizio di colonna: -->
                     <cb/>
+                    <milestone unit="paragraph-part" facs="#pag95-p2.2"/>
                     
                 </p>
             </body>
