@@ -143,6 +143,8 @@
         
         <text xml:lang='it'>
             <body>
+                <!-- Inizio di pagina: -->
+                <pb/>
                 <fw type="header" place= "top" facs="#pag94-header">
                     <fw rend="align(left)" type="pageNum" facs="#pag94-num">
                         94
@@ -154,9 +156,10 @@
                         [Vol. 1°, N° 6.
                     </fw>
                 </fw>
-                
+                <!-- Inizio di colonna: -->
+                <cb/>
                 <head rend="align(center) case(allcaps)" facs="#pag94-art">
-                    L'<term>AMORE CAVALLERESCO</term>.
+                    L'<term ref="#ac">AMORE CAVALLERESCO</term>.
                 </head>
 
                 <p facs="#pag94-p1.1">
@@ -170,6 +173,7 @@
                     <lb/>dalla terra per condurci in altre regioni idealmente pure,
                     <lb/>candide, azzurre, dove gli uomini amavano come amereb<pc force="weak">-</pc>
                     <lb break="no"/>bero gli angeli, se ci fossero: dove 1’uomo e la donna si
+                    <!-- Inizio colonna: -->
                     <cb facs="#pag94-p1.2"/>
                     <lb/>guardavano in un’estasi celeste, ma senza desiderarsi scam<pc force="weak">-</pc>
                     <lb break="no"/>bievolmente, senza contaminarsi di bassi appetiti, paghi
@@ -197,10 +201,77 @@
                             </lg>
                         </quote>
                     </foreign>
-                    <lb/>come dice il povero <name>Cercalmont</name>.
+                    <lb/>come dice il povero <persName xml:id="tr-c">Cercalmont</persName>.
                 </p>
 
                 <p facs="#pag94-p2.1">
+                    <lb/>Ma questo mondo quale ci sarebbe dato dalla canzone
+                    <lb/>dei trovatori è veramente esistito? Questo amore quale ci
+                    <lb/>apparirebbe nella strofe cesellata dall’<ref target="#tr-c">artista di <placeName><region>Provenza</region></placeName></ref>
+                    <lb/>è stato mai una realtà? Cerchiamo di scoprirlo. E prima
+                    <lb/>di tutto domandiamoci quale sia il tipo, 1’ideale del
+                    <lb/>barone, del signore feudale, come se lo figura il trova<pc force="weak">-</pc>
+                    <lb break="no"/>tore. Egli deve essere ricco e gentile; devono piacergli le
+                    <lb/>donne e le guerre; deve regalare splendidamente i suoi
+                    <lb/>ospiti; deve banchettare con prodi ed allegri compagni, tra
+                    <lb/>i canti ed i suoni. Quando il barone adempia a questi do<pc force="weak">-</pc>
+                    <lb break="no"/>veri cavallereschi, tutto il rimanente gli è perdonato, anche
+                    <lb/>se si apposta sulla via, e deruba i mercanti che passano;
+                    <lb/>anche se commette stranezze e crudeltà. Ed accanto a lui sta
+                    <lb/>la dama, regina delle feste e dei conviti, sospiro segreto del
+                    <lb/>poeta, abbandonata nella solitudine della sua camera dal ma<pc force="weak">-</pc>
+                    <lb break="no"/>rito, che corre il mondo a folleggiare e donneare, e non si
+                    <lb/>cura di lei o la custodisce con gelosia tiranna.
+                    <persName xml:id="tr-pv"><forename>Pietro</forename> <surname>Vidal</surname></persName>
+                    <lb/>sorprende addormentata <persName>Adelaide di Barral</persName>, le si inginoc<pc force="weak">-</pc>
+                    <lb break="no"/>chia davanti e la bacia. Ella sente il bacio, e credendo che
+                    <lb/>fosse il marito, si leva sorridente, ma scorge invece il <ref target="#tr-pv">tro<pc force="weak">-</pc>
+                    <lb/>vatore</ref>. Alle sue grida accorrono le damigelle, e il <roleName ref="#mb">Visconte</roleName>
+                    <lb/>stesso, a cui la moglie chiede piangendo di essere vendicata
+                    <lb/>dell’oltraggio. Ma <persName xml:id="mb"><roleName>Messer</roleName> Barral</persName> prende la cosa in chiasso,
+                    <lb/>e ridendo riprende la moglie che abbia levato tanto ru<pc force="weak">-</pc>
+                    <lb break="no"/>more di ciò che il <ref target="#tr-pv">trovatore</ref> avea fatto. Non sempre però
+                    <lb/>accadeva lo stesso, e ben se ne accorse il medesimo <ref target="#tr-pv">Vidal</ref>,
+                    <lb/>quando ebbe forata la lingua da un marito geloso dei suoi
+                    <lb/>usurpati diritti; e se ne accorse anche meglio <persName>Guglielmo
+                    <lb/>di <placeName><settlement>Cabeistang</settlement></placeName></persName>, la cui storia, 
+                    in parte forse leggendaria, ed
+                    <lb/>entrata poi nel dominio della novellistica popolare, ci fa ad
+                    <lb/>ogni modo travedere una fierezza di costumi, che male si
+                    <lb/>accorda coi rosei sospiri dei trovatori, e ci solleva un lembo
+                    <lb/>delle segrete ed intime relazioni di amore tra i cavalieri e
+                    <lb/>le dame. Nella società provenzale ci sono molto più i sintomi
+                    <lb/>di una galanteria allegra e qualche volta sfrenata, di quello
+                    <lb/>che non ci sia la riprova delle timide e platoniche aspira<pc force="weak">-</pc>
+                    <lb break="no"/>zioni quali ci sarebbero rivelate dalla canzone del trova<pc force="weak">-</pc>
+                    <lb break="no"/>tore. 
+                    <persName>Ermengarda di <placeName><settlement>Narbona</settlement></placeName></persName> accoglie 
+                    <persName><forename>Pietro</forename> <surname>Rogier</surname></persName>, che
+                    <lb/>in suo onore scrive molte poesie. Ma ella è poi costretta
+                    <lb/>a dargli commiato, perchè la gente bisbiglia. La <roleName>contessa
+                    <lb/>di <placeName><settlement>Burlatz</settlement></placeName></roleName> 
+                    è cantata da <persName>Arnaldo di <placeName><settlement>Maroill</settlement></placeName></persName>; ma il poeta
+                    <lb/>è in seguito licenziato, perchè un altro innamorato della
+                    <lb/>contessa è geloso di lui. Se l’<term ref="#ac">amore cavalleresco</term> si fosse
+                    <lb/>sempre tenuto nelle pure ed alte regioni della canzone tro<pc force="weak">-</pc>
+                    <lb break="no"/>vadorica, noi intenderemmo poco perchè si dovesse bisbi<pc force="weak">-</pc>
+                    <lb break="no"/>gliare ed essere gelosi. Questo stesso fatto dei sommessi
+                    <lb/>bisbigli, questo mormorio della gente contro certi legami
+                    <!-- Inizio pagina 95: -->    
+                    <pb/>
+                    <fw type="header" place= "top" facs="#pag95-header">
+                        <fw rend="align(left)" facs="#pag94-date">
+                            <date>10 Febbraio ’78</date>.] 
+                        </fw>
+                        <fw rend="align(center) case(allcaps)" facs="#pag95-title">
+                            LA RASSEGNA SETTIMANALE.
+                        </fw>
+                        <fw rend="align(right)" type="pageNum" facs="#pag95-num">
+                            95
+                        </fw>
+                    </fw>
+                    <!-- Inizio di colonna: -->
+                    <cb/>
                     
                 </p>
             </body>
