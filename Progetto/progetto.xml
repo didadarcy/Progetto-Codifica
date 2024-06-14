@@ -72,7 +72,7 @@
                         <title level="a">
                             L'amore cavalleresco
                         </title>
-                        <author>
+                        <author xml:id="aut-t">
                             <persName>
                                 Tiresias
                             </persName>
@@ -162,7 +162,8 @@
                     L'<term ref="#ac">AMORE CAVALLERESCO</term>.
                 </head>
 
-                <p facs="#pag94-p1.1">
+                <p>
+                    <milestone unit="paragraph-part" facs="#pag94-p1.1"/>
                     <lb/>Anche oggi, dopo tanti secoli che 1’<term xml:id="ac">amore cavalleresco</term>
                     <lb/>è seppellito nelle tombe del <date from="476" to="1492">Medio Evo</date>, quando noi 
                     <!-- il trattino è un elemento di punteggiatura che non divide la parola: -->
@@ -174,7 +175,8 @@
                     <lb/>candide, azzurre, dove gli uomini amavano come amereb<pc force="weak">-</pc>
                     <lb break="no"/>bero gli angeli, se ci fossero: dove 1’uomo e la donna si
                     <!-- Inizio colonna: -->
-                    <cb facs="#pag94-p1.2"/>
+                    <cb/>
+                    <milestone unit="paragraph-part" facs="#pag94-p1.2"/>
                     <lb/>guardavano in un’estasi celeste, ma senza desiderarsi scam<pc force="weak">-</pc>
                     <lb break="no"/>bievolmente, senza contaminarsi di bassi appetiti, paghi
                     <lb/>abbastanza di un sospiro e di uno sguardo, paghi che i
@@ -288,9 +290,9 @@
                     <lb/>si lascia rapire volentieri. <persName xml:id="tr-rb">Rambaldo di <placeName><settlement>Vaqueiras</settlement></placeName></persName>, trovan<pc force="weak">-</pc>
                     <lb break="no"/>dosi alla corte del <roleName xml:id="marc-mf">marchese di <placeName><region>Monferrato</region></placeName></roleName>, canta in molte
                     <lb/>poesie la sorella di lui, <persName><addName>Donna</addName> Beatrice</persName>. Un giorno <q>« <foreign xml:lang="pro">la
-                    <sic>»</sic> domna se colquet dormir ab el,</foreign> »</q> e il <roleName ref="#marc-mf">Marchese</roleName> li sor<pc force="weak">-</pc>
+                    <pc force="weak">»</pc> domna se colquet dormir ab el,</foreign> »</q> e il <roleName ref="#marc-mf">Marchese</roleName> li sor<pc force="weak">-</pc>
                     <lb break="no"/>prende, li copre col suo mantello perchè si accorgano che
-                    <lb/>li aveva visti, e se ne va. Qui veramente <hi rend="italic">noi roviniamo in
+                    <lb/>li aveva visti, e se ne va. Qui veramente <hi rend="italics">noi roviniamo in
                     <lb/>basso loco</hi>, qui siamo davvero in cospetto di un realismo
                     <lb/>crudo. Dalle aeree vette dell’idealismo cavalleresco, ca<pc force="weak">-</pc>
                     <lb break="no"/>schiamo nella realtà più palpabile della vita. Se <persName ref="#tr-rb">Rambaldo</persName>,
@@ -347,7 +349,8 @@
                     il fiore de’trovatori: egli,
                     <lb/>dopo aver ripudiate due mogli, ama contemporaneamente
                     <!-- Inizio di colonna: -->
-                    <cb facs="pag95-p2.3"/>
+                    <cb/>
+                    <milestone unit="paragraph-part" facs="#pag94-p2.3"/>
                     <lb/>una <persName><addName>donna</addName> Agnese</persName> e una <persName><addName>donna</addName> Ermesina</persName>; usa modi vitu<pc force="weak">-</pc>
                     <lb break="no"/>perosi per ingannar queste ed altre donne della contrada;
                     <lb/>si vanta dei suoi trionfi, pubblica i nomi delle sedotte, le
@@ -359,7 +362,7 @@
                     <lb break="no"/>vero servo, la sua esistenza è tutta nell’amore, nel giuoco,
                     <lb/>nella prodigalità, nel sollazzo: il <roleName>Delfino d’<placeName><region>Auvergne</region></placeName></roleName> con<pc force="weak">-</pc>
                     <lb break="no"/>suma in doni più della metà della sua contea; <persName><forename>Guglielmo</forename>
-                    <lb/><surname>Faidit</surname></persName> si mangia tutto il suo al giuoco dei dadi; <hi rend="italic">l'arte di
+                    <lb/><surname>Faidit</surname></persName> si mangia tutto il suo al giuoco dei dadi; <hi rend="italics">l'arte di
                     <lb/>trovare</hi> diventa una specie di patrimonio: due fratelli ave<pc force="weak">-</pc>
                     <lb break="no"/>vano un castello di poca rendita, ed erano trovatori am<pc force="weak">-</pc>
                     <lb break="no"/>bedue. Fecero patto che l’uno si tenesse il castello, e l’al<pc force="weak">-</pc>
@@ -367,44 +370,224 @@
                 </p>
 
                 <p facs="#pag95-p3">
-                    Se è vero che i Poemi cavallereschi rappresentano og-
-                    gettivamente la società feudale, domandiamo anche ad essi
-                    qualche notizia dell’amore. Ecco una gentile figura di donna,
-                    Iseult, Isotta la bionda (il Medio Evo non ammetteva che ci
-                    fossero belle donne, le quali non fossero bionde), la dama
-                    avvenente, il fiore della cortesia e della gentilezza, figlia
-                    di re, chiesta in isposa da un altro re, March di Cor-
-                    nouailles, il quale manda il proprio nipote, Tristano, a
-                    prendere la fidanzata, perchè l’accompagni, la guardi, la
-                    custodisca. Era questo veramente il caso di una devozione
-                    tutta platonica. Ma nella lunga traversata per mare Tri-
-                    stano ed Isotta bevono il contenuto di un filtro magico de-
-                    stinato al marito, e si amano irresistibilmente. La bionda
-                    fanciulla lascia sulle onde il fiore del suo pulzellaggio, e
-                    nonostante sposa poi il suo re March. Non mi è lecito
-                    raccontare gli inganni crudeli della bella regina e del suo
-                    cavaliere: gli aiuti prestati loro da una damigella e da
-                    uno scudiere. Ma certo siffatto tipo di donna, di dama, di
-                    regina, presentato al medioevo feudale, e le cui memorie si
-                    ripercuotevano nelle sale dei turriti castelli, al suono del
-                    liuto del trovatore, certo non poteva essere in disaccordo
-                    coi costumi del tempo. L’amore cavalleresco quale ci è dato
-                    dalla canzone trovadorica avrebbe dovuto bendarsi gli occhi
-                    dinanzi a simili fatti, se codesta canzone fosse stata qual-
-                    che cosa di più che un esercizio poetico. Nè Isotta è un’ec-
-                    cezione. Ginevra, la moglie del re Artù, fondatore dell’or-
-                    dine di cavalleria, è 1’amante di Lancillotto, si lascia sor-
-                    prendere con lui, con lui fugge: tutto un dramma avventuroso
-                    si svolge intorno a questi due personaggi, che pure ci rap-
-                    presentano il tipo perfetto della dama e del cavaliere.
+                    <lb/>Se è vero che i <term>Poemi cavallereschi</term> rappresentano og<pc force="weak">-</pc>
+                    <lb break="no"/>gettivamente la società feudale, domandiamo anche ad essi
+                    <lb/>qualche notizia dell’amore. Ecco una gentile figura di donna,
+                    <lb/><persName xml:id="iso">Iseult, <addName>Isotta la bionda</addName></persName> 
+                    (il <date from="476" to="1492">Medio Evo</date> non ammetteva che ci
+                    <lb/>fossero belle donne, le quali non fossero bionde), la dama
+                    <lb/>avvenente, il fiore della cortesia e della gentilezza, figlia
+                    <lb/>di re, chiesta in isposa da un altro re, <persName xml:id="re-mar">March di <placeName><region>Cor<pc force="weak">-</pc>
+                    <lb break="no"/>nouailles</region></placeName></persName>, 
+                    il quale manda il proprio nipote, <persName xml:id="tris">Tristano</persName>, a
+                    <lb/>prendere la fidanzata, perchè l’accompagni, la guardi, la
+                    <lb/>custodisca. Era questo veramente il caso di una devozione
+                    <lb/>tutta platonica. Ma nella lunga traversata per mare <persName ref="#tris">Tri<pc force="weak">-</pc>
+                    <lb break="no"/>stano</persName> ed <persName ref="#iso">Isotta</persName> bevono il contenuto di un filtro magico de<pc force="weak">-</pc>
+                    <lb/>stinato al marito, e si amano irresistibilmente. La <ref target="#iso">bionda
+                    <lb/>fanciulla</ref> lascia sulle onde il fiore del suo pulzellaggio, e
+                    <lb/>nonostante sposa poi il suo <persName ref="#re-mar"><roleName>re</roleName> March</persName>. Non mi è lecito
+                    <lb/>raccontare gli inganni crudeli della bella regina e del suo
+                    <lb/>cavaliere: gli aiuti prestati loro da una damigella e da
+                    <lb/>uno scudiere. Ma certo siffatto tipo di donna, di dama, di
+                    <lb/>regina, presentato al medioevo feudale, e le cui memorie si
+                    <lb/>ripercuotevano nelle sale dei turriti castelli, al suono del
+                    <lb/>liuto del trovatore, certo non poteva essere in disaccordo
+                    <lb/>coi costumi del tempo. L’<term ref="#ac">amore cavalleresco</term> quale ci è dato
+                    <lb/>dalla canzone trovadorica avrebbe dovuto bendarsi gli occhi
+                    <lb/>dinanzi a simili fatti, se codesta canzone fosse stata qual<pc force="weak">-</pc>
+                    <lb break="no"/>che cosa di più che un esercizio poetico. Nè <persName ref="#iso">Isotta</persName> è un’ec<pc force="weak">-</pc>
+                    <lb break="no"/>cezione. <persName xml:id="gin">Ginevra</persName>, la moglie del <persName><roleName>re</roleName> Artù</persName>, fondatore dell’or<pc force="weak">-</pc>
+                    <lb break="no"/>dine di cavalleria, è 1’amante di <persName xml:id="lan">Lancillotto</persName>, si lascia sor<pc force="weak">-</pc>
+                    <lb break="no"/>prendere con lui, con lui fugge: tutto un dramma avventuroso
+                    <lb/>si svolge intorno a questi due personaggi, che pure ci rap<pc force="weak">-</pc>
+                    <lb break="no"/>presentano il tipo perfetto della dama e del cavaliere.
                 </p>
+
+                <p facs="#pag95-p4">
+                    <lb/>E non basta ancora. Quello che ho detto di <persName ref="#tris">Tristano</persName> e
+                    <lb/>di <persName ref="#iso">Isotta</persName>, di <persName ref="#lan">Lancillotto</persName> 
+                    e di <persName ref="#gin">Ginevra</persName>, dovrei pur dirlo di
+                    <lb/><persName>Yvain</persName> che ama allo stesso modo la <roleName>Dama de <placeName>Brecilien</placeName></roleName>, do<pc force="weak">-</pc>
+                    <lb break="no"/>vrei dirlo di <persName>Erec</persName> e <persName>Enide</persName>, anzi dello stesso <persName>Perceval <addName>le
+                    <lb/>Gallois</addName></persName>, che sebbene entri nel <term>ciclo religioso del <name type="object">Saint-Graal</name></term>,
+                    <lb/>pure è servo d’amore, e non certo secondo le teorie cavalleresche.
+                </p>
+
+                <p facs="#pag95-p5">
+                    <lb/>Alla stessa conclusione arriveremmo, se esaminassimo i
+                    <lb/><term>Romanzi d’avventura</term>. In uno di essi, dei più gentili e dei
+                    <lb/>più diffusi nel medioevo, un giovane nascosto in un cane<pc force="weak">-</pc>
+                    <lb break="no"/>stro di fiori riesce a penetrare nella camera della fanciulla
+                    <lb/>che amava, e la mattina dopo i due amanti sono sorpresi
+                    <lb/>abbracciati e addormentati insieme. Anche di qui mi pare
+                    <lb/>che sieno volati via i sospiri platonici dell’<term ref="#ac">amore cavalle<pc force="weak">-</pc>
+                    <lb break="no"/>resco</term>. Esso nella canzone del trovatore non è altro che un
+                    <lb/>giuoco di spirito, è una teoria, è una scienza. Ma appena
+                    <lb/>il cuore comincia a battere, l’amore cessa di essere caval<pc force="weak">-</pc>
+                    <lb break="no"/>leresco e ritorna umano, esce dal campo dei sogni e rientra
+                    <lb/>nella piena realtà della vita. Se ciò sia un bene od un male
+                    <lb/>non tocca a me a giudicarlo. 
+                </p>
+
+                <signed rend="case(allcaps) align(right)" facs="#pag95-sign">
+                    <persName ref="#aut-t">TIRESIAS</persName>.
+                </signed>
             </body>
         </text>
     </TEI>
-    <!-- Edizione digitale della bibliografia del fascicolo 6 del volume 1 -->
+    
+    <!-- Edizione digitale di un'entrata bibliografica del fascicolo 6 del volume 1 -->
     <TEI>
-        <teiHeader>
-        <!-- header for second text -->
+        <teiHeader xml:lang='it'>
+            <fileDesc>
+                <titleStmt>
+                    <title>Letteratura (entrata bibliografica)</title>
+                    <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                    <respStmt>
+                        <resp>Trascrizione a cura di </resp>
+                        <persName ref="#DDM">Diana De Marinis</persName>
+                    </respStmt>
+                </titleStmt>
+                <!-- Informazioni sull'edizione digitale: -->
+                <publicationStmt>
+                    <distributor ref="#DDM">
+                        Diana De Marinis
+                    </distributor>
+                </publicationStmt>
+                <!-- Informazioni sul documento originale: -->
+                <sourceDesc>
+                    <bibl>
+                        Entrata bibliografica nella sezione "Letteratura" in:
+                        <!-- Titolo della rivista: -->
+                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
+                        <publisher>Casa Editrice Barbèra</publisher>
+                        <date>1878</date>
+                        <!-- Informazioni sulla parte del documento codificata: -->
+                        <biblScope unit="volume">I</biblScope>
+                        <biblScope unit="issue">6</biblScope>
+                        <biblScope unit="page">101</biblScope>
+                    </bibl>
+                </sourceDesc>
+            </fileDesc>
+        </teiHeader>
+        <facsimile>
+            <surface>
+                <!-- Collegamento all'immagine della pagina: -->
+                <graphic url='imgs/Vol1-1878-1-S1-F6-pag-101.png' width='1531.666666px' height='2207.666666px' />
+                <!-- Titolo della sezione della bibliografia: -->
+                <zone ulx="345" uly="168" lrx="533" lry="190" xml:id="pag101-sec"/>
+                <!-- Citazione bibliografica: -->
+                <zone ulx="92" uly="196" lrx="766" lry="288" xml:id="pag101-bibl"/>
+                <!-- Prima colonna (inizio paragrafo): -->
+                <zone points = ' 77,283 767,282 751,2045 69,2050 ' xml:id="pag101-p1.1"/>
+                <!-- Porzione in alto nella seconda colonna (fine paragrafo): -->
+                <zone ulx="787" uly="120" lrx="1451" lry="262" xml:id="pag101-p1.2"/>
+            </surface>
+        </facsimile>
+        <text>
+        <body>
+            <head rend="case(allcaps) align(center)">
+                LETTERATURA.
+            </head>
+            <bibl>
+                <lb/><author rend="case(allcaps)"><persName><forename>ARTURO</forename> <surname>GRAF</surname></persName></author>.
+                <title rend="italics"><placeName><region>Provenza</region></placeName> e <placeName><country>Italia</country></placeName></title>,
+                <title type="desc">prolusione a un corso di
+                <lb/>letteratura provenzale, letta nella <orgName>R. Università di <placeName><settlement>To<pc force="weak">-</pc>
+                <lb break="no"/>rino</settlement></placeName></orgName> addì <date>29 novembre 1877</date></title>. — 
+                <pubPlace><placeName><settlement>Torino</settlement></placeName></pubPlace>, <date>1877</date>.
+            </bibl>
+            <p>
+                <milestone unit="paragraph-part" facs="#pag101-p1.1"/>
+                Il vedere stampata la prolusione di un professore di
+                Università dà quasi diremmo diritto di sperare che contenga qualcosa di nuovo, e che contribuisca, per poco che
+                sia, ad aumentare in qualche modo il patrimonio scientifico
+                del paese. Di nuovo invece non abbiamo trovato nulla in
+                queste pagine, per le quali l’Autore si è evidentemente giovato di opere ben conosciute. Anzi, non solo non ci sono
+                cose nuove, ma ci sono alcune inesattezze che ci permetteremo di additare all’ egregio insegnante. Dice il professore Graf che « le due poesie della lingua d’ oïl e della lin-
+                » gua d’oc ebbero diversa tra loro l’origine, la forma, per
+                » buona parte anche la materia, ma eguali in tutto i de-
+                » stini. » A noi parrebbe invece che i loro destini fossero stati
+                interamente opposti, poiché la letteratura provenzale morì
+                col secolo decimoterzo, o tutt’al più col decimoquarto; mentre la letteratura, la poesia francese, la discendente legittima della poesia della lingua d’oïl, vive anche oggi. Neppure può dirsi che « tutt’ e due queste poesie ritraggono il
+                » mondo feudale e cavalleresco, ma ciascuna ne ritrae un
+                » particolare aspetto, l’una (la francese) ne ritrae l’aspetto
+                » guerriero;.... l’altra (la provenzale) ne ritrae l’aspetto ga-
+                » lante. » Nella poesia provenzale non tutto è amore e
+                galanteria : abbiamo ancora i sirventes, che spesso sono poesie guerriere, e abbiamo i plarih, che spesso sono poesie politiche d’alta importanza. Nella poesia francese per converso
+                non tutto è guerriero : abbiamo ancora i lais, i dits, i fabliaux, i chansonniers, le pastourelles. Non è esatto il dire
+                che i trovatori accorrevano alla corte dei Malaspina « nella
+                valle della Magra. » Le memorie che ci rimangono accennano
+                piuttosto che i trovatori frequentassero le corti dei Malaspina del Genovesato e del Tortonese. Per sapere che molti
+                trovatori vissero alla corte di Federigo II non devesi dire:
+                « se non mentisce il ricordo che se ne trova fatto nelle Cento
+                » Novelle Antiche. » Abbiamo delle testimonianze sicure del
+                fatto, al di fuori di ciò che dice il Novellino. Nominando
+                Sordello non potevasi tacere delle questioni a cui ha dato
+                luogo questo personaggio. Non si può dire che sia stata
+                la poesia provenzale quella che promosse in Italia la « sa-
+                » lutifera agitazione che è necessario preparamento ad ogni
+                » manifestazione propria ed autonoma di pensiero. » Ci fu
+                in Italia nel secolo decimoterzo una manifestazione propria
+                ed autonoma di pensiero, affatto indipendente dalla poesia
+                provenzale. Anzi, la manifestazione promossa dalla poesia
+                provenzale, non può dirsi che fosse autonoma. Dire che la
+                poesia del Guinicelli, del Cavalcanti e di Cino da Pistoia è
+                « in sostanza » la stessa poesia di quella dei trovatori, è
+                dir cosa che nessuno studioso della nostra antica lirica potrà ammettere. E così pure parrà a tutti un giudizio poco
+                serio il dire che « Dante e il Petrarca levarono alla maggior
+                » perfezione, di cui eli’ era capace, la poesia dei trovatori,
+                » l’uno nella Vita Nuova, l’altro nel Canzoniere. » Ridurre
+                Dante e il Petrarca a perfezionatori della poesia trovadorica ci pare un errore, perchè tra quelli e questi c’ è di mezzo
+                un abisso. E ci pare ancora che l’autore contradica a quello
+                che ha detto, quando soggiunge: « nel Canzoniere due mondi
+                » s’incontrano, il medioevale e 1’ antico, e dalla loro fusione
+                » vien fuori un mondo nuovo, pien di fermento e di vita. » Ma
+                dunque che cosa resta dei trovatori nel Canzoniere ? Ancora,
+                l’asserire così genericamente che « la prima lirica nostra
+                » fu in principio straniera, » è erroneo. Bisognava distinguere tra lirica e lirica. Fu straniero per esempio il con
+                <!-- Inizio di colonna: -->
+                <cb/>
+                <milestone unit="paragraph-part" facs="#pag101-p1.2"/>
+            </p>
+        </body>
+        </text>
+    </TEI>
+
+     <!-- Edizione digitale di un'entrata bibliografica del fascicolo 6 del volume 1 -->
+     <TEI>
+        <teiHeader xml:lang='it'>
+            <fileDesc>
+                <titleStmt>
+                    <title>Scienze Naturali (entrata bibliografica)</title>
+                    <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                    <respStmt>
+                        <resp>Trascrizione a cura di </resp>
+                        <persName ref="#DDM">Diana De Marinis</persName>
+                    </respStmt>
+                </titleStmt>
+                <!-- Informazioni sull'edizione digitale: -->
+                <publicationStmt>
+                    <distributor ref="#DDM">
+                        Diana De Marinis
+                    </distributor>
+                </publicationStmt>
+                <!-- Informazioni sul documento originale: -->
+                <sourceDesc>
+                    <bibl>
+                        Entrata bibliografica nella sezione "Letteratura" in:
+                        <!-- Titolo della rivista: -->
+                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
+                        <publisher>Casa Editrice Barbèra</publisher>
+                        <date>1878</date>
+                        <!-- Informazioni sulla parte del documento codificata: -->
+                        <biblScope unit="volume">I</biblScope>
+                        <biblScope unit="issue">6</biblScope>
+                        <biblScope unit="page">101</biblScope>
+                    </bibl>
+                </sourceDesc>
+            </fileDesc>
         </teiHeader>
         <text>
         <!-- content of second text -->
