@@ -194,7 +194,7 @@
                     <lb/>ultimo bacio che basta a tutti i suoi desideri:
                     <!-- Citazione poetica in occitano arcaico: -->
                     <foreign xml:lang="pro">
-                        <quote>
+                        <quote rend="align(center) font-size(small)">
                             <lg>
                                 <l>Toz raos talenz m’ aemplira</l>
                                 <l>Ma donna, sol d’un bais m’aizis,</l>
@@ -232,7 +232,7 @@
                     <lb/>dell’oltraggio. Ma <persName xml:id="mb"><roleName>Messer</roleName> Barral</persName> prende la cosa in chiasso,
                     <lb/>e ridendo riprende la moglie che abbia levato tanto ru<pc force="weak">-</pc>
                     <lb break="no"/>more di ciò che il <ref target="#tr-pv">trovatore</ref> avea fatto. Non sempre però
-                    <lb/>accadeva lo stesso, e ben se ne accorse il medesimo <ref target="#tr-pv">Vidal</ref>,
+                    <lb/>accadeva lo stesso, e ben se ne accorse il medesimo <persName ref="#tr-pv">Vidal</persName>,
                     <lb/>quando ebbe forata la lingua da un marito geloso dei suoi
                     <lb/>usurpati diritti; e se ne accorse anche meglio <persName>Guglielmo
                     <lb/>di <placeName><settlement>Cabeistang</settlement></placeName></persName>, la cui storia, 
@@ -274,7 +274,129 @@
                     <!-- Inizio di colonna: -->
                     <cb/>
                     <milestone unit="paragraph-part" facs="#pag95-p2.2"/>
-                    
+                    <lb/>che il poeta cantava purissimi, dovrebbe esserci segno che
+                    <lb/>i contemporanei non prestavano fede a quello che il tro<pc force="weak">-</pc>
+                    <lb break="no"/>vatore diceva nei suoi versi; che anzi, a malgrado dei versi,
+                    <lb/>si sospettavano nodi più stretti tra il poeta e la dama. E
+                    <lb/>la verità è infatti che quelle candide regioni non erano
+                    <lb/>altro che una finzione poetica, che non aveva riscontro nella
+                    <lb/>realtà dei fatti; non erano che un pretesto per dar luogo
+                    <lb/>ad una poesia che era di moda, e che sodisfaceva a certi
+                    <lb/>gusti estetici. Il trovatore <persName>Pietro di <placeName><settlement>Maensac</settlement></placeName></persName> canta la mo<pc force="weak">-</pc>
+                    <lb break="no"/>glie di <persName>Bernardo de <placeName><settlement>Tierci</settlement></placeName></persName>, poi un bel giorno la rapisce,
+                    <lb/>la conduce seco, la rinchiude nel suo castello; e la donna
+                    <lb/>si lascia rapire volentieri. <persName xml:id="tr-rb">Rambaldo di <placeName><settlement>Vaqueiras</settlement></placeName></persName>, trovan<pc force="weak">-</pc>
+                    <lb break="no"/>dosi alla corte del <roleName xml:id="marc-mf">marchese di <placeName><region>Monferrato</region></placeName></roleName>, canta in molte
+                    <lb/>poesie la sorella di lui, <persName><addName>Donna</addName> Beatrice</persName>. Un giorno <q>« <foreign xml:lang="pro">la
+                    <sic>»</sic> domna se colquet dormir ab el,</foreign> »</q> e il <roleName ref="#marc-mf">Marchese</roleName> li sor<pc force="weak">-</pc>
+                    <lb break="no"/>prende, li copre col suo mantello perchè si accorgano che
+                    <lb/>li aveva visti, e se ne va. Qui veramente <hi rend="italic">noi roviniamo in
+                    <lb/>basso loco</hi>, qui siamo davvero in cospetto di un realismo
+                    <lb/>crudo. Dalle aeree vette dell’idealismo cavalleresco, ca<pc force="weak">-</pc>
+                    <lb break="no"/>schiamo nella realtà più palpabile della vita. Se <persName ref="#tr-rb">Rambaldo</persName>,
+                    <lb/>uscendo dal dolce luogo dove lo trovò il <roleName ref="#marc-mf">Marchese</roleName>, poteva
+                    <lb/>intuonare una canzone tutta spirante purità e candore, la
+                    <lb/>rispondenza tra l’arte e la vita, tra il pensiero ed il fatto
+                    <lb/>non ci è più in verità. E codesta rispondenza non c’è in
+                    <lb/>nulla. Nella sua canzone il trovatore è timido, umile, riguar<pc force="weak">-</pc>
+                    <lb break="no"/>doso, rassegnato. Ma come si accorda ciò col fatto di <persName ref="#tr-pv">Vidal</persName>,
+                    <lb/>che per piacere alla sua dama la quale chiamavasi <addName>Lupa</addName>, si
+                    <lb/>maschera da lupo, si fa dar la caccia dai pastori, e ritorna
+                    <lb/>malconcio della persona al castello di lei, che fa grande
+                    <lb/>allegrezza di tale follia? Dove se ne vanno la timidità e la
+                    <lb/>rassegnazione, quando <persName xml:id="tr-rm">Raimondo de <placeName><settlement>Miraval</settlement></placeName></persName> per ottenere
+                    <lb/>l’amore di donna <persName>Adelaide di <placeName><settlement>Besançon</settlement></placeName></persName> corre al proprio
+                    <lb/>castello e ne mette fuori la moglie? E dove se ne va an<pc force="weak">-</pc>
+                    <lb break="no"/>cora la pudicizia di codeste dame, se vediamo la moglie di
+                    <lb/><persName ref="#tr-rm">Raimondo</persName> cedere lietamente il posto alla rivale, poiché ella
+                    <lb/>amava un altro cavaliere? Codeste dame, di cui la canzone
+                    <lb/>taceva sempre il nome, per non offenderle; codeste castel<pc force="weak">-</pc>
+                    <lb break="no"/>lane, le quali sembra che non paghino mai altro che di uno
+                    <lb/>sguardo il loro poeta, nel fatto erano gelose le une delle
+                    <lb/>altre, e quando potevano, si rubavano anche, prosaicamen<pc force="weak">-</pc>
+                    <lb break="no"/>te, gli amanti. <persName xml:id="tr-sm">Savarico di <placeName><settlement>Mauleon</settlement></placeName></persName> 
+                    amava <persName xml:id="d-gb"><addName>donna</addName> Gugliel<pc force="weak">-</pc>
+                    <lb break="no"/>ma di <placeName><settlement>Benaujatz</settlement></placeName></persName>; ma essa 1’aveva fatto più volte correre
+                    <lb/>dal <placeName><region>Poitou</region></placeName> in <placeName><region>Guascogna</region></placeName>, 
+                    sempre lusingandolo di promesse,
+                    <lb/>e mai non concedendo quello che prometteva. <persName ref="#tr-sm"><roleName>Messer</roleName> Sa<pc force="weak">-</pc>
+                    <lb break="no"/>varico</persName> vide un’altra dama, 
+                    la <roleName xml:id="d-cm">contessa di <placeName><settlement>Manchac</settlement></placeName></roleName>, se ne
+                    <lb/>invaghì, e fu accettato per cavaliere. T<damage degree="low">o</damage>sto che lo seppe
+                    <lb/><persName ref="#d-gb"><addName>madonna</addName> Guglielma</persName>, mandò lettere e saluti, 
+                    a <persName ref="#tr-sm"><roleName>messer</roleName> Sava<pc force="weak">-</pc>
+                    <lb break="no"/>rico</persName>, pregandolo che venisse a lei, il giorno stesso che aveva
+                    <lb/>promesso di trovarsi colla <roleName ref="#d-cm">contessa</roleName>; che venisse di nasco<pc force="weak">-</pc>
+                    <lb break="no"/>sto, e otterrebbe tutto quello che potesse desiderare. Le ri<pc force="weak">-</pc>
+                    <lb break="no"/>flessioni sarebbero superflue, dove c’è tanta eloquenza di
+                    <lb/>fatti. Citiamo ancora un altro esempio. Tre trovatori ama<pc force="weak">-</pc>
+                    <lb break="no"/>vano la stessa dama; tutti e tre, celatamente, la richiede<pc force="weak">-</pc>
+                    <lb break="no"/>vano d’amore, senza che 1’uno sapesse nulla dell’altro. Un
+                    <lb/>giorno essi erano seduti presso di lei, uno da una parte,
+                    <lb/>1’altro dall’altra ed il terzo dinanzi. Ciascuno la guardava
+                    <lb/>furtivamente; ed essa cominciò a dare occhiate amorose a
+                    <lb/>quello che le sedeva davanti; prese la mano all’altro strin<pc force="weak">-</pc>
+                    <lb break="no"/>gendola con forza; ed al terzo pestò il piede sorridendo e
+                    <lb/>sospirando. Il testo provenzale chiama ardita questa dama;
+                    <lb/>noi troveremmo forse un altro epiteto più adattato a lei,
+                    <lb/>ma ci guarderemo bene dal pronunziarlo, contenti solo a
+                    <lb/>notare come anche da ciò si scorge chiaro che 1’<term ref="#ac">amore ca<pc force="weak">-</pc>
+                    <lb break="no"/>valleresco</term> radeva spesso colle ali la terra. Nè poteva es<pc force="weak">-</pc>
+                    <lb break="no"/>sere diversamente. La vita stessa del poeta ce lo dice. Ve<pc force="weak">-</pc>
+                    <lb break="no"/>dete quel <roleName>visconte di <placeName><settlement>Poitiers</settlement></placeName></roleName>, 
+                    il fiore de’trovatori: egli,
+                    <lb/>dopo aver ripudiate due mogli, ama contemporaneamente
+                    <!-- Inizio di colonna: -->
+                    <cb facs="pag95-p2.3"/>
+                    <lb/>una <persName><addName>donna</addName> Agnese</persName> e una <persName><addName>donna</addName> Ermesina</persName>; usa modi vitu<pc force="weak">-</pc>
+                    <lb break="no"/>perosi per ingannar queste ed altre donne della contrada;
+                    <lb/>si vanta dei suoi trionfi, pubblica i nomi delle sedotte, le
+                    <lb/>designa colle più villane allusioni paragonandole ai propri
+                    <lb/>cavalli; tiene pubblicamente con sè <persName>Malberga</persName>, moglie del
+                    <lb/><roleName>visconte di <placeName><settlement>Castellaraldo</settlement></placeName></roleName>, ne fa incidere 1’imagine sullo
+                    <lb/>scudo, e per essa ripudia anche la terza moglie. E così è
+                    <lb/>di tutti: sia il trovatore un <roleName>visconte di <placeName><settlement>Poitiers</settlement></placeName></roleName>, o un po<pc force="weak">-</pc>
+                    <lb break="no"/>vero servo, la sua esistenza è tutta nell’amore, nel giuoco,
+                    <lb/>nella prodigalità, nel sollazzo: il <roleName>Delfino d’<placeName><region>Auvergne</region></placeName></roleName> con<pc force="weak">-</pc>
+                    <lb break="no"/>suma in doni più della metà della sua contea; <persName><forename>Guglielmo</forename>
+                    <lb/><surname>Faidit</surname></persName> si mangia tutto il suo al giuoco dei dadi; <hi rend="italic">l'arte di
+                    <lb/>trovare</hi> diventa una specie di patrimonio: due fratelli ave<pc force="weak">-</pc>
+                    <lb break="no"/>vano un castello di poca rendita, ed erano trovatori am<pc force="weak">-</pc>
+                    <lb break="no"/>bedue. Fecero patto che l’uno si tenesse il castello, e l’al<pc force="weak">-</pc>
+                    <lb break="no"/>tro 1’arte sua.
+                </p>
+
+                <p facs="#pag95-p3">
+                    Se è vero che i Poemi cavallereschi rappresentano og-
+                    gettivamente la società feudale, domandiamo anche ad essi
+                    qualche notizia dell’amore. Ecco una gentile figura di donna,
+                    Iseult, Isotta la bionda (il Medio Evo non ammetteva che ci
+                    fossero belle donne, le quali non fossero bionde), la dama
+                    avvenente, il fiore della cortesia e della gentilezza, figlia
+                    di re, chiesta in isposa da un altro re, March di Cor-
+                    nouailles, il quale manda il proprio nipote, Tristano, a
+                    prendere la fidanzata, perchè l’accompagni, la guardi, la
+                    custodisca. Era questo veramente il caso di una devozione
+                    tutta platonica. Ma nella lunga traversata per mare Tri-
+                    stano ed Isotta bevono il contenuto di un filtro magico de-
+                    stinato al marito, e si amano irresistibilmente. La bionda
+                    fanciulla lascia sulle onde il fiore del suo pulzellaggio, e
+                    nonostante sposa poi il suo re March. Non mi è lecito
+                    raccontare gli inganni crudeli della bella regina e del suo
+                    cavaliere: gli aiuti prestati loro da una damigella e da
+                    uno scudiere. Ma certo siffatto tipo di donna, di dama, di
+                    regina, presentato al medioevo feudale, e le cui memorie si
+                    ripercuotevano nelle sale dei turriti castelli, al suono del
+                    liuto del trovatore, certo non poteva essere in disaccordo
+                    coi costumi del tempo. L’amore cavalleresco quale ci è dato
+                    dalla canzone trovadorica avrebbe dovuto bendarsi gli occhi
+                    dinanzi a simili fatti, se codesta canzone fosse stata qual-
+                    che cosa di più che un esercizio poetico. Nè Isotta è un’ec-
+                    cezione. Ginevra, la moglie del re Artù, fondatore dell’or-
+                    dine di cavalleria, è 1’amante di Lancillotto, si lascia sor-
+                    prendere con lui, con lui fugge: tutto un dramma avventuroso
+                    si svolge intorno a questi due personaggi, che pure ci rap-
+                    presentano il tipo perfetto della dama e del cavaliere.
                 </p>
             </body>
         </text>
