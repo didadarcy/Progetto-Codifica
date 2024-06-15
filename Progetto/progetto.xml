@@ -486,94 +486,100 @@
             </surface>
         </facsimile>
         <text>
-        <body>
-            <head rend="case(allcaps) align(center)">
-                LETTERATURA.
-            </head>
-            <bibl xml:id="AG-PI">
-                <lb/><author rend="case(allcaps)" xml:id="AG"><persName><forename>ARTURO</forename> <surname>GRAF</surname></persName></author>.
-                <title rend="italics"><placeName><region>Provenza</region></placeName> e <placeName><country>Italia</country></placeName></title>,
-                <title type="desc">prolusione a un corso di
-                <lb/>letteratura provenzale, letta nella <orgName>R. Università di <placeName><settlement>To<pc force="weak">-</pc>
-                <lb break="no"/>rino</settlement></placeName></orgName> addì <date>29 novembre 1877</date></title>. — 
-                <pubPlace><placeName><settlement>Torino</settlement></placeName></pubPlace>, <date>1877</date>.
-            </bibl>
-            <p>
-                <milestone unit="paragraph-part" facs="#pag101-p1.1"/>
-                <lb/>Il vedere stampata la prolusione di un <roleName ref="#AG">professore di
-                <lb/>Università</roleName> dà quasi diremmo diritto di sperare che con<pc force="weak">-</pc>
-                <lb break="no"/>tenga qualcosa di nuovo, e che contribuisca, per poco che
-                <lb/>sia, ad aumentare in qualche modo il patrimonio scientifico
-                <lb/>del paese. Di nuovo invece non abbiamo trovato nulla in
-                <lb/>queste pagine, per le quali l’<ref target="#AG">Autore</ref> si è evidentemente gio<pc force="weak">-</pc>
-                <lb break="no"/>vato di opere ben conosciute. Anzi, non solo non ci sono
-                <lb/>cose nuove, ma ci sono alcune inesattezze che ci permet<pc force="weak">-</pc>
-                <lb break="no"/>teremo di additare all’<ref target="#AG">egregio insegnante</ref>. 
-                Dice il <persName ref="#AG"><roleName>profes<pc force="weak">-</pc>
-                <lb break="no"/>sore</roleName> <surname>Graf</surname></persName> che <quote source="#AG-PI">« le due poesie della lingua d’oïl e della lin<pc force="weak">-</pc>
-                <lb break="no"/><pc force="weak">»</pc> gua d’oc ebbero diversa tra loro l’origine, la forma, per
-                <lb/><pc force="weak">»</pc> buona parte anche la materia, ma eguali in tutto i de<pc force="weak">-</pc>
-                <lb break="no"/><pc force="weak">»</pc> stini. »</quote> A noi parrebbe invece che i loro destini fossero stati
-                <lb/>interamente opposti, poiché la letteratura provenzale morì
-                <lb/>col secolo decimoterzo, o tutt’al più col decimoquarto; men<pc force="weak">-</pc>
-                <lb break="no"/>tre la letteratura, la poesia francese, la discendente legit<pc force="weak">-</pc>
-                <lb break="no"/>tima della poesia della lingua d’oïl, vive anche oggi. Nep<pc force="weak">-</pc>
-                <lb break="no"/>pure può dirsi che <quote source="#AG-PI">« tutt’e due queste poesie ritraggono il
-                <lb/><pc force="weak">»</pc> mondo feudale e cavalleresco, ma ciascuna ne ritrae un
-                <lb/><pc force="weak">»</pc> particolare aspetto, l’una (la francese) ne ritrae l’aspetto
-                <lb/><pc force="weak">»</pc> guerriero;.... l’altra (la provenzale) ne ritrae l’aspetto ga<pc force="weak">-</pc>
-                <lb break="no"/><pc force="weak">»</pc> lante. »</quote> Nella poesia provenzale non tutto è amore e
-                <lb/>galanteria: abbiamo ancora i <term xml:lang="pro" rend="italics">sirventes</term>, che spesso sono poe<pc force="weak">-</pc>
-                <lb break="no"/>sie guerriere, e abbiamo i <term xml:lang="pro" rend="italics">plarih</term>, che spesso sono poesie po<pc force="weak">-</pc>
-                <lb break="no"/>litiche d’alta importanza. Nella poesia francese per converso
-                <lb/>non tutto è guerriero: abbiamo ancora i <term xml:lang="fr" rend="italics">lais</term>, 
-                i <term xml:lang="fr" rend="italics">dits</term>, i <term xml:lang="fr" rend="italics">fa<pc force="weak">-</pc>
-                <lb break="no"/>bliaux</term>, i <term xml:lang="fr" rend="italics">chansonniers</term>, 
-                le <term xml:lang="fr" rend="italics">pastourelles</term>. Non è esatto il dire
-                <lb/>che i trovatori accorrevano alla corte dei Malaspina <quote source="#AG-PI">« nella
-                <lb/>valle della Magra. »</quote> Le memorie che ci rimangono accennano
-                <lb/>piuttosto che i trovatori frequentassero le corti dei Mala<pc force="weak">-</pc>
-                <lb break="no"/>spina del Genovesato e del Tortonese. Per sapere che molti
-                <lb/>trovatori vissero alla corte di Federigo II non devesi dire:
-                <lb/>« se non mentisce il ricordo che se ne trova fatto nelle Cento
-                <lb/>» Novelle Antiche. » Abbiamo delle testimonianze sicure del
-                <lb/>fatto, al di fuori di ciò che dice il Novellino. Nominando
-                <lb/>Sordello non potevasi tacere delle questioni a cui ha dato
-                <lb/>luogo questo personaggio. Non si può dire che sia stata
-                <lb/>la poesia provenzale quella che promosse in Italia la « sa<pc force="weak">-</pc>
-                <lb break="no"/>» lutifera agitazione che è necessario preparamento ad ogni
-                <lb/>» manifestazione propria ed autonoma di pensiero. » Ci fu
-                <lb/>in Italia nel secolo decimoterzo una manifestazione propria
-                <lb/>ed autonoma di pensiero, affatto indipendente dalla poesia
-                <lb/>provenzale. Anzi, la manifestazione promossa dalla poesia
-                <lb/>provenzale, non può dirsi che fosse autonoma. Dire che la
-                <lb/>poesia del Guinicelli, del Cavalcanti e di Cino da Pistoia è
-                <lb/>« in sostanza » la stessa poesia di quella dei trovatori, è
-                <lb/>dir cosa che nessuno studioso della nostra antica lirica po<pc force="weak">-</pc>
-                <lb break="no"/>trà ammettere. E così pure parrà a tutti un giudizio poco
-                <lb/>serio il dire che « Dante e il Petrarca levarono alla maggior
-                <lb/>» perfezione, di cui ell’era capace, la poesia dei trovatori,
-                <lb/>» l’uno nella Vita Nuova, l’altro nel Canzoniere. » Ridurre
-                <lb/>Dante e il Petrarca a perfezionatori della poesia trovado<pc force="weak">-</pc>
-                <lb break="no"/>rica ci pare un errore, perchè tra quelli e questi c’è di mezzo
-                <lb/>un abisso. E ci pare ancora che l’autore contradica a quello
-                <lb/>che ha detto, quando soggiunge: « nel Canzoniere due mondi
-                <lb/>» s’incontrano, il medioevale e 1’antico, e dalla loro fusione
-                <lb/>» vien fuori un mondo nuovo, pien di fermento e di vita. » Ma
-                <lb/>dunque che cosa resta dei trovatori nel Canzoniere? Ancora,
-                <lb/>l’asserire così genericamente che « la prima lirica nostra
-                <lb/>» fu in principio straniera, » è erroneo. Bisognava distin<pc force="weak">-</pc>
-                <lb break="no"/>guere tra lirica e lirica. Fu straniero per esempio il con<pc force="weak">-</pc>
-                <!-- Inizio di colonna: -->
-                <cb/>
-                <milestone unit="paragraph-part" facs="#pag101-p1.2"/>
-                <lb break="no"/>trasto di Ciullo d’Alcamo? Fu straniera la lirica della scuola
-                <lb/>toscana? Questi pochi appunti basteranno a dimostrare che
-                <lb/>la Prolusione dell’egregio professore Graf poteva essere
-                <lb/>almeno più esatta, anche ripetendo o giudicando fatti
-                <lb/>già noti.
-            </p>
-        </body>
+            <body>
+                <head rend="case(allcaps) align(center)">
+                    LETTERATURA.
+                </head>
+                <bibl xml:id="AG-PI">
+                    <lb/><author rend="case(allcaps)" xml:id="AG"><persName><forename>ARTURO</forename> <surname>GRAF</surname></persName></author>.
+                    <title rend="italics"><placeName><region>Provenza</region></placeName> e <placeName><country>Italia</country></placeName></title>,
+                    <title type="desc">prolusione a un corso di
+                    <lb/>letteratura provenzale, letta nella <orgName>R. Università di <placeName><settlement>To<pc force="weak">-</pc>
+                    <lb break="no"/>rino</settlement></placeName></orgName> addì <date>29 novembre 1877</date></title>. — 
+                    <pubPlace><placeName><settlement>Torino</settlement></placeName></pubPlace>, <date>1877</date>.
+                </bibl>
+                <p>
+                    <milestone unit="paragraph-part" facs="#pag101-p1.1"/>
+                    <lb/>Il vedere stampata la prolusione di un <roleName ref="#AG">professore di
+                    <lb/>Università</roleName> dà quasi diremmo diritto di sperare che con<pc force="weak">-</pc>
+                    <lb break="no"/>tenga qualcosa di nuovo, e che contribuisca, per poco che
+                    <lb/>sia, ad aumentare in qualche modo il patrimonio scientifico
+                    <lb/>del paese. Di nuovo invece non abbiamo trovato nulla in
+                    <lb/>queste pagine, per le quali l’<ref target="#AG">Autore</ref> si è evidentemente gio<pc force="weak">-</pc>
+                    <lb break="no"/>vato di opere ben conosciute. Anzi, non solo non ci sono
+                    <lb/>cose nuove, ma ci sono alcune inesattezze che ci permet<pc force="weak">-</pc>
+                    <lb break="no"/>teremo di additare all’<ref target="#AG">egregio insegnante</ref>. 
+                    Dice il <persName ref="#AG"><roleName>profes<pc force="weak">-</pc>
+                    <lb break="no"/>sore</roleName> <surname>Graf</surname></persName> che <quote source="#AG-PI">
+                    « le due poesie della lingua d’oïl e della lin<pc force="weak">-</pc>
+                    <lb break="no"/><pc force="weak">»</pc> gua d’oc ebbero diversa tra loro l’origine, la forma, per
+                    <lb/><pc force="weak">»</pc> buona parte anche la materia, ma eguali in tutto i de<pc force="weak">-</pc>
+                    <lb break="no"/><pc force="weak">»</pc> stini. »</quote> A noi parrebbe invece che i loro destini fossero stati
+                    <lb/>interamente opposti, poiché la letteratura provenzale morì
+                    <lb/>col <date from="1201" to="1300">secolo decimoterzo</date>, o tutt’al più col <date from="1301" to="1400">decimoquarto</date>; men<pc force="weak">-</pc>
+                    <lb break="no"/>tre la letteratura, la poesia francese, la discendente legit<pc force="weak">-</pc>
+                    <lb break="no"/>tima della poesia della lingua d’oïl, vive anche oggi. Nep<pc force="weak">-</pc>
+                    <lb break="no"/>pure può dirsi che <quote source="#AG-PI">« tutt’e due queste poesie ritraggono il
+                    <lb/><pc force="weak">»</pc> mondo feudale e cavalleresco, ma ciascuna ne ritrae un
+                    <lb/><pc force="weak">»</pc> particolare aspetto, l’una (la francese) ne ritrae l’aspetto
+                    <lb/><pc force="weak">»</pc> guerriero;.... l’altra (la provenzale) ne ritrae l’aspetto ga<pc force="weak">-</pc>
+                    <lb break="no"/><pc force="weak">»</pc> lante. »</quote> Nella poesia provenzale non tutto è amore e
+                    <lb/>galanteria: abbiamo ancora i <term xml:lang="pro" rend="italics">sirventes</term>, che spesso sono poe<pc force="weak">-</pc>
+                    <lb break="no"/>sie guerriere, e abbiamo i <term xml:lang="pro" rend="italics">plarih</term>, che spesso sono poesie po<pc force="weak">-</pc>
+                    <lb break="no"/>litiche d’alta importanza. Nella poesia francese per converso
+                    <lb/>non tutto è guerriero: abbiamo ancora i <term xml:lang="fr" rend="italics">lais</term>, 
+                    i <term xml:lang="fr" rend="italics">dits</term>, i <term xml:lang="fr" rend="italics">fa<pc force="weak">-</pc>
+                    <lb break="no"/>bliaux</term>, i <term xml:lang="fr" rend="italics">chansonniers</term>, 
+                    le <term xml:lang="fr" rend="italics">pastourelles</term>. Non è esatto il dire
+                    <lb/>che i trovatori accorrevano alla corte dei <surname>Malaspina</surname> <quote source="#AG-PI">« nella
+                    <lb/><geogName>valle della Magra</geogName>. »</quote> Le memorie che ci rimangono accennano
+                    <lb/>piuttosto che i trovatori frequentassero le corti dei <surname>Mala<pc force="weak">-</pc>
+                    <lb break="no"/>spina</surname> del <placeName><region>Genovesato</region></placeName> e del <placeName><region>Tortonese</region></placeName>. Per sapere che molti
+                    <lb/>trovatori vissero alla corte di <persName>Federigo II</persName> non devesi dire:
+                    <lb/><quote source="#AG-PI">« se non mentisce il ricordo che se ne trova fatto nelle <title rend="italics">Cento
+                    <lb/><pc force="weak">»</pc> Novelle Antiche</title>. »</quote> Abbiamo delle testimonianze sicure del
+                    <lb/>fatto, al di fuori di ciò che dice il <title>Novellino</title>. Nominando
+                    <lb/><persName>Sordello</persName> non potevasi tacere delle questioni a cui ha dato
+                    <lb/>luogo questo personaggio. Non si può dire che sia stata
+                    <lb/>la poesia provenzale quella che promosse in <placeName><country>Italia</country></placeName> la <quote source="#AG-PI">« sa<pc force="weak">-</pc>
+                    <lb break="no"/><pc force="weak">»</pc>lutifera agitazione che è necessario preparamento ad ogni
+                    <lb/><pc force="weak">»</pc> manifestazione propria ed autonoma di pensiero. »</quote> Ci fu
+                    <lb/>in <placeName><country>Italia</country></placeName> nel 
+                    <date from="1201" to="1300">secolo decimoterzo</date> una manifestazione propria
+                    <lb/>ed autonoma di pensiero, affatto indipendente dalla poesia
+                    <lb/>provenzale. Anzi, la manifestazione promossa dalla poesia
+                    <lb/>provenzale, non può dirsi che fosse autonoma. Dire che la
+                    <lb/>poesia del <persName><surname>Guinicelli</surname></persName>, del <persName><surname>Cavalcanti</surname></persName> 
+                    e di <persName>Cino da <placeName><settlement>Pistoia</settlement></placeName></persName> è
+                    <lb/><q>« in sostanza »</q> la stessa poesia di quella dei trovatori, è
+                    <lb/>dir cosa che nessuno studioso della nostra antica lirica po<pc force="weak">-</pc>
+                    <lb break="no"/>trà ammettere. E così pure parrà a tutti un giudizio poco
+                    <lb/>serio il dire che <quote source="#AG-PI">« <persName>Dante</persName> e il <persName><surname>Petrarca</surname></persName> levarono alla maggior
+                    <lb/><pc force="weak">»</pc> perfezione, di cui ell’era capace, la poesia dei trovatori,
+                    <lb/><pc force="weak">»</pc> l’uno nella <title rend="italics">Vita Nuova</title>, 
+                    l’altro nel <title rend="italics">Canzoniere</title>. »</quote> Ridurre
+                    <lb/><persName>Dante</persName> e il <persName><surname>Petrarca</surname></persName> 
+                    a perfezionatori della poesia trovado<pc force="weak">-</pc>
+                    <lb break="no"/>rica ci pare un errore, perchè tra quelli e questi c’è di mezzo
+                    <lb/>un abisso. E ci pare ancora che l'<ref target="#AG">autore</ref> contradica a quello
+                    <lb/>che ha detto, quando soggiunge: <quote source="#AG-PI">« nel <title rend="italics">Canzoniere</title> due mondi
+                    <lb/><pc force="weak">»</pc> s’incontrano, il medioevale e 1’antico, e dalla loro fusione
+                    <lb/><pc force="weak">»</pc> vien fuori un mondo nuovo, pien di fermento e di vita. »</quote> Ma
+                    <lb/>dunque che cosa resta dei trovatori nel <title rend="italics">Canzoniere</title>? Ancora,
+                    <lb/>l’asserire così genericamente che <quote source="#AG-PI">« la prima 
+                    l<damage degree="low">i</damage>ri<damage degree="low">c</damage>a nostra
+                    <lb/><pc force="weak">»</pc> fu in principio straniera, »</quote> è erroneo. Bisognava distin<pc force="weak">-</pc>
+                    <lb break="no"/>guere tra lirica e lirica. Fu straniero per esempio il con<pc force="weak">-</pc>
+                    <!-- Inizio di colonna: -->
+                    <cb/>
+                    <milestone unit="paragraph-part" facs="#pag101-p1.2"/>
+                    <lb break="no"/>trasto di <persName>Ciullo d’Alcamo</persName>? Fu straniera la lirica della scuola
+                    <lb/>toscana? Questi pochi appunti basteranno a dimostrare che
+                    <lb/>la <ref target="#AG-PI">Prolusione</ref> dell’<persName ref="#AG"><roleName>egregio professore</roleName> <surname>Graf</surname></persName> poteva essere
+                    <lb/>almeno più esatta, anche ripetendo o giudicando fatti
+                    <lb/>già noti.
+                </p>
+            </body>
         </text>
     </TEI>
 
@@ -606,13 +612,109 @@
                         <!-- Informazioni sulla parte del documento codificata: -->
                         <biblScope unit="volume">I</biblScope>
                         <biblScope unit="issue">6</biblScope>
-                        <biblScope unit="page">101</biblScope>
+                        <biblScope unit="page">104</biblScope>
                     </bibl>
                 </sourceDesc>
             </fileDesc>
         </teiHeader>
+        <facsimile>
+            <surface>
+                <!-- Collegamento all'immagine della pagina: -->
+                <graphic url='imgs/Vol1-1878-1-S1-F6-pag-104.png' width='1504.666666px' height='2233.666666px' />
+                <!-- Titolo della sezione della bibliografia: -->
+                <zone ulx="317" uly="1003" lrx="548" lry="1029" xml:id="pag104-sec"/>
+                <!-- Citazione bibliografica: -->
+                <zone ulx="89" uly="1038" lrx="768" lry="1092" xml:id="pag104-bibl"/>
+                <!-- Primo paragrafo: -->
+                <zone ulx="88" uly="1102" lrx="765" lry="1272" xml:id="pag104-p1"/>
+                <!-- Secondo paragrafo: -->
+                <zone ulx="87" uly="1278" lrx="763" lry="1990" xml:id="pag104-p2"/>
+                <!-- Porzione in basso nella prima colonna (inizio terzo paragrafo): -->
+                <zone ulx="88" uly="1993" lrx="765" lry="2022" xml:id="pag104-p3.1"/>
+                <!-- Porzione in alto nella seconda colonna (fine terzo paragrafo): -->
+                <zone ulx="783" uly="154" lrx="1465" lry="320" xml:id="pag104-p3.2"/>
+                <!-- Quarto paragrafo: -->
+                <zone ulx="785" uly="326" lrx="1468" lry="525" xml:id="pag104-p4"/>
+            </surface>
+        </facsimile>
         <text>
-        <!-- content of second text -->
+            <body>
+                <head rend="case(allcaps) align(center)">
+                    LETTERATURA.
+                </head>
+                <bibl xml:id="AR-HE">
+                    <lb/><author rend="case(allcaps)" xml:id="AR"><persName>A. <surname>RIANT</surname></persName></author>.
+                    <title rend="italics" xml:lang="fr">L’hygiène et l’éducation dans les internats, lycées,
+                    <lb/>collèges etc.</title>. — 
+                    <pubPlace xml:lang="fr"><placeName><settlement>Paris</settlement></placeName></pubPlace>, <date>1877</date>.
+                </bibl>
+
+                <p facs="#pag104-p1">
+                    <lb/>Noi raccomandiamo caldamente questo libro a medici,
+                    <lb/>a maestri, a tutti quelli che nelle scuole vedono la base del<pc force="weak">-</pc>
+                    <lb break="no"/>l’avvenire sociale. La sana pedagogia, l’igiene illuminata,
+                    <lb/>1’amore del bene si intrecciano talmente e così bene in
+                    <lb/>questo libro, da renderci assai difficile il dire, se in esso
+                    <lb/>brilli meglio il medico o lo studioso di scienze sociali.
+                </p>
+
+                <p facs="#pag104-p2">
+                    <lb/>Il <persName ref="#AR"><roleName><choice><abbr>dott.</abbr><expan resp="#DDM">dottore</expan></choice></roleName> <surname>Riant</surname></persName> 
+                    era già noto in Francia per molti suoi libri
+                    <lb/>d’igiene popolare e più specialmente per un ottimo volume
+                    <lb/>sull’igiene delle scuole (<title xml:lang="fr" rend="italics">Hygiène scolaire</title>), che ebbe già due
+                    <lb/>edizioni; ma questo nuovo libro ci sembra il migliore. L’<ref target="#AR">au<pc force="weak">-</pc>
+                    <lb break="no"/>tore</ref> ha visitato e studiato tutti i collegi della <placeName><country>Francia</country></placeName>, e con<pc force="weak">-</pc>
+                    <lb break="no"/>frontandoli con quelli della vicina <placeName><country>Inghilterra</country></placeName>, mostra quanto
+                    <lb/>i primi siano lontani dai secondi, e come sia urgente provve-
+                    <lb break="no"/>dere perchè la <placeName><country>Francia</country></placeName> non rimanga addietro in cosa che
+                    <lb/>tocca così da vicino gl’interessi più cari dell’igiene e dell’edu<pc force="weak">-</pc>
+                    <lb break="no"/>cazione delle future generazioni. Nulla sfugge all’<ref target="#AR">autore</ref>: egli
+                    <lb/>indaga minutamente e profondamente tutti i problemi del<pc force="weak">-</pc>
+                    <lb break="no"/>l’igiene fisica, dell’igiene intellettuale e dell’igiene morale dei
+                    <lb/>collegi, facendosi volta a volta architetto, cuoco, maestro di
+                    <lb/>ginnastica, educatore, amministratore. I problemi peda<pc force="weak">-</pc>
+                    <lb break="no"/>gogici son tutti molto complessi, e la loro soluzione riesce
+                    <lb/>quasi sempre molto incompleta; perchè a risolverli si ado<pc force="weak">-</pc>
+                    <lb break="no"/>perano i maestri o i medici da soli, senza darsi scambie<pc force="weak">-</pc>
+                    <lb break="no"/>volmente la mano. È per questo che vediamo tante volte
+                    <lb/>il pedagogo che ride delle esigenze eccessive dell’igienista,
+                    <lb/>e il medico che predica nel deserto, sgomentando parenti
+                    <lb/>ed allievi sul numero eccessivo delle ore dedicate allo stu<pc force="weak">-</pc>
+                    <lb break="no"/>dio. Qui invece vien fatta la giusta parte ad ogni elemento;
+                    <lb/>e il medico non si dimentica mai di essere educatore; così
+                    <lb/>come il maestro ricorda ad ogni momento il <quote rend="italics">mens sana in
+                    <lb/>corpore sano</quote>.
+                </p>
+
+                <p>
+                    <milestone unit="paragraph-part" facs="#pag104-p3.1"/>
+                    <lb/>Il <persName ref="#AR"><roleName>dottor</roleName> <surname>Riant</surname></persName> 
+                    rammenta alla <placeName><country>Francia</country></placeName>, che l’ultima
+                    <!-- Inizio colonna: -->
+                    <cb/>
+                    <milestone unit="paragraph-part" facs="#pag104-p3.2"/>
+                    <lb/>inchiesta ha dimostrato pei soli collegi comunali 1’esistenza
+                    <lb/>di <num type="cardinal">149</num> locali mediocri, di <num type="cardinal">46</num> 
+                    cattivi, per soli <num type="cardinal">56</num> buoni;
+                    <lb/>mentre ricorda con immensa invidia le rendite ricchissime
+                    <lb/>dei collegi inglesi: <orgName>Westminster</orgName> con <num type="cardinal" value="1500000">un milione e mezzo</num>,
+                    <lb/><orgName>Oxford</orgName> con <num type="cardinal" value="12000000">12 milioni</num>, 
+                    <orgName>Cambridge</orgName> con <num type="cardinal" value="5000000">5 milioni</num>, e questi
+                    <lb/>non sono istituti dello Stato.
+                </p>
+
+                <p facs="#pag104-p4">
+                    <lb/>Il <persName ref="#AR"><roleName><choice><abbr>dott.</abbr><expan resp="#DDM">dottore</expan></choice></roleName> <surname>Riant</surname></persName>
+                    critica giustamente le ore eccessive di stu<pc force="weak">-</pc>
+                    <lb break="no"/>dio, la ginnastica metodica e pedantesca sostituita anche
+                    <lb/>per i fanciulli alle libere espansioni del giuoco, combatte
+                    <lb/>i castighi corporali ancora vigenti in <placeName><country>Inghilterra</country></placeName>, e in tutti
+                    <lb/>i cento problemi di minuta pedagogia e di fina igiene, di<pc force="weak">-</pc>
+                    <lb break="no"/>mostra quella sicurezza di giudizi, che posa sopra una larga
+                    <lb/>esperienza, e non sulla lettura superficiale dei libri.
+                </p>
+            </body>
         </text>
     </TEI>
 
