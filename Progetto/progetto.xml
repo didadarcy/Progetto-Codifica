@@ -490,8 +490,8 @@
             <head rend="case(allcaps) align(center)">
                 LETTERATURA.
             </head>
-            <bibl>
-                <lb/><author rend="case(allcaps)"><persName><forename>ARTURO</forename> <surname>GRAF</surname></persName></author>.
+            <bibl xml:id="AG-PI">
+                <lb/><author rend="case(allcaps)" xml:id="AG"><persName><forename>ARTURO</forename> <surname>GRAF</surname></persName></author>.
                 <title rend="italics"><placeName><region>Provenza</region></placeName> e <placeName><country>Italia</country></placeName></title>,
                 <title type="desc">prolusione a un corso di
                 <lb/>letteratura provenzale, letta nella <orgName>R. Università di <placeName><settlement>To<pc force="weak">-</pc>
@@ -500,56 +500,78 @@
             </bibl>
             <p>
                 <milestone unit="paragraph-part" facs="#pag101-p1.1"/>
-                Il vedere stampata la prolusione di un professore di
-                Università dà quasi diremmo diritto di sperare che contenga qualcosa di nuovo, e che contribuisca, per poco che
-                sia, ad aumentare in qualche modo il patrimonio scientifico
-                del paese. Di nuovo invece non abbiamo trovato nulla in
-                queste pagine, per le quali l’Autore si è evidentemente giovato di opere ben conosciute. Anzi, non solo non ci sono
-                cose nuove, ma ci sono alcune inesattezze che ci permetteremo di additare all’ egregio insegnante. Dice il professore Graf che « le due poesie della lingua d’ oïl e della lin-
-                » gua d’oc ebbero diversa tra loro l’origine, la forma, per
-                » buona parte anche la materia, ma eguali in tutto i de-
-                » stini. » A noi parrebbe invece che i loro destini fossero stati
-                interamente opposti, poiché la letteratura provenzale morì
-                col secolo decimoterzo, o tutt’al più col decimoquarto; mentre la letteratura, la poesia francese, la discendente legittima della poesia della lingua d’oïl, vive anche oggi. Neppure può dirsi che « tutt’ e due queste poesie ritraggono il
-                » mondo feudale e cavalleresco, ma ciascuna ne ritrae un
-                » particolare aspetto, l’una (la francese) ne ritrae l’aspetto
-                » guerriero;.... l’altra (la provenzale) ne ritrae l’aspetto ga-
-                » lante. » Nella poesia provenzale non tutto è amore e
-                galanteria : abbiamo ancora i sirventes, che spesso sono poesie guerriere, e abbiamo i plarih, che spesso sono poesie politiche d’alta importanza. Nella poesia francese per converso
-                non tutto è guerriero : abbiamo ancora i lais, i dits, i fabliaux, i chansonniers, le pastourelles. Non è esatto il dire
-                che i trovatori accorrevano alla corte dei Malaspina « nella
-                valle della Magra. » Le memorie che ci rimangono accennano
-                piuttosto che i trovatori frequentassero le corti dei Malaspina del Genovesato e del Tortonese. Per sapere che molti
-                trovatori vissero alla corte di Federigo II non devesi dire:
-                « se non mentisce il ricordo che se ne trova fatto nelle Cento
-                » Novelle Antiche. » Abbiamo delle testimonianze sicure del
-                fatto, al di fuori di ciò che dice il Novellino. Nominando
-                Sordello non potevasi tacere delle questioni a cui ha dato
-                luogo questo personaggio. Non si può dire che sia stata
-                la poesia provenzale quella che promosse in Italia la « sa-
-                » lutifera agitazione che è necessario preparamento ad ogni
-                » manifestazione propria ed autonoma di pensiero. » Ci fu
-                in Italia nel secolo decimoterzo una manifestazione propria
-                ed autonoma di pensiero, affatto indipendente dalla poesia
-                provenzale. Anzi, la manifestazione promossa dalla poesia
-                provenzale, non può dirsi che fosse autonoma. Dire che la
-                poesia del Guinicelli, del Cavalcanti e di Cino da Pistoia è
-                « in sostanza » la stessa poesia di quella dei trovatori, è
-                dir cosa che nessuno studioso della nostra antica lirica potrà ammettere. E così pure parrà a tutti un giudizio poco
-                serio il dire che « Dante e il Petrarca levarono alla maggior
-                » perfezione, di cui eli’ era capace, la poesia dei trovatori,
-                » l’uno nella Vita Nuova, l’altro nel Canzoniere. » Ridurre
-                Dante e il Petrarca a perfezionatori della poesia trovadorica ci pare un errore, perchè tra quelli e questi c’ è di mezzo
-                un abisso. E ci pare ancora che l’autore contradica a quello
-                che ha detto, quando soggiunge: « nel Canzoniere due mondi
-                » s’incontrano, il medioevale e 1’ antico, e dalla loro fusione
-                » vien fuori un mondo nuovo, pien di fermento e di vita. » Ma
-                dunque che cosa resta dei trovatori nel Canzoniere ? Ancora,
-                l’asserire così genericamente che « la prima lirica nostra
-                » fu in principio straniera, » è erroneo. Bisognava distinguere tra lirica e lirica. Fu straniero per esempio il con
+                <lb/>Il vedere stampata la prolusione di un <roleName ref="#AG">professore di
+                <lb/>Università</roleName> dà quasi diremmo diritto di sperare che con<pc force="weak">-</pc>
+                <lb break="no"/>tenga qualcosa di nuovo, e che contribuisca, per poco che
+                <lb/>sia, ad aumentare in qualche modo il patrimonio scientifico
+                <lb/>del paese. Di nuovo invece non abbiamo trovato nulla in
+                <lb/>queste pagine, per le quali l’<ref target="#AG">Autore</ref> si è evidentemente gio<pc force="weak">-</pc>
+                <lb break="no"/>vato di opere ben conosciute. Anzi, non solo non ci sono
+                <lb/>cose nuove, ma ci sono alcune inesattezze che ci permet<pc force="weak">-</pc>
+                <lb break="no"/>teremo di additare all’<ref target="#AG">egregio insegnante</ref>. 
+                Dice il <persName ref="#AG"><roleName>profes<pc force="weak">-</pc>
+                <lb break="no"/>sore</roleName> <surname>Graf</surname></persName> che <quote source="#AG-PI">« le due poesie della lingua d’oïl e della lin<pc force="weak">-</pc>
+                <lb break="no"/><pc force="weak">»</pc> gua d’oc ebbero diversa tra loro l’origine, la forma, per
+                <lb/><pc force="weak">»</pc> buona parte anche la materia, ma eguali in tutto i de<pc force="weak">-</pc>
+                <lb break="no"/><pc force="weak">»</pc> stini. »</quote> A noi parrebbe invece che i loro destini fossero stati
+                <lb/>interamente opposti, poiché la letteratura provenzale morì
+                <lb/>col secolo decimoterzo, o tutt’al più col decimoquarto; men<pc force="weak">-</pc>
+                <lb break="no"/>tre la letteratura, la poesia francese, la discendente legit<pc force="weak">-</pc>
+                <lb break="no"/>tima della poesia della lingua d’oïl, vive anche oggi. Nep<pc force="weak">-</pc>
+                <lb break="no"/>pure può dirsi che <quote source="#AG-PI">« tutt’e due queste poesie ritraggono il
+                <lb/><pc force="weak">»</pc> mondo feudale e cavalleresco, ma ciascuna ne ritrae un
+                <lb/><pc force="weak">»</pc> particolare aspetto, l’una (la francese) ne ritrae l’aspetto
+                <lb/><pc force="weak">»</pc> guerriero;.... l’altra (la provenzale) ne ritrae l’aspetto ga<pc force="weak">-</pc>
+                <lb break="no"/><pc force="weak">»</pc> lante. »</quote> Nella poesia provenzale non tutto è amore e
+                <lb/>galanteria: abbiamo ancora i <term xml:lang="pro" rend="italics">sirventes</term>, che spesso sono poe<pc force="weak">-</pc>
+                <lb break="no"/>sie guerriere, e abbiamo i <term xml:lang="pro" rend="italics">plarih</term>, che spesso sono poesie po<pc force="weak">-</pc>
+                <lb break="no"/>litiche d’alta importanza. Nella poesia francese per converso
+                <lb/>non tutto è guerriero: abbiamo ancora i <term xml:lang="fr" rend="italics">lais</term>, 
+                i <term xml:lang="fr" rend="italics">dits</term>, i <term xml:lang="fr" rend="italics">fa<pc force="weak">-</pc>
+                <lb break="no"/>bliaux</term>, i <term xml:lang="fr" rend="italics">chansonniers</term>, 
+                le <term xml:lang="fr" rend="italics">pastourelles</term>. Non è esatto il dire
+                <lb/>che i trovatori accorrevano alla corte dei Malaspina <quote source="#AG-PI">« nella
+                <lb/>valle della Magra. »</quote> Le memorie che ci rimangono accennano
+                <lb/>piuttosto che i trovatori frequentassero le corti dei Mala<pc force="weak">-</pc>
+                <lb break="no"/>spina del Genovesato e del Tortonese. Per sapere che molti
+                <lb/>trovatori vissero alla corte di Federigo II non devesi dire:
+                <lb/>« se non mentisce il ricordo che se ne trova fatto nelle Cento
+                <lb/>» Novelle Antiche. » Abbiamo delle testimonianze sicure del
+                <lb/>fatto, al di fuori di ciò che dice il Novellino. Nominando
+                <lb/>Sordello non potevasi tacere delle questioni a cui ha dato
+                <lb/>luogo questo personaggio. Non si può dire che sia stata
+                <lb/>la poesia provenzale quella che promosse in Italia la « sa<pc force="weak">-</pc>
+                <lb break="no"/>» lutifera agitazione che è necessario preparamento ad ogni
+                <lb/>» manifestazione propria ed autonoma di pensiero. » Ci fu
+                <lb/>in Italia nel secolo decimoterzo una manifestazione propria
+                <lb/>ed autonoma di pensiero, affatto indipendente dalla poesia
+                <lb/>provenzale. Anzi, la manifestazione promossa dalla poesia
+                <lb/>provenzale, non può dirsi che fosse autonoma. Dire che la
+                <lb/>poesia del Guinicelli, del Cavalcanti e di Cino da Pistoia è
+                <lb/>« in sostanza » la stessa poesia di quella dei trovatori, è
+                <lb/>dir cosa che nessuno studioso della nostra antica lirica po<pc force="weak">-</pc>
+                <lb break="no"/>trà ammettere. E così pure parrà a tutti un giudizio poco
+                <lb/>serio il dire che « Dante e il Petrarca levarono alla maggior
+                <lb/>» perfezione, di cui ell’era capace, la poesia dei trovatori,
+                <lb/>» l’uno nella Vita Nuova, l’altro nel Canzoniere. » Ridurre
+                <lb/>Dante e il Petrarca a perfezionatori della poesia trovado<pc force="weak">-</pc>
+                <lb break="no"/>rica ci pare un errore, perchè tra quelli e questi c’è di mezzo
+                <lb/>un abisso. E ci pare ancora che l’autore contradica a quello
+                <lb/>che ha detto, quando soggiunge: « nel Canzoniere due mondi
+                <lb/>» s’incontrano, il medioevale e 1’antico, e dalla loro fusione
+                <lb/>» vien fuori un mondo nuovo, pien di fermento e di vita. » Ma
+                <lb/>dunque che cosa resta dei trovatori nel Canzoniere? Ancora,
+                <lb/>l’asserire così genericamente che « la prima lirica nostra
+                <lb/>» fu in principio straniera, » è erroneo. Bisognava distin<pc force="weak">-</pc>
+                <lb break="no"/>guere tra lirica e lirica. Fu straniero per esempio il con<pc force="weak">-</pc>
                 <!-- Inizio di colonna: -->
                 <cb/>
                 <milestone unit="paragraph-part" facs="#pag101-p1.2"/>
+                <lb break="no"/>trasto di Ciullo d’Alcamo? Fu straniera la lirica della scuola
+                <lb/>toscana? Questi pochi appunti basteranno a dimostrare che
+                <lb/>la Prolusione dell’egregio professore Graf poteva essere
+                <lb/>almeno più esatta, anche ripetendo o giudicando fatti
+                <lb/>già noti.
             </p>
         </body>
         </text>
