@@ -683,7 +683,7 @@
                     <lb/>ed allievi sul numero eccessivo delle ore dedicate allo stu<pc force="weak">-</pc>
                     <lb break="no"/>dio. Qui invece vien fatta la giusta parte ad ogni elemento;
                     <lb/>e il medico non si dimentica mai di essere educatore; così
-                    <lb/>come il maestro ricorda ad ogni momento il <quote rend="italics">mens sana in
+                    <lb/>come il maestro ricorda ad ogni momento il <quote rend="italics" xml:lang="la">mens sana in
                     <lb/>corpore sano</quote>.
                 </p>
 
@@ -761,9 +761,210 @@
                 </sourceDesc>
             </fileDesc>
         </teiHeader>
-        <text>
-        <!-- content of second text -->
-        </text>
+
+        <!-- Descrizione delle zone codificate del documento fisico: -->
+        <facsimile>
+             <!-- Pagina 357: -->
+             <surface xml:id="pag357">
+                <!-- Collegamento all'immagine della pagina: -->
+                <graphic url='imgs/Vol2-1878-2-S2-F21-pag-357.png' width='1531.666666px' height='2224.666666px' />
+                <!-- Header della pagina: -->
+                <zone ulx="41" uly="31" lrx="1451" lry="127" xml:id="pag357-header" />
+                <!-- Titolo della pagina: -->
+                <zone ulx="547" uly="78" lrx="998" lry="116" xml:id="pag357-title" />
+                <!-- Data: -->
+                <zone ulx="81" uly="77" lrx="351" lry="118" xml:id="pag357-date" />
+                <!-- Numero della pagina: -->
+                <zone ulx="1379" uly="84" lrx="1439" lry="119" xml:id="pag357-num" />
+                <!-- Titolo dell'articolo: -->
+                <zone ulx="161" uly="154" lrx="689" lry="189" xml:id="pag357-art" />
+                <!-- Prima colonna (inizio primo paragrafo): -->
+                <zone ulx="87" uly="190" lrx="771" lry="2036" xml:id="pag357-p1.1" />
+                <!-- Nota prima colonna: -->
+                <zone ulx="90" uly="2038" lrx="768" lry="2088" xml:id="pag357-note" />
+                <!-- Porzione in alto nella seconda colonna (fine primo paragrafo): -->
+                <zone ulx="771" uly="157" lrx="1452" lry="443" xml:id="pag357-p1.2" />
+                <!-- Secondo paragrafo: -->
+                <zone ulx="775" uly="447" lrx="1456" lry="1884" xml:id="pag357-p2" />
+                <!-- Porzione in basso nella seconda colonna (inizio terzo paragrafo): -->
+                <zone ulx="787" uly="1890" lrx="1468" lry="2085" xml:id="pag357-p3.1" />
+            </surface>
+
+            <!-- Pagina 358: -->
+            <surface xml:id="pag358">
+                <!-- Collegamento all'immagine della pagina: -->
+                <graphic url='imgs/Vol2-1878-2-S2-F21-pag-358.png' width='1536.666666px' height='2224.666666px' />
+                <!-- Header della pagina: -->
+                <zone ulx="58" uly="78" lrx="1435" lry="139" xml:id="pag358-header"/>
+                <!-- Titolo della pagina: -->
+                <zone ulx="527" uly="93" lrx="977" lry="130" xml:id="pag358-title" />
+                <!-- Volume e fascicolo: -->
+                <zone ulx="1209" uly="95" lrx="1429" lry="134" xml:id="pag358-vol" />
+                <!-- Numero della pagina: -->
+                <zone ulx="77" uly="97" lrx="135" lry="126" xml:id="pag358-num" />
+                <!-- Porzione in alto nella prima colonna (fine terzo paragrafo): -->
+                <zone ulx="73" uly="170" lrx="745" lry="806" xml:id="pag358-p3.2" />
+                <!-- Quarto paragrafo: -->
+                <zone ulx="74" uly="810" lrx="751" lry="1636" xml:id="pag358-p4" />
+                <!-- Porzione in basso nella prima colonna (inizio quinto paragrafo): -->
+                <zone ulx="75" uly="1642" lrx="753" lry="2101" xml:id="pag358-p5.1" />
+                <!-- Porzione in alto nella seconda colonna (fine quinto paragrafo): -->
+                <zone ulx="759" uly="171" lrx="1435" lry="459" xml:id="pag358-p5.2" />
+                <!-- Sesto paragrafo: -->
+                <zone ulx="761" uly="461" lrx="1444" lry="1236" xml:id="pag358-p6" />
+                <!-- Settimo paragrafo: -->
+                <zone ulx="762" uly="1239" lrx="1441" lry="1606" xml:id="pag358-p7" />
+                <!-- Ottavo paragrafo: -->
+                <zone ulx="765" uly="1609" lrx="1447" lry="1862" xml:id="pag358-p8" />
+                <!-- Porzione in basso nella seconda colonna (inizio nono paragrafo): -->
+                <zone ulx="767" uly="1869" lrx="1443" lry="2094" xml:id="pag358-p9.1" />
+            </surface>
+            
+            <!-- Pagina 359: -->
+            <surface xml:id="pag359">
+                <!-- Collegamento all'immagine della pagina: -->
+                <graphic url='Vol2-1878-2-S2-F21-pag-359.png' width='1514.666666px' height='2190.666666px' />
+                <!-- Header della pagina: -->
+                <zone ulx="75" uly="64" lrx="1453" lry="132" xml:id="pag359-header" />
+                <!-- Titolo della pagina: -->
+                <zone ulx="550" uly="83" lrx="1011" lry="122" xml:id="pag359-title" />
+                <!-- Data: -->
+                <zone ulx="92" uly="80" lrx="352" lry="123" xml:id="pag359-date" />
+                <!-- Numero della pagina: -->
+                <zone ulx="1392" uly="90" lrx="1448" lry="120" xml:id="pag359-num" />
+                <!-- Porzione in alto nella prima colonna (fine nono paragrafo): -->
+                <zone ulx="87" uly="150" lrx="770" lry="276" xml:id="pag359-p9.2" />
+                <!-- Firma: -->
+                <zone ulx="617" uly="246" lrx="727" lry="272" xml:id="pag359-sign"/>
+            </surface>
+        </facsimile>
+
+        <text xml:lang='it'>
+            <body>
+                <!-- Inizio di pagina: -->
+                <pb/>
+                <fw type="header" place= "top" facs="#pag357-header">
+                    <fw rend="align(left)" facs="#pag357-date">
+                        <date>24 Novembre ’78</date>.] 
+                    </fw>
+                    <fw rend="align(center) case(allcaps)" facs="#pag357-title">
+                        LA RASSEGNA SETTIMANALE.
+                    </fw>
+                    <fw rend="align(right)" type="pageNum" facs="#pag357-num">
+                        357
+                    </fw>
+                </fw>
+                <!-- Inizio di colonna: -->
+                <cb/>
+                <head rend="align(center) case(allcaps)" facs="#pag357-art">
+                    <term xml:id="lsps">LA SCUOLA POETICA SICILIANA.</term> 
+                    <note place="bottom" type="bibl" n="*">
+                        <bibl xml:id="ddj-ag">
+                            <lb/><title xml:lang="de" rend="italics">Die sicilianische Dichterschule des dreizehnten Jahrhunderts</title> von
+                            <lb/><author rend="case(allcaps)" xml:id="de-ag"><persName><forename>ADOLF</forename> <surname>GASPARY</surname></persName></author>.
+                            <pubPlace>Berlin</pubPlace> <date>1878</date>.
+                        </bibl>
+                        </note>.
+                </head>
+
+                <p>
+                    <milestone unit="paragraph-part" facs="#pag357-p1.1"/>
+                    <lb/><persName>Dante</persName> aveva detto che essendo la <placeName><region>Sicilia</region></placeName> 
+                    <quote rend="italics" xml:lang="la">regale solium</quote>,
+                    <lb/>tutto quanto i <q>« predecessori »</q> avevano scritto in volgare
+                    <lb/>chiamavasi <q>« siciliano, »</q> appellativo eh’egli riteneva e che
+                    <lb/>i posteri non avrebbero potuto mutare. Codesta relazione
+                    <lb/>stabilita da <persName>Dante</persName> tra quell’appellativo, e la circostanza del<pc force="weak">-</pc>
+                    <lb break="no"/>l’essere la corte in <placeName><region>Sicilia</region></placeName>, fa credere che con quel <quote rend="italics" xml:lang="la">« prae<pc force="weak">-</pc>
+                    <lb break="no"/>decessores nostri »</quote> egli intendesse l’anteriore generazione
+                    <lb/>poetica, i veri rappresentanti della prima scuola, di qualun<pc force="weak">-</pc>
+                    <lb break="no"/>que parte d’<placeName><country>Italia</country></placeName> poi fossero. Quella denominazione doveva
+                    <lb/>dunque avere un valore cronologico, quantunque forse non
+                    <lb/>bene determinato, ma non geografico. Il <persName ref="#de-ag"><surname>Gaspary</surname></persName>, autore di
+                    <lb/>un <ref target="#ddj-ag">nuovo lavoro</ref> sulla <ref target="#lsps">scuola sicula</ref>, vi annetterebbe anche
+                    <lb/>un significato letterario, intendendo per <q>« siciliani »</q> tutti i
+                    <lb/>poeti anteriori al <term rend="italics">dolce stil novo</term>, quindi anche <persName>Guittone</persName> e
+                    <lb/>la sua scuola. Ma non ci par verosimile che nell’uso, a cui
+                    <lb/><persName>Dante</persName> dice attenersi, quella denominazione potesse riferirsi
+                    <lb/>ad una precisa distinzione delle due scuole quale è quella
+                    <lb/>fatta da <persName>Dante</persName> nel <bibl><biblScope unit="volume">Purgatorio</biblScope>
+                    (<biblScope unit="part" rend="case(allcaps) small">XXIV</biblScope>, <biblScope unit="line">55</biblScope>)</bibl>, 
+                    e che si chiamas<pc force="weak">-</pc>
+                    <lb break="no"/>sero <q>« siciliani »</q> poeti tanto noti e vicini come <persName>Guittone</persName> e
+                    <lb/>i suoi imitatori. Comunque ciò sia, è certo che anche let<pc force="weak">-</pc>
+                    <lb break="no"/>terariamente, e il <persName ref="#de-ag"><surname>Gaspary</surname></persName> lo riconosce, v’hanno tra i primi
+                    <lb/>poeti dell’epoca sveva e i più antichi toscani troppo note<pc force="weak">-</pc>
+                    <lb break="no"/>voli differenze perchè possano andar confusi insieme. I primi
+                    <lb/>sono ancora tutti chiusi nel formulario provenzale, e non
+                    <lb/>differiscono dai loro modelli che per la lingua impacciata e
+                    <lb/>pesante ehe ne mette maggiormente a nudo l’estrema po<pc force="weak">-</pc>
+                    <lb break="no"/>vertà e monotonia del contenuto, reso nei Provenzali più
+                    <lb/>tollerabile dalla grazia e sveltezza della forma. E se quei
+                    <lb/>poeti non scrissero essi pure provenzale, come i loro con<pc force="weak">-</pc>
+                    <lb break="no"/>temporanei dell’alta <placeName><country>Italia</country></placeName>, devesi, almeno in parte, alla mag<pc force="weak">-</pc>
+                    <lb break="no"/>giore differenza che rispetto al provenzale presentavano i
+                    <lb/>dialetti meridionali, che avrebbe loro impedito l’essere intesi
+                    <lb/>dalle loro donne, per le quali principalmente scrivevano,
+                    <lb/>poiché, come nota <persName>Dante</persName>, <quote>« lo primo che cominciò a dire
+                    <lb/>siccome poeta volgare si mosse però che volle fare inten<pc force="weak">-</pc>
+                    <lb break="no"/>dere le sue parole a donna alla quale era malagevole ad
+                    <lb/>intendere i versi latini.... conciossiacosaché cotai modo di
+                    <lb/>parlare fosse dal principio trovato per dire d’amore. »</quote> Del
+                    <lb/>resto nulla di mutato nei pensieri e nelle formule consa<pc force="weak">-</pc>
+                    <lb break="no"/>crate della canzone amorosa. Le stesse sottigliezze e arguzie
+                    <lb/>sulla natura d’amore e le stesse immagini ed espressioni,
+                    <lb/>con un difetto anche maggiore di calore, di vita, d’indivi<pc force="weak">-</pc>
+                    <lb break="no"/>dualità, che si traduce nell’interminabile ripetizione dei pochi
+                    <lb/>luoghi comuni che formavano il repertorio di quella mise<pc force="weak">-</pc>
+                    <lb break="no"/>rissima rettorica. L’amore è ancora umile omaggio come
+                    <lb/>di vassallo a signore; il poeta ancora il <q>« leale servidore »</q>
+                    <lb/>della sua donna, che fredda e contegnosa lo degna appena,
+                    <lb/>dall’alto del suo piedistallo, di un <q>« fino riso »</q> o di un poco
+                    <lb/>di <q>« beninanza, »</q> mentr’egli ripete a sé stesso che un <q>« fino
+                    <lb/>amore »</q> ottiene alfine <q>« mercede »</q> e giura, malgrado le
+                    <lb/>crudeltà della sua donna, di volerle essere eternamente fe<pc force="weak">-</pc>
+                    <lb break="no"/>dele. Ripetuti invariabilmente anche i pochi e scarsi ac<pc force="weak">-</pc>
+                    <lb break="no"/>cenni alle bellezze della natura e al ridestarsi della nuova
+                    <lb/>stagione, e riprodotti gli stessi scoloriti paragoni non traenti,
+                    <lb/>come presso gli antichi, da una schietta e vivace contem<pc force="weak">-</pc>
+                    <lb break="no"/>plazione della natura, ma lambiccati, pretensiosi e foggiati
+                    <lb/>sopra reminiscenze e pregiudizi scolastici. Il poeta vive nelle
+                    <lb/>fiamme come la salamandra nel fuoco, o vi brucia come la
+                    <lb/>farfalla che svolazza intorno alla fiaccola; canta nel più forte
+                    <lb/>delle sue pene come il cigno quando è più presso al morire;
+                    <lb/>si perde mirando gli occhi della sua donna come <persName>Narciso</persName>
+                    <lb/>mirando la fonte. L’amore per la sua donna è come la lan<pc force="weak">-</pc>
+                    <lb break="no"/>cia di <persName>Peleo</persName>; la sua fedeltà come quella dell’assassino; s’au<pc force="weak">-</pc>
+                    <lb break="no"/>gura di potere, come la Fenice, morire e rinascere per me<pc force="weak">-</pc>
+                    <!-- Inizio di colonna: -->
+                    <cb/>
+                    <milestone unit="paragraph-part" facs="#pag357-p2.2"/>
+                    glio piacere, e va discorrendo. Intere canzoni sono traduzioni
+                    letterali o quasi. Il Diez e il Nannucci mostrarono già come
+                    un sonetto di Ser Polo non fosse che una libera traduzione
+                    d’una strofa di Perdigon, e il Gaspary cita ora altri esempi
+                    d’imitazioni quasi letterali. Che se si aggiunge che questi
+                    poeti non uscirono quasi mai dai soggetti amorosi, nè mai
+                    tentarono argomenti che li richiamassero alla realtà, non
+                    parrà esagerato il dire, come abbiamo fatto, che la scuola
+                    sicula non fu, salvo la lingua mutata, che la continuazione
+                    scolorita della provenzale.
+                </p>
+
+
+                <pb/>
+                <fw type="header" place= "top" facs="#pag94-header">
+                    <fw rend="align(left)" type="pageNum" facs="#pag94-num">
+                        94
+                    </fw>
+                    <fw rend="align(center) case(allcaps)" facs="#pag94-title">
+                        LA RASSEGNA SETTIMANALE.
+                    </fw>
+                    <fw rend="align(right)" facs="#pag94-vol">
+                        [Vol. 1°, N° 6.
+                    </fw>
+                </fw>
+            </body>    
     </TEI>
     <!-- Edizione digitale della bibliografia del fascicolo 21 del volume 2 -->
     <TEI>
