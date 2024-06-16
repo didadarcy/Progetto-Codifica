@@ -197,10 +197,8 @@
                     <!-- Citazione poetica in occitano arcaico: -->
                     <foreign xml:lang="pro">
                         <quote rend="align(center) font-size(small)">
-                            <lg>
                                 <l>Toz raos talenz m’ aemplira</l>
                                 <l>Ma donna, sol d’un bais m’aizis,</l>
-                            </lg>
                         </quote>
                     </foreign>
                     <lb/>come dice il povero <persName xml:id="tr-c">Cercalmont</persName>.
@@ -816,8 +814,8 @@
                 <zone ulx="762" uly="1239" lrx="1441" lry="1606" xml:id="pag358-p7" />
                 <!-- Ottavo paragrafo: -->
                 <zone ulx="765" uly="1609" lrx="1447" lry="1862" xml:id="pag358-p8" />
-                <!-- Porzione in basso nella seconda colonna (inizio nono paragrafo): -->
-                <zone ulx="767" uly="1869" lrx="1443" lry="2094" xml:id="pag358-p9.1" />
+                <!-- Nono paragrafo: -->
+                <zone ulx="767" uly="1869" lrx="1443" lry="2094" xml:id="pag358-p9" />
             </surface>
             
             <!-- Pagina 359: -->
@@ -832,8 +830,8 @@
                 <zone ulx="92" uly="80" lrx="352" lry="123" xml:id="pag359-date" />
                 <!-- Numero della pagina: -->
                 <zone ulx="1392" uly="90" lrx="1448" lry="120" xml:id="pag359-num" />
-                <!-- Porzione in alto nella prima colonna (fine nono paragrafo): -->
-                <zone ulx="87" uly="150" lrx="770" lry="276" xml:id="pag359-p9.2" />
+                <!-- Porzione in alto nella prima colonna (decimo paragrafo): -->
+                <zone ulx="87" uly="150" lrx="770" lry="276" xml:id="pag359-p10" />
                 <!-- Firma: -->
                 <zone ulx="617" uly="246" lrx="727" lry="272" xml:id="pag359-sign"/>
             </surface>
@@ -841,7 +839,7 @@
 
         <text xml:lang='it'>
             <body>
-                <!-- Inizio di pagina: -->
+                <!-- Inizio di pagina 357: -->
                 <pb/>
                 <fw type="header" place= "top" facs="#pag357-header">
                     <fw rend="align(left)" facs="#pag357-date">
@@ -881,7 +879,7 @@
                     <lb break="no"/>que parte d’<placeName><country>Italia</country></placeName> poi fossero. Quella denominazione doveva
                     <lb/>dunque avere un valore cronologico, quantunque forse non
                     <lb/>bene determinato, ma non geografico. Il <persName ref="#de-ag"><surname>Gaspary</surname></persName>, autore di
-                    <lb/>un <ref target="#ddj-ag">nuovo lavoro</ref> sulla <ref target="#lsps">scuola sicula</ref>, vi annetterebbe anche
+                    <lb/>un <ref target="#ddj-ag">nuovo lavoro</ref> sulla <term ref="#lsps">scuola sicula</term>, vi annetterebbe anche
                     <lb/>un significato letterario, intendendo per <q>« siciliani »</q> tutti i
                     <lb/>poeti anteriori al <term rend="italics">dolce stil novo</term>, quindi anche <persName>Guittone</persName> e
                     <lb/>la sua scuola. Ma non ci par verosimile che nell’uso, a cui
@@ -938,33 +936,202 @@
                     <lb break="no"/>gura di potere, come la Fenice, morire e rinascere per me<pc force="weak">-</pc>
                     <!-- Inizio di colonna: -->
                     <cb/>
-                    <milestone unit="paragraph-part" facs="#pag357-p2.2"/>
-                    glio piacere, e va discorrendo. Intere canzoni sono traduzioni
-                    letterali o quasi. Il Diez e il Nannucci mostrarono già come
-                    un sonetto di Ser Polo non fosse che una libera traduzione
-                    d’una strofa di Perdigon, e il Gaspary cita ora altri esempi
-                    d’imitazioni quasi letterali. Che se si aggiunge che questi
-                    poeti non uscirono quasi mai dai soggetti amorosi, nè mai
-                    tentarono argomenti che li richiamassero alla realtà, non
-                    parrà esagerato il dire, come abbiamo fatto, che la scuola
-                    sicula non fu, salvo la lingua mutata, che la continuazione
-                    scolorita della provenzale.
+                    <milestone unit="paragraph-part" facs="#pag357-p1.2"/>
+                    <lb break="no"/>glio piacere, e va discorrendo. Intere canzoni sono traduzioni
+                    <lb/>letterali o quasi. Il <persName>Diez</persName> e il <persName>Nannucci</persName> mostrarono già come
+                    <lb/>un sonetto di <persName><roleName>Ser</roleName> Polo</persName> non fosse che una libera traduzione
+                    <lb/>d’una strofa di <persName>Perdigon</persName>, e il <persName ref="#de-ag"><surname>Gaspary</surname></persName> cita ora altri esempi
+                    <lb/>d’imitazioni quasi letterali. Che se si aggiunge che questi
+                    <lb/>poeti non uscirono quasi mai dai soggetti amorosi, nè mai
+                    <lb/>tentarono argomenti che li richiamassero alla realtà, non
+                    <lb/>parrà esagerato il dire, come abbiamo fatto, che la <term ref="#lsps">scuola
+                    <lb/>sicula</term> non fu, salvo la lingua mutata, che la continuazione
+                    <lb/>scolorita della provenzale.
                 </p>
+                <p facs="#pag357-p2">
+                    <lb/>Tutto questo è già ben cambiato nella prima scuola to<pc force="weak">-</pc>
+                    <lb break="no"/>scana. Si seguita ad imitare ed a saccheggiare il vecchio
+                    <lb/>repertorio, ma c’è pure un sentimento ed una forma nuova
+                    <lb/>che riesce a farsi strada e a rompere le vecchie pastoie. Nello
+                    <lb/>stesso <persName>Guittone</persName> non si può disconoscere una certa, per quanto
+                    <lb/>poco simpatica, originalità. Lontani dall’aura artificiale della
+                    <lb/>corte, i nuovi poeti sentono la vita che ribolle loro d’intorno
+                    <lb/>e lasciano volentieri la chimera amorosa per tentare la can<pc force="weak">-</pc>
+                    <lb break="no"/>zone civile. La più bella canzone di <persName>Guittone</persName> è <title>il Serventese
+                    <lb/>contro i Fiorentini dopo la battaglia di <placeName><settlement>Monteaperti</settlement></placeName></title>. Canzoni
+                    <lb/>politiche scrissero i Pisani <persName>Pannuccio</persName>, <persName>Lotto</persName> e <persName>Bacciarone</persName>,
+                    <lb/>e abbiamo sonetti di <persName>Monte Andrea</persName>, di <persName>Orlanduccio Orafo</persName>,
+                    <lb/>di <persName>Palamidesse</persName>, di <persName><roleName>Ser</roleName> Cione</persName>, che, come già mostrò il <persName>Cher<pc force="weak">-</pc>
+                    <lb break="no"/>rier</persName>, si riferiscono a <persName>Corradino</persName> e agli avvenimenti contem<pc force="weak">-</pc>
+                    <lb break="no"/>poranei. Anche all’infuori degli argomenti politici, l’evolu<pc force="weak">-</pc>
+                    <lb break="no"/>zione lirica compiuta dal <persName>Guinicelli</persName>, il connubio della poesia
+                    <lb/>colla filosofia, non si deve totalmente scompagnare dall’in<pc force="weak">-</pc>
+                    <lb break="no"/>dirizzo morale dato alla canzone da <persName>Guittone</persName>, per quanto a
+                    <lb/>costui mancasse il gusto della forma e la facoltà di ravvi<pc force="weak">-</pc>
+                    <lb break="no"/>vare coll’immagine l’idea, e riuscisse perciò pedestre, scola<pc force="weak">-</pc>
+                    <lb break="no"/>stico e freddo. Le prime canzoni del <persName>Guinicelli</persName> sono ancora
+                    <lb/>sul vecchio stampo, ed egli stesso rivolgendosi a <persName>Guittone</persName>
+                    <lb/>gli scrive come a padre ed a maestro. Ma questo punto delle
+                    <lb/>relazioni della scuola bolognese colla toscana è ancora il più
+                    <lb/>oscuro e richiede, ad essere chiarito, dati e documenti che
+                    <lb/>ancora ci mancano e che ulteriori scoperte verranno forse
+                    <lb/>a mettere in luce. Certo le poche date sicure sui poeti bo<pc force="weak">-</pc>
+                    <lb break="no"/>lognesi accennano ad epoca alquanto posteriore a quella di
+                    <lb/><persName>Guittone</persName>; ma il concluderne, come fa il 
+                    <persName ref="#de-ag"><surname>Gaspary</surname></persName>, l’anterio<pc force="weak">-</pc>
+                    <lb break="no"/>rità della scuola aretina sulla bolognese, è giudizio affret<pc force="weak">-</pc>
+                    <lb break="no"/>tato. Parimenti il dire che <soCalled>“la lingua dei poeti bolognesi
+                    <lb/>accusa influenza toscana”</soCalled> non è argomento serio, poiché di
+                    <lb/>quei poeti conosciamo ben poco, e questo straziato dagli
+                    <lb/>editori antichi e moderni, compreso il <persName>Nannucci</persName>. Del resto
+                    <lb/>anche i codici più antichi che contengono poesie di Bolo<pc force="weak">-</pc>
+                    <lb break="no"/>gnesi sono scritti da Toscani, e ce le danno alla rinfusa con
+                    <lb/>quelle dei poeti d’ogni parte d’<placeName><country>Italia</country></placeName>, ondo occorreranno
+                    <lb/>lunghi studi e raffronti per sceverare le forme primitive
+                    <lb/>attraverso alle molteplici alterazioni che un complicato in<pc force="weak">-</pc>
+                    <lb break="no"/>treccio di cause concorsero ad apportarvi. Ed è chiaro che
+                    <lb/>questo lavoro di restituzione non potrà riuscire che in parte.
+                    <lb/>Invece abbiamo un indizio ben forte per credere ad un’an<pc force="weak">-</pc>
+                    <lb break="no"/>teriore influenza preponderante della scuola di Bologna ed
+                    <lb/>è l’introduzione della rima che crediamo debbasi appunto
+                    <lb/>chiamare <q>« bolognese,»</q> già in pieno uso nella scuola aretina
+                    <lb/>e per influenza di questa rimasta nella poesia fino alla metà
+                    <lb/>del secolo XIV. L’ipotesi che quella rima potesse avere base
+                    <lb/>aretina contrasta con tutto quello che sappiamo di questo
+                    <lb/>dialetto, del quale abbiamo pure saggi del tempo dello stesso
+                    <lb/><persName>Guittone</persName>.
+                </p>
+                <p>
+                    <milestone unit="paragraph-part" facs="#pag357-p3.1"/>
+                    <lb/>Rispetto ai generi più popolari, o sopratutto intorno al
+                    <lb/>celebre Contrasto <q>« <title rend="italics">Rosa fresca aulentissima</title>, »</q> 
+                    il <persName ref="#de-ag"><surname>Gaspary</surname></persName>
+                    <lb/>propugna un’opinione che può dirsi di conciliazione. Quella
+                    <lb/>poesia non sarebbe per lui un vero canto popolare, molto
+                    <lb/>meno poi un canto amebeo siciliano (anzi il 
+                    <persName ref="#de-ag"><surname>Gaspary</surname></persName> pensa
+                    <lb/>che il nome di <persName>Ciullo d’Alcamo</persName> « debba ben tosto scom<pc force="weak">-</pc>
+                    <lb break="no"/>parire dalla storia letteraria 
+                    d’<placeName><country>Italia</country></placeName> »), nè il lavoro di
+                    <!-- Inizio pagina 358: -->
+                    <pb/>
+                    <fw type="header" place= "top" facs="#pag358-header">
+                        <fw rend="align(left)" type="pageNum" facs="#pag358-num">
+                            358
+                        </fw>
+                        <fw rend="align(center) case(allcaps)" facs="#pag358-title">
+                            LA RASSEGNA SETTIMANALE.
+                        </fw>
+                        <fw rend="align(right)" facs="#pag358-vol">
+                            [Voi. 2°, N° 21.
+                        </fw>
+                    </fw>
+                    <!-- Inizio di colonna: -->
+                    <cb/>
+                    <milestone unit="paragraph-part" facs="#pag358-p3.2"/>
+                    <lb/>un poeta d’arte, ma l’opera di un giullare tanto o quanto
+                    <lb/>imbevuto dei precetti e dei luoghi comuni della poesia cor<pc force="weak">-</pc>
+                    <lb break="no"/>tigiana, un prodotto insomma della poesia <hi rend="italics">popolaresca</hi> o
+                    <lb/><hi rend="italics">giullaresca</hi>. Ma se la distinzione tra <hi rend="italics">giullare</hi> e <hi rend="italics">trovatore</hi> non
+                    <lb/>fu sempre ben chiara neppure in <placeName><region>Provenza</region></placeName>, con quali cri<pc force="weak">-</pc>
+                    <lb break="no"/>teri si potranno stabilire codeste differenze di più e di meno
+                    <lb/>per un poeta italiano? Si dirà che l’autore del Contrasto è
+                    <lb/>più rozzo degli altri. Ma questa era una conseguenza del<pc force="weak">-</pc>
+                    <lb break="no"/>l’uso del dialetto impostogli dal soggetto stesso, che lo ri<pc force="weak">-</pc>
+                    <lb break="no"/>chiamava alla natura e alla realtà. Poteva imitare un dia<pc force="weak">-</pc>
+                    <lb break="no"/>logo popolare colla lingua impacciata della canzone? E
+                    <lb/><persName>Rambaldo di <placeName><settlement>Vaqueiras</settlement></placeName></persName> 
+                    non ha egli usato in una simile
+                    <lb/>tenzone il dialetto genovese? E se l’autore non era che un
+                    <lb/>cantore di piazza, come avvenne che il suo Contrasto figura
+                    <lb/>tra i prodotti della scuola cortigiana? E perchè questo solo
+                    <lb/>canto giullaresco ci fu conservato e non si preferirono altri
+                    <lb/>più brevi o meno rozzi? E non dovrà meravigliarci 1’uso
+                    <lb/>di parole e di formule provenzali e francesi in un popo<pc force="weak">-</pc>
+                    <lb break="no"/>lano pugliese? Queste non sono cose che s’intendano da se,
+                    <lb/>e andrebbero pure spiegate. Se per sostituire una teoria
+                    <lb/>ad un’altra bastasse il gettar là una parola, sarebbe cosa
+                    <lb/>troppo facile.
+                </p>
+                <p facs="#pag358-p4">
+                    <lb/>Il medesimo è da notare per le Romanze. Anche qui il
+                    <lb/><persName ref="#de-ag"><surname>Gaspary</surname></persName> piglia la via di mezzo; 
+                    riconosce un’influenza fran<pc force="weak">-</pc>
+                    <lb break="no"/>cese ma la vuole limitata alla forma. Ma la questione non
+                    <lb/>è sulla maggiore o minore libertà con cui il poeta ha proce<pc force="weak">-</pc>
+                    <lb break="no"/>duto nei particolari, ma nel decidere se lo stimolo e l’idea
+                    <lb/>a coltivare quel genere gli sia venuta dal canto popolare
+                    <lb/>o dallo studio dei modelli stranieri. Un poeta di <placeName><settlement>Parigi</settlement></placeName> comincia:
+                    <!-- Citazione poetica in francese: -->
+                    <foreign xml:lang="fr">
+                        <quote rend="align(center) font-size(small)">
+                                <l>Je chevanchai l’autrier</l>
+                                <l>Sur la rive de <geogName type="river">Saine</geogName>...</l>
+                        </quote>
+                    </foreign>
+                    <lb/>e un poeta toscano, sostituendo l’<geogName type="river">Arno</geogName> 
+                    alla <geogName type="river">Senna</geogName>:
+                    <quote rend="align(center) font-size(small)">
+                        <l>Per <geogName type="river">Arno</geogName> mi cavalcava...</l>
+                    </quote>
+                    <lb/>Come supporre che l’ultimo, scrivendo la sua romanza, non
+                    <lb/>avesse in mente una consimile romanza francese? Quando il
+                    <lb/><persName ref="#de-ag"><surname>Gaspary</surname></persName> dice che non si può 
+                    negare ai poeti italiani una
+                    <lb/>certa originalità <quote>« effetto dell’influenza del sentimento po<pc force="weak">-</pc>
+                    <lb break="no"/>polare, »</quote> non dice una novità. Anche noi scrivevamo: <quote>« Che in
+                    <lb/>questi poeti si senta come un’eco del sentimento popolare,
+                    <lb/>che tutto non sia accatto o rappezzatura, che abbiano un
+                    <lb/>cotal fare libero e franco, che vi si veda facilità di natura,
+                    <lb/>chi lo nega? Lo stesso bisogno di attingere alle correnti
+                    <lb/>della favella popolare, per avere espressioni e immagini ap<pc force="weak">-</pc>
+                    <lb break="no"/>propriate, li riconduceva in seno al popolo che tutto respira
+                    <lb/>e vive nella sua favella, e una volta in faccia alla natura
+                    <lb/>osservarono e studiarono da sè, trattarono con più fran<pc force="weak">-</pc>
+                    <lb break="no"/>chezza e novità i soggetti presi ad imitare, li mascherarono
+                    <lb/>in parte coi colori locali, riuscirono più ricchi e più 
+                    <damage degree="medium" agent="ink"> </damage>spon<pc force="weak">-</pc>
+                    <lb break="no"/>tanei. »</quote>
+                </p>
+                <p>
+                    <milestone unit="paragraph-part" facs="#pag358-p5.1"/>
+                    <lb/>Ma se passiamo alla questione filologica ci troveremo di
+                    <lb/>nuovo in pieno accordo coll’<choice><abbr>A.</abbr><expan resp="#DDM">autore.</expan></choice> Sul processo di forma<pc force="weak">-</pc>
+                    <lb break="no"/>zione della lingua poetica, sull’autorità da accordare al
+                    <lb/><title><choice><abbr rend="italics">Volg. Eloq.</abbr><expan resp="#DDM">De vulgari eloquentia</expan></choice></title>, 
+                    sulla determinazione degli elementi meridionali
+                    <lb/>passati nella lingua comune, ecc., il 
+                    <persName ref="#de-ag"><surname>Gaspary</surname></persName> ha veduto e
+                    <lb/>studiato tutto quanto è stato scritto d’importante, e saputo
+                    <lb/>vagliare, appurare e mettere nella loro luce i risultati finora
+                    <lb/>conseguiti. Egli non è meno di noi incredulo alla teoria,
+                    <lb/>oggi accettata e propugnata in <placeName><country>Italia</country></placeName> da critici autorevoli,
+                    <lb/>di una prima redazione siciliana dei nostri più antichi can<pc force="weak">-</pc>
+                    <lb break="no"/>zonieri, e inclina a ritenere i prodotti della <term ref="#lsps">scuola sicula</term>
+                    <lb/>composti in lingua illustre, e il Contrasto in pugliese. La
+                    <lb/>parte più notevole del libro è quella in cui confuta l’argo<pc force="weak">-</pc>
+                    <lb break="no"/>mento che si volle trarre dalla rima sicula. Egli mostra
+                    <lb/>come siffatta rima si riscontri in poeti d’ogni parte d’<placeName><country>Ita<pc force="weak">-</pc>
+                    <lb break="no"/>lia</country></placeName>, come da tutti si facesse luogo in rima alle più svariate
+                    <!-- Inizio di colonna: -->
+                    <cb/>
+                    <milestone unit="paragraph-part" facs="#pag358-p5.2"/>
+                    <lb/>forme dialettali, e come infine la forma siciliana, se in
+                    <lb/>molti casi restituisce la rima, in altri la distrugge. Ragioni
+                    <lb/>a parer nostro ovvie ed evidentissime che del resto dette
+                    <lb/>già prima in <placeName><country>Italia</country></placeName> non avevano ottenuto ascolto. Ma con<pc force="weak">-</pc>
+                    <lb break="no"/>vien pur dire che su tutte queste questioni veri risultati
+                    <lb/>non si otterranno se non si ricorrerà alle fonti, cioè ai co<pc force="weak">-</pc>
+                    <lb break="no"/>dici più antichi, lo studio metodico dei quali può solo darci
+                    <lb/>lume sui modi di formazione e di tradizione della nostra
+                    <lb/>lingua poetica di cui i testi a stampa non ci danno che
+                    <lb/>un’immagine alterata.
+                </p>
+                <p facs="#pag358-p6">
 
-
-                <pb/>
-                <fw type="header" place= "top" facs="#pag94-header">
-                    <fw rend="align(left)" type="pageNum" facs="#pag94-num">
-                        94
-                    </fw>
-                    <fw rend="align(center) case(allcaps)" facs="#pag94-title">
-                        LA RASSEGNA SETTIMANALE.
-                    </fw>
-                    <fw rend="align(right)" facs="#pag94-vol">
-                        [Vol. 1°, N° 6.
-                    </fw>
-                </fw>
-            </body>    
+                </p>
+            </body>  
+        </text>  
     </TEI>
     <!-- Edizione digitale della bibliografia del fascicolo 21 del volume 2 -->
     <TEI>
