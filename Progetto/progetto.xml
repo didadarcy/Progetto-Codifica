@@ -2,7 +2,7 @@
 <!-- Dichiarazione della DTD TEI: -->
 <!DOCTYPE TEI SYSTEM "tei_all.dtd">
 <!-- Radice e dichiarazione del namespace TEI: -->
-<TEI xmlns="https://tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <!-- Descrizione dell'edizione digitale: -->
         <fileDesc>
@@ -741,7 +741,7 @@
                         <title level="a">
                             La scuola poetica siciliana
                         </title>
-                        <author>
+                        <author xml:id="aut-nc">
                             <persName>
                                 <forename>Napoleone</forename>
                                 <surname>Caix</surname>
@@ -808,14 +808,14 @@
                 <zone ulx="75" uly="1642" lrx="753" lry="2101" xml:id="pag358-p5.1" />
                 <!-- Porzione in alto nella seconda colonna (fine quinto paragrafo): -->
                 <zone ulx="759" uly="171" lrx="1435" lry="459" xml:id="pag358-p5.2" />
-                <!-- Sesto paragrafo: -->
-                <zone ulx="761" uly="461" lrx="1444" lry="1236" xml:id="pag358-p6" />
-                <!-- Settimo paragrafo: -->
-                <zone ulx="762" uly="1239" lrx="1441" lry="1606" xml:id="pag358-p7" />
-                <!-- Ottavo paragrafo: -->
-                <zone ulx="765" uly="1609" lrx="1447" lry="1862" xml:id="pag358-p8" />
-                <!-- Nono paragrafo: -->
-                <zone ulx="767" uly="1869" lrx="1443" lry="2094" xml:id="pag358-p9" />
+                <!-- Inizio sesto paragrafo: -->
+                <zone ulx="761" uly="461" lrx="1444" lry="1236" xml:id="pag358-p6.start" />
+                <!-- Primo punto lista (nel sesto paragrafo): -->
+                <zone ulx="762" uly="1239" lrx="1441" lry="1606" xml:id="pag358-p6.l1" />
+                <!-- Secondo punto lista (nel sesto paragrafo): -->
+                <zone ulx="765" uly="1609" lrx="1447" lry="1862" xml:id="pag358-p6.l2" />
+                <!-- Terzo punto lista (nel sesto paragrafo): -->
+                <zone ulx="767" uly="1869" lrx="1443" lry="2094" xml:id="pag358-p6.l3" />
             </surface>
             
             <!-- Pagina 359: -->
@@ -830,8 +830,10 @@
                 <zone ulx="92" uly="80" lrx="352" lry="123" xml:id="pag359-date" />
                 <!-- Numero della pagina: -->
                 <zone ulx="1392" uly="90" lrx="1448" lry="120" xml:id="pag359-num" />
-                <!-- Porzione in alto nella prima colonna (decimo paragrafo): -->
-                <zone ulx="87" uly="150" lrx="770" lry="276" xml:id="pag359-p10" />
+                <!-- Quarto punto lista (nel sesto paragrafo): -->
+                <zone ulx="98" uly="161" lrx="772" lry="218" xml:id="pag358-p6.l4"/>
+                <!-- Fine sesto paragrafo: -->
+                <zone ulx="95" uly="216" lrx="768" lry="278" xml:id="pag358-p6.end"/> 
                 <!-- Firma: -->
                 <zone ulx="617" uly="246" lrx="727" lry="272" xml:id="pag359-sign"/>
             </surface>
@@ -1127,28 +1129,271 @@
                     <lb/>lingua poetica di cui i testi a stampa non ci danno che
                     <lb/>un’immagine alterata.
                 </p>
-                <p facs="#pag358-p6">
+                <p> 
+                    <milestone unit="paragraph-part" facs="#pag358-p6.start"/>
+                    <lb/>Altro argomento con cui si volle provare una prima re<pc force="weak">-</pc>
+                    <lb break="no"/>dazione sicula dei nostri canzonieri è una canzone in sici<pc force="weak">-</pc>
+                    <lb break="no"/>liano attribuita a <persName><forename>Stefano</forename> <surname>Protonotaro</surname></persName>, che il <persName>Barbieri</persName> copiò
+                    <lb/>insieme con un frammento attribuito al <persName><roleName>re</roleName> Enzo</persName>, da un
+                    <lb/>suo codice ch’egli chiama <quote rend="italics" xml:id="ls">« libro siciliano. »</quote> Questo appel<pc force="weak">-</pc>
+                    <lb break="no"/>lativo non ci deve imporre troppo, poiché dallo stesso
+                    <lb/>codice il <persName>Barbieri</persName> trasse canzoni provenzali e italiane, onde
+                    <lb/>si vede che non era se non una raccolta miscellanea e com<pc force="weak">-</pc>
+                    <lb break="no"/>posta in un modo abbastanza singolare. Tuttavia se quella
+                    <lb/>canzone fosse autentica, proverebbe che i Siculi si valsero
+                    <lb/>talvolta poetando anche del dialetto (non però che se ne
+                    <lb/>siano valsi sempre e tutti e che non esistesse una lingua
+                    <lb/>illustre). Ma è veramente autentica? Si può ben dubitarne.
+                    <lb/>Il <persName ref="#de-ag"><surname>Gaspary</surname></persName> accenna alla possibilità che quella canzone non
+                    <lb/>sia che una posteriore traduzione siciliana di altra in lin<pc force="weak">-</pc>
+                    <lb break="no"/>gua illustre, ma rimane perplesso parendogli difficile spie<pc force="weak">-</pc>
+                    <lb break="no"/>gare da chi e perchè quella traduzione si sarebbe fatta. Ma
+                    <lb/>la spiegazione non sarebbe poi molto difficile, quando si
+                    <lb/>pensi come i Siciliani non abbiano mai lasciato, per una ma<pc force="weak">-</pc>
+                    <lb break="no"/>lintesa 
+                    <cit><quote rend="italics">carità del natìo loco</quote>
+                        <bibl resp="#DDM">
+                            <author>Dante Alighieri</author>, 
+                            <title>Divina Commedia</title>, 
+                            <biblScope unit="volume">Inferno</biblScope>, 
+                            <biblScope unit="part">Canto XIV</biblScope>.
+                        </bibl>
+                    </cit>, di vantare ed esagerare a tutti
+                    <lb/>i costi 1’antichità e priorità dei loro monumenti letterari.
+                    <lb/>Basti il dire che un documento che i dotti siciliani fino a
+                    <lb/>ieri spacciarono per appartenente al <date from="1101" to="1200">secolo XII</date>, si trovò
+                    <lb/>ora dal <name>Döhmer</name> appartenere al <date from="1501" to="1600">secolo XVI</date>! Perchè anche
+                    <lb/>il famoso <ref target="#ls" rend="italics">libro siciliano</ref> non potrebb’essere una delle tante
+                    <lb/>falsificazioni del tempo? Questo sospetto è avvalorato da
+                    <lb/>varie considerazioni che qui sottoponiamo al lettore.
 
+                    <list>
+                        <item n="1°" facs="#pag358-p6.l1">
+                            <lb/><persName>Dante</persName>, non solo non fa cenno di alcuna canzone in
+                            <lb/>siciliano, ma volendo dar esempio dei difetti di cotesto dia<pc force="weak">-</pc>
+                            <lb break="no"/>letto, è costretto a citare un verso del Contrasto in pugliese,
+                            <lb/>che del resto bastava al suo scopo. Ora se <persName>Dante</persName> avesse cono<pc force="weak">-</pc>
+                            <lb break="no"/>sciuto canzoni d’arte siciliana, come non ne avrebbe parlato
+                            <lb/>o dato saggio nel 
+                            <title><choice><abbr rend="italics">Volg. Eloq.</abbr><expan resp="#DDM">De vulgari eloquentia</expan></choice></title>? 
+                            E se estesi testi siciliani ci
+                            <lb/>fossero stati, come non li avrebbe conosciuti <persName>Dante</persName>, così
+                            <lb/>informato di tutto quanto si scriveva e componeva in <placeName><country>Italia</country></placeName>,
+                            <lb/>che ne’ suoi viaggi ebbe occasione di veder codici d’ogni
+                            <lb/>fatta e di conoscere persone d’ogni parte d’<placeName><country>Italia</country></placeName>, e che
+                            <lb/>visse in un periodo così vicino a quello del fiorire della
+                            <lb/>scuola sicula? Dov’erano allora tutte codeste canzoni in
+                            <lb/>siciliano, codesto <ref target="#ls" rend="italics">libro siciliano</ref>?
+                        </item>
+                        <item n="2°" facs="#pag358-p6.l2">
+                            <lb/>La raccolta del <persName>Barbieri</persName> è in disaccordo con tutti
+                            <lb/>gli altri codici conosciuti appunto dove ci offre testi dia<pc force="weak">-</pc>
+                            <lb break="no"/>lettali; poiché nè i componimenti, nè i nomi di <persName>Lanfranco
+                            <lb/>Maraboto</persName><corr resp="#DDM"> e</corr> di <persName>Garibo</persName>, 
+                            citati dal <persName>Barbieri</persName> insieme colla can<pc force="weak">-</pc>
+                            <lb break="no"/>zone di <persName>Stefano</persName>, figurano in alcuna raccolta od elenco au<pc force="weak">-</pc>
+                            <lb break="no"/>tentico di poeti della scuola sicula, e sono parimente ignoti
+                            <lb/>a <persName>Dante</persName>. Anche il frammento attribuito al 
+                            <persName><roleName>re</roleName> Ezio</persName> si cer<pc force="weak">-</pc>
+                            <lb break="no"/>cherebbe invano in alcuno dei <choice><abbr>mss.</abbr><expan resp="#DDM">manoscritti</expan></choice> che ci danno le altre
+                            <lb/>canzoni di quel re.
+                        </item>
+                        <item n="3°" facs="#pag358-p6.l3">
+                            <lb/>Al tempo del <persName>Barbieri</persName>, nella prima metà del <date from="1501" to="1600">
+                            <choice><abbr>sec.</abbr><expan resp="#DDM">secolo </expan></choice>XVI</date>,
+                            <lb/>circolavano di siffatte poesie in siciliano, spacciate per an<pc force="weak">-</pc>
+                            <lb break="no"/>tiche e ricevute anche da qualche dotto e filologo per tali,
+                            <lb/>che invece si riconobbero <quote>« scritte in lingua siciliana mo<pc force="weak">-</pc>
+                            <lb break="no"/>derna di contado, e in iscrittura moderna, »</quote> certo al solito
+                            <lb/>scopo di provare l’antichità e priorità della <q>« musa sicula. »</q>
+                            <lb/>Perchè non poteva essere tra queste anche la canzone del
+                            <lb/><persName>Barbieri</persName>, e questi essere caduto, come altri, nell’inganno?
+                        </item>
+                        <!-- Inizio pagina 359: -->
+                        <pb/>
+                        <fw type="header" place= "top" facs="#pag359-header">
+                            <fw rend="align(left)" facs="#pag359-date">
+                                <date>24 Novembre ’78</date>.] 
+                            </fw>
+                            <fw rend="align(center) case(allcaps)" facs="#pag359-title">
+                                LA RASSEGNA SETTIMANALE.
+                            </fw>
+                            <fw rend="align(right)" type="pageNum" facs="#pag359-num">
+                                359
+                            </fw>
+                        </fw>
+                        <!-- Inizio di colonna: -->
+                        <cb/>
+                        <item n="4°" facs="#pag358-p6.l4">
+                            <lb/>Dal lato filologico ci sono gravissime difficoltà a
+                            <lb/>ritenere la canzono originariamente siciliana.
+                        </item>
+                    </list>
+                    <milestone unit="paragraph-part" facs="#pag358-p6.end"/>
+                    <lb/>Sui due ultimi argomenti, e sopratutto sull’ultimo, tor<pc force="weak">-</pc>
+                    <lb break="no"/>neremo in altro luogo.
                 </p>
+
+                <signed rend="case(allcaps) align(right)" facs="#pag359-sign">
+                    <persName ref="#aut-nc"><damage degree="low"><choice><abbr>N.</abbr><expan resp="#DDM">NAPOLEONE</expan></choice> CAIX</damage></persName>
+                </signed>
             </body>  
         </text>  
-    </TEI>
-    <!-- Edizione digitale della bibliografia del fascicolo 21 del volume 2 -->
-    <TEI>
-        <teiHeader>
-        <!-- header for second text -->
-        </teiHeader>
-        <text>
-        <!-- content of second text -->
-        </text>
     </TEI>
     <!-- Edizione digitale della sezione "notizie" del fascicolo 21 del volume 2 -->
     <TEI>
         <teiHeader>
-        <!-- header for second text -->
+            <fileDesc>
+                <titleStmt>
+                    <title>Notizie (edizione digitale)</title>
+                    <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                    <respStmt>
+                        <resp>Trascrizione a cura di </resp>
+                        <persName ref="#DDM">Diana De Marinis</persName>
+                    </respStmt>
+                </titleStmt>
+                <!-- Informazioni sull'edizione digitale: -->
+                <publicationStmt>
+                    <distributor ref="#DDM">
+                        Diana De Marinis
+                    </distributor>
+                </publicationStmt>
+                <!-- Informazioni sul documento originale: -->
+                <sourceDesc>
+                    <bibl>
+                        Sezione "Notizie" in:
+                        <!-- Titolo della rivista: -->
+                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
+                        <publisher>Casa Editrice Barbèra</publisher>
+                        <date>1878</date>
+                        <!-- Informazioni sulla parte del documento codificata: -->
+                        <biblScope unit="volume">II</biblScope>
+                        <biblScope unit="issue">21</biblScope>
+                        <biblScope unit="page">364</biblScope>
+                    </bibl>
+                </sourceDesc>
+            </fileDesc>
         </teiHeader>
+        <facsimile>
+            <surface>
+                <!-- Collegamento all'immagine della pagina: -->
+                <graphic url='imgs/Vol2-1878-2-S2-F21-pag-364.png' width='1530.666666px' height='2220.666666px' />
+                <!-- Titolo della sezione: -->
+                <zone ulx="1039" uly="485" lrx="1184" lry="515" xml:id="not-title"/>
+                <!-- Lista delle notizie: -->
+                <zone ulx="768" uly="522" lrx="1449" lry="620" xml:id="not-l1"/>
+                <zone ulx="769" uly="624" lrx="1447" lry="727" xml:id="not-l2"/>
+                <zone ulx="771" uly="731" lrx="1447" lry="855" xml:id="not-l3"/>
+                <zone ulx="772" uly="870" lrx="1446" lry="1072" xml:id="not-l4"/>
+                <zone ulx="773" uly="1077" lrx="1446" lry="1286" xml:id="not-l5"/>
+                <zone ulx="775" uly="1300" lrx="1444" lry="1426" xml:id="not-l6"/>
+                <zone ulx="777" uly="1433" lrx="1444" lry="1612" xml:id="not-l7"/>
+                <zone ulx="776" uly="1614" lrx="1445" lry="1710" xml:id="not-l8"/>
+                <zone ulx="777" uly="1722" lrx="1452" lry="1958" xml:id="not-l9"/>
+            </surface>
+        </facsimile>
         <text>
-        <!-- content of second text -->
+            <body>
+                <head rend="case(allcaps) align(center)" facs="#not-title">
+                    NOTIZIE.
+                </head>
+                <list>
+                    <item n="1" facs="#not-l1">
+                        <lb/>La <orgName rend="italics">Corrispondenza letteraria di <placeName><settlement>Lipsia</settlement></placeName></orgName> 
+                        afferma che <persName><forename>Alessandro</forename>
+                        <lb/><surname>Dumas</surname></persName> lavora ad uno studio su <title rend="italics">Dafni e Cloe</title>.
+                        Egli lo scriverebbe nel<pc force="weak">-</pc>
+                        <lb break="no"/>l’antico francese del traduttore della pastorale di <persName>Longo</persName>, <persName><forename>Jacques</forename>
+                        <lb/><surname>Amyot</surname></persName>.
+                    </item>
+                    <item n="2" facs="#not-l2" source="#l2">
+                        <lb/>Avanti la fine del mese verranno alla luce i due primi volumi
+                        <lb/>della <bibl><title rend="italics">Corrispondenza letteraria e politica</title> di 
+                        <author><persName>Federigo II</persName></author></bibl>, di cui 1’<orgName>Acca<pc force="weak">-</pc>
+                        <lb break="no"/>demia di <placeName><settlement>Berlino</settlement></placeName></orgName> prepara da tanti anni la pubblicazione.
+                        <lb/><seg rend="align(right)">(<title level="j" rend="italics" xml:id="l2" xml:lang="fr">Revue politique et littéraire</title>)</seg>
+                    </item>
+                    <item n="3" facs="#not-l3" source="#l3">
+                        <lb/>Il signor <persName>Parker</persName> nella seconda edizione della sua opera (<title rend="italics">Le for<pc force="weak">-</pc>
+                        <lb break="no"/>tificazioni primitive di <placeName><settlement>Roma</settlement></placeName></title>) ha aggiunto grandissima copia di nuovi
+                        <lb/>materiali. Si afferma che l’<orgName>Istituto germanico</orgName>, nel celebrare nel <date>pros<pc force="weak">-</pc>
+                        <lb break="no"/>simo aprile</date> 1’anniversario della fondazione di <placeName><settlement>Roma</settlement></placeName>, celebrerà in pari
+                        <lb/>tempo il giubileo della sua esistenza in questa città. 
+                        <seg rend="align(right)">(<title level="j" rend="italics" xml:id="l3" xml:lang="en">Academy</title>)</seg>
+                    </item>
+                    <item n="4" facs="#not-l4" source="#l4">
+                        <lb/>Vi fu grande agitazione all’annunzio dato dal signor <persName>Edison</persName> di
+                        <lb/>potere moltiplicare all’infinito i punti luminosi di una corrente elet<pc force="weak">-</pc>
+                        <lb break="no"/>trica. Sembra però che tale annunzio fosse alquanto prematuro, poi<damage degree="low">c</damage>hè
+                        <lb/>i signori <persName>Brewer</persName> e <persName>Jensen</persName> nella <date>settimana scorsa</date> hanno fatto domanda
+                        <lb/>all’<orgName>ufficio dei Brevetti</orgName> per una <q>« protezione provvisoria. »</q> Quindi pos<pc force="weak">-</pc>
+                        <lb break="no"/>sono decorrere <date>sei mesi</date> prima che sia depositata una specifica completa,
+                        <lb/>o che sia fatta nota al pubblico l’indole dell’invenzione del signor
+                        <lb/><persName>Edison</persName>.
+                        <seg rend="align(right)">(<title level="j" rend="italics" xml:id="l4" xml:lang="la">Athenaeum</title>)</seg>
+                    </item>
+                    <item n="5" facs="#not-l5" source="#l5">
+                        <lb/>Mentre tutti aspettano che venga annunziato il metodo del si<pc force="weak">-</pc>
+                        <lb break="no"/>gnor <persName>Edison</persName> per frazionare la luce elettrica, il signor <persName><forename>Richard</forename> <surname>Werder<pc force="weak">-</pc>
+                        <lb break="no"/>mann</surname></persName>, ben noto in ciò che riguarda l’illuminazione elettrica, sembra
+                        <lb/>avere sciolto il problema, almeno fino a un certo punto, ed egli crede
+                        <lb/>che dopo ulteriori esperienze potrà dividero la corrente in <num type="cardinal">50</num>, <num type="cardinal">100</num> e
+                        <lb/>perfino <num type="cardinal">500</num> fiammelle. Sono state fatte esposizioni di prova della
+                        <lb/>luce con resultati soddisfacenti alle officine della manifattura telegrafica
+                        <lb/>inglese di <placeName type="street">Eusto<damage degree="low">n</damage> road</placeName>. 
+                        <seg rend="align(right)">(<title level="j" rend="italics" xml:id="l5" xml:lang="en">Nature</title>)</seg>
+                    </item>
+                    <item n="6" facs="#not-l6" source="#l6">
+                        <lb/>Si afferma che vada costituendosi a <placeName><settlement>Parigi</settlement></placeName> un Comitato collo scopo
+                        <lb/>di una esposizione internazionale permanente al <placeName type="building">Palazzo di cristallo</placeName>.
+                        <lb/>Gli espositori francesi vengono invitati a trasferire i loro prodotti dal
+                        <lb/><placeName>Campo di Marte</placeName> a <placeName>Sydenham</placeName>, 
+                        realizzando così l’idea originaria del <placeName type="building">Pa<pc force="weak">-</pc>
+                        <lb break="no"/>lazzo di cristallo</placeName> quale museo e magazzino cosmopolita.
+                        <seg rend="align(right)">(<title level="j" rend="italics" xml:id="l6" xml:lang="en">Nature</title>)</seg> 
+                    </item>
+                    <item n="7" facs="#not-l7">
+                        <lb/>L’<placeName><country>Austria</country></placeName>, la <placeName><country>Spagna</country></placeName>, 
+                        l’<placeName><country>Egitto</country></placeName>, la <placeName><country>China</country></placeName>, 
+                        il <placeName><country>Marocco</country></placeName>, il <placeName><country>Porto<pc force="weak">-</pc>
+                        <lb break="no"/>gallo</country></placeName>, la <placeName><country>Russia</country></placeName> e 
+                        l’<placeName><country>Inghilterra</country></placeName> con tutte le sue colonie, hanno donato
+                        <lb/>al governo francese tutti gli oggetti che quelle nazioni misero in mo<pc force="weak">-</pc>
+                        <lb break="no"/>stra all’<eventName>Esposizione universale</eventName> riguardanti la etnografia e la pedagogia.
+                        <lb/>Quelle collezioni di pregio grandissimo saranno esposte nel Museo etno<pc force="weak">-</pc>
+                        <lb break="no"/>grafico e pedagogico che il governo francese ha in animo di fondare,
+                        <lb/>come in uno dei suoi ultimi discorsi annunciò il signor <persName>Bardoux</persName>.
+                    </item>
+                    <item n="8" facs="#not-l8">
+                        <lb/>Il <persName><roleName><choice><abbr>cav.</abbr><expan resp="#DDM">cavaliere</expan></choice></roleName> 
+                        <forename>Cristoforo</forename> <surname>Robecchi</surname></persName>, 
+                        console d’<placeName><country>Italia</country></placeName> a <placeName><settlement>Tiflis</settlement></placeName> ha inviato
+                        <lb/>in dono al <placeName type="building">Museo preistorico ed etnografico 
+                        del <orgName>Collegio romano</orgName></placeName> una
+                        <lb/>collezione di oggetti, per la maggior parte strumenti musicali del
+                        <lb/><placeName><country>Giappone</country></placeName>.
+                    </item>
+                    <item n="9" facs="#not-l9" source="#l9">
+                        <lb/>La <orgName>società missionaria di <placeName><settlement>Londra</settlement></placeName></orgName> 
+                        ha ricevuto 1’<date>11 novembre</date> la
+                        <lb/>notizia dell’arrivo a <placeName><settlement>Ujiji</settlement></placeName> di una parte della sua spedizione 
+                        di <placeName type="lake">Tanga<pc force="weak">-</pc>
+                        <lb break="no"/>nyika</placeName> sotto il comando del signor <persName>Thomson</persName> 
+                        Il viaggio da <placeName><settlement>Urambo</settlement></placeName>, ca<pc force="weak">-</pc>
+                        <lb break="no"/>pitale di <placeName><region>Unyamwesi</region></placeName>, al lago <placeName type="lake">Tanganyika</placeName> 
+                        occupò <num type="cardinal" value="18">diciotto</num> giorni sol<pc force="weak">-</pc>
+                        <lb break="no"/>tanto. Queste notizie sono giunte a <placeName><settlement>Londra</settlement></placeName> 
+                        nel breve spazio di <num type="cardinal">78</num>
+                        <lb/>giorni, dei quali soli <num type="cardinal">45</num> occorsero<damage type="ink" degree="medium"> </damage>per la trasmissione della lettera da
+                        <lb/><placeName><settlement>Ujiji</settlement></placeName> a <placeName><region>Zanzibar</region></placeName>, 
+                        distanza di <measure type="distance">circa <num>650</num> miglia</measure>; eppure soltanto <date>otto
+                        <lb/>anni</date> fa il <persName><roleName>dottor</roleName> Livingstone</persName> 
+                        era considerato perduto, benché risiedesse
+                        <lb/>nel primo di quei luoghi.
+                        <seg rend="align(right)">(<title level="j" rend="italics" xml:id="l9" xml:lang="en">Academy</title>)</seg> 
+                    </item>
+                </list>
+            </body>
         </text>
     </TEI>
 </TEI>
