@@ -143,8 +143,8 @@
         
         <text xml:lang='it'>
             <body>
-                <!-- Inizio di pagina: -->
-                <pb/>
+                <!-- Inizio di pagina 94: -->
+                <pb n="94"/>
                 <fw type="header" place= "top" facs="#pag94-header">
                     <fw rend="align(left)" type="pageNum" facs="#pag94-num">
                         94
@@ -258,8 +258,8 @@
                     <lb break="no"/>vadorica, noi intenderemmo poco perchè si dovesse bisbi<pc force="weak">-</pc>
                     <lb break="no"/>gliare ed essere gelosi. Questo stesso fatto dei sommessi
                     <lb/>bisbigli, questo mormorio della gente contro certi legami
-                    <!-- Inizio pagina 95: -->    
-                    <pb/>
+                    <!-- Inizio di pagina 95: -->    
+                    <pb n="95"/>
                     <fw type="header" place= "top" facs="#pag95-header">
                         <fw rend="align(left)" facs="#pag94-date">
                             <date>10 Febbraio ’78</date>.] 
@@ -842,7 +842,7 @@
         <text xml:lang='it'>
             <body>
                 <!-- Inizio di pagina 357: -->
-                <pb/>
+                <pb n="357"/>
                 <fw type="header" place= "top" facs="#pag357-header">
                     <fw rend="align(left)" facs="#pag357-date">
                         <date>24 Novembre ’78</date>.] 
@@ -1015,8 +1015,8 @@
                     <lb/>che il nome di <persName>Ciullo d’Alcamo</persName> « debba ben tosto scom<pc force="weak">-</pc>
                     <lb break="no"/>parire dalla storia letteraria 
                     d’<placeName><country>Italia</country></placeName> »), nè il lavoro di
-                    <!-- Inizio pagina 358: -->
-                    <pb/>
+                    <!-- Inizio di pagina 358: -->
+                    <pb n="358"/>
                     <fw type="header" place= "top" facs="#pag358-header">
                         <fw rend="align(left)" type="pageNum" facs="#pag358-num">
                             358
@@ -1209,8 +1209,8 @@
                             <lb/>Perchè non poteva essere tra queste anche la canzone del
                             <lb/><persName>Barbieri</persName>, e questi essere caduto, come altri, nell’inganno?
                         </item>
-                        <!-- Inizio pagina 359: -->
-                        <pb/>
+                        <!-- Inizio di pagina 359: -->
+                        <pb n="359"/>
                         <fw type="header" place= "top" facs="#pag359-header">
                             <fw rend="align(left)" facs="#pag359-date">
                                 <date>24 Novembre ’78</date>.] 

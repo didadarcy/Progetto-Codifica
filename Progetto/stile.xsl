@@ -27,9 +27,25 @@
                     Titolo: <xsl:value-of select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
                     Trascrizione a cura di: <xsl:value-of select="/tei:TEI/tei:teiHeader/tei:fileDesc//tei:persName"/>
                 </div>
-                
+                <!-- Chiamo il template per le parti codificate: -->
+                <xsl:apply-templates select="/tei:TEI/tei:TEI"/>         
             </body>
         </html>
+    </xsl:template>
+
+    <!-- Template per le parti codificate: -->
+    <xsl:template match="/tei:TEI/tei:TEI">
+        <div>
+            <!-- TEI header: -->
+            <div></div>
+            <!-- Testo e immagini corrispondenti: -->
+            <div>
+                <!-- -->
+                <xsl:apply-templates select="tei:text/tei:body/child::*"/>
+                
+            </div>
+        </div>
+        
     </xsl:template>
 
 </xsl:stylesheet>
