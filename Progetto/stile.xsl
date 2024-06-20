@@ -24,7 +24,7 @@
                     <a href="#">Notizie</a>
                 </nav>
                 <div> 
-                    Titolo: <xsl:value-of select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
+                    Titolo: <xsl:value-of select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/><br/>
                     Trascrizione a cura di: <xsl:value-of select="/tei:TEI/tei:teiHeader/tei:fileDesc//tei:persName"/>
                 </div>
                 <!-- Chiamo il template per le parti codificate: -->
@@ -37,12 +37,81 @@
     <xsl:template match="/tei:TEI/tei:TEI">
         <div>
             <!-- TEI header: -->
-            <div></div>
+            <xsl:apply-templates select="tei:teiHeader"/>
             <!-- Testo e immagini corrispondenti: -->
             <div>
-                <xsl:apply-templates select=".//tei:surface"/>
                 <xsl:apply-templates select=".//tei:body"/>
             </div>
+        </div>
+    </xsl:template>
+
+    <!-- Template per il tei header: -->
+    <xsl:template match="tei:teiHeader">
+        <div>
+            <h2><xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title"/></h2>
+            <span class="bold"><xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp"/>: </span>
+            <xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:respStmt/tei:persName"/><br/>
+            <span class="bold">Editore: </span> <xsl:value-of select="tei:fileDesc/tei:publicationStmt"/> <br/><br/>
+            <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:bibl"/>
+        </div>
+    </xsl:template>
+
+    <!-- Template per la citazione bibliografica alla fonte: -->
+    <xsl:template match="tei:sourceDesc/tei:bibl">
+        <div class="header-bibl">
+            <h3><span class="bold">Fonte: </span></h3> 
+            <span class="bold">Titolo: </span> <xsl:value-of select="tei:title[@level='a']"/><br/>
+            <xsl:if test="tei:author">
+                <span class="bold">Autore: </span> <xsl:value-of select="tei:author"/><br/>  
+            </xsl:if>
+            <span class="bold">Titolo della rivista: </span> <xsl:value-of select="tei:title[@level='j']"/><br/>
+            <span class="bold">Casa Editrice: </span> <xsl:value-of select="tei:publisher"/><br/>
+            <span class="bold">Anno di pubblicazione: </span> <xsl:value-of select="tei:date"/><br/>
+            <span class="bold">Volume: </span> <xsl:value-of select="tei:biblScope[@unit='volume']"/><br/>
+            <span class="bold">Fascicolo: </span> <xsl:value-of select="tei:biblScope[@unit='issue']"/><br/>
+        </div>
+    </xsl:template>
+
+        <!-- Template per il corpo del testo: -->
+    <xsl:template match="tei:body">
+        <xsl:variable name="curr-body" select="."/>
+        <xsl:for-each-group select="descendant::node()" group-starting-with="tei:pb">
+            <div class="page">
+            <!-- Scrivo il numero della pagina e mostro l'immagine corrispondente: -->
+                <xsl:apply-templates select="current-group()[self::tei:pb]"/>
+            <!-- Mostro il testo della pagina, prendendo il contenuto dei paragrafi nella pagina: -->
+                <xsl:apply-templates select="$curr-body/(tei:list | tei:p)[descendant-or-self::node() intersect current-group()]"/>
+            </div>
+        </xsl:for-each-group> 
+    </xsl:template>
+
+    <!-- Template per i paragrafi: -->
+    <xsl:template match="tei:p">    
+        <p class="paragraph">
+            <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
+            <xsl:apply-templates select="node()[not(self::tei:pb)][descendant-or-self::node() intersect current-group()]"/>
+        </p>  
+    </xsl:template>
+
+    <!-- Template per le liste contenute in body: -->
+    <xsl:template match="tei:body//tei:list">
+        <xsl:apply-templates select="tei:item intersect current-group()"/>
+    </xsl:template>
+
+    <!-- Template per gli item delle liste contenute in body: -->
+    <xsl:template match="tei:body//tei:item">
+        <p class="list-item">
+            <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
+            <xsl:apply-templates select="node()[not(self::tei:pb)] intersect current-group()"/>
+        </p>   
+    </xsl:template>
+
+    <!-- Template per la pagina: -->
+    <xsl:template match="tei:pb">
+        <h2>Pagina <xsl:value-of select="@n"/></h2>
+        <xsl:variable name="numero-pag" select="@n"/>
+        <div class="pageimg">
+            <xsl:apply-templates select="//tei:surface[@xml:id=concat('pag',$numero-pag)]"/>
         </div>
     </xsl:template>
 
@@ -60,7 +129,7 @@
 
     <!-- Template per posizionare il titolo dei testi: -->
     <xsl:template match="tei:head">
-        <h3><xsl:apply-templates/></h3>
+        <h3 class="align-center allcaps"><xsl:apply-templates/></h3>
     </xsl:template>
 
     <!-- Template per le note: -->
@@ -71,14 +140,9 @@
         </span>  
     </xsl:template>
 
-    <!-- Template per i paragrafi: -->
-    <xsl:template match="tei:p">
-        <div class="paragraph"><xsl:apply-templates/></div>
-    </xsl:template>
-
     <!-- Template per il corsivo: -->
-    <xsl:template match="*[@rend='italics']">
-        <i><xsl:apply-templates/></i>
+    <xsl:template match="*[@rend='italics']" priority="-1">
+        <span class="italics"><xsl:apply-templates/></span>
     </xsl:template>
 
     <!-- Template per l'header della pagina: -->
@@ -107,7 +171,14 @@
 
     <!-- Template per le abbreviazioni: -->
     <xsl:template match="tei:abbr">
-        <span class="abbr"><xsl:apply-templates/></span> 
+        <xsl:choose>
+            <xsl:when test="@rend='italics'">
+                <span class="abbr italics"><xsl:apply-templates/></span>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="abbr"><xsl:apply-templates/></span>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- Template per le espansioni: -->
@@ -125,6 +196,75 @@
         <span class="align-right"><xsl:apply-templates/></span>
     </xsl:template>
 
-    
+     <!-- Template per i titoli: -->
+    <xsl:template match="tei:body//tei:title | tei:body//tei:bibl[@resp='']">
+        <xsl:choose>
+            <xsl:when test="@rend='italics'">
+                <span class="title italics"><xsl:apply-templates/></span>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="title"><xsl:apply-templates/></span>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!-- Template per citazioni bibliografiche inserite: -->
+    <xsl:template match="tei:body//tei:bibl[@resp='#DDM']">
+        <span class="expan"><xsl:apply-templates/></span>
+    </xsl:template>
+
+    <!-- Template per i term: -->
+    <xsl:template match="tei:term">
+        <xsl:choose>
+            <xsl:when test="@rend='italics'">
+                <span class="term italics"><xsl:apply-templates/></span>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="term"><xsl:apply-templates/></span>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!-- Template per gli eventi: -->
+    <xsl:template match="tei:eventName">
+        <span class="eventName"><xsl:apply-templates/></span>
+    </xsl:template>
+
+    <!-- Template per le date: -->
+    <xsl:template match="tei:date">
+        <span class="date"><xsl:apply-templates/></span>
+    </xsl:template>
+
+    <!-- Template per i nomi di persona: -->
+    <xsl:template match="tei:persName | tei:roleName | tei:addName">
+        <span class="persName"><xsl:apply-templates/></span>
+    </xsl:template>
+
+    <!-- Template per i nomi di luoghi: -->
+    <xsl:template match="tei:placeName | tei:geogName">
+        <span class="placeName"><xsl:apply-templates/></span>
+    </xsl:template>
+
+    <!-- Template per i nomi delle organizzazioni: -->
+    <xsl:template match="tei:orgName">
+        <xsl:choose>
+            <xsl:when test="@rend='italics'">
+                <span class="orgName italics"><xsl:apply-templates/></span>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="orgName"><xsl:apply-templates/></span>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!-- Template per le quote: -->
+    <xsl:template match="tei:quote[@rend='align(center) font-size(small)']">
+        <span class="quote align-center font-small"><xsl:apply-templates/></span>
+    </xsl:template>
+
+    <!-- Template per i versi poetici: -->
+    <xsl:template match="tei:l">
+        <br/><xsl:apply-templates/>
+    </xsl:template>
 
 </xsl:stylesheet>

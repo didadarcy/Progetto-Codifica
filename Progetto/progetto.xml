@@ -9,11 +9,11 @@
             <!-- Titolo dell'edizione digitale: -->
             <titleStmt>
                 <title>Edizione digitali di articoli selezionati dalla rivista 
-                    <orgName ref="#RS">Rassegna Settimanale</orgName>
+                    <orgName ref="#RS">"Rassegna Settimanale"</orgName>
                 </title>
                 <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
                 <respStmt>
-                    <resp>Trascrizione a cura di </resp>
+                    <resp>Trascrizione a cura di</resp>
                     <persName ref="#DDM">Diana De Marinis</persName>
                 </respStmt>
             </titleStmt>
@@ -55,7 +55,7 @@
                     <title>L'amore cavalleresco (edizione digitale)</title>
                     <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
                     <respStmt>
-                        <resp>Trascrizione a cura di </resp>
+                        <resp>Trascrizione a cura di</resp>
                         <persName ref="#DDM">Diana De Marinis</persName>
                     </respStmt>
                 </titleStmt>
@@ -144,7 +144,7 @@
         <text xml:lang='it'>
             <body>
                 <!-- Inizio di pagina 94: -->
-                <pb n="94"/>
+                <pb n="94" facs="#pag94"/>
                 <fw type="header" place= "top" facs="#pag94-header">
                     <fw rend="align(left)" type="pageNum" facs="#pag94-num">
                         94
@@ -159,18 +159,18 @@
                 <!-- Inizio di colonna: -->
                 <cb/>
                 <head rend="align(center) case(allcaps)" facs="#pag94-art">
-                    L'<term ref="#ac">AMORE CAVALLERESCO</term>.
+                    L'<term xml:id="ac">AMORE CAVALLERESCO</term>.
                 </head>
 
                 <p>
                     <milestone unit="paragraph-part" facs="#pag94-p1.1"/>
-                    <lb/>Anche oggi, dopo tanti secoli che 1’<term xml:id="ac">amore cavalleresco</term>
+                    <lb/>Anche oggi, dopo tanti secoli che 1’<term ref="#ac">amore cavalleresco</term>
                     <lb/>è seppellito nelle tombe del <date from="476" to="1492">Medio Evo</date>, quando noi 
                     <!-- il trattino è un elemento di punteggiatura che non divide la parola: -->
                     pro<pc force="weak">-</pc>
                     <!-- l'inizio di riga non coincide con l'inizio di una nuova parola: --> 
                     <lb break="no"/>nunziamo queste due parole intendiamo che esse esprimano
-                    <lb/><gloss target="#ac">qualche cosa di sovrumano, qualche cosa che ci distacca
+                    <lb/>qualche cosa di sovrumano, qualche cosa che ci distacca
                     <lb/>dalla terra per condurci in altre regioni idealmente pure,
                     <lb/>candide, azzurre, dove gli uomini amavano come amereb<pc force="weak">-</pc>
                     <lb break="no"/>bero gli angeli, se ci fossero: dove 1’uomo e la donna si
@@ -181,7 +181,7 @@
                     <lb break="no"/>bievolmente, senza contaminarsi di bassi appetiti, paghi
                     <lb/>abbastanza di un sospiro e di uno sguardo, paghi che i
                     <lb/>loro spiriti si confondessero, che le loro anime si abbrac<pc force="weak">-</pc>
-                    <lb break="no"/>ciassero</gloss>. La <term>canzone del trovatore</term> sale alla donna amata
+                    <lb break="no"/>ciassero. La <term>canzone del trovatore</term> sale alla donna amata
                     <lb/>come una nuvoletta d’incenso che l’avvolge ma non la
                     <lb/>contamina. L’umile <term>cantore</term> non chiede mai nulla che possa
                     <lb/>offendere la regina dei suoi pensieri; egli è pronto per lei
@@ -259,7 +259,7 @@
                     <lb break="no"/>gliare ed essere gelosi. Questo stesso fatto dei sommessi
                     <lb/>bisbigli, questo mormorio della gente contro certi legami
                     <!-- Inizio di pagina 95: -->    
-                    <pb n="95"/>
+                    <pb n="95" facs="#pag95"/>
                     <fw type="header" place= "top" facs="#pag95-header">
                         <fw rend="align(left)" facs="#pag94-date">
                             <date>10 Febbraio ’78</date>.] 
@@ -443,7 +443,7 @@
                     <title>Letteratura (entrata bibliografica)</title>
                     <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
                     <respStmt>
-                        <resp>Trascrizione a cura di </resp>
+                        <resp>Trascrizione a cura di</resp>
                         <persName ref="#DDM">Diana De Marinis</persName>
                     </respStmt>
                 </titleStmt>
@@ -470,7 +470,7 @@
             </fileDesc>
         </teiHeader>
         <facsimile>
-            <surface>
+            <surface xml:id="pag101">
                 <!-- Collegamento all'immagine della pagina: -->
                 <graphic url='imgs/Vol1-1878-1-S1-F6-pag-101.png' width='1531.666666px' height='2207.666666px' />
                 <!-- Titolo della sezione della bibliografia: -->
@@ -485,6 +485,7 @@
         </facsimile>
         <text>
             <body>
+                <pb n="101" facs="#pag101"/>
                 <head rend="case(allcaps) align(center)">
                     LETTERATURA.
                 </head>
@@ -589,7 +590,7 @@
                     <title>Scienze Naturali (entrata bibliografica)</title>
                     <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
                     <respStmt>
-                        <resp>Trascrizione a cura di </resp>
+                        <resp>Trascrizione a cura di</resp>
                         <persName ref="#DDM">Diana De Marinis</persName>
                     </respStmt>
                 </titleStmt>
@@ -602,7 +603,7 @@
                 <!-- Informazioni sul documento originale: -->
                 <sourceDesc>
                     <bibl>
-                        Entrata bibliografica nella sezione "Letteratura" in:
+                        Entrata bibliografica nella sezione "Scienze Naturali" in:
                         <!-- Titolo della rivista: -->
                         <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
                         <publisher>Casa Editrice Barbèra</publisher>
@@ -616,7 +617,7 @@
             </fileDesc>
         </teiHeader>
         <facsimile>
-            <surface>
+            <surface xml:id="pag104">
                 <!-- Collegamento all'immagine della pagina: -->
                 <graphic url='imgs/Vol1-1878-1-S1-F6-pag-104.png' width='1504.666666px' height='2233.666666px' />
                 <!-- Titolo della sezione della bibliografia: -->
@@ -637,8 +638,9 @@
         </facsimile>
         <text>
             <body>
+                <pb n="104" facs="#pag104"/>
                 <head rend="case(allcaps) align(center)">
-                    LETTERATURA.
+                    SCIENZE NATURALI.
                 </head>
                 <bibl xml:id="AR-HE">
                     <lb/><author rend="case(allcaps)" xml:id="AR"><persName>A. <surname>RIANT</surname></persName></author>.
@@ -724,7 +726,7 @@
                     <title>La scuola poetica siciliana (edizione digitale)</title>
                     <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
                     <respStmt>
-                        <resp>Trascrizione a cura di </resp>
+                        <resp>Trascrizione a cura di</resp>
                         <persName ref="#DDM">Diana De Marinis</persName>
                     </respStmt>
                 </titleStmt>
@@ -821,7 +823,7 @@
             <!-- Pagina 359: -->
             <surface xml:id="pag359">
                 <!-- Collegamento all'immagine della pagina: -->
-                <graphic url='Vol2-1878-2-S2-F21-pag-359.png' width='1514.666666px' height='2190.666666px' />
+                <graphic url='imgs/Vol2-1878-2-S2-F21-pag-359.png' width='1514.666666px' height='2190.666666px' />
                 <!-- Header della pagina: -->
                 <zone ulx="75" uly="64" lrx="1453" lry="132" xml:id="pag359-header" />
                 <!-- Titolo della pagina: -->
@@ -842,7 +844,7 @@
         <text xml:lang='it'>
             <body>
                 <!-- Inizio di pagina 357: -->
-                <pb n="357"/>
+                <pb n="357" facs="#pag357"/>
                 <fw type="header" place= "top" facs="#pag357-header">
                     <fw rend="align(left)" facs="#pag357-date">
                         <date>24 Novembre ’78</date>.] 
@@ -1016,7 +1018,7 @@
                     <lb break="no"/>parire dalla storia letteraria 
                     d’<placeName><country>Italia</country></placeName> »), nè il lavoro di
                     <!-- Inizio di pagina 358: -->
-                    <pb n="358"/>
+                    <pb n="358" facs="#pag358"/>
                     <fw type="header" place= "top" facs="#pag358-header">
                         <fw rend="align(left)" type="pageNum" facs="#pag358-num">
                             358
@@ -1210,7 +1212,7 @@
                             <lb/><persName>Barbieri</persName>, e questi essere caduto, come altri, nell’inganno?
                         </item>
                         <!-- Inizio di pagina 359: -->
-                        <pb n="359"/>
+                        <pb n="359" facs="#pag359"/>
                         <fw type="header" place= "top" facs="#pag359-header">
                             <fw rend="align(left)" facs="#pag359-date">
                                 <date>24 Novembre ’78</date>.] 
@@ -1226,7 +1228,7 @@
                         <cb/>
                         <item n="4°" facs="#pag358-p6.l4">
                             <lb/>Dal lato filologico ci sono gravissime difficoltà a
-                            <lb/>ritenere la canzono originariamente siciliana.
+                            <lb/>ritenere la canzone originariamente siciliana.
                         </item>
                     </list>
                     <milestone unit="paragraph-part" facs="#pag358-p6.end"/>
@@ -1248,7 +1250,7 @@
                     <title>Notizie (edizione digitale)</title>
                     <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
                     <respStmt>
-                        <resp>Trascrizione a cura di </resp>
+                        <resp>Trascrizione a cura di</resp>
                         <persName ref="#DDM">Diana De Marinis</persName>
                     </respStmt>
                 </titleStmt>
@@ -1275,7 +1277,7 @@
             </fileDesc>
         </teiHeader>
         <facsimile>
-            <surface>
+            <surface xml:id="pag364">
                 <!-- Collegamento all'immagine della pagina: -->
                 <graphic url='imgs/Vol2-1878-2-S2-F21-pag-364.png' width='1530.666666px' height='2220.666666px' />
                 <!-- Titolo della sezione: -->
@@ -1294,6 +1296,7 @@
         </facsimile>
         <text>
             <body>
+                <pb n="364" facs="#pag364"/>
                 <head rend="case(allcaps) align(center)" facs="#not-title">
                     NOTIZIE.
                 </head>
