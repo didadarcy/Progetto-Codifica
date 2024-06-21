@@ -1,0 +1,149 @@
+body {
+    background-color: rgba(169, 201, 229, 0.53);
+    font-family: Minimalist, Arial, Helvetica, sans-serif;
+}
+
+header > h1, header > h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+header nav {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color:black;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5%;
+}
+
+header a {
+    margin: auto;
+    color: black;
+    padding: 10px;
+    background-color: rgba(118, 178, 231, 0.786);
+    border-style: solid; 
+    border-radius: 8px;
+    border-color: rgba(1, 120, 224, 0.786);
+    /* width: 120px; */
+    /* font-weight: normal; */
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+} 
+
+div.page {
+    margin: 6%;
+}
+
+img {
+    max-width: 75%;
+}
+
+div.page h2 {
+    padding-left: 17%;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+div.pagecols {
+    display: flex;
+}
+
+div.pageimg {
+    flex: 40%;
+}
+
+div.pagebody {
+    overflow-y: scroll;
+    height: 670px;
+    padding-right: 3%;
+    padding-left: 5%;
+}
+
+div.page-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+div.page-header span.align-left, 
+    div.page-header span.align-center, 
+    div.page-header span.align-right {
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+}
+
+.align-left {
+    text-align: left;
+    display: block;
+}
+
+.align-center {
+    text-align: center;
+    display: block;
+}
+
+.align-right {
+    text-align: right;
+    display: block;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.font-small {
+    font-size: 13px;
+}
+
+.allcaps {
+    font-variant: small-caps;
+}
+
+/* Tooltip per le note, citazioni e espansioni */
+.note, .choice, .cit {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.note .note-text, .choice .expan, .cit .cit-bibl {
+    visibility: hidden;
+    /* width: 50px; */
+    background-color: rgb(187, 223, 255);
+    border-style: solid;
+    border-width: 0.5;
+    border-color: rgba(1, 120, 224, 0.786);
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    padding: 3px;
+    font-size: 12px;
+
+    width: max-content;
+    max-width: 120px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    position: absolute;
+    z-index: 1;
+}
+
+.note .note-text {
+    max-width: 1000px;
+    transform: translateX(-90%);
+    font-variant: normal;
+}
+
+.note:hover .note-text, .choice:hover .expan, .cit:hover .cit-bibl {
+    visibility: visible;
+}

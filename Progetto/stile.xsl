@@ -12,17 +12,20 @@
         <html>
             <head>
                 <title>Progetto Codifica di Testi - De Marinis</title>
+                <link rel="stylesheet" href="stile.css" />
             </head>
             <body>
-                <h1>La Rassegna Settimanale</h1>
-                <h2>Codifica di sezioni ed articoli scelti dell'anno 1878.</h2>
-                <nav>
-                    <a href="#">L'amore cavalleresco</a>
-                    <a href="#">La scuola poetica siciliana</a>
-                    <a href="#">Bibliografia: letteratura</a>
-                    <a href="#">Bibliografia: scienze naturali</a>
-                    <a href="#">Notizie</a>
-                </nav>
+                <header>
+                    <h1>La Rassegna Settimanale</h1>
+                    <h2>Codifica di sezioni ed articoli scelti dell'anno 1878.</h2>
+                    <nav>
+                        <a href="#">L'amore cavalleresco</a>
+                        <a href="#">La scuola poetica siciliana</a>
+                        <a href="#">Bibliografia: letteratura</a>
+                        <a href="#">Bibliografia: scienze naturali</a>
+                        <a href="#">Notizie</a>
+                    </nav>
+                </header>
                 <div> 
                     Titolo: <xsl:value-of select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/><br/>
                     Trascrizione a cura di: <xsl:value-of select="/tei:TEI/tei:teiHeader/tei:fileDesc//tei:persName"/>
@@ -76,12 +79,20 @@
     <xsl:template match="tei:body">
         <xsl:variable name="curr-body" select="."/>
         <xsl:for-each-group select="descendant::node()" group-starting-with="tei:pb">
-            <div class="page">
-            <!-- Scrivo il numero della pagina e mostro l'immagine corrispondente: -->
-                <xsl:apply-templates select="current-group()[self::tei:pb]"/>
-            <!-- Mostro il testo della pagina, prendendo il contenuto dei paragrafi nella pagina: -->
-                <xsl:apply-templates select="$curr-body/(tei:list | tei:p)[descendant-or-self::node() intersect current-group()]"/>
-            </div>
+            <xsl:if test="current-group()[self::tei:pb]">
+                <div class="page">
+                    <!-- Scrivo il numero della pagina -->
+                        <h2>Pagina <xsl:value-of select="current-group()[self::tei:pb]/@n"/></h2>
+                    <div class="pagecols">
+                    <!-- Mostro l'immagine corrispondente: -->
+                        <xsl:apply-templates select="current-group()[self::tei:pb]"/>
+                    <!-- Mostro il testo della pagina, prendendo il contenuto dei paragrafi nella pagina: -->
+                        <div class="pagebody">
+                            <xsl:apply-templates select="$curr-body/(tei:list | tei:p | tei:fw | tei:head | tei:signed | tei:bibl)[descendant-or-self::node() intersect current-group()]"/>
+                        </div>
+                    </div>
+                </div>
+            </xsl:if>
         </xsl:for-each-group> 
     </xsl:template>
 
@@ -100,7 +111,7 @@
 
     <!-- Template per gli item delle liste contenute in body: -->
     <xsl:template match="tei:body//tei:item">
-        <p class="list-item">
+        <p class="list-item font-small">
             <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
             <xsl:apply-templates select="node()[not(self::tei:pb)] intersect current-group()"/>
         </p>   
@@ -108,7 +119,6 @@
 
     <!-- Template per la pagina: -->
     <xsl:template match="tei:pb">
-        <h2>Pagina <xsl:value-of select="@n"/></h2>
         <xsl:variable name="numero-pag" select="@n"/>
         <div class="pageimg">
             <xsl:apply-templates select="//tei:surface[@xml:id=concat('pag',$numero-pag)]"/>
@@ -123,9 +133,12 @@
     </xsl:template>
 
     <!-- Template per mandare a capo le righe: -->
-    <xsl:template match="tei:lb">
+    <xsl:template match="tei:lb" >
         <br/>
     </xsl:template>
+
+    <!-- Template per non mostrare il tag br prima della nota: -->
+    <xsl:template match="tei:note//tei:lb[position() = 1]" />
 
     <!-- Template per posizionare il titolo dei testi: -->
     <xsl:template match="tei:head">
@@ -134,10 +147,7 @@
 
     <!-- Template per le note: -->
     <xsl:template match="tei:note">
-         *
-        <span class="note">
-            <xsl:apply-templates/>
-        </span>  
+        <span class="note">*<span class="note-text"><xsl:apply-templates/></span></span>
     </xsl:template>
 
     <!-- Template per il corsivo: -->
@@ -147,10 +157,7 @@
 
     <!-- Template per l'header della pagina: -->
     <xsl:template match="tei:fw[@type='header']">
-        <div class="page-header">
-            <br/>
-            <xsl:apply-templates/>
-        </div>
+        <div class="page-header"><xsl:apply-templates/></div>
     </xsl:template>
 
     <!-- Template per le parti dell'header della pagina: -->
@@ -167,6 +174,11 @@
             </xsl:when>
         </xsl:choose>
         
+    </xsl:template>
+
+    <!-- Template per le scelte: -->
+    <xsl:template match="tei:choice">
+        <span class="choice"><xsl:apply-templates /></span>
     </xsl:template>
 
     <!-- Template per le abbreviazioni: -->
@@ -197,7 +209,7 @@
     </xsl:template>
 
      <!-- Template per i titoli: -->
-    <xsl:template match="tei:body//tei:title | tei:body//tei:bibl[@resp='']">
+    <xsl:template match="tei:body//tei:title | tei:body//tei:bibl">
         <xsl:choose>
             <xsl:when test="@rend='italics'">
                 <span class="title italics"><xsl:apply-templates/></span>
@@ -209,8 +221,11 @@
     </xsl:template>
 
     <!-- Template per citazioni bibliografiche inserite: -->
-    <xsl:template match="tei:body//tei:bibl[@resp='#DDM']">
-        <span class="expan"><xsl:apply-templates/></span>
+    <xsl:template match="tei:cit">
+        <span class="cit">
+            <xsl:apply-templates select="tei:quote"/>
+            <span class="cit-bibl"><xsl:apply-templates select="tei:bibl"/></span>
+        </span>
     </xsl:template>
 
     <!-- Template per i term: -->
