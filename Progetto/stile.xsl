@@ -13,65 +13,116 @@
             <head>
                 <title>Progetto Codifica di Testi - De Marinis</title>
                 <link rel="stylesheet" href="stile.css" />
+                <script src="https://code.jquery.com/jquery-3.6.0.js"/>
+                <script src="script.js"/>
             </head>
             <body>
+                <button id="highlight-button">Annotazioni (mostra)</button>
+                <div id="colors">
+                    <span class="term"></span>Termini <br/>
+                    <span class="eventName"></span>Eventi <br/>
+                    <span class="date"></span>Date <br/>
+                    <span class="persName"></span>Persone <br/>
+                    <span class="placeName"></span>Luoghi <br/>
+                    <span class="orgName"></span>Orgs.<br/>
+                </div>
                 <header>
                     <h1>La Rassegna Settimanale</h1>
                     <h2>Codifica di sezioni ed articoli scelti dell'anno 1878.</h2>
                     <nav>
-                        <a href="#">L'amore cavalleresco</a>
-                        <a href="#">La scuola poetica siciliana</a>
-                        <a href="#">Bibliografia: letteratura</a>
-                        <a href="#">Bibliografia: scienze naturali</a>
-                        <a href="#">Notizie</a>
+                        <a href="#TEI-AC">L'amore cavalleresco</a>
+                        <a href="#TEI-LSPS">La scuola poetica siciliana</a>
+                        <a href="#TEI-Lett">Bibliografia: letteratura</a>
+                        <a href="#TEI-SN">Bibliografia: scienze naturali</a>
+                        <a href="#TEI-Not">Notizie</a>
                     </nav>
                 </header>
-                <div> 
-                    Titolo: <xsl:value-of select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/><br/>
-                    Trascrizione a cura di: <xsl:value-of select="/tei:TEI/tei:teiHeader/tei:fileDesc//tei:persName"/>
-                </div>
+                <xsl:apply-templates select="/tei:TEI/tei:teiHeader" />
+                
                 <!-- Chiamo il template per le parti codificate: -->
                 <xsl:apply-templates select="/tei:TEI/tei:TEI"/>         
             </body>
         </html>
     </xsl:template>
 
+    <!-- Template per gli statement di responsabilità: -->
+    <xsl:template match="tei:respStmt">
+        <span class="bold"><xsl:value-of select="tei:resp"/>: </span> <xsl:value-of select="tei:persName"/><br/>
+    </xsl:template>
+
+    <xsl:template match="tei:publicationStmt">
+        <span class="bold">Pubblicato da: </span> <xsl:value-of select="tei:publisher"/><br/>
+        <span class="bold">Copyright: </span> <xsl:value-of select="tei:availability"/><br/>
+    </xsl:template>
+
     <!-- Template per le parti codificate: -->
     <xsl:template match="/tei:TEI/tei:TEI">
-        <div>
+        <xsl:element name='article'>
+            <xsl:attribute name="id" select="@xml:id"/>
+            <!-- Titolo della parte codificata -->
+            <h2><xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/></h2>
             <!-- TEI header: -->
             <xsl:apply-templates select="tei:teiHeader"/>
             <!-- Testo e immagini corrispondenti: -->
             <div>
                 <xsl:apply-templates select=".//tei:body"/>
             </div>
-        </div>
+        </xsl:element>
     </xsl:template>
 
     <!-- Template per il tei header: -->
     <xsl:template match="tei:teiHeader">
-        <div>
-            <h2><xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title"/></h2>
+        <div class="teiHeader"> 
+            <h3>Informazioni generali</h3>
+            <span class="bold">Titolo: </span> <xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title"/><br/>
+            
+            <!-- Informazioni sull'edizione: -->
+            <xsl:if test=".//tei:editionStmt/tei:edition">
+                <span class="bold">Edizione: </span> <xsl:value-of select=".//tei:editionStmt/tei:edition"/><br/>
+            </xsl:if>
+            <!-- Informazioni sugli statement di responsabilità: -->
+            <xsl:apply-templates select=".//tei:respStmt"/>
+            <!-- Informazioni sulla pubblicazione: -->
+            <xsl:apply-templates select=".//tei:publicationStmt"/>
+            <!-- Informazioni sulla fonte: -->
+            <xsl:apply-templates select=".//tei:bibl"/>
+        </div>
+            <!-- <h2><xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title"/></h2>
             <span class="bold"><xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp"/>: </span>
             <xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:respStmt/tei:persName"/><br/>
             <span class="bold">Editore: </span> <xsl:value-of select="tei:fileDesc/tei:publicationStmt"/> <br/><br/>
-            <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:bibl"/>
-        </div>
+            <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:bibl"/> -->
     </xsl:template>
 
     <!-- Template per la citazione bibliografica alla fonte: -->
     <xsl:template match="tei:sourceDesc/tei:bibl">
         <div class="header-bibl">
-            <h3><span class="bold">Fonte: </span></h3> 
-            <span class="bold">Titolo: </span> <xsl:value-of select="tei:title[@level='a']"/><br/>
+            <h3><span class="bold">Informazioni sulla fonte</span></h3> 
+            <xsl:if test="tei:title[@level='a']">
+                <span class="bold">Titolo: </span> <xsl:value-of select="tei:title[@level='a']"/><br/>
+            </xsl:if>
             <xsl:if test="tei:author">
                 <span class="bold">Autore: </span> <xsl:value-of select="tei:author"/><br/>  
             </xsl:if>
             <span class="bold">Titolo della rivista: </span> <xsl:value-of select="tei:title[@level='j']"/><br/>
             <span class="bold">Casa Editrice: </span> <xsl:value-of select="tei:publisher"/><br/>
+            <xsl:if test="tei:pubPlace">
+                <span class="bold">Luogo di pubblicazione: </span> <xsl:value-of select="tei:pubPlace"/><br/>
+            </xsl:if>
             <span class="bold">Anno di pubblicazione: </span> <xsl:value-of select="tei:date"/><br/>
-            <span class="bold">Volume: </span> <xsl:value-of select="tei:biblScope[@unit='volume']"/><br/>
-            <span class="bold">Fascicolo: </span> <xsl:value-of select="tei:biblScope[@unit='issue']"/><br/>
+            <xsl:if test="tei:biblScope">
+                <span class="bold">Volume: </span> <xsl:value-of select="tei:biblScope[@unit='volume']"/><br/>
+                <span class="bold">Fascicolo: </span> <xsl:value-of select="tei:biblScope[@unit='issue']"/><br/>
+            </xsl:if>
+            <xsl:element name="a">
+                <xsl:attribute name="href" select="tei:edition/@source"/>
+                Edizione digitale 
+            </xsl:element> 
+            a cura di: <ul>
+                <xsl:for-each select="tei:edition/*">
+                    <li><xsl:value-of select="."/></li>
+                </xsl:for-each>
+            </ul>
         </div>
     </xsl:template>
 
@@ -111,10 +162,21 @@
 
     <!-- Template per gli item delle liste contenute in body: -->
     <xsl:template match="tei:body//tei:item">
-        <p class="list-item font-small">
-            <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
-            <xsl:apply-templates select="node()[not(self::tei:pb)] intersect current-group()"/>
-        </p>   
+        <xsl:choose>
+            <xsl:when test="@rend='font-size(small)'">
+                <p class="list-item font-small">
+                    <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
+                    <xsl:apply-templates select="node()[not(self::tei:pb)] intersect current-group()"/>
+                </p>   
+            </xsl:when>
+            <xsl:otherwise>
+                <p class="list-item">
+                    <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
+                    <xsl:apply-templates select="node()[not(self::tei:pb)] intersect current-group()"/>
+                </p> 
+            </xsl:otherwise>
+        </xsl:choose>
+        
     </xsl:template>
 
     <!-- Template per la pagina: -->
@@ -127,9 +189,71 @@
 
     <!-- Template per le immagini: -->
     <xsl:template match="tei:surface">
-        <xsl:element name="img">
-            <xsl:attribute name="src" select="tei:graphic/@url"/>
+        <xsl:element name="svg">
+            <xsl:attribute name="id" select="@xml:id" />
+            <xsl:attribute name="viewBox">0,0,1520,2200</xsl:attribute>
+            <xsl:attribute name="width">480</xsl:attribute>
+            <xsl:attribute name="height">700</xsl:attribute>
+
+            <xsl:element name="image">
+                <xsl:attribute name="href" select="tei:graphic/@url" />
+                <xsl:attribute name="x" select="0"/>
+                <xsl:attribute name="y" select="0"/>
+                <xsl:attribute name="width">100%</xsl:attribute>
+                <xsl:attribute name="height">100%</xsl:attribute>
+            </xsl:element>
+
+            <xsl:for-each select="tei:zone">
+                <xsl:choose>
+                    <xsl:when test="@ulx">
+                        <xsl:element name="rect">
+                            <xsl:attribute name="x" select="@ulx"/>
+                            <xsl:attribute name="y" select="@uly"/>
+                            <xsl:attribute name="width" select="@lrx - @ulx"/>
+                            <xsl:attribute name="height" select="@lry - @uly"/>
+                            <xsl:attribute name="fill">none</xsl:attribute>
+                        </xsl:element>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:element name="polygon">
+                            <xsl:attribute name="points" select="@points"/>
+                            <xsl:attribute name="fill">none</xsl:attribute>
+                        </xsl:element>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each>
         </xsl:element>
+        <!-- <xsl:element name="img">
+            <xsl:attribute name="src" select="tei:graphic/@url"/>
+            <xsl:attribute name="usemap" select="concat('map-', @xml:id)"/>
+        </xsl:element>
+
+        <xsl:element name="map">
+            <xsl:attribute name="name" select="concat('map-', @xml:id)" />
+            <xsl:attribute name="id" select="concat('map-', @xml:id)" />
+
+            <xsl:for-each select="tei:zone">
+                <xsl:element name="area">
+                    <xsl:attribute name="id">
+                        <xsl:value-of select="@xml:id" />
+                    </xsl:attribute>
+                    <xsl:attribute name="class">area</xsl:attribute>
+                    
+                    <xsl:choose>
+                        <xsl:when test="@ulx">
+                            <xsl:attribute name="coords">
+                                <xsl:value-of select="@ulx" />,<xsl:value-of select="@uly" />,<xsl:value-of select="@lrx" />,<xsl:value-of select="@lry" />
+                            </xsl:attribute>
+                            <xsl:attribute name="shape">rect</xsl:attribute>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:attribute name="coords" select="@coords"/>
+                            <xsl:attribute name="shape">poly</xsl:attribute>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:element>
+            </xsl:for-each>
+        </xsl:element> -->
     </xsl:template>
 
     <!-- Template per mandare a capo le righe: -->

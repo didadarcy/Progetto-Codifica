@@ -2,37 +2,69 @@
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Progetto Codifica di Testi - De Marinis</title>
-      <link rel="stylesheet" href="stile.css">
-   </head>
-   <body>
+      <link rel="stylesheet" href="stile.css"><script src="https://code.jquery.com/jquery-3.6.0.js"></script><script src="script.js"></script></head>
+   <body><button id="highlight-button">Annotazioni (mostra)</button><div id="colors"><span class="term"></span>Termini <br><span class="eventName"></span>Eventi <br><span class="date"></span>Date <br><span class="persName"></span>Persone <br><span class="placeName"></span>Luoghi <br><span class="orgName"></span>Orgs.<br></div>
       <header>
          <h1>La Rassegna Settimanale</h1>
          <h2>Codifica di sezioni ed articoli scelti dell'anno 1878.</h2>
-         <nav><a href="#">L'amore cavalleresco</a><a href="#">La scuola poetica siciliana</a><a href="#">Bibliografia: letteratura</a><a href="#">Bibliografia: scienze naturali</a><a href="#">Notizie</a></nav>
+         <nav><a href="#TEI-AC">L'amore cavalleresco</a><a href="#TEI-LSPS">La scuola poetica siciliana</a><a href="#TEI-Lett">Bibliografia: letteratura</a><a href="#TEI-SN">Bibliografia: scienze naturali</a><a href="#TEI-Not">Notizie</a></nav>
       </header>
-      <div> 
-         Titolo: Edizione digitali di articoli selezionati dalla rivista 
+      <div class="teiHeader">
+         <h3>Informazioni generali</h3><span class="bold">Titolo: </span>Edizione digitale di articoli selezionati dalla rivista 
          "Rassegna Settimanale"
-         <br>
-         Trascrizione a cura di: Diana De Marinis</div>
-      <div>
-         <div>
-            <h2>L'amore cavalleresco (edizione digitale)</h2><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Editore: </span>
-            Diana De Marinis
-            <br><br><div class="header-bibl">
-               <h3><span class="bold">Fonte: </span></h3><span class="bold">Titolo: </span>
+         <br><span class="bold">Edizione: </span>
+         Edizione digitale di Giugno 2024
+         <br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+            <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+            di politica, scienze, lettere ed arti
+            <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Anno di pubblicazione: </span>1878<br><a href="https://rassegnasettimanale.animi.it/">
+               Edizione digitale 
+               </a> 
+            a cura di: 
+            <ul>
+               <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+               <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+               <li>Università degli Studi Suor Orsola Benincasa</li>
+            </ul>
+         </div>
+      </div>
+      <article id="TEI-AC">
+         <h2>L'amore cavalleresco (edizione digitale)</h2>
+         <div class="teiHeader">
+            <h3>Informazioni generali</h3><span class="bold">Titolo: </span>L'amore cavalleresco (edizione digitale)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+               <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo: </span>
                L'amore cavalleresco
                <br><span class="bold">Autore: </span>
                
                Tiresias
                
-               <br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale di politica, scienze, lettere ed arti<br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br></div>
+               <br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+               di politica, scienze, lettere ed arti
+               <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Firenze<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=10">
+                  Edizione digitale 
+                  </a> 
+               a cura di: 
+               <ul>
+                  <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+                  <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+                  <li>Università degli Studi Suor Orsola Benincasa</li>
+               </ul>
+            </div>
          </div>
          <div>
             <div class="page">
                <h2>Pagina 94</h2>
                <div class="pagecols">
-                  <div class="pageimg"><img src="imgs/Vol1-1878-1-S1-F6-pag-94.png"></div>
+                  <div class="pageimg"><svg id="pag94" viewBox="0,0,1520,2200" width="480" height="700">
+                        <image href="imgs/Vol1-1878-1-S1-F6-pag-94.png" x="0" y="0" width="100%" height="100%"></image>
+                        <rect x="39" y="60" width="1444" height="69" fill="none"></rect>
+                        <rect x="562" y="86" width="445" height="36" fill="none"></rect>
+                        <rect x="1267" y="83" width="194" height="43" fill="none"></rect>
+                        <rect x="93" y="91" width="61" height="30" fill="none"></rect>
+                        <rect x="227" y="1829" width="422" height="32" fill="none"></rect>
+                        <rect x="97" y="1872" width="683" height="207" fill="none"></rect>
+                        <rect x="789" y="166" width="680" height="566" fill="none"></rect>
+                        <rect x="791" y="738" width="682" height="1334" fill="none"></rect></svg></div>
                   <div class="pagebody">
                      <div class="page-header">
                         <span class="align-left">
@@ -151,7 +183,18 @@
             <div class="page">
                <h2>Pagina 95</h2>
                <div class="pagecols">
-                  <div class="pageimg"><img src="imgs/Vol1-1878-1-S1-F6-pag-95.png"></div>
+                  <div class="pageimg"><svg id="pag95" viewBox="0,0,1520,2200" width="480" height="700">
+                        <image href="imgs/Vol1-1878-1-S1-F6-pag-95.png" x="0" y="0" width="100%" height="100%"></image>
+                        <rect x="57" y="60" width="1390" height="56" fill="none"></rect>
+                        <rect x="522" y="78" width="457" height="30" fill="none"></rect>
+                        <rect x="66" y="72" width="244" height="37" fill="none"></rect>
+                        <rect x="1380" y="81" width="49" height="24" fill="none"></rect>
+                        <rect x="63" y="142" width="678" height="1928" fill="none"></rect>
+                        <rect x="754" y="145" width="687" height="459" fill="none"></rect>
+                        <rect x="757" y="609" width="676" height="853" fill="none"></rect>
+                        <rect x="757" y="1465" width="674" height="195" fill="none"></rect>
+                        <rect x="757" y="1660" width="680" height="380" fill="none"></rect>
+                        <rect x="1282" y="2007" width="120" height="25" fill="none"></rect></svg></div>
                   <div class="pagebody">
                      <p class="paragraph">
                         
@@ -324,19 +367,34 @@
                </div>
             </div>
          </div>
-      </div>
-      <div>
-         <div>
-            <h2>Letteratura (entrata bibliografica)</h2><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Editore: </span>
-            Diana De Marinis
-            <br><br><div class="header-bibl">
-               <h3><span class="bold">Fonte: </span></h3><span class="bold">Titolo: </span><br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale di politica, scienze, lettere ed arti<br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br></div>
+      </article>
+      <article id="TEI-Lett">
+         <h2>Letteratura (entrata bibliografica)</h2>
+         <div class="teiHeader">
+            <h3>Informazioni generali</h3><span class="bold">Titolo: </span>Letteratura (entrata bibliografica)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+               <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+               di politica, scienze, lettere ed arti
+               <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Firenze<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=17">
+                  Edizione digitale 
+                  </a> 
+               a cura di: 
+               <ul>
+                  <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+                  <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+                  <li>Università degli Studi Suor Orsola Benincasa</li>
+               </ul>
+            </div>
          </div>
          <div>
             <div class="page">
                <h2>Pagina 101</h2>
                <div class="pagecols">
-                  <div class="pageimg"><img src="imgs/Vol1-1878-1-S1-F6-pag-101.png"></div>
+                  <div class="pageimg"><svg id="pag101" viewBox="0,0,1520,2200" width="480" height="700">
+                        <image href="imgs/Vol1-1878-1-S1-F6-pag-101.png" x="0" y="0" width="100%" height="100%"></image>
+                        <rect x="345" y="168" width="188" height="22" fill="none"></rect>
+                        <rect x="92" y="196" width="674" height="92" fill="none"></rect>
+                        <polygon points=" 77,283 767,282 751,2045 69,2050 " fill="none"></polygon>
+                        <rect x="787" y="120" width="664" height="142" fill="none"></rect></svg></div>
                   <div class="pagebody">
                      <h3 class="align-center allcaps">
                         LETTERATURA.
@@ -432,19 +490,37 @@
                </div>
             </div>
          </div>
-      </div>
-      <div>
-         <div>
-            <h2>Scienze Naturali (entrata bibliografica)</h2><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Editore: </span>
-            Diana De Marinis
-            <br><br><div class="header-bibl">
-               <h3><span class="bold">Fonte: </span></h3><span class="bold">Titolo: </span><br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale di politica, scienze, lettere ed arti<br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br></div>
+      </article>
+      <article id="TEI-SN">
+         <h2>Scienze Naturali (entrata bibliografica)</h2>
+         <div class="teiHeader">
+            <h3>Informazioni generali</h3><span class="bold">Titolo: </span>Scienze Naturali (entrata bibliografica)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+               <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+               di politica, scienze, lettere ed arti
+               <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Firenze<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=20">
+                  Edizione digitale 
+                  </a> 
+               a cura di: 
+               <ul>
+                  <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+                  <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+                  <li>Università degli Studi Suor Orsola Benincasa</li>
+               </ul>
+            </div>
          </div>
          <div>
             <div class="page">
                <h2>Pagina 104</h2>
                <div class="pagecols">
-                  <div class="pageimg"><img src="imgs/Vol1-1878-1-S1-F6-pag-104.png"></div>
+                  <div class="pageimg"><svg id="pag104" viewBox="0,0,1520,2200" width="480" height="700">
+                        <image href="imgs/Vol1-1878-1-S1-F6-pag-104.png" x="0" y="0" width="100%" height="100%"></image>
+                        <rect x="317" y="1003" width="231" height="26" fill="none"></rect>
+                        <rect x="89" y="1038" width="679" height="54" fill="none"></rect>
+                        <rect x="88" y="1102" width="677" height="170" fill="none"></rect>
+                        <rect x="87" y="1278" width="676" height="712" fill="none"></rect>
+                        <rect x="88" y="1993" width="677" height="29" fill="none"></rect>
+                        <rect x="783" y="154" width="682" height="166" fill="none"></rect>
+                        <rect x="785" y="326" width="683" height="199" fill="none"></rect></svg></div>
                   <div class="pagebody">
                      <h3 class="align-center allcaps">
                         SCIENZE NATURALI.
@@ -519,26 +595,47 @@
                </div>
             </div>
          </div>
-      </div>
-      <div>
-         <div>
-            <h2>La scuola poetica siciliana (edizione digitale)</h2><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Editore: </span>
-            Diana De Marinis
-            <br><br><div class="header-bibl">
-               <h3><span class="bold">Fonte: </span></h3><span class="bold">Titolo: </span>
+      </article>
+      <article id="TEI-LSPS">
+         <h2>La scuola poetica siciliana (edizione digitale)</h2>
+         <div class="teiHeader">
+            <h3>Informazioni generali</h3><span class="bold">Titolo: </span>La scuola poetica siciliana (edizione digitale)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+               <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo: </span>
                La scuola poetica siciliana
                <br><span class="bold">Autore: </span>
                
                Napoleone
                Caix
                
-               <br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale di politica, scienze, lettere ed arti<br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>II<br><span class="bold">Fascicolo: </span>21<br></div>
+               <br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+               di politica, scienze, lettere ed arti
+               <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Roma<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>II<br><span class="bold">Fascicolo: </span>21<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol2-1878-2-S2-F21.pdf#page=9">
+                  Edizione digitale 
+                  </a> 
+               a cura di: 
+               <ul>
+                  <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+                  <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+                  <li>Università degli Studi Suor Orsola Benincasa</li>
+               </ul>
+            </div>
          </div>
          <div>
             <div class="page">
                <h2>Pagina 357</h2>
                <div class="pagecols">
-                  <div class="pageimg"><img src="imgs/Vol2-1878-2-S2-F21-pag-357.png"></div>
+                  <div class="pageimg"><svg id="pag357" viewBox="0,0,1520,2200" width="480" height="700">
+                        <image href="imgs/Vol2-1878-2-S2-F21-pag-357.png" x="0" y="0" width="100%" height="100%"></image>
+                        <rect x="41" y="31" width="1410" height="96" fill="none"></rect>
+                        <rect x="547" y="78" width="451" height="38" fill="none"></rect>
+                        <rect x="81" y="77" width="270" height="41" fill="none"></rect>
+                        <rect x="1379" y="84" width="60" height="35" fill="none"></rect>
+                        <rect x="161" y="154" width="528" height="35" fill="none"></rect>
+                        <rect x="87" y="190" width="684" height="1846" fill="none"></rect>
+                        <rect x="90" y="2038" width="678" height="50" fill="none"></rect>
+                        <rect x="771" y="157" width="681" height="286" fill="none"></rect>
+                        <rect x="775" y="447" width="681" height="1437" fill="none"></rect>
+                        <rect x="787" y="1890" width="681" height="195" fill="none"></rect></svg></div>
                   <div class="pagebody">
                      <div class="page-header">
                         <span class="align-left">
@@ -717,7 +814,20 @@
             <div class="page">
                <h2>Pagina 358</h2>
                <div class="pagecols">
-                  <div class="pageimg"><img src="imgs/Vol2-1878-2-S2-F21-pag-358.png"></div>
+                  <div class="pageimg"><svg id="pag358" viewBox="0,0,1520,2200" width="480" height="700">
+                        <image href="imgs/Vol2-1878-2-S2-F21-pag-358.png" x="0" y="0" width="100%" height="100%"></image>
+                        <rect x="58" y="78" width="1377" height="61" fill="none"></rect>
+                        <rect x="527" y="93" width="450" height="37" fill="none"></rect>
+                        <rect x="1209" y="95" width="220" height="39" fill="none"></rect>
+                        <rect x="77" y="97" width="58" height="29" fill="none"></rect>
+                        <rect x="73" y="170" width="672" height="636" fill="none"></rect>
+                        <rect x="74" y="810" width="677" height="826" fill="none"></rect>
+                        <rect x="75" y="1642" width="678" height="459" fill="none"></rect>
+                        <rect x="759" y="171" width="676" height="288" fill="none"></rect>
+                        <rect x="761" y="461" width="683" height="775" fill="none"></rect>
+                        <rect x="762" y="1239" width="679" height="367" fill="none"></rect>
+                        <rect x="765" y="1609" width="682" height="253" fill="none"></rect>
+                        <rect x="767" y="1869" width="676" height="225" fill="none"></rect></svg></div>
                   <div class="pagebody">
                      <p class="paragraph">
                         
@@ -870,7 +980,7 @@
                         <br>varie considerazioni che qui sottoponiamo al lettore.
                         
                         
-                        <p class="list-item font-small">
+                        <p class="list-item">
                            <br><span class="persName">Dante</span>, non solo non fa cenno di alcuna canzone in
                            <br>siciliano, ma volendo dar esempio dei difetti di cotesto dia-
                            <br>letto, è costretto a citare un verso del Contrasto in pugliese,
@@ -887,7 +997,7 @@
                            <br>scuola sicula? Dov’erano allora tutte codeste canzoni in
                            <br>siciliano, codesto <span class="italics">libro siciliano</span>?
                            </p>
-                        <p class="list-item font-small">
+                        <p class="list-item">
                            <br>La raccolta del <span class="persName">Barbieri</span> è in disaccordo con tutti
                            <br>gli altri codici conosciuti appunto dove ci offre testi dia-
                            <br>lettali; poiché nè i componimenti, nè i nomi di <span class="persName">Lanfranco
@@ -900,7 +1010,7 @@
                            <br>cherebbe invano in alcuno dei <span class="choice"><span class="abbr">mss.</span><span class="expan">manoscritti</span></span> che ci danno le altre
                            <br>canzoni di quel re.
                            </p>
-                        <p class="list-item font-small">
+                        <p class="list-item">
                            <br>Al tempo del <span class="persName">Barbieri</span>, nella prima metà del <span class="date">
                               <span class="choice"><span class="abbr">sec.</span><span class="expan">secolo </span></span>XVI</span>,
                            <br>circolavano di siffatte poesie in siciliano, spacciate per an-
@@ -918,10 +1028,18 @@
             <div class="page">
                <h2>Pagina 359</h2>
                <div class="pagecols">
-                  <div class="pageimg"><img src="imgs/Vol2-1878-2-S2-F21-pag-359.png"></div>
+                  <div class="pageimg"><svg id="pag359" viewBox="0,0,1520,2200" width="480" height="700">
+                        <image href="imgs/Vol2-1878-2-S2-F21-pag-359.png" x="0" y="0" width="100%" height="100%"></image>
+                        <rect x="75" y="64" width="1378" height="68" fill="none"></rect>
+                        <rect x="550" y="83" width="461" height="39" fill="none"></rect>
+                        <rect x="92" y="80" width="260" height="43" fill="none"></rect>
+                        <rect x="1392" y="90" width="56" height="30" fill="none"></rect>
+                        <rect x="98" y="161" width="674" height="57" fill="none"></rect>
+                        <rect x="95" y="216" width="673" height="62" fill="none"></rect>
+                        <rect x="617" y="246" width="110" height="26" fill="none"></rect></svg></div>
                   <div class="pagebody">
                      <p class="paragraph">
-                        <p class="list-item font-small">
+                        <p class="list-item">
                            <br>Dal lato filologico ci sono gravissime difficoltà a
                            <br>ritenere la canzone originariamente siciliana.
                            </p>
@@ -934,19 +1052,40 @@
                </div>
             </div>
          </div>
-      </div>
-      <div>
-         <div>
-            <h2>Notizie (edizione digitale)</h2><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Editore: </span>
-            Diana De Marinis
-            <br><br><div class="header-bibl">
-               <h3><span class="bold">Fonte: </span></h3><span class="bold">Titolo: </span><br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale di politica, scienze, lettere ed arti<br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>II<br><span class="bold">Fascicolo: </span>21<br></div>
+      </article>
+      <article id="TEI-Not">
+         <h2>Notizie (edizione digitale)</h2>
+         <div class="teiHeader">
+            <h3>Informazioni generali</h3><span class="bold">Titolo: </span>Notizie (edizione digitale)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+               <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+               di politica, scienze, lettere ed arti
+               <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Roma<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>II<br><span class="bold">Fascicolo: </span>21<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol2-1878-2-S2-F21.pdf#page=9">
+                  Edizione digitale 
+                  </a> 
+               a cura di: 
+               <ul>
+                  <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+                  <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+                  <li>Università degli Studi Suor Orsola Benincasa</li>
+               </ul>
+            </div>
          </div>
          <div>
             <div class="page">
                <h2>Pagina 364</h2>
                <div class="pagecols">
-                  <div class="pageimg"><img src="imgs/Vol2-1878-2-S2-F21-pag-364.png"></div>
+                  <div class="pageimg"><svg id="pag364" viewBox="0,0,1520,2200" width="480" height="700">
+                        <image href="imgs/Vol2-1878-2-S2-F21-pag-364.png" x="0" y="0" width="100%" height="100%"></image>
+                        <rect x="1039" y="485" width="145" height="30" fill="none"></rect>
+                        <rect x="768" y="522" width="681" height="98" fill="none"></rect>
+                        <rect x="769" y="624" width="678" height="103" fill="none"></rect>
+                        <rect x="771" y="731" width="676" height="124" fill="none"></rect>
+                        <rect x="772" y="870" width="674" height="202" fill="none"></rect>
+                        <rect x="773" y="1077" width="673" height="209" fill="none"></rect>
+                        <rect x="775" y="1300" width="669" height="126" fill="none"></rect>
+                        <rect x="777" y="1433" width="667" height="179" fill="none"></rect>
+                        <rect x="776" y="1614" width="669" height="96" fill="none"></rect>
+                        <rect x="777" y="1722" width="675" height="236" fill="none"></rect></svg></div>
                   <div class="pagebody">
                      <h3 class="align-center allcaps">
                         NOTIZIE.
@@ -1049,6 +1188,6 @@
                </div>
             </div>
          </div>
-      </div>
+      </article>
    </body>
 </html>

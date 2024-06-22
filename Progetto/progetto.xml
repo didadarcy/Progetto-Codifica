@@ -8,28 +8,53 @@
         <fileDesc>
             <!-- Titolo dell'edizione digitale: -->
             <titleStmt>
-                <title>Edizione digitali di articoli selezionati dalla rivista 
-                    <orgName ref="#RS">"Rassegna Settimanale"</orgName>
+                <title>Edizione digitale di articoli selezionati dalla rivista 
+                    <orgName>"Rassegna Settimanale"</orgName>
                 </title>
+            </titleStmt>
+            <!-- Informazioni sulla codifica dell'edizione digitale: -->
+            <editionStmt>
+                <edition>
+                    Edizione digitale di <date when="2024-06">Giugno 2024</date>
+                </edition>
+
                 <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                <respStmt>
+                    <resp>Progetto coordinato da</resp>
+                    <persName>Angelo Maria Del Grosso</persName>
+                </respStmt>
                 <respStmt>
                     <resp>Trascrizione a cura di</resp>
                     <persName ref="#DDM">Diana De Marinis</persName>
                 </respStmt>
-            </titleStmt>
-            <!-- Informazioni sull'edizione digitale: -->
+            </editionStmt>
+            <!-- Informazioni sulla pubblicazione dell'edizione digitale: -->
             <publicationStmt>
-                <distributor ref="#DDM">
+                <publisher>Università di Pisa</publisher>
+                <distributor>
                     Diana De Marinis
                 </distributor>
+                <pubPlace>Pisa</pubPlace>
+                <availability status="free">
+                    <p>Dominio pubblico</p>
+                </availability>
+                <date when="2024-06">Giugno 2024</date>
             </publicationStmt>
             <!-- Informazioni sul documento originale: -->
             <sourceDesc>
                 <bibl>
                     <!-- Titolo della rivista: -->
-                    <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title>
+                    <title level="j">La Rassegna Settimanale 
+                        <title type="sub">di politica, scienze, lettere ed arti</title>
+                    </title>
                     <publisher>Casa Editrice Barbèra</publisher>
                     <date>1878</date> 
+                    <edition source="https://rassegnasettimanale.animi.it/">
+                        Edizione digitale a cura di: 
+                        <orgName>Comitato per il Centenario della morte di Leopoldo Franchetti</orgName>,
+                        <orgName>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</orgName>,
+                        <orgName>Università degli Studi Suor Orsola Benincasa</orgName>
+                    </edition>
                 </bibl>
             </sourceDesc>            
         </fileDesc>
@@ -38,32 +63,38 @@
         <listPerson>
             <person xml:id="DDM" role="Transcriber">
                 <persName>Diana De Marinis</persName>
-            </person> 
+            </person>
         </listPerson>
-        <listOrg>
-            <org xml:id="RS">
-                <orgName>Rassegna Settimanale</orgName>
-            </org>
-        </listOrg>
     </standOff>
 
     <!-- Edizione digitale dell'articolo "L'amore cavalleresco" (volume 1, fascicolo 6)-->
-    <TEI>
+    <TEI xml:id="TEI-AC">
         <teiHeader xml:lang='it'>
             <fileDesc>
                 <titleStmt>
                     <title>L'amore cavalleresco (edizione digitale)</title>
+
                     <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                    <respStmt>
+                        <resp>Progetto coordinato da</resp>
+                        <persName>Angelo Maria Del Grosso</persName>
+                    </respStmt>
                     <respStmt>
                         <resp>Trascrizione a cura di</resp>
                         <persName ref="#DDM">Diana De Marinis</persName>
                     </respStmt>
                 </titleStmt>
-                <!-- Informazioni sull'edizione digitale: -->
+                <!-- Informazioni sulla pubblicazione dell'edizione digitale: -->
                 <publicationStmt>
-                    <distributor ref="#DDM">
+                    <publisher>Università di Pisa</publisher>
+                    <distributor>
                         Diana De Marinis
                     </distributor>
+                    <pubPlace>Pisa</pubPlace>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <date when="2024-06">Giugno 2024</date>
                 </publicationStmt>
                 <!-- Informazioni sul documento originale: -->
                 <sourceDesc>
@@ -78,13 +109,22 @@
                             </persName>
                         </author>
                         <!-- Titolo della rivista: -->
-                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
+                        <title level="j">La Rassegna Settimanale 
+                            <title type="sub">di politica, scienze, lettere ed arti</title>
+                        </title>
                         <publisher>Casa Editrice Barbèra</publisher>
+                        <pubPlace>Firenze</pubPlace>
                         <date>1878</date>
                         <!-- Informazioni sulla parte del documento codificata: -->
                         <biblScope unit="volume">I</biblScope>
                         <biblScope unit="issue">6</biblScope>
                         <biblScope unit="page" from="94" to="95"/>
+                        <edition source="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=10">
+                            Edizione digitale a cura di: 
+                            <orgName>Comitato per il Centenario della morte di Leopoldo Franchetti</orgName>,
+                            <orgName>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</orgName>,
+                            <orgName>Università degli Studi Suor Orsola Benincasa</orgName>
+                        </edition>
                     </bibl>
                 </sourceDesc>
             </fileDesc>
@@ -436,35 +476,55 @@
     </TEI>
     
     <!-- Edizione digitale di un'entrata bibliografica del fascicolo 6 del volume 1 -->
-    <TEI>
+    <TEI xml:id="TEI-Lett">
         <teiHeader xml:lang='it'>
             <fileDesc>
                 <titleStmt>
                     <title>Letteratura (entrata bibliografica)</title>
+                    
                     <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                    <respStmt>
+                        <resp>Progetto coordinato da</resp>
+                        <persName>Angelo Maria Del Grosso</persName>
+                    </respStmt>
                     <respStmt>
                         <resp>Trascrizione a cura di</resp>
                         <persName ref="#DDM">Diana De Marinis</persName>
                     </respStmt>
                 </titleStmt>
-                <!-- Informazioni sull'edizione digitale: -->
+                <!-- Informazioni sulla pubblicazione dell'edizione digitale: -->
                 <publicationStmt>
-                    <distributor ref="#DDM">
+                    <publisher>Università di Pisa</publisher>
+                    <distributor>
                         Diana De Marinis
                     </distributor>
+                    <pubPlace>Pisa</pubPlace>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <date when="2024-06">Giugno 2024</date>
                 </publicationStmt>
                 <!-- Informazioni sul documento originale: -->
                 <sourceDesc>
                     <bibl>
                         Entrata bibliografica nella sezione "Letteratura" in:
                         <!-- Titolo della rivista: -->
-                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
+                        <title level="j">La Rassegna Settimanale 
+                            <title type="sub">di politica, scienze, lettere ed arti</title>
+                        </title>
                         <publisher>Casa Editrice Barbèra</publisher>
+                        <pubPlace>Firenze</pubPlace>
                         <date>1878</date>
                         <!-- Informazioni sulla parte del documento codificata: -->
                         <biblScope unit="volume">I</biblScope>
                         <biblScope unit="issue">6</biblScope>
                         <biblScope unit="page">101</biblScope>
+                        <edition source="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=17">
+                            Edizione digitale a cura di: 
+                            <orgName>Comitato per il Centenario della morte di Leopoldo Franchetti</orgName>,
+                            <orgName>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</orgName>,
+                            <orgName>Università degli Studi Suor Orsola Benincasa</orgName>
+                        </edition>
                     </bibl>
                 </sourceDesc>
             </fileDesc>
@@ -583,35 +643,55 @@
     </TEI>
 
      <!-- Edizione digitale di un'entrata bibliografica del fascicolo 6 del volume 1 -->
-     <TEI>
+    <TEI xml:id="TEI-SN">
         <teiHeader xml:lang='it'>
             <fileDesc>
                 <titleStmt>
                     <title>Scienze Naturali (entrata bibliografica)</title>
+                    
                     <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                    <respStmt>
+                        <resp>Progetto coordinato da</resp>
+                        <persName>Angelo Maria Del Grosso</persName>
+                    </respStmt>
                     <respStmt>
                         <resp>Trascrizione a cura di</resp>
                         <persName ref="#DDM">Diana De Marinis</persName>
                     </respStmt>
                 </titleStmt>
-                <!-- Informazioni sull'edizione digitale: -->
+                <!-- Informazioni sulla pubblicazione dell'edizione digitale: -->
                 <publicationStmt>
-                    <distributor ref="#DDM">
+                    <publisher>Università di Pisa</publisher>
+                    <distributor>
                         Diana De Marinis
                     </distributor>
+                    <pubPlace>Pisa</pubPlace>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <date when="2024-06">Giugno 2024</date>
                 </publicationStmt>
                 <!-- Informazioni sul documento originale: -->
                 <sourceDesc>
                     <bibl>
                         Entrata bibliografica nella sezione "Scienze Naturali" in:
                         <!-- Titolo della rivista: -->
-                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
+                        <title level="j">La Rassegna Settimanale 
+                            <title type="sub">di politica, scienze, lettere ed arti</title>
+                        </title>
                         <publisher>Casa Editrice Barbèra</publisher>
+                        <pubPlace>Firenze</pubPlace>
                         <date>1878</date>
                         <!-- Informazioni sulla parte del documento codificata: -->
                         <biblScope unit="volume">I</biblScope>
                         <biblScope unit="issue">6</biblScope>
                         <biblScope unit="page">104</biblScope>
+                        <edition source="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=20">
+                            Edizione digitale a cura di: 
+                            <orgName>Comitato per il Centenario della morte di Leopoldo Franchetti</orgName>,
+                            <orgName>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</orgName>,
+                            <orgName>Università degli Studi Suor Orsola Benincasa</orgName>
+                        </edition>
                     </bibl>
                 </sourceDesc>
             </fileDesc>
@@ -719,22 +799,33 @@
     </TEI>
 
     <!-- Edizione digitale dell'articolo "La scuola poetica siciliana" (volume 2, fascicolo 21)-->
-    <TEI>
+    <TEI xml:id="TEI-LSPS">
         <teiHeader>
             <fileDesc>
                 <titleStmt>
                     <title>La scuola poetica siciliana (edizione digitale)</title>
+                    
                     <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                    <respStmt>
+                        <resp>Progetto coordinato da</resp>
+                        <persName>Angelo Maria Del Grosso</persName>
+                    </respStmt>
                     <respStmt>
                         <resp>Trascrizione a cura di</resp>
                         <persName ref="#DDM">Diana De Marinis</persName>
                     </respStmt>
                 </titleStmt>
-                <!-- Informazioni sull'edizione digitale: -->
+                <!-- Informazioni sulla pubblicazione dell'edizione digitale: -->
                 <publicationStmt>
-                    <distributor ref="#DDM">
+                    <publisher>Università di Pisa</publisher>
+                    <distributor>
                         Diana De Marinis
                     </distributor>
+                    <pubPlace>Pisa</pubPlace>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <date when="2024-06">Giugno 2024</date>
                 </publicationStmt>
                 <!-- Informazioni sul documento originale: -->
                 <sourceDesc>
@@ -750,13 +841,22 @@
                             </persName>
                         </author>
                         <!-- Titolo della rivista: -->
-                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
+                        <title level="j">La Rassegna Settimanale 
+                            <title type="sub">di politica, scienze, lettere ed arti</title>
+                        </title>
                         <publisher>Casa Editrice Barbèra</publisher>
+                        <pubPlace>Roma</pubPlace>
                         <date>1878</date>
                         <!-- Informazioni sulla parte del documento codificata: -->
                         <biblScope unit="volume">II</biblScope>
                         <biblScope unit="issue">21</biblScope>
                         <biblScope unit="page" from="357" to="359"/>
+                        <edition source="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol2-1878-2-S2-F21.pdf#page=9">
+                            Edizione digitale a cura di: 
+                            <orgName>Comitato per il Centenario della morte di Leopoldo Franchetti</orgName>,
+                            <orgName>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</orgName>,
+                            <orgName>Università degli Studi Suor Orsola Benincasa</orgName>
+                        </edition>
                     </bibl>
                 </sourceDesc>
             </fileDesc>
@@ -1243,35 +1343,55 @@
         </text>  
     </TEI>
     <!-- Edizione digitale della sezione "notizie" del fascicolo 21 del volume 2 -->
-    <TEI>
+    <TEI xml:id="TEI-Not">
         <teiHeader>
             <fileDesc>
                 <titleStmt>
                     <title>Notizie (edizione digitale)</title>
+                    
                     <!-- Inserisco le informazioni su chi ha realizzato l'edizione digitale -->
+                    <respStmt>
+                        <resp>Progetto coordinato da</resp>
+                        <persName>Angelo Maria Del Grosso</persName>
+                    </respStmt>
                     <respStmt>
                         <resp>Trascrizione a cura di</resp>
                         <persName ref="#DDM">Diana De Marinis</persName>
                     </respStmt>
                 </titleStmt>
-                <!-- Informazioni sull'edizione digitale: -->
+                <!-- Informazioni sulla pubblicazione dell'edizione digitale: -->
                 <publicationStmt>
-                    <distributor ref="#DDM">
+                    <publisher>Università di Pisa</publisher>
+                    <distributor>
                         Diana De Marinis
                     </distributor>
+                    <pubPlace>Pisa</pubPlace>
+                    <availability status="free">
+                        <p>Dominio pubblico</p>
+                    </availability>
+                    <date when="2024-06">Giugno 2024</date>
                 </publicationStmt>
                 <!-- Informazioni sul documento originale: -->
                 <sourceDesc>
                     <bibl>
                         Sezione "Notizie" in:
                         <!-- Titolo della rivista: -->
-                        <title level="j">La Rassegna Settimanale di politica, scienze, lettere ed arti</title> 
+                        <title level="j">La Rassegna Settimanale 
+                            <title type="sub">di politica, scienze, lettere ed arti</title>
+                        </title>
                         <publisher>Casa Editrice Barbèra</publisher>
+                        <pubPlace>Roma</pubPlace>
                         <date>1878</date>
                         <!-- Informazioni sulla parte del documento codificata: -->
                         <biblScope unit="volume">II</biblScope>
                         <biblScope unit="issue">21</biblScope>
                         <biblScope unit="page">364</biblScope>
+                        <edition source="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol2-1878-2-S2-F21.pdf#page=9">
+                            Edizione digitale a cura di: 
+                            <orgName>Comitato per il Centenario della morte di Leopoldo Franchetti</orgName>,
+                            <orgName>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</orgName>,
+                            <orgName>Università degli Studi Suor Orsola Benincasa</orgName>
+                        </edition>
                     </bibl>
                 </sourceDesc>
             </fileDesc>

@@ -38,12 +38,52 @@ a {
     font-weight: bold;
 } 
 
-div.page {
-    margin: 6%;
+.teiHeader {
+    margin: 3%;
+    padding: 0.5% 2% 3% 3%;
+    background-color: rgba(255, 255, 255, 0.383);
 }
 
-img {
-    max-width: 75%;
+#highlight-button {
+    position: fixed;
+    top: 3%;
+    right: 0.5%;
+
+    font-weight: bold;
+    background-color: rgba(255, 166, 0, 0.602);
+    border-width: 1px;
+    width: 90px;
+    white-space: normal;
+    word-wrap: break-word;
+    
+    z-index: 1;
+}
+
+#colors {
+    position: fixed;
+    top: 10%;
+    right: 0.5%;
+    display: none;
+}
+
+#colors span {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    display: inline-block;
+}
+
+article {
+    margin: 5%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.177);
+}
+
+div.page {
+    margin: 3%;
 }
 
 div.page h2 {
@@ -60,9 +100,19 @@ div.pageimg {
     flex: 40%;
 }
 
+div.pageimg svg {
+    width: 480px;
+}
+
+polygon:hover, rect:hover {
+    fill: rgba(255, 149, 0, 0.453);
+}
+
 div.pagebody {
     overflow-y: scroll;
+    scrollbar-color: rgba(255, 166, 0, 0.602) rgba(252, 213, 142, 0.602);;
     height: 670px;
+    width: 500px;
     padding-right: 3%;
     padding-left: 5%;
 }
@@ -98,6 +148,10 @@ div.page-header span.align-left,
 
 .italics {
     font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .font-small {
@@ -146,4 +200,28 @@ div.page-header span.align-left,
 
 .note:hover .note-text, .choice:hover .expan, .cit:hover .cit-bibl {
     visibility: visible;
+}
+
+.term.active {
+    background-color: rgba(148, 221, 148, 0.666);
+}
+
+.eventName.active {
+    background-color: rgba(187, 147, 225, 0.706);
+}
+
+.date.active {
+    background-color: rgba(221, 159, 215, 0.671);
+}
+
+.persName.active {
+    background-color: rgba(251, 159, 159, 0.681);
+}
+
+.placeName.active {
+    background-color: rgba(185, 164, 109, 0.636);
+}
+
+.orgName.active {
+    background-color: rgba(123, 145, 204, 0.619);
 }
