@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI SYSTEM "tei_all.dtd" >
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esercizio 6</title>
+                <author>Diana De Marinis</author>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Diana De Marinis</distributor>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title>La chiave d'oro</title>
+                    <author>Giovanni Verga</author>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+            <head>La chiave d'oro</head>
+            <p>
+                A <placeName>Santa Margherita</placeName>, nella casina del <roleName>>Canonico</roleName>>
+                stavano recitando il Santo Rosario, <date>dopo cena</date>, quando
+                all'improvviso si udì una schioppettata nella <date>notte</date>.
+            </p>
+<p>
+    Il <roleName>canonico</roleName> allibì, colla coroncina tuttora in mano, e
+    le donne si fecero la croce, tendendo le orecchie, mentre
+    i cani nel cortile abbaiavano furiosamente. Quasi subito
+    rimbombò un'altra schioppettata di risposta nel <placeName>
+        <geogName>vallone</geogName>
+        sotto la Rocca
+    </placeName>.
+</p>
+<p>
+    <q>— Gesù e Maria, che sarà mai? —</q> esclamò <rs>
+        la
+        fantesca
+    </rs> sull'uscio della cucina.
+    <q>— Zitti tutti! —</q> esclamò il <roleName>>Canonico</roleName>>, pallido come il
+    berretto da notte. <q>— Lasciatemi sentire —</q>.
+</p>
+<p>
+    E si mise dietro l'imposta della finestra. I cani si
+    erano chetati, e fuori si udiva il vento nel <geogName>vallone</geogName>. A un
+    tratto riprese l'abbaiare più forte di prima, e in mezzo, a
+    brevi intervalli, si udì bussare al portone con un sasso.
+</p>
+<p>
+    <q>— Non aprite, non aprite a nessuno! —</q> gridava il
+    <roleName>>Canonico</roleName>>, correndo a prendere la carabina al capezzale
+    del letto, sotto il crocifisso. Le mani gli tremavano. Poi,
+    in mezzo al baccano, si udì gridare dietro al portone: <q>
+        —
+        Aprite, signor <roleName>Canonico</roleName>; son io, <persName>Surfareddu</persName>! —
+    </q> E come
+    finalmente il fattore del pianterreno escì a chetare i cani
+    e a tirare le spranghe del portone, entrò il camparo,
+    <persName>Surfareddu</persName>, scuro in viso e con lo schioppo ancora caldo
+    in mano.
+</p>
+
+
+<p>
+    <q>— Che c'è Grippino? cos'è successo? —</q> chiese il
+    <roleName>>Canonico</roleName>> spaventato.
+    <q>
+        — C'è, vossignoria, che mentre voi dormite e
+        riposate, io arrischio la pelle per guardarvi la roba —
+    </q>
+    rispose <persName>Surfareddu</persName>.
+</p><p>
+    
+    E raccontò cos'era successo, in piedi, sull'uscio,
+    dondolandosi alla sua maniera. Non poteva pigliar
+    sonno, dal gran caldo, e s'era messo un momento
+    sull'uscio della capanna, di là, sul poggetto, quando
+    aveva udito rumore, nel <geogName>vallone</geogName>, dove era il frutteto, un
+    rumore come le sue orecchie sole lo conoscevano, e la
+    <name>Bellina</name>, una cagnaccia spelata e macilenta che gli stava
+    alle calcagna. Bacchiavano nel frutteto arance e altre
+    frutta; un fruscìo che non fa il vento; e poi ad intervalli
+    silenzio, mentre empivano i sacchi. Allora aveva preso
+    lo schioppo d'accanto all'uscio della capanna, quel
+    vecchio schioppo a pietra con la canna lunga e i pezzi
+    d'ottone che aveva in mano. Quando si dice il destino!
+    Perché quella era l'ultima notte che doveva stare a <persName>
+        Santa
+        Margherita
+    </persName>. S'era licenziato a <date>Pasqua</date> dal <roleName>Canonico</roleName>,
+    d'amore e di accordo, e l'<date>1 settembre</date> doveva andare dal
+    padrone nuovo, in quel di <persName>Vizzini</persName>. Giusto il giorno
+    avanti s'era fatta la consegna di ogni cosa col <roleName>Canonico</roleName>.
+    Ed era<date> l'ultimo di agosto</date>: una notte buia e senza stelle.
+    <name>Bellina</name> andava avanti, col naso al vento, zitta, come
+    l'aveva insegnata lui. Egli camminava adagio adagio,
+    levando i piedi alti nel fieno perché non si udisse il
+    fruscìo. E la cagna si voltava ad ogni dieci passi per
+    vedere se la seguiva. Quando furono al <geogName>vallone</geogName>, disse
+    
+    piano a Bellina: <q>— Dietro! —</q> E si mise al riparo di un
+    noce grosso. Poi diede la voce: <q>— Ehi!...—</q>
+</p>
+<p>
+    <q>— Una voce, Dio liberi! — </q>diceva il <roleName>Canonico</roleName> — che
+    faceva accapponar la pelle quando si udiva da
+    <persName>Surfareddu</persName>, un uomo che nella sua professione di
+    camparo aveva fatto più di un omicidio. <q>— Allora —</q>
+    rispose <persName>Surfareddu</persName> <q>
+        — allora mi spararono addosso a
+        bruciapelo — panf! — Per fortuna che risposi al lampo
+        della fucilata. Erano in tre, e udii gridare. Andate a
+        vedere nel frutteto, che il mio uomo dev'esserci rimasto.
+    </q>
+</p>
+<p>
+    <q>— Ah! cos'hai fatto scellerato! — </q>esclamava il
+    <roleName>Canonico</roleName>, mentre le donne strillavano fra di loro.<q>
+         —
+        Ora verranno il giudice e gli sbirri, e mi lasci
+        nell'imbroglio!
+    </q>
+</p>
+<p>
+    <q>
+        — Questo è il ringraziamento che mi fate,
+        vossignoria? —
+    </q> rispose brusco <persName>Surfareddu</persName>. <q>
+        — Se
+        aspettavano a rubarvi sinché io me ne fossi andato dal
+        vostro servizio, era meglio anche per me, che non ci
+        avrei avuto quest'altro che dire con la giustizia.
+    </q>
+</p>
+<p>
+    <q>
+        — Ora vattene ai Grilli, e di' al fattore che ti mando
+        io. Domani poi ci avrai il tuo bisogno. Ma che nessuno
+        ti veda, per l'amor di Dio, ora ch'è tempo di fichidindia,
+        e la gente è tutta per quelle balze. Chissà quanto mi
+        costerà questa faccenda; che sarebbe stato meglio tu
+        avessi chiuso gli occhi.
+    </q>
+</p>
+<p>
+    <q>
+        — Ah no, signor <roleName>Canonico</roleName>! Finché sto al vostro
+        servizio, sfregi di questa fatta non ne soffre <persName>Surfareddu</persName>!
+        Loro lo sapevano che fino al 31 agosto il custode del
+    
+    
+        vostro podere ero io. Tanto peggio per loro! La mia
+        polvere non la butto via, no! —
+    </q>
+</p>
+<p>
+    E se ne andò con lo schioppo in spalla e la <name>Bellina</name>
+    dietro, ch'era ancor buio. Nella casina di <placeName>
+        Santa
+        Margherita
+    </placeName> non si chiuse più occhio quella notte, pel
+    timore dei ladri e il pensiero di quell'uomo steso a terra
+    lì nel frutteto. A giorno chiaro, quando cominciarono a
+    vedersi dei viandanti sulla viottola dirimpetto, nella
+    <placeName>Rocca</placeName>, il <roleName>Canonico</roleName>, armato sino ai denti e con tutti i
+    contadini dietro, si arrischiò ad andare a vedere quel
+    ch'era stato. Le donne strillavano:
+    <q>— Non andate, vossignoria! —</q>
+</p>
+<p>
+    Ma appena fuori del cortile si trovarono fra i piedi
+    <persName>Luigino</persName>, che era sgattajolato fra la gente.
+    <q>— Portate via questo ragazzo —</q> gridò lo zio
+    <roleName>canonico</roleName>. <q>— No! voglio andare a vedere anche io! —</q>
+    strillava costui. E dopo, finché visse, gli rimase
+    impresso in mente lo spettacolo che aveva avuto sotto
+    gli occhi così piccolo.
+</p>
+<p>
+    Era nel frutteto, fatti pochi passi, sotto un vecchio
+    ulivo malato, steso a terra, e col naso color fuligine dei
+    moribondi. S'era trascinato carponi su di un mucchio di
+    sacchi vuoti ed era rimasto lì tutta la notte. I suoi
+    compagni nel fuggire s'erano portati via i sacchi pieni.
+    Lì presso c'era un tratto di terra smossa colle unghie e
+    tutta nera di sangue.
+    <q>— Ah! signor <roleName>canonico</roleName> —</q> biascicò il moribondo. <q>
+        —
+        Per quattro ulive m'hanno ammazzato! —
+    </q>
+</p>
+
+
+<p>
+    Il <roleName>canonico</roleName> diede l'assoluzione. Poscia, <date>
+        verso
+        mezzogiorno
+    </date>, arrivò il <roleName>Giudice</roleName> con la forza, e voleva
+    prendersela col <roleName>Canonico</roleName>, e legarlo come un
+    mascalzone. Per fortuna che c'erano tutti i contadini e il
+    fattore con la famiglia testimoni. Nondimeno il <roleName>Giudice</roleName>
+    si sfogò contro quel <rs>servo di Dio</rs> che era una specie di
+    barone antico per le prepotenze, e teneva al suo servizio
+    degli uomini come <persName>Surfareddu</persName> per campari, e faceva
+    ammazzar la gente per quattro ulive. Voleva consegnato
+    l'assassino morto o vivo, e il <roleName>Canonico</roleName> giurava e
+    spergiurava che non ne capiva nulla.
+</p>
+<p>
+    Tanto che un altro po' il <roleName>Giudice</roleName> lo dichiarava
+    complice e mandante, e lo faceva legare ugualmente
+    dagli sbirri. Così gridavano e andavano e venivano sotto
+    gli aranci del frutteto, mentre il <rs>medico</rs> e il <rs>cancelliere</rs>
+    facevano il loro ufficio dinanzi al morto steso sui sacchi
+    vuoti. Poi misero la tavola all'ombra del frutteto, pel
+    caldo che faceva, e le donne indussero il <roleName>signor Giudice</roleName>
+    a prendere un boccone perché cominciava a farsi tardi.
+    La fantesca si sbracciò: maccheroni, intingoli d'ogni
+    sorta, e le signore stesse si misero in quattro perché la
+    tavola non sfigurasse in quell'occasione. Il <roleName>
+        signor
+        Giudice
+    </roleName> se ne leccò le dita. Dopo, il <rs>cancelliere</rs> rimosse
+    un po' la tovaglia da una punta, e stese in fretta dieci
+    righe di verbale, con la firma dei testimoni e ogni cosa,
+    mentre il <roleName>Giudice</roleName> pigliava il caffè fatto apposta con la
+    macchina, e i contadini guardavano da lontano, mezzo
+    nascosti fra gli aranci. Infine il <roleName>Canonico</roleName> andò a
+    
+    
+    prendere con le sue mani una bottiglia di moscadello
+    vecchio che avrebbe risuscitato un morto.
+</p>
+<p>
+    Quell'altro intanto l'avevano sotterrato alla meglio
+    sotto il vecchio ulivo malato. Nell'andarsene il <roleName>Giudice</roleName>
+    gradì un fascio di fiori dalle signore, che fecero mettere
+    nelle bisacce della mula del cancelliere due bei panieri
+    di frutta scelte; e il <roleName>Canonico</roleName> li accompagnò sino al
+    limite del podere.
+</p>
+<p>
+    Il giorno dopo venne un messo del Mandamento a
+    dire che il <roleName>signor Giudice</roleName> avea persa nel frutteto la
+    chiavetta dell'orologio, e che la cercassero bene che
+    doveva esserci di certo.
+</p>
+<p>
+    <q>— Datemi <date>due giorni</date> di tempo, che la troveremo —</q>
+    fece rispondere il <roleName>Canonico</roleName>. E scrisse subito ad un
+    amico di <placeName>Caltagirone</placeName> perché gli comprasse una chiavetta
+    d'orologio. Una bella chiave d'oro che gli costò due
+    onze, e la mandò al <roleName>signor Giudice</roleName> dicendo:
+    <q>
+        — È questa la chiavetta che ha smarrito il signor
+        Giudice?
+    </q>
+    <q>— È questa, sissignore</q> — rispose lui: e il processo
+    andò liscio per la sua strada, tantoché sopravvenne il 60,
+    e <persName>Surfareddu</persName> tornò a fare il camparo dopo l'indulto di
+    <persName>Garibaldi</persName>, sin che si fece ammazzare a sassate in una
+    rissa con dei campari per certa quistione di pascolo. E il
+    <roleName>Canonico</roleName>, quando tornava a parlare di tutti i casi di
+    <date>quella notte</date> che gli aveva dato tanto da fare, diceva a
+    proposito del Giudice d'allora:
+    
+    
+    <q>
+        — Fu un galantuomo! Perché invece di perdere la
+        sola chiavetta, avrebbe potuto farmi cercare anche
+        l'orologio e la catena —.
+    </q>
+</p>
+<p>
+    Nel frutteto, sotto l'albero vecchio dove è sepolto il
+    <rs>ladro delle ulive</rs>, vengono cavoli grossi come teste di
+    bambini.
+</p>
+
+        </body>
+    </text>
+</TEI>

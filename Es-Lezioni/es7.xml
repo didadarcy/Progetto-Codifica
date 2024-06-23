@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI SYSTEM "tei_all.dtd" >
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esercizio 7</title>
+                <author>Diana De Marinis</author>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Diana De Marinis</distributor>
+            </publicationStmt>
+            <sourceDesc><p>Nessuna fonte</p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                Il <term ref="#verismo">Verismo</term> fu un movimento letterario nato in <placeName>Italia</placeName>
+                 all'incirca <date>fra il 1875 e il 1895</date>. Esempi di scrittori veristi illustri sono:
+                <listPerson>
+                    <person>
+                        <persName>Luigi Capuana</persName>
+                    </person>
+                    <person xml:id="verga">
+                        <persName>Giovanni Verga</persName>
+                    </person>
+                </listPerson>
+                <ref target="#verga">Quest'ultimo</ref> ha scritto <title>Il ciclo dei Malavoglia</title>.
+            </p>
+        </body>
+        <back>
+            <list type="gloss">
+                <head>Glossario dei termini</head>
+                <label xml:id="verismo">Verismo</label>
+                <item n="1">Movimento letterario italiano.</item>
+            </list>
+        </back>
+    </text>
+</TEI>
