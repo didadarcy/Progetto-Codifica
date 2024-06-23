@@ -3,7 +3,9 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <title>Progetto Codifica di Testi - De Marinis</title>
       <link rel="stylesheet" href="stile.css"><script src="https://code.jquery.com/jquery-3.6.0.js"></script><script src="script.js"></script></head>
-   <body><button id="highlight-button">Annotazioni (mostra)</button><div id="colors"><span class="term"></span>Termini <br><span class="eventName"></span>Eventi <br><span class="date"></span>Date <br><span class="persName"></span>Persone <br><span class="placeName"></span>Luoghi <br><span class="orgName"></span>Orgs.<br></div>
+   <body>
+      <div id="highlights"><button id="highlight-button">Annotazioni (mostra)</button><div id="colors"><span class="term"></span>Termini <br><span class="eventName"></span>Eventi <br><span class="date"></span>Date <br><span class="persName"></span>Persone <br><span class="placeName"></span>Luoghi <br><span class="orgName"></span>Orgs.<br></div>
+      </div>
       <header>
          <h1>La Rassegna Settimanale</h1>
          <h2>Codifica di sezioni ed articoli scelti dell'anno 1878.</h2>
@@ -28,59 +30,59 @@
             </ul>
          </div>
       </div>
-      <article id="TEI-AC">
-         <h2>L'amore cavalleresco (edizione digitale)</h2>
-         <div class="teiHeader">
-            <h3>Informazioni generali</h3><span class="bold">Titolo: </span>L'amore cavalleresco (edizione digitale)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
-               <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo: </span>
-               L'amore cavalleresco
-               <br><span class="bold">Autore: </span>
-               
-               Tiresias
-               
-               <br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
-               di politica, scienze, lettere ed arti
-               <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Firenze<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=10">
-                  Edizione digitale 
-                  </a> 
-               a cura di: 
-               <ul>
-                  <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
-                  <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
-                  <li>Università degli Studi Suor Orsola Benincasa</li>
-               </ul>
+      <main>
+         <article id="TEI-AC">
+            <h2>L'amore cavalleresco (edizione digitale)</h2>
+            <div class="teiHeader">
+               <h3>Informazioni generali</h3><span class="bold">Titolo: </span>L'amore cavalleresco (edizione digitale)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+                  <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo: </span>
+                  L'amore cavalleresco
+                  <br><span class="bold">Autore: </span>
+                  
+                  Tiresias
+                  
+                  <br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+                  di politica, scienze, lettere ed arti
+                  <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Firenze<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=10">
+                     Edizione digitale 
+                     </a> 
+                  a cura di: 
+                  <ul>
+                     <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+                     <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+                     <li>Università degli Studi Suor Orsola Benincasa</li>
+                  </ul>
+               </div>
             </div>
-         </div>
-         <div>
             <div class="page">
                <h2>Pagina 94</h2>
                <div class="pagecols">
-                  <div class="pageimg"><svg id="pag94" viewBox="0,0,1520,2200" width="480" height="700">
+                  <div class="pageimg"><svg id="pag94" viewBox="0,0,1519.666666,2242.666666" width="480" height="700">
                         <image href="imgs/Vol1-1878-1-S1-F6-pag-94.png" x="0" y="0" width="100%" height="100%"></image>
-                        <rect x="39" y="60" width="1444" height="69" fill="none"></rect>
-                        <rect x="562" y="86" width="445" height="36" fill="none"></rect>
-                        <rect x="1267" y="83" width="194" height="43" fill="none"></rect>
-                        <rect x="93" y="91" width="61" height="30" fill="none"></rect>
-                        <rect x="227" y="1829" width="422" height="32" fill="none"></rect>
-                        <rect x="97" y="1872" width="683" height="207" fill="none"></rect>
-                        <rect x="789" y="166" width="680" height="566" fill="none"></rect>
-                        <rect x="791" y="738" width="682" height="1334" fill="none"></rect></svg></div>
+                        <rect id="pag94-header" x="39" y="60" width="1444" height="69"></rect>
+                        <rect id="pag94-title" x="562" y="86" width="445" height="36"></rect>
+                        <rect id="pag94-vol" x="1267" y="83" width="194" height="43"></rect>
+                        <rect id="pag94-num" x="93" y="91" width="61" height="30"></rect>
+                        <rect id="pag94-art" x="227" y="1829" width="422" height="32"></rect>
+                        <rect id="pag94-p1.1" x="97" y="1872" width="683" height="207"></rect>
+                        <rect id="pag94-p1.2" x="789" y="166" width="680" height="566"></rect>
+                        <rect id="pag94-p2.1" x="791" y="738" width="682" height="1334"></rect></svg></div>
                   <div class="pagebody">
-                     <div class="page-header">
-                        <span class="align-left">
+                     <div class="page-header" data-facs="#pag94-header">
+                        <span class="align-left" data-facs="#pag94-num">
                            94
                            </span>
-                        <span class="align-center allcaps">
+                        <span class="align-center allcaps" data-facs="#pag94-title">
                            LA RASSEGNA SETTIMANALE.
                            </span>
-                        <span class="align-right">
+                        <span class="align-right" data-facs="#pag94-vol">
                            [Vol. 1°, N° 6.
                            </span>
                         </div>
-                     <h3 class="align-center allcaps">
+                     <h3 class="align-center allcaps" data-facs="#pag94-art">
                         L'<span class="term">AMORE CAVALLERESCO</span>.
                         </h3>
-                     <p class="paragraph">
+                     <p data-facs="#pag94-p1.1">
                         
                         <br>Anche oggi, dopo tanti secoli che l'<span class="term">amore cavalleresco</span>
                         <br>è seppellito nelle tombe del <span class="date">Medio Evo</span>, quando noi 
@@ -93,7 +95,8 @@
                         <br>candide, azzurre, dove gli uomini amavano come amereb-
                         <br>bero gli angeli, se ci fossero: dove l'uomo e la donna si
                         
-                        
+                        </p>
+                     <p data-facs="#pag94-p1.2">
                         
                         <br>guardavano in un’estasi celeste, ma senza desiderarsi scam-
                         <br>bievolmente, senza contaminarsi di bassi appetiti, paghi
@@ -121,7 +124,7 @@
                         
                         <br>come dice il povero <span class="persName">Cercalmont</span>.
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag94-p2.1">
                         
                         <br>Ma questo mondo quale ci sarebbe dato dalla canzone
                         <br>dei trovatori è veramente esistito? Questo amore quale ci
@@ -183,34 +186,35 @@
             <div class="page">
                <h2>Pagina 95</h2>
                <div class="pagecols">
-                  <div class="pageimg"><svg id="pag95" viewBox="0,0,1520,2200" width="480" height="700">
+                  <div class="pageimg"><svg id="pag95" viewBox="0,0,1511.666666,2211.666666" width="480" height="700">
                         <image href="imgs/Vol1-1878-1-S1-F6-pag-95.png" x="0" y="0" width="100%" height="100%"></image>
-                        <rect x="57" y="60" width="1390" height="56" fill="none"></rect>
-                        <rect x="522" y="78" width="457" height="30" fill="none"></rect>
-                        <rect x="66" y="72" width="244" height="37" fill="none"></rect>
-                        <rect x="1380" y="81" width="49" height="24" fill="none"></rect>
-                        <rect x="63" y="142" width="678" height="1928" fill="none"></rect>
-                        <rect x="754" y="145" width="687" height="459" fill="none"></rect>
-                        <rect x="757" y="609" width="676" height="853" fill="none"></rect>
-                        <rect x="757" y="1465" width="674" height="195" fill="none"></rect>
-                        <rect x="757" y="1660" width="680" height="380" fill="none"></rect>
-                        <rect x="1282" y="2007" width="120" height="25" fill="none"></rect></svg></div>
+                        <rect id="pag95-header" x="57" y="60" width="1390" height="56"></rect>
+                        <rect id="pag95-title" x="522" y="78" width="457" height="30"></rect>
+                        <rect id="pag95-date" x="66" y="72" width="244" height="37"></rect>
+                        <rect id="pag95-num" x="1380" y="81" width="49" height="24"></rect>
+                        <rect id="pag95-p2.2" x="63" y="142" width="678" height="1928"></rect>
+                        <rect id="pag95-p2.3" x="754" y="145" width="687" height="459"></rect>
+                        <rect id="pag95-p3" x="757" y="609" width="676" height="853"></rect>
+                        <rect id="pag95-p4" x="757" y="1465" width="674" height="195"></rect>
+                        <rect id="pag95-p5" x="757" y="1660" width="680" height="380"></rect>
+                        <rect id="pag95-sign" x="1282" y="2007" width="120" height="25"></rect></svg></div>
                   <div class="pagebody">
-                     <p class="paragraph">
+                     <div class="page-header" data-facs="#pag95-header">
+                        <span class="align-left" data-facs="#pag94-date">
+                           <span class="date">10 Febbraio ’78</span>.] 
+                           </span>
+                        <span class="align-center allcaps" data-facs="#pag95-title">
+                           LA RASSEGNA SETTIMANALE.
+                           </span>
+                        <span class="align-right" data-facs="#pag95-num">
+                           95
+                           </span>
+                        </div>
+                     <p data-facs="">
                         
-                        <div class="page-header">
-                           <span class="align-left">
-                              <span class="date">10 Febbraio ’78</span>.] 
-                              </span>
-                           <span class="align-center allcaps">
-                              LA RASSEGNA SETTIMANALE.
-                              </span>
-                           <span class="align-right">
-                              95
-                              </span>
-                           </div>
                         
-                        
+                        </p>
+                     <p data-facs="#pag95-p2.2">
                         
                         <br>che il poeta cantava purissimi, dovrebbe esserci segno che
                         <br>i contemporanei non prestavano fede a quello che il tro-
@@ -285,7 +289,8 @@
                         il fiore de’trovatori: egli,
                         <br>dopo aver ripudiate due mogli, ama contemporaneamente
                         
-                        
+                        </p>
+                     <p data-facs="#pag95-p2.3">
                         
                         <br>una <span class="persName"><span class="persName">donna</span> Agnese</span> e una <span class="persName"><span class="persName">donna</span> Ermesina</span>; usa modi vitu-
                         <br>perosi per ingannar queste ed altre donne della contrada;
@@ -304,7 +309,7 @@
                         <br>bedue. Fecero patto che l’uno si tenesse il castello, e l’al-
                         <br>tro l'arte sua.
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag95-p3">
                         <br>Se è vero che i <span class="term">Poemi cavallereschi</span> rappresentano og-
                         <br>gettivamente la società feudale, domandiamo anche ad essi
                         <br>qualche notizia dell’amore. Ecco una gentile figura di donna,
@@ -338,7 +343,7 @@
                         <br>si svolge intorno a questi due personaggi, che pure ci rap-
                         <br>presentano il tipo perfetto della dama e del cavaliere.
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag95-p4">
                         <br>E non basta ancora. Quello che ho detto di <span class="persName">Tristano</span> e
                         <br>di <span class="persName">Isotta</span>, di <span class="persName">Lancillotto</span> 
                         e di <span class="persName">Ginevra</span>, dovrei pur dirlo di
@@ -347,7 +352,7 @@
                               <br>Gallois</span></span>, che sebbene entri nel <span class="term">ciclo religioso del Saint-Graal</span>,
                         <br>pure è servo d’amore, e non certo secondo le teorie cavalleresche.
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag95-p5">
                         <br>Alla stessa conclusione arriveremmo, se esaminassimo i
                         <br><span class="term">Romanzi d’avventura</span>. In uno di essi, dei più gentili e dei
                         <br>più diffusi nel medioevo, un giovane nascosto in un cane-
@@ -361,51 +366,49 @@
                         <br>leresco e ritorna umano, esce dal campo dei sogni e rientra
                         <br>nella piena realtà della vita. Se ciò sia un bene od un male
                         <br>non tocca a me a giudicarlo. 
-                        </p><span class="align-right allcaps">
+                        </p><span class="align-right allcaps" data-facs="#pag95-sign">
                         <span class="persName">TIRESIAS</span>.
                         </span></div>
                </div>
             </div>
-         </div>
-      </article>
-      <article id="TEI-Lett">
-         <h2>Letteratura (entrata bibliografica)</h2>
-         <div class="teiHeader">
-            <h3>Informazioni generali</h3><span class="bold">Titolo: </span>Letteratura (entrata bibliografica)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
-               <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
-               di politica, scienze, lettere ed arti
-               <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Firenze<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=17">
-                  Edizione digitale 
-                  </a> 
-               a cura di: 
-               <ul>
-                  <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
-                  <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
-                  <li>Università degli Studi Suor Orsola Benincasa</li>
-               </ul>
+         </article>
+         <article id="TEI-Lett">
+            <h2>Letteratura (entrata bibliografica)</h2>
+            <div class="teiHeader">
+               <h3>Informazioni generali</h3><span class="bold">Titolo: </span>Letteratura (entrata bibliografica)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+                  <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+                  di politica, scienze, lettere ed arti
+                  <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Firenze<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=17">
+                     Edizione digitale 
+                     </a> 
+                  a cura di: 
+                  <ul>
+                     <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+                     <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+                     <li>Università degli Studi Suor Orsola Benincasa</li>
+                  </ul>
+               </div>
             </div>
-         </div>
-         <div>
             <div class="page">
                <h2>Pagina 101</h2>
                <div class="pagecols">
-                  <div class="pageimg"><svg id="pag101" viewBox="0,0,1520,2200" width="480" height="700">
+                  <div class="pageimg"><svg id="pag101" viewBox="0,0,1531.666666,2207.666666" width="480" height="700">
                         <image href="imgs/Vol1-1878-1-S1-F6-pag-101.png" x="0" y="0" width="100%" height="100%"></image>
-                        <rect x="345" y="168" width="188" height="22" fill="none"></rect>
-                        <rect x="92" y="196" width="674" height="92" fill="none"></rect>
-                        <polygon points=" 77,283 767,282 751,2045 69,2050 " fill="none"></polygon>
-                        <rect x="787" y="120" width="664" height="142" fill="none"></rect></svg></div>
+                        <rect id="pag101-sec" x="345" y="168" width="188" height="22"></rect>
+                        <rect id="pag101-bibl" x="92" y="196" width="674" height="92"></rect>
+                        <polygon id="pag101-p1.1" points=" 77,283 767,282 751,2045 69,2050 "></polygon>
+                        <rect id="pag101-p1.2" x="787" y="120" width="664" height="142"></rect></svg></div>
                   <div class="pagebody">
-                     <h3 class="align-center allcaps">
+                     <h3 class="align-center allcaps" data-facs="#pag101-sec">
                         LETTERATURA.
-                        </h3><span class="title">
+                        </h3><span class="bibl" data-facs="#pag101-bibl">
                         <br><span class="persName">ARTURO GRAF</span>.
                         <span class="title italics"><span class="placeName">Provenza</span> e <span class="placeName">Italia</span></span>,
                         <span class="title">prolusione a un corso di
                            <br>letteratura provenzale, letta nella <span class="orgName">R. Università di <span class="placeName">To-
                                  <br>rino</span></span> addì <span class="date">29 novembre 1877</span></span>. — 
                         <span class="placeName">Torino</span>, <span class="date">1877</span>.
-                        </span><p class="paragraph">
+                        </span><p data-facs="#pag101-p1.1">
                         
                         <br>Il vedere stampata la prolusione di un <span class="persName">professore di
                            <br>Università</span> dà quasi diremmo diritto di sperare che con-
@@ -478,7 +481,8 @@
                         <br>» fu in principio straniera, » è erroneo. Bisognava distin-
                         <br>guere tra lirica e lirica. Fu straniero per esempio il con-
                         
-                        
+                        </p>
+                     <p data-facs="#pag101-p1.2">
                         
                         <br>trasto di <span class="persName">Ciullo d’Alcamo</span>? Fu straniera la lirica della scuola
                         <br>toscana? Questi pochi appunti basteranno a dimostrare che
@@ -489,47 +493,45 @@
                   </div>
                </div>
             </div>
-         </div>
-      </article>
-      <article id="TEI-SN">
-         <h2>Scienze Naturali (entrata bibliografica)</h2>
-         <div class="teiHeader">
-            <h3>Informazioni generali</h3><span class="bold">Titolo: </span>Scienze Naturali (entrata bibliografica)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
-               <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
-               di politica, scienze, lettere ed arti
-               <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Firenze<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=20">
-                  Edizione digitale 
-                  </a> 
-               a cura di: 
-               <ul>
-                  <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
-                  <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
-                  <li>Università degli Studi Suor Orsola Benincasa</li>
-               </ul>
+         </article>
+         <article id="TEI-SN">
+            <h2>Scienze Naturali (entrata bibliografica)</h2>
+            <div class="teiHeader">
+               <h3>Informazioni generali</h3><span class="bold">Titolo: </span>Scienze Naturali (entrata bibliografica)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+                  <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+                  di politica, scienze, lettere ed arti
+                  <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Firenze<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>I<br><span class="bold">Fascicolo: </span>6<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol1-1878-1-S1-F6.pdf#page=20">
+                     Edizione digitale 
+                     </a> 
+                  a cura di: 
+                  <ul>
+                     <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+                     <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+                     <li>Università degli Studi Suor Orsola Benincasa</li>
+                  </ul>
+               </div>
             </div>
-         </div>
-         <div>
             <div class="page">
                <h2>Pagina 104</h2>
                <div class="pagecols">
-                  <div class="pageimg"><svg id="pag104" viewBox="0,0,1520,2200" width="480" height="700">
+                  <div class="pageimg"><svg id="pag104" viewBox="0,0,1504.666666,2233.666666" width="480" height="700">
                         <image href="imgs/Vol1-1878-1-S1-F6-pag-104.png" x="0" y="0" width="100%" height="100%"></image>
-                        <rect x="317" y="1003" width="231" height="26" fill="none"></rect>
-                        <rect x="89" y="1038" width="679" height="54" fill="none"></rect>
-                        <rect x="88" y="1102" width="677" height="170" fill="none"></rect>
-                        <rect x="87" y="1278" width="676" height="712" fill="none"></rect>
-                        <rect x="88" y="1993" width="677" height="29" fill="none"></rect>
-                        <rect x="783" y="154" width="682" height="166" fill="none"></rect>
-                        <rect x="785" y="326" width="683" height="199" fill="none"></rect></svg></div>
+                        <rect id="pag104-sec" x="317" y="1003" width="231" height="26"></rect>
+                        <rect id="pag104-bibl" x="89" y="1038" width="679" height="54"></rect>
+                        <rect id="pag104-p1" x="88" y="1102" width="677" height="170"></rect>
+                        <rect id="pag104-p2" x="87" y="1278" width="676" height="712"></rect>
+                        <rect id="pag104-p3.1" x="88" y="1993" width="677" height="29"></rect>
+                        <rect id="pag104-p3.2" x="783" y="154" width="682" height="166"></rect>
+                        <rect id="pag104-p4" x="785" y="326" width="683" height="199"></rect></svg></div>
                   <div class="pagebody">
-                     <h3 class="align-center allcaps">
+                     <h3 class="align-center allcaps" data-facs="#pag104-sec">
                         SCIENZE NATURALI.
-                        </h3><span class="title">
+                        </h3><span class="bibl" data-facs="#pag104-bibl">
                         <br><span class="persName">A. RIANT</span>.
                         <span class="title italics">L’hygiène et l’éducation dans les internats, lycées,
                            <br>collèges etc.</span>. — 
                         <span class="placeName">Paris</span>, <span class="date">1877</span>.
-                        </span><p class="paragraph">
+                        </span><p data-facs="#pag104-p1">
                         <br>Noi raccomandiamo caldamente questo libro a medici,
                         <br>a maestri, a tutti quelli che nelle scuole vedono la base del-
                         <br>l’avvenire sociale. La sana pedagogia, l’igiene illuminata,
@@ -537,7 +539,7 @@
                         <br>questo libro, da renderci assai difficile il dire, se in esso
                         <br>brilli meglio il medico o lo studioso di scienze sociali.
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag104-p2">
                         <br>Il <span class="persName"><span class="persName"><span class="choice"><span class="abbr">dott.</span><span class="expan">dottore</span></span></span> Riant</span> 
                         era già noto in Francia per molti suoi libri
                         <br>d’igiene popolare e più specialmente per un ottimo volume
@@ -565,12 +567,13 @@
                         <br>come il maestro ricorda ad ogni momento il <span class="italics">mens sana in
                            <br>corpore sano</span>.
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag104-p3.1">
                         
                         <br>Il <span class="persName"><span class="persName">dottor</span> Riant</span> 
                         rammenta alla <span class="placeName">Francia</span>, che l’ultima
                         
-                        
+                        </p>
+                     <p data-facs="#pag104-p3.2">
                         
                         <br>inchiesta ha dimostrato pei soli collegi comunali l'esistenza
                         <br>di 149 locali mediocri, di 46 
@@ -581,7 +584,7 @@
                         <span class="orgName">Cambridge</span> con 5 milioni, e questi
                         <br>non sono istituti dello Stato.
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag104-p4">
                         <br>Il <span class="persName"><span class="persName"><span class="choice"><span class="abbr">dott.</span><span class="expan">dottore</span></span></span> Riant</span>
                         critica giustamente le ore eccessive di stu-
                         <br>dio, la ginnastica metodica e pedantesca sostituita anche
@@ -594,71 +597,69 @@
                   </div>
                </div>
             </div>
-         </div>
-      </article>
-      <article id="TEI-LSPS">
-         <h2>La scuola poetica siciliana (edizione digitale)</h2>
-         <div class="teiHeader">
-            <h3>Informazioni generali</h3><span class="bold">Titolo: </span>La scuola poetica siciliana (edizione digitale)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
-               <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo: </span>
-               La scuola poetica siciliana
-               <br><span class="bold">Autore: </span>
-               
-               Napoleone
-               Caix
-               
-               <br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
-               di politica, scienze, lettere ed arti
-               <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Roma<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>II<br><span class="bold">Fascicolo: </span>21<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol2-1878-2-S2-F21.pdf#page=9">
-                  Edizione digitale 
-                  </a> 
-               a cura di: 
-               <ul>
-                  <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
-                  <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
-                  <li>Università degli Studi Suor Orsola Benincasa</li>
-               </ul>
+         </article>
+         <article id="TEI-LSPS">
+            <h2>La scuola poetica siciliana (edizione digitale)</h2>
+            <div class="teiHeader">
+               <h3>Informazioni generali</h3><span class="bold">Titolo: </span>La scuola poetica siciliana (edizione digitale)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+                  <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo: </span>
+                  La scuola poetica siciliana
+                  <br><span class="bold">Autore: </span>
+                  
+                  Napoleone
+                  Caix
+                  
+                  <br><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+                  di politica, scienze, lettere ed arti
+                  <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Roma<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>II<br><span class="bold">Fascicolo: </span>21<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol2-1878-2-S2-F21.pdf#page=9">
+                     Edizione digitale 
+                     </a> 
+                  a cura di: 
+                  <ul>
+                     <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+                     <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+                     <li>Università degli Studi Suor Orsola Benincasa</li>
+                  </ul>
+               </div>
             </div>
-         </div>
-         <div>
             <div class="page">
                <h2>Pagina 357</h2>
                <div class="pagecols">
-                  <div class="pageimg"><svg id="pag357" viewBox="0,0,1520,2200" width="480" height="700">
+                  <div class="pageimg"><svg id="pag357" viewBox="0,0,1531.666666,2224.666666" width="480" height="700">
                         <image href="imgs/Vol2-1878-2-S2-F21-pag-357.png" x="0" y="0" width="100%" height="100%"></image>
-                        <rect x="41" y="31" width="1410" height="96" fill="none"></rect>
-                        <rect x="547" y="78" width="451" height="38" fill="none"></rect>
-                        <rect x="81" y="77" width="270" height="41" fill="none"></rect>
-                        <rect x="1379" y="84" width="60" height="35" fill="none"></rect>
-                        <rect x="161" y="154" width="528" height="35" fill="none"></rect>
-                        <rect x="87" y="190" width="684" height="1846" fill="none"></rect>
-                        <rect x="90" y="2038" width="678" height="50" fill="none"></rect>
-                        <rect x="771" y="157" width="681" height="286" fill="none"></rect>
-                        <rect x="775" y="447" width="681" height="1437" fill="none"></rect>
-                        <rect x="787" y="1890" width="681" height="195" fill="none"></rect></svg></div>
+                        <rect id="pag357-header" x="41" y="31" width="1410" height="96"></rect>
+                        <rect id="pag357-title" x="547" y="78" width="451" height="38"></rect>
+                        <rect id="pag357-date" x="81" y="77" width="270" height="41"></rect>
+                        <rect id="pag357-num" x="1379" y="84" width="60" height="35"></rect>
+                        <rect id="pag357-art" x="161" y="154" width="528" height="35"></rect>
+                        <rect id="pag357-p1.1" x="87" y="190" width="684" height="1846"></rect>
+                        <rect id="pag357-note" x="90" y="2038" width="678" height="50"></rect>
+                        <rect id="pag357-p1.2" x="771" y="157" width="681" height="286"></rect>
+                        <rect id="pag357-p2" x="775" y="447" width="681" height="1437"></rect>
+                        <rect id="pag357-p3.1" x="787" y="1890" width="681" height="195"></rect></svg></div>
                   <div class="pagebody">
-                     <div class="page-header">
-                        <span class="align-left">
+                     <div class="page-header" data-facs="#pag357-header">
+                        <span class="align-left" data-facs="#pag357-date">
                            <span class="date">24 Novembre ’78</span>.] 
                            </span>
-                        <span class="align-center allcaps">
+                        <span class="align-center allcaps" data-facs="#pag357-title">
                            LA RASSEGNA SETTIMANALE.
                            </span>
-                        <span class="align-right">
+                        <span class="align-right" data-facs="#pag357-num">
                            357
                            </span>
                         </div>
-                     <h3 class="align-center allcaps">
+                     <h3 class="align-center allcaps" data-facs="#pag357-art">
                         <span class="term">LA SCUOLA POETICA SICILIANA.</span> 
                         <span class="note">*<span class="note-text">
-                              <span class="title">
+                              <span class="bibl" data-facs="">
                                  <span class="title italics">Die sicilianische Dichterschule des dreizehnten Jahrhunderts</span> von
                                  <br><span class="persName">ADOLF GASPARY</span>.
                                  Berlin <span class="date">1878</span>.
                                  </span>
                               </span></span>
                         </h3>
-                     <p class="paragraph">
+                     <p data-facs="#pag357-p1.1">
                         
                         <br><span class="persName">Dante</span> aveva detto che essendo la <span class="placeName">Sicilia</span> 
                         <span class="italics">regale solium</span>,
@@ -678,7 +679,7 @@
                         <br>la sua scuola. Ma non ci par verosimile che nell’uso, a cui
                         <br><span class="persName">Dante</span> dice attenersi, quella denominazione potesse riferirsi
                         <br>ad una precisa distinzione delle due scuole quale è quella
-                        <br>fatta da <span class="persName">Dante</span> nel <span class="title">Purgatorio
+                        <br>fatta da <span class="persName">Dante</span> nel <span class="bibl" data-facs="">Purgatorio
                            (XXIV, 55)</span>, 
                         e che si chiamas-
                         <br>sero « siciliani » poeti tanto noti e vicini come <span class="persName">Guittone</span> e
@@ -728,7 +729,8 @@
                         <br>cia di <span class="persName">Peleo</span>; la sua fedeltà come quella dell’assassino; s’au-
                         <br>gura di potere, come la Fenice, morire e rinascere per me-
                         
-                        
+                        </p>
+                     <p data-facs="#pag357-p1.2">
                         
                         <br>glio piacere, e va discorrendo. Intere canzoni sono traduzioni
                         <br>letterali o quasi. Il <span class="persName">Diez</span> e il <span class="persName">Nannucci</span> mostrarono già come
@@ -741,7 +743,7 @@
                            <br>sicula</span> non fu, salvo la lingua mutata, che la continuazione
                         <br>scolorita della provenzale.
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag357-p2">
                         <br>Tutto questo è già ben cambiato nella prima scuola to-
                         <br>scana. Si seguita ad imitare ed a saccheggiare il vecchio
                         <br>repertorio, ma c’è pure un sentimento ed una forma nuova
@@ -794,7 +796,7 @@
                         <br>dialetto, del quale abbiamo pure saggi del tempo dello stesso
                         <br><span class="persName">Guittone</span>.
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag357-p3.1">
                         
                         <br>Rispetto ai generi più popolari, o sopratutto intorno al
                         <br>celebre Contrasto « <span class="title italics">Rosa fresca aulentissima</span>, » 
@@ -814,36 +816,37 @@
             <div class="page">
                <h2>Pagina 358</h2>
                <div class="pagecols">
-                  <div class="pageimg"><svg id="pag358" viewBox="0,0,1520,2200" width="480" height="700">
+                  <div class="pageimg"><svg id="pag358" viewBox="0,0,1536.666666,2224.666666" width="480" height="700">
                         <image href="imgs/Vol2-1878-2-S2-F21-pag-358.png" x="0" y="0" width="100%" height="100%"></image>
-                        <rect x="58" y="78" width="1377" height="61" fill="none"></rect>
-                        <rect x="527" y="93" width="450" height="37" fill="none"></rect>
-                        <rect x="1209" y="95" width="220" height="39" fill="none"></rect>
-                        <rect x="77" y="97" width="58" height="29" fill="none"></rect>
-                        <rect x="73" y="170" width="672" height="636" fill="none"></rect>
-                        <rect x="74" y="810" width="677" height="826" fill="none"></rect>
-                        <rect x="75" y="1642" width="678" height="459" fill="none"></rect>
-                        <rect x="759" y="171" width="676" height="288" fill="none"></rect>
-                        <rect x="761" y="461" width="683" height="775" fill="none"></rect>
-                        <rect x="762" y="1239" width="679" height="367" fill="none"></rect>
-                        <rect x="765" y="1609" width="682" height="253" fill="none"></rect>
-                        <rect x="767" y="1869" width="676" height="225" fill="none"></rect></svg></div>
+                        <rect id="pag358-header" x="58" y="78" width="1377" height="61"></rect>
+                        <rect id="pag358-title" x="527" y="93" width="450" height="37"></rect>
+                        <rect id="pag358-vol" x="1209" y="95" width="220" height="39"></rect>
+                        <rect id="pag358-num" x="77" y="97" width="58" height="29"></rect>
+                        <rect id="pag358-p3.2" x="73" y="170" width="672" height="636"></rect>
+                        <rect id="pag358-p4" x="74" y="810" width="677" height="826"></rect>
+                        <rect id="pag358-p5.1" x="75" y="1642" width="678" height="459"></rect>
+                        <rect id="pag358-p5.2" x="759" y="171" width="676" height="288"></rect>
+                        <rect id="pag358-p6.start" x="761" y="461" width="683" height="775"></rect>
+                        <rect id="pag358-p6.l1" x="762" y="1239" width="679" height="367"></rect>
+                        <rect id="pag358-p6.l2" x="765" y="1609" width="682" height="253"></rect>
+                        <rect id="pag358-p6.l3" x="767" y="1869" width="676" height="225"></rect></svg></div>
                   <div class="pagebody">
-                     <p class="paragraph">
+                     <div class="page-header" data-facs="#pag358-header">
+                        <span class="align-left" data-facs="#pag358-num">
+                           358
+                           </span>
+                        <span class="align-center allcaps" data-facs="#pag358-title">
+                           LA RASSEGNA SETTIMANALE.
+                           </span>
+                        <span class="align-right" data-facs="#pag358-vol">
+                           [Vol. 2°, N° 21.
+                           </span>
+                        </div>
+                     <p data-facs="">
                         
-                        <div class="page-header">
-                           <span class="align-left">
-                              358
-                              </span>
-                           <span class="align-center allcaps">
-                              LA RASSEGNA SETTIMANALE.
-                              </span>
-                           <span class="align-right">
-                              [Vol. 2°, N° 21.
-                              </span>
-                           </div>
                         
-                        
+                        </p>
+                     <p data-facs="#pag358-p3.2">
                         
                         <br>un poeta d’arte, ma l’opera di un giullare tanto o quanto
                         <br>imbevuto dei precetti e dei luoghi comuni della poesia cor-
@@ -869,7 +872,7 @@
                         <br>ad un’altra bastasse il gettar là una parola, sarebbe cosa
                         <br>troppo facile.
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag358-p4">
                         <br>Il medesimo è da notare per le Romanze. Anche qui il
                         <br><span class="persName">Gaspary</span> piglia la via di mezzo; 
                         riconosce un’influenza fran-
@@ -909,7 +912,7 @@
                          spon-
                         <br>tanei. »
                         </p>
-                     <p class="paragraph">
+                     <p data-facs="#pag358-p5.1">
                         
                         <br>Ma se passiamo alla questione filologica ci troveremo di
                         <br>nuovo in pieno accordo coll’<span class="choice"><span class="abbr">A.</span><span class="expan">autore.</span></span> Sul processo di forma-
@@ -930,7 +933,8 @@
                         <br>come siffatta rima si riscontri in poeti d’ogni parte d’<span class="placeName">Ita-
                            <br>lia</span>, come da tutti si facesse luogo in rima alle più svariate
                         
-                        
+                        </p>
+                     <p data-facs="#pag358-p5.2">
                         
                         <br>forme dialettali, e come infine la forma siciliana, se in
                         <br>molti casi restituisce la rima, in altri la distrugge. Ragioni
@@ -943,7 +947,7 @@
                         <br>lingua poetica di cui i testi a stampa non ci danno che
                         <br>un’immagine alterata.
                         </p>
-                     <p class="paragraph"> 
+                     <p data-facs="#pag358-p6.start"> 
                         
                         <br>Altro argomento con cui si volle provare una prima re-
                         <br>dazione sicula dei nostri canzonieri è una canzone in sici-
@@ -965,7 +969,7 @@
                         <br>la spiegazione non sarebbe poi molto difficile, quando si
                         <br>pensi come i Siciliani non abbiano mai lasciato, per una ma-
                         <br>lintesa 
-                        <span class="cit"><span class="italics">carità del natìo loco</span><span class="cit-bibl"><span class="title">
+                        <span class="cit"><span class="italics">carità del natìo loco</span><span class="cit-bibl"><span class="bibl" data-facs="">
                                  Dante Alighieri, 
                                  <span class="title">Divina Commedia</span>, 
                                  Inferno, 
@@ -980,7 +984,7 @@
                         <br>varie considerazioni che qui sottoponiamo al lettore.
                         
                         
-                        <p class="list-item">
+                        <p class="list-item" data-facs="#pag358-p6.l1">
                            <br><span class="persName">Dante</span>, non solo non fa cenno di alcuna canzone in
                            <br>siciliano, ma volendo dar esempio dei difetti di cotesto dia-
                            <br>letto, è costretto a citare un verso del Contrasto in pugliese,
@@ -997,7 +1001,7 @@
                            <br>scuola sicula? Dov’erano allora tutte codeste canzoni in
                            <br>siciliano, codesto <span class="italics">libro siciliano</span>?
                            </p>
-                        <p class="list-item">
+                        <p class="list-item" data-facs="#pag358-p6.l2">
                            <br>La raccolta del <span class="persName">Barbieri</span> è in disaccordo con tutti
                            <br>gli altri codici conosciuti appunto dove ci offre testi dia-
                            <br>lettali; poiché nè i componimenti, nè i nomi di <span class="persName">Lanfranco
@@ -1010,7 +1014,7 @@
                            <br>cherebbe invano in alcuno dei <span class="choice"><span class="abbr">mss.</span><span class="expan">manoscritti</span></span> che ci danno le altre
                            <br>canzoni di quel re.
                            </p>
-                        <p class="list-item">
+                        <p class="list-item" data-facs="#pag358-p6.l3">
                            <br>Al tempo del <span class="persName">Barbieri</span>, nella prima metà del <span class="date">
                               <span class="choice"><span class="abbr">sec.</span><span class="expan">secolo </span></span>XVI</span>,
                            <br>circolavano di siffatte poesie in siciliano, spacciate per an-
@@ -1028,69 +1032,79 @@
             <div class="page">
                <h2>Pagina 359</h2>
                <div class="pagecols">
-                  <div class="pageimg"><svg id="pag359" viewBox="0,0,1520,2200" width="480" height="700">
+                  <div class="pageimg"><svg id="pag359" viewBox="0,0,1514.666666,2190.666666" width="480" height="700">
                         <image href="imgs/Vol2-1878-2-S2-F21-pag-359.png" x="0" y="0" width="100%" height="100%"></image>
-                        <rect x="75" y="64" width="1378" height="68" fill="none"></rect>
-                        <rect x="550" y="83" width="461" height="39" fill="none"></rect>
-                        <rect x="92" y="80" width="260" height="43" fill="none"></rect>
-                        <rect x="1392" y="90" width="56" height="30" fill="none"></rect>
-                        <rect x="98" y="161" width="674" height="57" fill="none"></rect>
-                        <rect x="95" y="216" width="673" height="62" fill="none"></rect>
-                        <rect x="617" y="246" width="110" height="26" fill="none"></rect></svg></div>
+                        <rect id="pag359-header" x="75" y="64" width="1378" height="68"></rect>
+                        <rect id="pag359-title" x="550" y="83" width="461" height="39"></rect>
+                        <rect id="pag359-date" x="92" y="80" width="260" height="43"></rect>
+                        <rect id="pag359-num" x="1392" y="90" width="56" height="30"></rect>
+                        <rect id="pag358-p6.l4" x="98" y="161" width="674" height="57"></rect>
+                        <rect id="pag358-p6.end" x="95" y="216" width="673" height="62"></rect>
+                        <rect id="pag359-sign" x="617" y="246" width="110" height="26"></rect></svg></div>
                   <div class="pagebody">
-                     <p class="paragraph">
-                        <p class="list-item">
+                     <div class="page-header" data-facs="#pag359-header">
+                        <span class="align-left" data-facs="#pag359-date">
+                           <span class="date">24 Novembre ’78</span>.] 
+                           </span>
+                        <span class="align-center allcaps" data-facs="#pag359-title">
+                           LA RASSEGNA SETTIMANALE.
+                           </span>
+                        <span class="align-right" data-facs="#pag359-num">
+                           359
+                           </span>
+                        </div>
+                     <p data-facs=""></p>
+                     <p data-facs="#pag358-p6.end">
+                        <p class="list-item" data-facs="#pag358-p6.l4">
                            <br>Dal lato filologico ci sono gravissime difficoltà a
                            <br>ritenere la canzone originariamente siciliana.
                            </p>
                         
                         <br>Sui due ultimi argomenti, e sopratutto sull’ultimo, tor-
                         <br>neremo in altro luogo.
-                        </p><span class="align-right allcaps">
+                        </p><span class="align-right allcaps" data-facs="#pag359-sign">
                         <span class="persName"><span class="choice"><span class="abbr">N.</span><span class="expan">NAPOLEONE</span></span> CAIX</span>
                         </span></div>
                </div>
             </div>
-         </div>
-      </article>
-      <article id="TEI-Not">
-         <h2>Notizie (edizione digitale)</h2>
-         <div class="teiHeader">
-            <h3>Informazioni generali</h3><span class="bold">Titolo: </span>Notizie (edizione digitale)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
-               <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
-               di politica, scienze, lettere ed arti
-               <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Roma<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>II<br><span class="bold">Fascicolo: </span>21<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol2-1878-2-S2-F21.pdf#page=9">
-                  Edizione digitale 
-                  </a> 
-               a cura di: 
-               <ul>
-                  <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
-                  <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
-                  <li>Università degli Studi Suor Orsola Benincasa</li>
-               </ul>
+         </article>
+         <article id="TEI-Not">
+            <h2>Notizie (edizione digitale)</h2>
+            <div class="teiHeader">
+               <h3>Informazioni generali</h3><span class="bold">Titolo: </span>Notizie (edizione digitale)<br><span class="bold">Progetto coordinato da: </span>Angelo Maria Del Grosso<br><span class="bold">Trascrizione a cura di: </span>Diana De Marinis<br><span class="bold">Pubblicato da: </span>Università di Pisa<br><span class="bold">Copyright: </span>Dominio pubblico<br><div class="header-bibl">
+                  <h3><span class="bold">Informazioni sulla fonte</span></h3><span class="bold">Titolo della rivista: </span>La Rassegna Settimanale 
+                  di politica, scienze, lettere ed arti
+                  <br><span class="bold">Casa Editrice: </span>Casa Editrice Barbèra<br><span class="bold">Luogo di pubblicazione: </span>Roma<br><span class="bold">Anno di pubblicazione: </span>1878<br><span class="bold">Volume: </span>II<br><span class="bold">Fascicolo: </span>21<br><a href="https://rassegnasettimanale.animi.it/wp-content/uploads/2019/02/Vol2-1878-2-S2-F21.pdf#page=9">
+                     Edizione digitale 
+                     </a> 
+                  a cura di: 
+                  <ul>
+                     <li>Comitato per il Centenario della morte di Leopoldo Franchetti</li>
+                     <li>Associazione nazionale per gli interessi del Mezzogiorno d’Italia (ANIMI)</li>
+                     <li>Università degli Studi Suor Orsola Benincasa</li>
+                  </ul>
+               </div>
             </div>
-         </div>
-         <div>
             <div class="page">
                <h2>Pagina 364</h2>
                <div class="pagecols">
-                  <div class="pageimg"><svg id="pag364" viewBox="0,0,1520,2200" width="480" height="700">
+                  <div class="pageimg"><svg id="pag364" viewBox="0,0,1530.666666,2220.666666" width="480" height="700">
                         <image href="imgs/Vol2-1878-2-S2-F21-pag-364.png" x="0" y="0" width="100%" height="100%"></image>
-                        <rect x="1039" y="485" width="145" height="30" fill="none"></rect>
-                        <rect x="768" y="522" width="681" height="98" fill="none"></rect>
-                        <rect x="769" y="624" width="678" height="103" fill="none"></rect>
-                        <rect x="771" y="731" width="676" height="124" fill="none"></rect>
-                        <rect x="772" y="870" width="674" height="202" fill="none"></rect>
-                        <rect x="773" y="1077" width="673" height="209" fill="none"></rect>
-                        <rect x="775" y="1300" width="669" height="126" fill="none"></rect>
-                        <rect x="777" y="1433" width="667" height="179" fill="none"></rect>
-                        <rect x="776" y="1614" width="669" height="96" fill="none"></rect>
-                        <rect x="777" y="1722" width="675" height="236" fill="none"></rect></svg></div>
+                        <rect id="not-title" x="1039" y="485" width="145" height="30"></rect>
+                        <rect id="not-l1" x="768" y="522" width="681" height="98"></rect>
+                        <rect id="not-l2" x="769" y="624" width="678" height="103"></rect>
+                        <rect id="not-l3" x="771" y="731" width="676" height="124"></rect>
+                        <rect id="not-l4" x="772" y="870" width="674" height="202"></rect>
+                        <rect id="not-l5" x="773" y="1077" width="673" height="209"></rect>
+                        <rect id="not-l6" x="775" y="1300" width="669" height="126"></rect>
+                        <rect id="not-l7" x="777" y="1433" width="667" height="179"></rect>
+                        <rect id="not-l8" x="776" y="1614" width="669" height="96"></rect>
+                        <rect id="not-l9" x="777" y="1722" width="675" height="236"></rect></svg></div>
                   <div class="pagebody">
-                     <h3 class="align-center allcaps">
+                     <h3 class="align-center allcaps" data-facs="#not-title">
                         NOTIZIE.
                         </h3>
-                     <p class="list-item font-small">
+                     <p class="list-item font-small" data-facs="#not-l1">
                         <br>La <span class="orgName italics">Corrispondenza letteraria di <span class="placeName">Lipsia</span></span> 
                         afferma che <span class="persName">Alessandro
                            <br>Dumas</span> lavora ad uno studio su <span class="title italics">Dafni e Cloe</span>.
@@ -1098,14 +1112,14 @@
                         <br>l’antico francese del traduttore della pastorale di <span class="persName">Longo</span>, <span class="persName">Jacques
                            <br>Amyot</span>.
                         </p>
-                     <p class="list-item font-small">
+                     <p class="list-item font-small" data-facs="#not-l2">
                         <br>Avanti la fine del mese verranno alla luce i due primi volumi
-                        <br>della <span class="title"><span class="title italics">Corrispondenza letteraria e politica</span> di 
+                        <br>della <span class="bibl" data-facs=""><span class="title italics">Corrispondenza letteraria e politica</span> di 
                            <span class="persName">Federigo II</span></span>, di cui l'<span class="orgName">Acca-
                            <br>demia di <span class="placeName">Berlino</span></span> prepara da tanti anni la pubblicazione.
                         <br><span class="align-right">(<span class="title italics">Revue politique et littéraire</span>)</span>
                         </p>
-                     <p class="list-item font-small">
+                     <p class="list-item font-small" data-facs="#not-l3">
                         <br>Il signor <span class="persName">Parker</span> nella seconda edizione della sua opera (<span class="title italics">Le for-
                            <br>tificazioni primitive di <span class="placeName">Roma</span></span>) ha aggiunto grandissima copia di nuovi
                         <br>materiali. Si afferma che l’<span class="orgName">Istituto germanico</span>, nel celebrare nel <span class="date">pros-
@@ -1113,7 +1127,7 @@
                         <br>tempo il giubileo della sua esistenza in questa città. 
                         <span class="align-right">(<span class="title italics">Academy</span>)</span>
                         </p>
-                     <p class="list-item font-small">
+                     <p class="list-item font-small" data-facs="#not-l4">
                         <br>Vi fu grande agitazione all’annunzio dato dal signor <span class="persName">Edison</span> di
                         <br>potere moltiplicare all’infinito i punti luminosi di una corrente elet-
                         <br>trica. Sembra però che tale annunzio fosse alquanto prematuro, poichè
@@ -1124,7 +1138,7 @@
                         <br><span class="persName">Edison</span>.
                         <span class="align-right">(<span class="title italics">Athenaeum</span>)</span>
                         </p>
-                     <p class="list-item font-small">
+                     <p class="list-item font-small" data-facs="#not-l5">
                         <br>Mentre tutti aspettano che venga annunziato il metodo del si-
                         <br>gnor <span class="persName">Edison</span> per frazionare la luce elettrica, il signor <span class="persName">Richard Werder-
                            <br>mann</span>, ben noto in ciò che riguarda l’illuminazione elettrica, sembra
@@ -1135,7 +1149,7 @@
                         <br>inglese di <span class="placeName">Euston road</span>. 
                         <span class="align-right">(<span class="title italics">Nature</span>)</span>
                         </p>
-                     <p class="list-item font-small">
+                     <p class="list-item font-small" data-facs="#not-l6">
                         <br>Si afferma che vada costituendosi a <span class="placeName">Parigi</span> un Comitato collo scopo
                         <br>di una esposizione internazionale permanente al <span class="placeName">Palazzo di cristallo</span>.
                         <br>Gli espositori francesi vengono invitati a trasferire i loro prodotti dal
@@ -1144,7 +1158,7 @@
                            <br>lazzo di cristallo</span> quale museo e magazzino cosmopolita.
                         <span class="align-right">(<span class="title italics">Nature</span>)</span> 
                         </p>
-                     <p class="list-item font-small">
+                     <p class="list-item font-small" data-facs="#not-l7">
                         <br>L’<span class="placeName">Austria</span>, la <span class="placeName">Spagna</span>, 
                         l’<span class="placeName">Egitto</span>, la <span class="placeName">China</span>, 
                         il <span class="placeName">Marocco</span>, il <span class="placeName">Porto-
@@ -1156,7 +1170,7 @@
                         <br>grafico e pedagogico che il governo francese ha in animo di fondare,
                         <br>come in uno dei suoi ultimi discorsi annunciò il signor <span class="persName">Bardoux</span>.
                         </p>
-                     <p class="list-item font-small">
+                     <p class="list-item font-small" data-facs="#not-l8">
                         <br>Il <span class="persName"><span class="persName"><span class="choice"><span class="abbr">cav.</span><span class="expan">cavaliere</span></span></span> 
                            Cristoforo Robecchi</span>, 
                         console d’<span class="placeName">Italia</span> a <span class="placeName">Tiflis</span> ha inviato
@@ -1165,7 +1179,7 @@
                         <br>collezione di oggetti, per la maggior parte strumenti musicali del
                         <br><span class="placeName">Giappone</span>.
                         </p>
-                     <p class="list-item font-small">
+                     <p class="list-item font-small" data-facs="#not-l9">
                         <br>La <span class="orgName">società missionaria di <span class="placeName">Londra</span></span> 
                         ha ricevuto l'<span class="date">11 novembre</span> la
                         <br>notizia dell’arrivo a <span class="placeName">Ujiji</span> di una parte della sua spedizione 
@@ -1187,7 +1201,7 @@
                   </div>
                </div>
             </div>
-         </div>
-      </article>
+         </article>
+      </main>
    </body>
 </html>

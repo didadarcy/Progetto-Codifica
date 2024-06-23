@@ -388,7 +388,7 @@
                     <lb/>dopo aver ripudiate due mogli, ama contemporaneamente
                     <!-- Inizio di colonna: -->
                     <cb/>
-                    <milestone unit="paragraph-part" facs="#pag94-p2.3"/>
+                    <milestone unit="paragraph-part" facs="#pag95-p2.3"/>
                     <lb/>una <persName><addName>donna</addName> Agnese</persName> e una <persName><addName>donna</addName> Ermesina</persName>; usa modi vitu<pc force="weak">-</pc>
                     <lb break="no"/>perosi per ingannar queste ed altre donne della contrada;
                     <lb/>si vanta dei suoi trionfi, pubblica i nomi delle sedotte, le
@@ -546,10 +546,10 @@
         <text>
             <body>
                 <pb n="101" facs="#pag101"/>
-                <head rend="case(allcaps) align(center)">
+                <head rend="case(allcaps) align(center)" facs="#pag101-sec">
                     LETTERATURA.
                 </head>
-                <bibl xml:id="AG-PI">
+                <bibl xml:id="AG-PI" facs="#pag101-bibl">
                     <lb/><author rend="case(allcaps)" xml:id="AG"><persName><forename>ARTURO</forename> <surname>GRAF</surname></persName></author>.
                     <title rend="italics"><placeName><region>Provenza</region></placeName> e <placeName><country>Italia</country></placeName></title>,
                     <title type="desc">prolusione a un corso di
@@ -719,10 +719,10 @@
         <text>
             <body>
                 <pb n="104" facs="#pag104"/>
-                <head rend="case(allcaps) align(center)">
+                <head rend="case(allcaps) align(center)" facs="#pag104-sec">
                     SCIENZE NATURALI.
                 </head>
-                <bibl xml:id="AR-HE">
+                <bibl xml:id="AR-HE" facs="#pag104-bibl">
                     <lb/><author rend="case(allcaps)" xml:id="AR"><persName>A. <surname>RIANT</surname></persName></author>.
                     <title rend="italics" xml:lang="fr">L’hygiène et l’éducation dans les internats, lycées,
                     <lb/>collèges etc.</title>. — 
@@ -1313,7 +1313,7 @@
                         </item>
                         <!-- Inizio di pagina 359: -->
                         <pb n="359" facs="#pag359"/>
-                        <fw type="header" place= "top" facs="#pag359-header">
+                        <fw type="header" place="top" facs="#pag359-header">
                             <fw rend="align(left)" facs="#pag359-date">
                                 <date>24 Novembre ’78</date>.] 
                             </fw>

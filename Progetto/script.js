@@ -1,5 +1,6 @@
 $().ready(function(){
     var highlight_active = false;
+    // $("#highlights").hide();
     
     $("#highlight-button").click(function(){
         if(highlight_active) {
@@ -15,9 +16,31 @@ $().ready(function(){
         }
     });
 
-    $('rect').mouseover(function() {
-        // alert("HELLO");
+    $('rect, polygon').mouseover(function() {
+        var facs = $(this).attr('id');
+        $(this).addClass("highlighted");
+        $('*[data-facs="#' + facs + '"]').addClass("highlighted");
     }).mouseout(function(){
-        $(this).removeClass("hovered-area");      
+        var facs = $(this).attr('id');
+        $(this).removeClass("highlighted");
+        $('*[data-facs="#' + facs + '"]').removeClass("highlighted");  
+    });
+
+    $('*[data-facs]').mouseover(function() {
+        var facs = $(this).attr('data-facs').substring(1);
+        $(this).addClass("highlighted");
+        $('*[id="' + facs + '"]').addClass("highlighted");
+    }).mouseout(function(){
+        var facs = $(this).attr('data-facs').substring(1);
+        $(this).removeClass("highlighted");
+        $('*[id="' + facs + '"]').removeClass("highlighted");  
+    });
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() > $("main").offset().top){
+            $("#highlights").show();
+        } else {
+            $("#highlights").hide();
+        }
     });
 });

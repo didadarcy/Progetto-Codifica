@@ -17,14 +17,16 @@
                 <script src="script.js"/>
             </head>
             <body>
-                <button id="highlight-button">Annotazioni (mostra)</button>
-                <div id="colors">
-                    <span class="term"></span>Termini <br/>
-                    <span class="eventName"></span>Eventi <br/>
-                    <span class="date"></span>Date <br/>
-                    <span class="persName"></span>Persone <br/>
-                    <span class="placeName"></span>Luoghi <br/>
-                    <span class="orgName"></span>Orgs.<br/>
+                <div id="highlights">
+                    <button id="highlight-button">Annotazioni (mostra)</button>
+                    <div id="colors">
+                        <span class="term"></span>Termini <br/>
+                        <span class="eventName"></span>Eventi <br/>
+                        <span class="date"></span>Date <br/>
+                        <span class="persName"></span>Persone <br/>
+                        <span class="placeName"></span>Luoghi <br/>
+                        <span class="orgName"></span>Orgs.<br/>
+                    </div>
                 </div>
                 <header>
                     <h1>La Rassegna Settimanale</h1>
@@ -40,7 +42,9 @@
                 <xsl:apply-templates select="/tei:TEI/tei:teiHeader" />
                 
                 <!-- Chiamo il template per le parti codificate: -->
-                <xsl:apply-templates select="/tei:TEI/tei:TEI"/>         
+                <main>
+                    <xsl:apply-templates select="/tei:TEI/tei:TEI"/>  
+                </main>       
             </body>
         </html>
     </xsl:template>
@@ -64,9 +68,7 @@
             <!-- TEI header: -->
             <xsl:apply-templates select="tei:teiHeader"/>
             <!-- Testo e immagini corrispondenti: -->
-            <div>
-                <xsl:apply-templates select=".//tei:body"/>
-            </div>
+            <xsl:apply-templates select=".//tei:body"/>
         </xsl:element>
     </xsl:template>
 
@@ -87,11 +89,6 @@
             <!-- Informazioni sulla fonte: -->
             <xsl:apply-templates select=".//tei:bibl"/>
         </div>
-            <!-- <h2><xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:title"/></h2>
-            <span class="bold"><xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp"/>: </span>
-            <xsl:value-of select="tei:fileDesc/tei:titleStmt/tei:respStmt/tei:persName"/><br/>
-            <span class="bold">Editore: </span> <xsl:value-of select="tei:fileDesc/tei:publicationStmt"/> <br/><br/>
-            <xsl:apply-templates select="tei:fileDesc/tei:sourceDesc/tei:bibl"/> -->
     </xsl:template>
 
     <!-- Template per la citazione bibliografica alla fonte: -->
@@ -129,17 +126,28 @@
         <!-- Template per il corpo del testo: -->
     <xsl:template match="tei:body">
         <xsl:variable name="curr-body" select="."/>
+        <!-- Divido il testo in pagine, separandolo all'inizio di ogni tei:pb: -->
         <xsl:for-each-group select="descendant::node()" group-starting-with="tei:pb">
+            <!-- Ignoro i gruppi che non contengono tei:pb: -->
             <xsl:if test="current-group()[self::tei:pb]">
                 <div class="page">
-                    <!-- Scrivo il numero della pagina -->
+                    <!-- Scrivo il numero della pagina: -->
                         <h2>Pagina <xsl:value-of select="current-group()[self::tei:pb]/@n"/></h2>
                     <div class="pagecols">
-                    <!-- Mostro l'immagine corrispondente: -->
+                        <!-- Mostro l'immagine corrispondente: -->
                         <xsl:apply-templates select="current-group()[self::tei:pb]"/>
-                    <!-- Mostro il testo della pagina, prendendo il contenuto dei paragrafi nella pagina: -->
+                        <!-- Mostro il testo della pagina, prendendo il contenuto dei paragrafi nella pagina: -->
                         <div class="pagebody">
-                            <xsl:apply-templates select="$curr-body/(tei:list | tei:p | tei:fw | tei:head | tei:signed | tei:bibl)[descendant-or-self::node() intersect current-group()]"/>
+                            <!-- Mostro l'header della pagina, se presente -->
+                            <xsl:apply-templates select="$curr-body//tei:fw[@type='header'] intersect current-group()"/>
+                            <!-- Divido la pagina per colonne e mostro i contenuti della colonna: -->
+                            <xsl:for-each-group select="current-group()" group-starting-with="tei:cb">
+                                <!-- Seleziono tutti i figli del body corrente che 
+                                        1) sono di tipo list|p|head|signed|bibl
+                                        2) sono contenuti nella colonna corrente, o hanno almeno un discendente che è contenuto nella colonna corrente
+                                -->
+                                <xsl:apply-templates select="$curr-body/(tei:list | tei:p | tei:head | tei:signed | tei:bibl)[descendant-or-self::node() intersect current-group()]"/>
+                            </xsl:for-each-group>
                         </div>
                     </div>
                 </div>
@@ -148,41 +156,61 @@
     </xsl:template>
 
     <!-- Template per i paragrafi: -->
-    <xsl:template match="tei:p">    
-        <p class="paragraph">
-            <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
-            <xsl:apply-templates select="node()[not(self::tei:pb)][descendant-or-self::node() intersect current-group()]"/>
-        </p>  
+    <xsl:template match="tei:p">
+        <xsl:element name="p">
+            <!-- Inserisco il riferimento alla tei:zone: -->
+            <!-- L'attributo @facs potrebbe essere sia contenuto nel tag tei:p (se l'intero paragrafo è in una singola colonna)
+                oppure potrebbe essere contenuto in un tei:milestone (se il paragrafo è separato su più colonne): -->
+            <xsl:choose>
+                <!-- Caso 1: L'attributo è contenuto nel tag tei:p: -->
+                <xsl:when test="@facs">
+                    <xsl:attribute name="data-facs" select="@facs"/>
+                </xsl:when>
+                <!-- Caso 2: L'attributo è contenuto in un tag tei:milestone: -->
+                <xsl:otherwise>
+                    <xsl:attribute name="data-facs" select="(tei:milestone[@unit='paragraph-part'] intersect current-group())/@facs"/>
+                </xsl:otherwise>
+            </xsl:choose>
+
+            <!-- Seleziono solo i nodi nella colonna (gruppo) corrente: -->
+            <!-- Ignoro i tag tei:p e tei:fw perché vengono gestiti dal template di tei:body: -->
+            <xsl:apply-templates select="node()[not(self::tei:pb | self::tei:fw)][descendant-or-self::node() intersect current-group()]"/>
+        </xsl:element>  
     </xsl:template>
 
     <!-- Template per le liste contenute in body: -->
     <xsl:template match="tei:body//tei:list">
+        <!-- Seleziono solo i tei:item contenuti nella colonna (gruppo) corrente: -->
         <xsl:apply-templates select="tei:item intersect current-group()"/>
     </xsl:template>
 
     <!-- Template per gli item delle liste contenute in body: -->
     <xsl:template match="tei:body//tei:item">
-        <xsl:choose>
-            <xsl:when test="@rend='font-size(small)'">
-                <p class="list-item font-small">
-                    <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
-                    <xsl:apply-templates select="node()[not(self::tei:pb)] intersect current-group()"/>
-                </p>   
-            </xsl:when>
-            <xsl:otherwise>
-                <p class="list-item">
-                    <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
-                    <xsl:apply-templates select="node()[not(self::tei:pb)] intersect current-group()"/>
-                </p> 
-            </xsl:otherwise>
-        </xsl:choose>
-        
+        <xsl:element name="p">
+            <!-- Se @rend contiene font-size(small) lo inserisco nella classe, altrimenti no: -->
+            <xsl:choose>
+                <xsl:when test="@rend='font-size(small)'">
+                    <xsl:attribute name="class">list-item font-small</xsl:attribute>        
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="class">list-item</xsl:attribute>
+                </xsl:otherwise>
+            </xsl:choose>
+
+            <!-- Inserisco il riferimento alla tei:zone: -->
+            <xsl:attribute name="data-facs" select="@facs"/>
+
+            <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
+            <!-- Ignoro i tag tei:p e tei:fw perché vengono gestiti dal template di tei:body: -->
+            <xsl:apply-templates select="node()[not(self::tei:pb | self::tei:fw)] intersect current-group()"/>
+        </xsl:element>
     </xsl:template>
 
     <!-- Template per la pagina: -->
     <xsl:template match="tei:pb">
         <xsl:variable name="numero-pag" select="@n"/>
         <div class="pageimg">
+            <!-- Inserisco l'immagine corrispondente alla pagina corrente: -->
             <xsl:apply-templates select="//tei:surface[@xml:id=concat('pag',$numero-pag)]"/>
         </div>
     </xsl:template>
@@ -191,10 +219,24 @@
     <xsl:template match="tei:surface">
         <xsl:element name="svg">
             <xsl:attribute name="id" select="@xml:id" />
-            <xsl:attribute name="viewBox">0,0,1520,2200</xsl:attribute>
+
+            <!-- La viewBox serve a dare un sistema di riferimento per l'intera immagine: -->
+            <xsl:attribute name="viewBox">
+                <!-- Coordinata x del vertice in alto a sinistra -->
+                <xsl:text>0,</xsl:text>
+                <!-- Coordinata y del vertice in alto a sinistra -->
+                <xsl:text>0,</xsl:text>
+                <!-- La larghezza dell'immagine è contenuta nell'attributo @width di tei:graphic, ma dobbiamo eliminare la stringa 'px' -->
+                <xsl:value-of select="substring-before(tei:graphic/@width, 'px')"/><xsl:text>,</xsl:text>
+                <!-- L'altezza dell'immagine è contenuta nell'attributo @height di tei:graphic, ma dobbiamo eliminare la stringa 'px' -->
+                <xsl:value-of select="substring-before(tei:graphic/@height, 'px')"/>
+            </xsl:attribute>
+
+            <!-- Dimensioni effettive dell'immagine visualizzata: -->
             <xsl:attribute name="width">480</xsl:attribute>
             <xsl:attribute name="height">700</xsl:attribute>
 
+            <!-- Immagine: -->
             <xsl:element name="image">
                 <xsl:attribute name="href" select="tei:graphic/@url" />
                 <xsl:attribute name="x" select="0"/>
@@ -203,57 +245,32 @@
                 <xsl:attribute name="height">100%</xsl:attribute>
             </xsl:element>
 
+            <!-- Per ogni tei:zone creiamo un elemento rect oppure polygon -->
             <xsl:for-each select="tei:zone">
                 <xsl:choose>
+                    <!-- Se il tei:zone contiene l'attributo @ulx allora è un rettangolo -->
                     <xsl:when test="@ulx">
                         <xsl:element name="rect">
+                            <xsl:attribute name="id" select="@xml:id"/>
+                            <!-- Posizione del vertice in alto a sinistra -->
                             <xsl:attribute name="x" select="@ulx"/>
                             <xsl:attribute name="y" select="@uly"/>
+                            <!-- La larghezza del rettangolo è la differenza tra le ascisse -->
                             <xsl:attribute name="width" select="@lrx - @ulx"/>
+                            <!-- L'altezza del rettangolo è la differenza tra le ordinate -->
                             <xsl:attribute name="height" select="@lry - @uly"/>
-                            <xsl:attribute name="fill">none</xsl:attribute>
                         </xsl:element>
                     </xsl:when>
+                    <!-- Altrimenti è un poligono -->
                     <xsl:otherwise>
                         <xsl:element name="polygon">
+                            <xsl:attribute name="id" select="@xml:id"/>
                             <xsl:attribute name="points" select="@points"/>
-                            <xsl:attribute name="fill">none</xsl:attribute>
                         </xsl:element>
                     </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:element>
-        <!-- <xsl:element name="img">
-            <xsl:attribute name="src" select="tei:graphic/@url"/>
-            <xsl:attribute name="usemap" select="concat('map-', @xml:id)"/>
-        </xsl:element>
-
-        <xsl:element name="map">
-            <xsl:attribute name="name" select="concat('map-', @xml:id)" />
-            <xsl:attribute name="id" select="concat('map-', @xml:id)" />
-
-            <xsl:for-each select="tei:zone">
-                <xsl:element name="area">
-                    <xsl:attribute name="id">
-                        <xsl:value-of select="@xml:id" />
-                    </xsl:attribute>
-                    <xsl:attribute name="class">area</xsl:attribute>
-                    
-                    <xsl:choose>
-                        <xsl:when test="@ulx">
-                            <xsl:attribute name="coords">
-                                <xsl:value-of select="@ulx" />,<xsl:value-of select="@uly" />,<xsl:value-of select="@lrx" />,<xsl:value-of select="@lry" />
-                            </xsl:attribute>
-                            <xsl:attribute name="shape">rect</xsl:attribute>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:attribute name="coords" select="@coords"/>
-                            <xsl:attribute name="shape">poly</xsl:attribute>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:element>
-            </xsl:for-each>
-        </xsl:element> -->
     </xsl:template>
 
     <!-- Template per mandare a capo le righe: -->
@@ -266,7 +283,12 @@
 
     <!-- Template per posizionare il titolo dei testi: -->
     <xsl:template match="tei:head">
-        <h3 class="align-center allcaps"><xsl:apply-templates/></h3>
+        <xsl:element name="h3">
+            <xsl:attribute name="class">align-center allcaps</xsl:attribute>
+            <xsl:attribute name="data-facs" select="@facs"/>
+
+            <xsl:apply-templates/>
+        </xsl:element>
     </xsl:template>
 
     <!-- Template per le note: -->
@@ -275,29 +297,39 @@
     </xsl:template>
 
     <!-- Template per il corsivo: -->
+    <!-- La priority serve a fare in modo che, in caso di conflitto, questo template abbia priorità più bassa -->
     <xsl:template match="*[@rend='italics']" priority="-1">
         <span class="italics"><xsl:apply-templates/></span>
     </xsl:template>
 
     <!-- Template per l'header della pagina: -->
     <xsl:template match="tei:fw[@type='header']">
-        <div class="page-header"><xsl:apply-templates/></div>
+        <xsl:element name="div">
+            <xsl:attribute name="class">page-header</xsl:attribute>
+            <xsl:attribute name="data-facs" select="@facs"/>
+            
+            <xsl:apply-templates/>
+        </xsl:element>
     </xsl:template>
 
     <!-- Template per le parti dell'header della pagina: -->
     <xsl:template match="tei:fw/tei:fw">
-        <xsl:choose>
-            <xsl:when test="@rend='align(left)'">
-                <span class="align-left"><xsl:apply-templates/></span>
-            </xsl:when>
-            <xsl:when test="@rend='align(center) case(allcaps)'">
-                <span class="align-center allcaps"><xsl:apply-templates/></span>
-            </xsl:when>
-            <xsl:when test="@rend='align(right)'">
-                <span class="align-right"><xsl:apply-templates/></span>
-            </xsl:when>
-        </xsl:choose>
-        
+        <xsl:element name="span">
+            <xsl:choose>
+                <xsl:when test="@rend='align(left)'">
+                    <xsl:attribute name="class">align-left</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@rend='align(center) case(allcaps)'">
+                    <xsl:attribute name="class">align-center allcaps</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@rend='align(right)'">
+                    <xsl:attribute name="class">align-right</xsl:attribute>
+                </xsl:when>
+            </xsl:choose>
+            <xsl:attribute name="data-facs" select="@facs"/>
+            
+            <xsl:apply-templates/>
+        </xsl:element>       
     </xsl:template>
 
     <!-- Template per le scelte: -->
@@ -324,7 +356,12 @@
 
     <!-- Template per le firme: -->
     <xsl:template match="tei:signed">
-        <span class="align-right allcaps"><xsl:apply-templates/></span>
+        <xsl:element name="span">
+            <xsl:attribute name="class">align-right allcaps</xsl:attribute>
+            <xsl:attribute name="data-facs" select="@facs"/>
+
+            <xsl:apply-templates/>
+        </xsl:element>
     </xsl:template>
 
     <!-- Template per le firme: -->
@@ -333,7 +370,7 @@
     </xsl:template>
 
      <!-- Template per i titoli: -->
-    <xsl:template match="tei:body//tei:title | tei:body//tei:bibl">
+    <xsl:template match="tei:body//tei:title">
         <xsl:choose>
             <xsl:when test="@rend='italics'">
                 <span class="title italics"><xsl:apply-templates/></span>
@@ -342,6 +379,16 @@
                 <span class="title"><xsl:apply-templates/></span>
             </xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+
+    <!-- Template per posizionare il titolo dei testi: -->
+    <xsl:template match="tei:body//tei:bibl">
+        <xsl:element name="span">
+            <xsl:attribute name="class">bibl</xsl:attribute>
+            <xsl:attribute name="data-facs" select="@facs"/>
+
+            <xsl:apply-templates/>
+        </xsl:element>
     </xsl:template>
 
     <!-- Template per citazioni bibliografiche inserite: -->
