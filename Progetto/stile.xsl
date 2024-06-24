@@ -39,7 +39,9 @@
                         <a href="#TEI-Not">Notizie</a>
                     </nav>
                 </header>
-                <xsl:apply-templates select="/tei:TEI/tei:teiHeader" />
+                <xsl:apply-templates select="/tei:TEI/tei:teiHeader"/>
+                <xsl:apply-templates select="/tei:TEI/tei:standOff/tei:list[@type='gloss']"/>
+                <xsl:apply-templates select="/tei:TEI/tei:standOff/tei:listPerson"/>
                 
                 <!-- Chiamo il template per le parti codificate: -->
                 <main>
@@ -91,6 +93,39 @@
         </div>
     </xsl:template>
 
+    <xsl:template match="tei:standOff/tei:list[@type='gloss']">
+        <div class="gloss-div">
+            <h2>Lista dei termini</h2>
+            <xsl:for-each select="tei:label">
+                <div class="gloss-item">
+                    <xsl:element name="b">
+                        <xsl:attribute name="id" select="@xml:id"/>
+                        <xsl:value-of select="."/>
+                    </xsl:element><br/>
+                    <p><xsl:value-of select="following-sibling::tei:item[1]"/></p>
+                </div>
+            </xsl:for-each>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="tei:standOff/tei:listPerson">
+        <div class="gloss-div">
+            <h2>Lista delle persone</h2>
+            <xsl:for-each select="tei:person">
+                <div class="gloss-item" >
+                    <xsl:element name="b">
+                        <xsl:attribute name="id" select="@xml:id"/>
+                        <xsl:value-of select="tei:persName"/>
+                    </xsl:element>
+                    <xsl:if test="tei:birth, tei:death">
+                        (<xsl:value-of select="tei:birth/tei:placeName"/>, <xsl:value-of select="tei:birth/tei:date"/> – <xsl:value-of select="tei:death/tei:placeName"/>, <xsl:value-of select="tei:death/tei:date"/>)
+                    </xsl:if>
+                    <p><xsl:value-of select="tei:note"/></p>
+                </div>
+            </xsl:for-each>
+        </div>
+    </xsl:template>
+
     <!-- Template per la citazione bibliografica alla fonte: -->
     <xsl:template match="tei:sourceDesc/tei:bibl">
         <div class="header-bibl">
@@ -99,7 +134,12 @@
                 <span class="bold">Titolo: </span> <xsl:value-of select="tei:title[@level='a']"/><br/>
             </xsl:if>
             <xsl:if test="tei:author">
-                <span class="bold">Autore: </span> <xsl:value-of select="tei:author"/><br/>  
+                <span class="bold">Autore: </span> 
+                <xsl:element name="a">
+                    <xsl:attribute name="href" select="tei:author/@ref"/>
+                    <xsl:value-of select="tei:author"/>
+                </xsl:element>
+                <br/>  
             </xsl:if>
             <span class="bold">Titolo della rivista: </span> <xsl:value-of select="tei:title[@level='j']"/><br/>
             <span class="bold">Casa Editrice: </span> <xsl:value-of select="tei:publisher"/><br/>
@@ -239,6 +279,7 @@
             <!-- Immagine: -->
             <xsl:element name="image">
                 <xsl:attribute name="href" select="tei:graphic/@url" />
+                <!-- Coordinata del vertice in alto a sinistra è (0,0): -->
                 <xsl:attribute name="x" select="0"/>
                 <xsl:attribute name="y" select="0"/>
                 <xsl:attribute name="width">100%</xsl:attribute>
@@ -381,13 +422,33 @@
         </xsl:choose>
     </xsl:template>
 
-    <!-- Template per posizionare il titolo dei testi: -->
+    <!-- Template per le citazioni bibliografiche presenti nel testo: -->
     <xsl:template match="tei:body//tei:bibl">
         <xsl:element name="span">
             <xsl:attribute name="class">bibl</xsl:attribute>
             <xsl:attribute name="data-facs" select="@facs"/>
 
             <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
+    <!-- Template per il campo autore nelle citazioni bibliografiche: -->
+    <xsl:template match="tei:body//tei:bibl/tei:author">
+        <xsl:element name="span">
+            <xsl:attribute name="class">author</xsl:attribute>
+            
+            <!-- Se l'autore ha un campo @ref, aggiungiamo il tag a, altrimenti no -->
+            <xsl:choose>
+                <xsl:when test="@ref">
+                    <xsl:element name="a">
+                        <xsl:attribute name="href" select="@ref"/>
+                        <xsl:apply-templates />
+                    </xsl:element>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates />
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:element>
     </xsl:template>
 
@@ -401,14 +462,29 @@
 
     <!-- Template per i term: -->
     <xsl:template match="tei:term">
-        <xsl:choose>
-            <xsl:when test="@rend='italics'">
-                <span class="term italics"><xsl:apply-templates/></span>
-            </xsl:when>
-            <xsl:otherwise>
-                <span class="term"><xsl:apply-templates/></span>
-            </xsl:otherwise>
-        </xsl:choose>
+        <xsl:element name="span">
+            <xsl:choose>
+                <xsl:when test="@rend='italics'">
+                    <xsl:attribute name="class">term italics</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="class">term</xsl:attribute>
+                </xsl:otherwise>
+            </xsl:choose>
+
+            <xsl:choose>
+                <xsl:when test="@ref">
+                    <xsl:element name="a">
+                        <xsl:attribute name="href" select="@ref"/>
+                        <xsl:apply-templates />
+                    </xsl:element>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates />
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:element>
+        
     </xsl:template>
 
     <!-- Template per gli eventi: -->
@@ -423,7 +499,14 @@
 
     <!-- Template per i nomi di persona: -->
     <xsl:template match="tei:persName | tei:roleName | tei:addName">
-        <span class="persName"><xsl:apply-templates/></span>
+        <xsl:choose>
+            <xsl:when test="@rend='italics'">
+                <span class="persName italics"><xsl:apply-templates/></span>
+            </xsl:when>
+            <xsl:otherwise>
+                <span class="persName"><xsl:apply-templates/></span>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <!-- Template per i nomi di luoghi: -->

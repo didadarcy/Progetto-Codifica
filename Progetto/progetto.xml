@@ -61,10 +61,69 @@
     </teiHeader>
     <standOff>
         <listPerson>
-            <person xml:id="DDM" role="Transcriber">
+            <person xml:id="DDM" role="transcriber">
                 <persName>Diana De Marinis</persName>
+                <note>Studentessa del terzo anno del corso di Informatica Umanistica dell'Università di Pisa (matr. 597112). Responsabile della presente edizione digitale.</note>
+            </person>
+            <person xml:id="aut-t" role="author">
+                <persName>Tiresias</persName>
+                <note>L'autore dell'articolo "L'amore Cavalleresco". Non si hanno sufficienti informazioni su di lui.</note>
+            </person>
+            <person xml:id="AG" role="author">
+                <persName><forename>Arturo</forename> <surname>Graf</surname></persName>
+                <birth><date>19 gennaio 1848</date> <placeName>Atene</placeName></birth>
+                <death><date>31 maggio 1913</date> <placeName>Torino</placeName></death>
+                <note>È stato un poeta, aforista e critico letterario italiano.</note>
+            </person>
+            <person xml:id="AR" role="author">
+                <persName><forename>Aimé</forename> <surname>Riant</surname></persName>
+                <birth><date>20 novembre 1827</date> <placeName>Parigi</placeName></birth>
+                <death><date>1902</date> <placeName>Parigi</placeName></death>
+                <note>È stato un medico specializzato nell'assistenza ai feriti militari.</note>
+            </person>
+            <person xml:id="de-ag" role="author">
+                <persName><forename>Adolf</forename> <surname>Gaspary</surname></persName>
+                <birth><date>23 maggio 1849</date> <placeName>Berlino</placeName></birth>
+                <death><date>17 marzo 1892</date> <placeName>Berlino</placeName></death>
+                <note>È stato un filologo specializzato nello studio della letteratura italiana.</note>
+            </person>
+            <person xml:id="aut-nc" role="author">
+                <persName><forename>Napoleone</forename> <surname>Caix</surname></persName>
+                <birth><date>24 agosto 1843</date> <placeName>Bozzolo</placeName></birth>
+                <death><date>22 ottobre 1882</date> <placeName>Bozzolo</placeName></death>
+                <note>L'autore dell'articolo "La Scuola Poetica Siciliana". È stato un filologo italiano.</note>
             </person>
         </listPerson>
+        <list type="gloss">
+            <head>Glossario dei termini:</head>
+            <label xml:id="trov">Trovatore</label>
+            <item>In filologia romanza il termine indica il rimatore provenzale, che tratta tematiche legate 
+                agli ideali della società feudale.</item>
+            <label xml:id="ac">Amore Cavalleresco</label> 
+            <item>L'amore cavalleresco, o amor cortese, è per il trovatore provenzale un sentimento 
+                capace di nobilitare e affinare l'uomo. Nasce come un'esperienza ambivalente fondata 
+                sulla compresenza di desiderio erotico e tensione spirituale.</item>   
+            <label xml:id="poemi-c">Poemi Cavallereschi</label> 
+            <item>Un insieme di poemi che trattano tematiche inerenti alle gesta dei cavalieri medievali.</item>
+            <label xml:id="crsg">Ciclo Religioso del Saint-Graal</label>
+            <item>Un ciclo di romanzi in francese antico composti nella prima metà del XIII secolo (circa 1215-1235) 
+                e appartenenti al ciclo arturiano.</item>
+            <label xml:id="oil">Lingua d'Oïl</label>
+            <item>Il francese antico, diffuso nel nord della Francia medioevale.</item>
+            <label xml:id="oc">Lingua d'Oc</label>
+            <item>Il provenzale antico, diffuso nel sud della Francia medioevale.</item>
+            <label xml:id="lett-pro">Letteratura Provenzale</label>
+            <item>Si sviluppò nel sud della Francia con una produzione di liriche prevalentemente 
+                amorose in lingua d'oc e si svolse parallelamente alla produzione letteraria 
+                in lingua d'oïl che diede l'avvio alla letteratura francese.</item>
+            <label xml:id="lsps">Scuola Poetica Siciliana</label>
+            <item>Un movimento letterario sorto in Sicilia (e più in generale nell'Italia meridionale) 
+                all'incirca tra il 1220 e il 1266 presso la corte siciliana 
+                dell'imperatore Federico II di Svevia.</item>
+            <label xml:id="dsn">Dolce Stil Novo</label>
+            <item>Un'importante corrente poetica italiana sviluppatasi tra il 1280 e il 1310, dapprima a Bologna grazie al suo iniziatore, 
+                considerato Guido Guinizelli (morto nel 1276), poi spostatasi a Firenze dove si sviluppò maggiormente.</item>
+        </list>
     </standOff>
 
     <!-- Edizione digitale dell'articolo "L'amore cavalleresco" (volume 1, fascicolo 6)-->
@@ -103,7 +162,7 @@
                         <title level="a">
                             L'amore cavalleresco
                         </title>
-                        <author xml:id="aut-t">
+                        <author ref="#aut-t">
                             <persName>
                                 Tiresias
                             </persName>
@@ -199,7 +258,7 @@
                 <!-- Inizio di colonna: -->
                 <cb/>
                 <head rend="align(center) case(allcaps)" facs="#pag94-art">
-                    L'<term xml:id="ac">AMORE CAVALLERESCO</term>.
+                    L'<term ref="#ac">AMORE CAVALLERESCO</term>.
                 </head>
 
                 <p>
@@ -221,9 +280,9 @@
                     <lb break="no"/>bievolmente, senza contaminarsi di bassi appetiti, paghi
                     <lb/>abbastanza di un sospiro e di uno sguardo, paghi che i
                     <lb/>loro spiriti si confondessero, che le loro anime si abbrac<pc force="weak">-</pc>
-                    <lb break="no"/>ciassero. La <term>canzone del trovatore</term> sale alla donna amata
+                    <lb break="no"/>ciassero. La canzone del <term ref="#trov">trovatore</term> sale alla donna amata
                     <lb/>come una nuvoletta d’incenso che l’avvolge ma non la
-                    <lb/>contamina. L’umile <term>cantore</term> non chiede mai nulla che possa
+                    <lb/>contamina. L’umile cantore non chiede mai nulla che possa
                     <lb/>offendere la regina dei suoi pensieri; egli è pronto per lei
                     <lb/>ad ogni sacrifizio, e non chiede in ricambio che un po’ di
                     <lb/>pietà. Il suo amore è il principio supremo di ogni virtù,
@@ -236,9 +295,9 @@
                     <lb/>ultimo bacio che basta a tutti i suoi desideri:
                     <!-- Citazione poetica in occitano arcaico: -->
                     <foreign xml:lang="pro">
-                        <quote rend="align(center) font-size(small)">
-                                <l>Toz raos talenz m’ aemplira</l>
-                                <l>Ma donna, sol d’un bais m’aizis,</l>
+                        <quote rend="align(center) font-size(small)" source="#tr-c">
+                                <l>Toz mos talenz m’ aemplira</l>
+                                <l>Ma donna, sol d’un bais m’ aizis,</l>
                         </quote>
                     </foreign>
                     <lb/>come dice il povero <persName xml:id="tr-c">Cercalmont</persName>.
@@ -247,7 +306,7 @@
                 <p>
                     <milestone unit="paragraph-part" facs="#pag94-p2.1"/>
                     <lb/>Ma questo mondo quale ci sarebbe dato dalla canzone
-                    <lb/>dei trovatori è veramente esistito? Questo amore quale ci
+                    <lb/>dei <term ref="#trov">trovatori</term> è veramente esistito? Questo amore quale ci
                     <lb/>apparirebbe nella strofe cesellata dall’<ref target="#tr-c">artista di <placeName><region>Provenza</region></placeName></ref>
                     <lb/>è stato mai una realtà? Cerchiamo di scoprirlo. E prima
                     <lb/>di tutto domandiamoci quale sia il tipo, l'ideale del
@@ -261,7 +320,7 @@
                     <lb/>anche se commette stranezze e crudeltà. Ed accanto a lui sta
                     <lb/>la dama, regina delle feste e dei conviti, sospiro segreto del
                     <lb/>poeta, abbandonata nella solitudine della sua camera dal ma<pc force="weak">-</pc>
-                    <lb break="no"/>rito, che corre il mondo a folleggiare e donneare, e non si
+                    <lb break="no"/>rito, che corre il mondo a folleggiare e don<damage degree="medium">n</damage>eare, e non si
                     <lb/>cura di lei o la custodisce con gelosia tiranna.
                     <persName xml:id="tr-pv"><forename>Pietro</forename> <surname>Vidal</surname></persName>
                     <lb/>sorprende addormentata <persName>Adelaide di Barral</persName>, le si inginoc<pc force="weak">-</pc>
@@ -271,7 +330,7 @@
                     <lb/>stesso, a cui la moglie chiede piangendo di essere vendicata
                     <lb/>dell’oltraggio. Ma <persName xml:id="mb"><roleName>Messer</roleName> Barral</persName> prende la cosa in chiasso,
                     <lb/>e ridendo riprende la moglie che abbia levato tanto ru<pc force="weak">-</pc>
-                    <lb break="no"/>more di ciò che il <ref target="#tr-pv">trovatore</ref> avea fatto. Non sempre però
+                    <lb break="no"/>more di ciò che il <term ref="#trov"><ref target="#tr-pv">trovatore</ref></term> avea fatto. Non sempre però
                     <lb/>accadeva lo stesso, e ben se ne accorse il medesimo <persName ref="#tr-pv">Vidal</persName>,
                     <lb/>quando ebbe forata la lingua da un marito geloso dei suoi
                     <lb/>usurpati diritti; e se ne accorse anche meglio <persName>Guglielmo
@@ -279,9 +338,9 @@
                     in parte forse leggendaria, ed
                     <lb/>entrata poi nel dominio della novellistica popolare, ci fa ad
                     <lb/>ogni modo travedere una fierezza di costumi, che male si
-                    <lb/>accorda coi rosei sospiri dei trovatori, e ci solleva un lembo
+                    <lb/>accorda coi rosei sospiri dei <term ref="#trov">trovatori</term>, e ci solleva un lembo
                     <lb/>delle segrete ed intime relazioni di amore tra i cavalieri e
-                    <lb/>le dame. Nella società provenzale ci sono molto più i sintomi
+                    <lb/>le dame. Nella società pro<damage degree="medium">v</damage>enzale ci sono molto più i sintomi
                     <lb/>di una galanteria allegra e qualche volta sfrenata, di quello
                     <lb/>che non ci sia la riprova delle timide e platoniche aspira<pc force="weak">-</pc>
                     <lb break="no"/>zioni quali ci sarebbero rivelate dalla canzone del trova<pc force="weak">-</pc>
@@ -322,10 +381,10 @@
                     <lb/>altro che una finzione poetica, che non aveva riscontro nella
                     <lb/>realtà dei fatti; non erano che un pretesto per dar luogo
                     <lb/>ad una poesia che era di moda, e che sodisfaceva a certi
-                    <lb/>gusti estetici. Il trovatore <persName>Pietro di <placeName><settlement>Maensac</settlement></placeName></persName> canta la mo<pc force="weak">-</pc>
+                    <lb/>gusti estetici. Il <term ref="#trov">trovatore</term> <persName>Pietro di <placeName><settlement>Maensac</settlement></placeName></persName> canta la mo<pc force="weak">-</pc>
                     <lb break="no"/>glie di <persName>Bernardo de <placeName><settlement>Tierci</settlement></placeName></persName>, poi un bel giorno la rapisce,
                     <lb/>la conduce seco, la rinchiude nel suo castello; e la donna
-                    <lb/>si lascia rapire volentieri. <persName xml:id="tr-rb">Rambaldo di <placeName><settlement>Vaqueiras</settlement></placeName></persName>, trovan<pc force="weak">-</pc>
+                    <lb/>si lascia rapire volentieri. <persName>Rambaldo di <placeName><settlement>Vaqueiras</settlement></placeName></persName>, trovan<pc force="weak">-</pc>
                     <lb break="no"/>dosi alla corte del <roleName xml:id="marc-mf">marchese di <placeName><region>Monferrato</region></placeName></roleName>, canta in molte
                     <lb/>poesie la sorella di lui, <persName><addName>Donna</addName> Beatrice</persName>. Un giorno <q>« <foreign xml:lang="pro">la
                     <lb/><pc force="weak">»</pc> domna se colquet dormir ab el,</foreign> »</q> e il <roleName ref="#marc-mf">Marchese</roleName> li sor<pc force="weak">-</pc>
@@ -333,43 +392,43 @@
                     <lb/>li aveva visti, e se ne va. Qui veramente <hi rend="italics">noi roviniamo in
                     <lb/>basso loco</hi>, qui siamo davvero in cospetto di un realismo
                     <lb/>crudo. Dalle aeree vette dell’idealismo cavalleresco, ca<pc force="weak">-</pc>
-                    <lb break="no"/>schiamo nella realtà più palpabile della vita. Se <persName ref="#tr-rb">Rambaldo</persName>,
+                    <lb break="no"/>schiamo nella realtà più palpabile della vita. Se <persName>Rambaldo</persName>,
                     <lb/>uscendo dal dolce luogo dove lo trovò il <roleName ref="#marc-mf">Marchese</roleName>, poteva
                     <lb/>intuonare una canzone tutta spirante purità e candore, la
                     <lb/>rispondenza tra l’arte e la vita, tra il pensiero ed il fatto
                     <lb/>non ci è più in verità. E codesta rispondenza non c’è in
-                    <lb/>nulla. Nella sua canzone il trovatore è timido, umile, riguar<pc force="weak">-</pc>
-                    <lb break="no"/>doso, rassegnato. Ma come si accorda ciò col fatto di <persName ref="#tr-pv">Vidal</persName>,
+                    <lb/>nulla. Nella sua canzone il <term ref="#trov">trovatore</term> è timido, umile, riguar<pc force="weak">-</pc>
+                    <lb break="no"/>doso, rassegnato. Ma come si accorda ciò col fatto di <persName>Vidal</persName>,
                     <lb/>che per piacere alla sua dama la quale chiamavasi <addName>Lupa</addName>, si
                     <lb/>maschera da lupo, si fa dar la caccia dai pastori, e ritorna
                     <lb/>malconcio della persona al castello di lei, che fa grande
                     <lb/>allegrezza di tale follia? Dove se ne vanno la timidità e la
-                    <lb/>rassegnazione, quando <persName xml:id="tr-rm">Raimondo de <placeName><settlement>Miraval</settlement></placeName></persName> per ottenere
+                    <lb/>rassegnazione, quando <persName>Raimondo de <placeName><settlement>Miraval</settlement></placeName></persName> per ottenere
                     <lb/>l’amore di donna <persName>Adelaide di <placeName><settlement>Besançon</settlement></placeName></persName> corre al proprio
                     <lb/>castello e ne mette fuori la moglie? E dove se ne va an<pc force="weak">-</pc>
                     <lb break="no"/>cora la pudicizia di codeste dame, se vediamo la moglie di
-                    <lb/><persName ref="#tr-rm">Raimondo</persName> cedere lietamente il posto alla rivale, poiché ella
+                    <lb/><persName>Raimondo</persName> cedere lietamente il posto alla rivale, poiché ella
                     <lb/>amava un altro cavaliere? Codeste dame, di cui la canzone
                     <lb/>taceva sempre il nome, per non offenderle; codeste castel<pc force="weak">-</pc>
                     <lb break="no"/>lane, le quali sembra che non paghino mai altro che di uno
                     <lb/>sguardo il loro poeta, nel fatto erano gelose le une delle
                     <lb/>altre, e quando potevano, si rubavano anche, prosaicamen<pc force="weak">-</pc>
-                    <lb break="no"/>te, gli amanti. <persName xml:id="tr-sm">Savarico di <placeName><settlement>Mauleon</settlement></placeName></persName> 
-                    amava <persName xml:id="d-gb"><addName>donna</addName> Gugliel<pc force="weak">-</pc>
+                    <lb break="no"/>te, gli amanti. <persName>Savarico di <placeName><settlement>Mauleon</settlement></placeName></persName> 
+                    amava <persName><addName>donna</addName> Gugliel<pc force="weak">-</pc>
                     <lb break="no"/>ma di <placeName><settlement>Benaujatz</settlement></placeName></persName>; ma essa l'aveva fatto più volte correre
                     <lb/>dal <placeName><region>Poitou</region></placeName> in <placeName><region>Guascogna</region></placeName>, 
                     sempre lusingandolo di promesse,
-                    <lb/>e mai non concedendo quello che prometteva. <persName ref="#tr-sm"><roleName>Messer</roleName> Sa<pc force="weak">-</pc>
+                    <lb/>e mai non concedendo quello che prometteva. <persName><roleName>Messer</roleName> Sa<pc force="weak">-</pc>
                     <lb break="no"/>varico</persName> vide un’altra dama, 
                     la <roleName xml:id="d-cm">contessa di <placeName><settlement>Manchac</settlement></placeName></roleName>, se ne
                     <lb/>invaghì, e fu accettato per cavaliere. T<damage degree="low">o</damage>sto che lo seppe
-                    <lb/><persName ref="#d-gb"><addName>madonna</addName> Guglielma</persName>, mandò lettere e saluti, 
-                    a <persName ref="#tr-sm"><roleName>messer</roleName> Sava<pc force="weak">-</pc>
+                    <lb/><persName><addName>madonna</addName> Guglielma</persName>, mandò lettere e saluti, 
+                    a <persName><roleName>messer</roleName> Sava<pc force="weak">-</pc>
                     <lb break="no"/>rico</persName>, pregandolo che venisse a lei, il giorno stesso che aveva
                     <lb/>promesso di trovarsi colla <roleName ref="#d-cm">contessa</roleName>; che venisse di nasco<pc force="weak">-</pc>
                     <lb break="no"/>sto, e otterrebbe tutto quello che potesse desiderare. Le ri<pc force="weak">-</pc>
                     <lb break="no"/>flessioni sarebbero superflue, dove c’è tanta eloquenza di
-                    <lb/>fatti. Citiamo ancora un altro esempio. Tre trovatori ama<pc force="weak">-</pc>
+                    <lb/>fatti. Citiamo ancora un altro esempio. Tre <term ref="#trov">trovatori</term> ama<pc force="weak">-</pc>
                     <lb break="no"/>vano la stessa dama; tutti e tre, celatamente, la richiede<pc force="weak">-</pc>
                     <lb break="no"/>vano d’amore, senza che l'uno sapesse nulla dell’altro. Un
                     <lb/>giorno essi erano seduti presso di lei, uno da una parte,
@@ -384,7 +443,7 @@
                     <lb break="no"/>valleresco</term> radeva spesso colle ali la terra. Nè poteva es<pc force="weak">-</pc>
                     <lb break="no"/>sere diversamente. La vita stessa del poeta ce lo dice. Ve<pc force="weak">-</pc>
                     <lb break="no"/>dete quel <roleName>visconte di <placeName><settlement>Poitiers</settlement></placeName></roleName>, 
-                    il fiore de’trovatori: egli,
+                    il fiore de’<term ref="#trov">trovatori</term>: egli,
                     <lb/>dopo aver ripudiate due mogli, ama contemporaneamente
                     <!-- Inizio di colonna: -->
                     <cb/>
@@ -396,71 +455,71 @@
                     <lb/>cavalli; tiene pubblicamente con sè <persName>Malberga</persName>, moglie del
                     <lb/><roleName>visconte di <placeName><settlement>Castellaraldo</settlement></placeName></roleName>, ne fa incidere l'imagine sullo
                     <lb/>scudo, e per essa ripudia anche la terza moglie. E così è
-                    <lb/>di tutti: sia il trovatore un <roleName>visconte di <placeName><settlement>Poitiers</settlement></placeName></roleName>, o un po<pc force="weak">-</pc>
+                    <lb/>di tutti: sia il <term ref="#trov">trovatore</term> un <roleName>visconte di <placeName><settlement>Poitiers</settlement></placeName></roleName>, o un po<pc force="weak">-</pc>
                     <lb break="no"/>vero servo, la sua esistenza è tutta nell’amore, nel giuoco,
                     <lb/>nella prodigalità, nel sollazzo: il <roleName>Delfino d’<placeName><region>Auvergne</region></placeName></roleName> con<pc force="weak">-</pc>
                     <lb break="no"/>suma in doni più della metà della sua contea; <persName><forename>Guglielmo</forename>
                     <lb/><surname>Faidit</surname></persName> si mangia tutto il suo al giuoco dei dadi; <hi rend="italics">l'arte di
                     <lb/>trovare</hi> diventa una specie di patrimonio: due fratelli ave<pc force="weak">-</pc>
-                    <lb break="no"/>vano un castello di poca rendita, ed erano trovatori am<pc force="weak">-</pc>
+                    <lb break="no"/>vano un castello di poca rendita, ed erano <term ref="#trov">trovatori</term> am<pc force="weak">-</pc>
                     <lb break="no"/>bedue. Fecero patto che l’uno si tenesse il castello, e l’al<pc force="weak">-</pc>
                     <lb break="no"/>tro l'arte sua.
                 </p>
 
                 <p facs="#pag95-p3">
-                    <lb/>Se è vero che i <term>Poemi cavallereschi</term> rappresentano og<pc force="weak">-</pc>
+                    <lb/>Se è vero che i <term ref="#poemi-c">Poemi cavallereschi</term> rappresentano og<pc force="weak">-</pc>
                     <lb break="no"/>gettivamente la società feudale, domandiamo anche ad essi
                     <lb/>qualche notizia dell’amore. Ecco una gentile figura di donna,
                     <lb/><persName xml:id="iso">Iseult, <addName>Isotta la bionda</addName></persName> 
                     (il <date from="476" to="1492">Medio Evo</date> non ammetteva che ci
                     <lb/>fossero belle donne, le quali non fossero bionde), la dama
                     <lb/>avvenente, il fiore della cortesia e della gentilezza, figlia
-                    <lb/>di re, chiesta in isposa da un altro re, <persName xml:id="re-mar">March di <placeName><region>Cor<pc force="weak">-</pc>
+                    <lb/>di re, chiesta in isposa da un altro re, <persName>March di <placeName><region>Cor<pc force="weak">-</pc>
                     <lb break="no"/>nouailles</region></placeName></persName>, 
-                    il quale manda il proprio nipote, <persName xml:id="tris">Tristano</persName>, a
+                    il quale manda il proprio nipote, <persName>Tristano</persName>, a
                     <lb/>prendere la fidanzata, perchè l’accompagni, la guardi, la
                     <lb/>custodisca. Era questo veramente il caso di una devozione
-                    <lb/>tutta platonica. Ma nella lunga traversata per mare <persName ref="#tris">Tri<pc force="weak">-</pc>
-                    <lb break="no"/>stano</persName> ed <persName ref="#iso">Isotta</persName> bevono il contenuto di un filtro magico de<pc force="weak">-</pc>
+                    <lb/>tu<damage degree="low">t</damage>ta platonica. Ma nella lunga traversata per mare <persName>Tri<pc force="weak">-</pc>
+                    <lb break="no"/>stano</persName> ed <persName>Isotta</persName> bevono il contenuto di un filtro magico de<pc force="weak">-</pc>
                     <lb/>stinato al marito, e si amano irresistibilmente. La <ref target="#iso">bionda
                     <lb/>fanciulla</ref> lascia sulle onde il fiore del suo pulzellaggio, e
-                    <lb/>nonostante sposa poi il suo <persName ref="#re-mar"><roleName>re</roleName> March</persName>. Non mi è lecito
+                    <lb/>nonostante sposa poi il suo <persName><roleName>re</roleName> March</persName>. Non mi è lecito
                     <lb/>raccontare gli inganni crudeli della bella regina e del suo
                     <lb/>cavaliere: gli aiuti prestati loro da una damigella e da
                     <lb/>uno scudiere. Ma certo siffatto tipo di donna, di dama, di
-                    <lb/>regina, presentato al medioevo feudale, e le cui memorie si
+                    <lb/>regina, presentato al <date from="476" to="1492">medioevo</date> feudale, e le cui memorie si
                     <lb/>ripercuotevano nelle sale dei turriti castelli, al suono del
-                    <lb/>liuto del trovatore, certo non poteva essere in disaccordo
+                    <lb/>liuto del <term ref="#trov">trovatore</term>, certo non poteva essere in disaccordo
                     <lb/>coi costumi del tempo. L’<term ref="#ac">amore cavalleresco</term> quale ci è dato
                     <lb/>dalla canzone trovadorica avrebbe dovuto bendarsi gli occhi
                     <lb/>dinanzi a simili fatti, se codesta canzone fosse stata qual<pc force="weak">-</pc>
-                    <lb break="no"/>che cosa di più che un esercizio poetico. Nè <persName ref="#iso">Isotta</persName> è un’ec<pc force="weak">-</pc>
-                    <lb break="no"/>cezione. <persName xml:id="gin">Ginevra</persName>, la moglie del <persName><roleName>re</roleName> Artù</persName>, fondatore dell’or<pc force="weak">-</pc>
-                    <lb break="no"/>dine di cavalleria, è l'amante di <persName xml:id="lan">Lancillotto</persName>, si lascia sor<pc force="weak">-</pc>
+                    <lb break="no"/>che cosa di più che un esercizio poetico. Nè <persName>Isotta</persName> è un’ec<pc force="weak">-</pc>
+                    <lb break="no"/>cezione. <persName>Ginevra</persName>, la moglie del <persName><roleName>re</roleName> Artù</persName>, fondatore dell’or<pc force="weak">-</pc>
+                    <lb break="no"/>dine di cavalleria, è l'amante di <persName>Lancillotto</persName>, si lascia sor<pc force="weak">-</pc>
                     <lb break="no"/>prendere con lui, con lui fugge: tutto un dramma avventuroso
                     <lb/>si svolge intorno a questi due personaggi, che pure ci rap<pc force="weak">-</pc>
                     <lb break="no"/>presentano il tipo perfetto della dama e del cavaliere.
                 </p>
 
                 <p facs="#pag95-p4">
-                    <lb/>E non basta ancora. Quello che ho detto di <persName ref="#tris">Tristano</persName> e
-                    <lb/>di <persName ref="#iso">Isotta</persName>, di <persName ref="#lan">Lancillotto</persName> 
-                    e di <persName ref="#gin">Ginevra</persName>, dovrei pur dirlo di
+                    <lb/>E non basta ancora. Quello che ho detto di <persName>Tristano</persName> e
+                    <lb/>di <persName>Isotta</persName>, di <persName>Lancillotto</persName> 
+                    e di <persName>Ginevra</persName>, dovrei pur dirlo di
                     <lb/><persName>Yvain</persName> che ama allo stesso modo la <roleName>Dama de <placeName>Brecilien</placeName></roleName>, do<pc force="weak">-</pc>
                     <lb break="no"/>vrei dirlo di <persName>Erec</persName> e <persName>Enide</persName>, anzi dello stesso <persName>Perceval <addName>le
-                    <lb/>Gallois</addName></persName>, che sebbene entri nel <term>ciclo religioso del <name type="object">Saint-Graal</name></term>,
+                    <lb/>Gallois</addName></persName>, che sebbene entri nel <term ref="#crsg">ciclo religioso del <name type="object">Saint-Graal</name></term>,
                     <lb/>pure è servo d’amore, e non certo secondo le teorie cavalleresche.
                 </p>
 
                 <p facs="#pag95-p5">
                     <lb/>Alla stessa conclusione arriveremmo, se esaminassimo i
-                    <lb/><term>Romanzi d’avventura</term>. In uno di essi, dei più gentili e dei
-                    <lb/>più diffusi nel medioevo, un giovane nascosto in un cane<pc force="weak">-</pc>
+                    <lb/>Romanzi d’avventura. In uno di essi, dei più gentili e dei
+                    <lb/>più diffusi nel <date from="476" to="1492">medioevo</date>, un giovane nascosto in un cane<pc force="weak">-</pc>
                     <lb break="no"/>stro di fiori riesce a penetrare nella camera della fanciulla
                     <lb/>che amava, e la mattina dopo i due amanti sono sorpresi
                     <lb/>abbracciati e addormentati insieme. Anche di qui mi pare
                     <lb/>che sieno volati via i sospiri platonici dell’<term ref="#ac">amore cavalle<pc force="weak">-</pc>
-                    <lb break="no"/>resco</term>. Esso nella canzone del trovatore non è altro che un
+                    <lb break="no"/>resco</term>. Esso nella canzone del <term ref="#trov">trovatore</term> non è altro che un
                     <lb/>giuoco di spirito, è una teoria, è una scienza. Ma appena
                     <lb/>il cuore comincia a battere, l’amore cessa di essere caval<pc force="weak">-</pc>
                     <lb break="no"/>leresco e ritorna umano, esce dal campo dei sogni e rientra
@@ -550,10 +609,10 @@
                     LETTERATURA.
                 </head>
                 <bibl xml:id="AG-PI" facs="#pag101-bibl">
-                    <lb/><author rend="case(allcaps)" xml:id="AG"><persName><forename>ARTURO</forename> <surname>GRAF</surname></persName></author>.
+                    <lb/><author rend="case(allcaps)" ref="#AG"><persName><forename>ARTURO</forename> <surname>GRAF</surname></persName></author>.
                     <title rend="italics"><placeName><region>Provenza</region></placeName> e <placeName><country>Italia</country></placeName></title>,
                     <title type="desc">prolusione a un corso di
-                    <lb/>letteratura provenzale, letta nella <orgName>R. Università di <placeName><settlement>To<pc force="weak">-</pc>
+                    <lb/>letteratura provenzale, letta nella <orgName><choice><abbr>R.</abbr><expan resp="#DDM">Regia</expan></choice> Università di <placeName><settlement>To<pc force="weak">-</pc>
                     <lb break="no"/>rino</settlement></placeName></orgName> addì <date>29 novembre 1877</date></title>. — 
                     <pubPlace><placeName><settlement>Torino</settlement></placeName></pubPlace>, <date>1877</date>.
                 </bibl>
@@ -568,21 +627,21 @@
                     <lb break="no"/>vato di opere ben conosciute. Anzi, non solo non ci sono
                     <lb/>cose nuove, ma ci sono alcune inesattezze che ci permet<pc force="weak">-</pc>
                     <lb break="no"/>teremo di additare all’<ref target="#AG">egregio insegnante</ref>. 
-                    Dice il <persName ref="#AG"><roleName>profes<pc force="weak">-</pc>
+                    Dice il <persName><roleName>profes<pc force="weak">-</pc>
                     <lb break="no"/>sore</roleName> <surname>Graf</surname></persName> che <quote source="#AG-PI">
-                    « le due poesie della lingua d’oïl e della lin<pc force="weak">-</pc>
-                    <lb break="no"/><pc force="weak">»</pc> gua d’oc ebbero diversa tra loro l’origine, la forma, per
+                    « le due poesie della <term ref="#oil">lingua d’oïl</term> e della <term ref="#oc">lin<pc force="weak">-</pc>
+                    <lb break="no"/><pc force="weak">»</pc> gua d’oc</term> ebbero diversa tra loro l’origine, la forma, per
                     <lb/><pc force="weak">»</pc> buona parte anche la materia, ma eguali in tutto i de<pc force="weak">-</pc>
                     <lb break="no"/><pc force="weak">»</pc> stini. »</quote> A noi parrebbe invece che i loro destini fossero stati
-                    <lb/>interamente opposti, poiché la letteratura provenzale morì
+                    <lb/>interamente opposti, poiché la <term ref="#lett-pro">letteratura provenzale</term> morì
                     <lb/>col <date from="1201" to="1300">secolo decimoterzo</date>, o tutt’al più col <date from="1301" to="1400">decimoquarto</date>; men<pc force="weak">-</pc>
-                    <lb break="no"/>tre la letteratura, la poesia francese, la discendente legit<pc force="weak">-</pc>
-                    <lb break="no"/>tima della poesia della lingua d’oïl, vive anche oggi. Nep<pc force="weak">-</pc>
+                    <lb break="no"/>tre la letteratura, la poesia francese, la discendente  legit<pc force="weak">-</pc>
+                    <lb break="no"/>tima della poesia della <term ref="#oil">lingua d’oïl</term>, vive anche oggi. Nep<pc force="weak">-</pc>
                     <lb break="no"/>pure può dirsi che <quote source="#AG-PI">« tutt’e due queste poesie ritraggono il
                     <lb/><pc force="weak">»</pc> mondo feudale e cavalleresco, ma ciascuna ne ritrae un
                     <lb/><pc force="weak">»</pc> particolare aspetto, l’una (la francese) ne ritrae l’aspetto
                     <lb/><pc force="weak">»</pc> guerriero;.... l’altra (la provenzale) ne ritrae l’aspetto ga<pc force="weak">-</pc>
-                    <lb break="no"/><pc force="weak">»</pc> lante. »</quote> Nella poesia provenzale non tutto è amore e
+                    <lb break="no"/><pc force="weak">»</pc> lante. »</quote> Nella <term ref="#lett-pro">poesia provenzale</term> non tutto è amore e
                     <lb/>galanteria: abbiamo ancora i <term xml:lang="pro" rend="italics">sirventes</term>, che spesso sono poe<pc force="weak">-</pc>
                     <lb break="no"/>sie guerriere, e abbiamo i <term xml:lang="pro" rend="italics">plarih</term>, che spesso sono poesie po<pc force="weak">-</pc>
                     <lb break="no"/>litiche d’alta importanza. Nella poesia francese per converso
@@ -590,11 +649,11 @@
                     i <term xml:lang="fr" rend="italics">dits</term>, i <term xml:lang="fr" rend="italics">fa<pc force="weak">-</pc>
                     <lb break="no"/>bliaux</term>, i <term xml:lang="fr" rend="italics">chansonniers</term>, 
                     le <term xml:lang="fr" rend="italics">pastourelles</term>. Non è esatto il dire
-                    <lb/>che i trovatori accorrevano alla corte dei <surname>Malaspina</surname> <quote source="#AG-PI">« nella
+                    <lb/>che i <term ref="#trov">trovatori</term> accorrevano alla corte dei <surname>Malaspina</surname> <quote source="#AG-PI">« nella
                     <lb/><geogName>valle della Magra</geogName>. »</quote> Le memorie che ci rimangono accennano
-                    <lb/>piuttosto che i trovatori frequentassero le corti dei <surname>Mala<pc force="weak">-</pc>
+                    <lb/>piuttosto che i <term ref="#trov">trovatori</term> frequentassero le corti dei <surname>Mala<pc force="weak">-</pc>
                     <lb break="no"/>spina</surname> del <placeName><region>Genovesato</region></placeName> e del <placeName><region>Tortonese</region></placeName>. Per sapere che molti
-                    <lb/>trovatori vissero alla corte di <persName>Federigo II</persName> non devesi dire:
+                    <lb/><term ref="#trov">trovatori</term> vissero alla corte di <persName>Federigo II</persName> non devesi dire:
                     <lb/><quote source="#AG-PI">« se non mentisce il ricordo che se ne trova fatto nelle <title rend="italics">Cento
                     <lb/><pc force="weak">»</pc> Novelle Antiche</title>. »</quote> Abbiamo delle testimonianze sicure del
                     <lb/>fatto, al di fuori di ciò che dice il <title>Novellino</title>. Nominando
@@ -610,11 +669,11 @@
                     <lb/>provenzale, non può dirsi che fosse autonoma. Dire che la
                     <lb/>poesia del <persName><surname>Guinicelli</surname></persName>, del <persName><surname>Cavalcanti</surname></persName> 
                     e di <persName>Cino da <placeName><settlement>Pistoia</settlement></placeName></persName> è
-                    <lb/><q>« in sostanza »</q> la stessa poesia di quella dei trovatori, è
+                    <lb/><q>« in sostanza »</q> la stessa poesia di quella dei <term ref="#trov">trovatori</term>, è
                     <lb/>dir cosa che nessuno studioso della nostra antica lirica po<pc force="weak">-</pc>
                     <lb break="no"/>trà ammettere. E così pure parrà a tutti un giudizio poco
                     <lb/>serio il dire che <quote source="#AG-PI">« <persName>Dante</persName> e il <persName><surname>Petrarca</surname></persName> levarono alla maggior
-                    <lb/><pc force="weak">»</pc> perfezione, di cui ell’era capace, la poesia dei trovatori,
+                    <lb/><pc force="weak">»</pc> perfezione, di cui ell’era capace, la poesia dei <term ref="#trov">trovatori</term>,
                     <lb/><pc force="weak">»</pc> l’uno nella <title rend="italics">Vita Nuova</title>, 
                     l’altro nel <title rend="italics">Canzoniere</title>. »</quote> Ridurre
                     <lb/><persName>Dante</persName> e il <persName><surname>Petrarca</surname></persName> 
@@ -624,7 +683,7 @@
                     <lb/>che ha detto, quando soggiunge: <quote source="#AG-PI">« nel <title rend="italics">Canzoniere</title> due mondi
                     <lb/><pc force="weak">»</pc> s’incontrano, il medioevale e l'antico, e dalla loro fusione
                     <lb/><pc force="weak">»</pc> vien fuori un mondo nuovo, pien di fermento e di vita. »</quote> Ma
-                    <lb/>dunque che cosa resta dei trovatori nel <title rend="italics">Canzoniere</title>? Ancora,
+                    <lb/>dunque che cosa resta dei <term ref="#trov">trovatori</term> nel <title rend="italics">Canzoniere</title>? Ancora,
                     <lb/>l’asserire così genericamente che <quote source="#AG-PI">« la prima 
                     l<damage degree="low">i</damage>ri<damage degree="low">c</damage>a nostra
                     <lb/><pc force="weak">»</pc> fu in principio straniera, »</quote> è erroneo. Bisognava distin<pc force="weak">-</pc>
@@ -634,7 +693,7 @@
                     <milestone unit="paragraph-part" facs="#pag101-p1.2"/>
                     <lb break="no"/>trasto di <persName>Ciullo d’Alcamo</persName>? Fu straniera la lirica della scuola
                     <lb/>toscana? Questi pochi appunti basteranno a dimostrare che
-                    <lb/>la <ref target="#AG-PI">Prolusione</ref> dell’<persName ref="#AG"><roleName>egregio professore</roleName> <surname>Graf</surname></persName> poteva essere
+                    <lb/>la <ref target="#AG-PI">Prolusione</ref> dell’<persName><roleName>egregio professore</roleName> <surname>Graf</surname></persName> poteva essere
                     <lb/>almeno più esatta, anche ripetendo o giudicando fatti
                     <lb/>già noti.
                 </p>
@@ -723,9 +782,9 @@
                     SCIENZE NATURALI.
                 </head>
                 <bibl xml:id="AR-HE" facs="#pag104-bibl">
-                    <lb/><author rend="case(allcaps)" xml:id="AR"><persName>A. <surname>RIANT</surname></persName></author>.
+                    <lb/><author rend="case(allcaps)" ref="#AR"><persName><choice><abbr>A.</abbr><expan resp="#DDM">Aimé</expan></choice> <surname>RIANT</surname></persName></author>.
                     <title rend="italics" xml:lang="fr">L’hygiène et l’éducation dans les internats, lycées,
-                    <lb/>collèges etc.</title>. — 
+                    <lb/>collèges etc.</title> — 
                     <pubPlace xml:lang="fr"><placeName><settlement>Paris</settlement></placeName></pubPlace>, <date>1877</date>.
                 </bibl>
 
@@ -739,7 +798,7 @@
                 </p>
 
                 <p facs="#pag104-p2">
-                    <lb/>Il <persName ref="#AR"><roleName><choice><abbr>dott.</abbr><expan resp="#DDM">dottore</expan></choice></roleName> <surname>Riant</surname></persName> 
+                    <lb/>Il <persName><roleName><choice><abbr>dott.</abbr><expan resp="#DDM">dottore</expan></choice></roleName> <surname>Riant</surname></persName> 
                     era già noto in Francia per molti suoi libri
                     <lb/>d’igiene popolare e più specialmente per un ottimo volume
                     <lb/>sull’igiene delle scuole (<title xml:lang="fr" rend="italics">Hygiène scolaire</title>), che ebbe già due
@@ -754,7 +813,7 @@
                     <lb break="no"/>l’igiene fisica, dell’igiene intellettuale e dell’igiene morale dei
                     <lb/>collegi, facendosi volta a volta architetto, cuoco, maestro di
                     <lb/>ginnastica, educatore, amministratore. I problemi peda<pc force="weak">-</pc>
-                    <lb break="no"/>gogici son tutti molto complessi, e la loro soluzione riesce
+                    <lb break="no"/>gogici son tutti molto complessi, e la loro so<damage degree="low">l</damage>uzione riesce
                     <lb/>quasi sempre molto incompleta; perchè a risolverli si ado<pc force="weak">-</pc>
                     <lb break="no"/>perano i maestri o i medici da soli, senza darsi scambie<pc force="weak">-</pc>
                     <lb break="no"/>volmente la mano. È per questo che vediamo tante volte
@@ -769,7 +828,7 @@
 
                 <p>
                     <milestone unit="paragraph-part" facs="#pag104-p3.1"/>
-                    <lb/>Il <persName ref="#AR"><roleName>dottor</roleName> <surname>Riant</surname></persName> 
+                    <lb/>Il <persName><roleName>dottor</roleName> <surname>Riant</surname></persName> 
                     rammenta alla <placeName><country>Francia</country></placeName>, che l’ultima
                     <!-- Inizio colonna: -->
                     <cb/>
@@ -785,7 +844,7 @@
                 </p>
 
                 <p facs="#pag104-p4">
-                    <lb/>Il <persName ref="#AR"><roleName><choice><abbr>dott.</abbr><expan resp="#DDM">dottore</expan></choice></roleName> <surname>Riant</surname></persName>
+                    <lb/>Il <persName><roleName><choice><abbr>dott.</abbr><expan resp="#DDM">dottore</expan></choice></roleName> <surname>Riant</surname></persName>
                     critica giustamente le ore eccessive di stu<pc force="weak">-</pc>
                     <lb break="no"/>dio, la ginnastica metodica e pedantesca sostituita anche
                     <lb/>per i fanciulli alle libere espansioni del giuoco, combatte
@@ -834,7 +893,7 @@
                         <title level="a">
                             La scuola poetica siciliana
                         </title>
-                        <author xml:id="aut-nc">
+                        <author ref="#aut-nc">
                             <persName>
                                 <forename>Napoleone</forename>
                                 <surname>Caix</surname>
@@ -959,11 +1018,11 @@
                 <!-- Inizio di colonna: -->
                 <cb/>
                 <head rend="align(center) case(allcaps)" facs="#pag357-art">
-                    <term xml:id="lsps">LA SCUOLA POETICA SICILIANA.</term> 
+                    <term ref="#lsps">LA SCUOLA POETICA SICILIANA.</term> 
                     <note place="bottom" type="bibl" n="*">
                         <bibl xml:id="ddj-ag">
                             <lb/><title xml:lang="de" rend="italics">Die sicilianische Dichterschule des dreizehnten Jahrhunderts</title> von
-                            <lb/><author rend="case(allcaps)" xml:id="de-ag"><persName><forename>ADOLF</forename> <surname>GASPARY</surname></persName></author>.
+                            <lb/><author rend="case(allcaps)" ref="#de-ag"><persName><forename>ADOLF</forename> <surname>GASPARY</surname></persName></author>.
                             <pubPlace>Berlin</pubPlace> <date>1878</date>.
                         </bibl>
                     </note>
@@ -982,10 +1041,10 @@
                     <lb/>poetica, i veri rappresentanti della prima scuola, di qualun<pc force="weak">-</pc>
                     <lb break="no"/>que parte d’<placeName><country>Italia</country></placeName> poi fossero. Quella denominazione doveva
                     <lb/>dunque avere un valore cronologico, quantunque forse non
-                    <lb/>bene determinato, ma non geografico. Il <persName ref="#de-ag"><surname>Gaspary</surname></persName>, autore di
+                    <lb/>bene determinato, ma non geografico. Il <persName><surname>Gaspary</surname></persName>, autore di
                     <lb/>un <ref target="#ddj-ag">nuovo lavoro</ref> sulla <term ref="#lsps">scuola sicula</term>, vi annetterebbe anche
                     <lb/>un significato letterario, intendendo per <q>« siciliani »</q> tutti i
-                    <lb/>poeti anteriori al <term rend="italics">dolce stil novo</term>, quindi anche <persName>Guittone</persName> e
+                    <lb/>poeti anteriori al <term rend="italics" ref="#dsn">dolce stil novo</term>, quindi anche <persName>Guittone</persName> e
                     <lb/>la sua scuola. Ma non ci par verosimile che nell’uso, a cui
                     <lb/><persName>Dante</persName> dice attenersi, quella denominazione potesse riferirsi
                     <lb/>ad una precisa distinzione delle due scuole quale è quella
@@ -994,23 +1053,23 @@
                     e che si chiamas<pc force="weak">-</pc>
                     <lb break="no"/>sero <q>« siciliani »</q> poeti tanto noti e vicini come <persName>Guittone</persName> e
                     <lb/>i suoi imitatori. Comunque ciò sia, è certo che anche let<pc force="weak">-</pc>
-                    <lb break="no"/>terariamente, e il <persName ref="#de-ag"><surname>Gaspary</surname></persName> lo riconosce, v’hanno tra i primi
+                    <lb break="no"/>terariamente, e il <persName><surname>Gaspary</surname></persName> lo riconosce, v’hanno tra i primi
                     <lb/>poeti dell’epoca sveva e i più antichi toscani troppo note<pc force="weak">-</pc>
                     <lb break="no"/>voli differenze perchè possano andar confusi insieme. I primi
                     <lb/>sono ancora tutti chiusi nel formulario provenzale, e non
                     <lb/>differiscono dai loro modelli che per la lingua impacciata e
-                    <lb/>pesante ehe ne mette maggiormente a nudo l’estrema po<pc force="weak">-</pc>
+                    <lb/>pesante <damage degree="medium">c</damage>he ne mette maggiormente a nudo l’estrema po<pc force="weak">-</pc>
                     <lb break="no"/>vertà e monotonia del contenuto, reso nei Provenzali più
                     <lb/>tollerabile dalla grazia e sveltezza della forma. E se quei
                     <lb/>poeti non scrissero essi pure provenzale, come i loro con<pc force="weak">-</pc>
-                    <lb break="no"/>temporanei dell’alta <placeName><country>Italia</country></placeName>, devesi, almeno in parte, alla mag<pc force="weak">-</pc>
+                    <lb break="no"/>temporanei dell’<placeName>alta <country>Italia</country></placeName>, devesi, almeno in parte, alla mag<pc force="weak">-</pc>
                     <lb break="no"/>giore differenza che rispetto al provenzale presentavano i
                     <lb/>dialetti meridionali, che avrebbe loro impedito l’essere intesi
                     <lb/>dalle loro donne, per le quali principalmente scrivevano,
                     <lb/>poiché, come nota <persName>Dante</persName>, <quote>« lo primo che cominciò a dire
                     <lb/>siccome poeta volgare si mosse però che volle fare inten<pc force="weak">-</pc>
                     <lb break="no"/>dere le sue parole a donna alla quale era malagevole ad
-                    <lb/>intendere i versi latini.... conciossiacosaché cotai modo di
+                    <lb/>intendere i versi latini..... conciossiacosaché cotal modo di
                     <lb/>parlare fosse dal principio trovato per dire d’amore. »</quote> Del
                     <lb/>resto nulla di mutato nei pensieri e nelle formule consa<pc force="weak">-</pc>
                     <lb break="no"/>crate della canzone amorosa. Le stesse sottigliezze e arguzie
@@ -1044,7 +1103,7 @@
                     <lb break="no"/>glio piacere, e va discorrendo. Intere canzoni sono traduzioni
                     <lb/>letterali o quasi. Il <persName>Diez</persName> e il <persName>Nannucci</persName> mostrarono già come
                     <lb/>un sonetto di <persName><roleName>Ser</roleName> Polo</persName> non fosse che una libera traduzione
-                    <lb/>d’una strofa di <persName>Perdigon</persName>, e il <persName ref="#de-ag"><surname>Gaspary</surname></persName> cita ora altri esempi
+                    <lb/>d’una strofa di <persName>Perdigon</persName>, e il <persName><surname>Gaspary</surname></persName> cita ora altri esempi
                     <lb/>d’imitazioni quasi letterali. Che se si aggiunge che questi
                     <lb/>poeti non uscirono quasi mai dai soggetti amorosi, nè mai
                     <lb/>tentarono argomenti che li richiamassero alla realtà, non
@@ -1063,7 +1122,7 @@
                     <lb/>e lasciano volentieri la chimera amorosa per tentare la can<pc force="weak">-</pc>
                     <lb break="no"/>zone civile. La più bella canzone di <persName>Guittone</persName> è <title>il Serventese
                     <lb/>contro i Fiorentini dopo la battaglia di <placeName><settlement>Monteaperti</settlement></placeName></title>. Canzoni
-                    <lb/>politiche scrissero i Pisani <persName>Pannuccio</persName>, <persName>Lotto</persName> e <persName>Bacciarone</persName>,
+                    <lb/>politiche scrissero i Pisani <persName><damage degree="medium">P</damage>annuccio</persName>, <persName>Lotto</persName> e <persName>Bacciarone</persName>,
                     <lb/>e abbiamo sonetti di <persName>Monte Andrea</persName>, di <persName>Orlanduccio Orafo</persName>,
                     <lb/>di <persName>Palamidesse</persName>, di <persName><roleName>Ser</roleName> Cione</persName>, che, come già mostrò il <persName>Cher<pc force="weak">-</pc>
                     <lb break="no"/>rier</persName>, si riferiscono a <persName>Corradino</persName> e agli avvenimenti contem<pc force="weak">-</pc>
@@ -1082,7 +1141,7 @@
                     <lb/>a mettere in luce. Certo le poche date sicure sui poeti bo<pc force="weak">-</pc>
                     <lb break="no"/>lognesi accennano ad epoca alquanto posteriore a quella di
                     <lb/><persName>Guittone</persName>; ma il concluderne, come fa il 
-                    <persName ref="#de-ag"><surname>Gaspary</surname></persName>, l’anterio<pc force="weak">-</pc>
+                    <persName><surname>Gaspary</surname></persName>, l’anterio<pc force="weak">-</pc>
                     <lb break="no"/>rità della scuola aretina sulla bolognese, è giudizio affret<pc force="weak">-</pc>
                     <lb break="no"/>tato. Parimenti il dire che <soCalled>“la lingua dei poeti bolognesi
                     <lb/>accusa influenza toscana”</soCalled> non è argomento serio, poiché di
@@ -1107,14 +1166,14 @@
                 </p>
                 <p>
                     <milestone unit="paragraph-part" facs="#pag357-p3.1"/>
-                    <lb/>Rispetto ai generi più popolari, o sopratutto intorno al
+                    <lb/>Rispetto ai generi più popolari, <damage degree="high"><unclear>e</unclear></damage> sopratutto intorno al
                     <lb/>celebre Contrasto <q>« <title rend="italics">Rosa fresca aulentissima</title>, »</q> 
-                    il <persName ref="#de-ag"><surname>Gaspary</surname></persName>
+                    il <persName><surname>Gaspary</surname></persName>
                     <lb/>propugna un’opinione che può dirsi di conciliazione. Quella
                     <lb/>poesia non sarebbe per lui un vero canto popolare, molto
                     <lb/>meno poi un canto amebeo siciliano (anzi il 
-                    <persName ref="#de-ag"><surname>Gaspary</surname></persName> pensa
-                    <lb/>che il nome di <persName>Ciullo d’Alcamo</persName> « debba ben tosto scom<pc force="weak">-</pc>
+                    <persName><surname>Gaspary</surname></persName> pensa
+                    <lb/>che il nome di <persName rend="italics">Ciullo d’Alcamo</persName> « debba ben tosto scom<pc force="weak">-</pc>
                     <lb break="no"/>parire dalla storia letteraria 
                     d’<placeName><country>Italia</country></placeName> »), nè il lavoro di
                     <!-- Inizio di pagina 358: -->
@@ -1136,7 +1195,7 @@
                     <lb/>un poeta d’arte, ma l’opera di un giullare tanto o quanto
                     <lb/>imbevuto dei precetti e dei luoghi comuni della poesia cor<pc force="weak">-</pc>
                     <lb break="no"/>tigiana, un prodotto insomma della poesia <hi rend="italics">popolaresca</hi> o
-                    <lb/><hi rend="italics">giullaresca</hi>. Ma se la distinzione tra <hi rend="italics">giullare</hi> e <hi rend="italics">trovatore</hi> non
+                    <lb/><hi rend="italics">giullaresca</hi>. Ma se la distinzione tra <hi rend="italics">giullare</hi> e <term ref="#trov"><hi rend="italics">trovatore</hi></term> non
                     <lb/>fu sempre ben chiara neppure in <placeName><region>Provenza</region></placeName>, con quali cri<pc force="weak">-</pc>
                     <lb break="no"/>teri si potranno stabilire codeste differenze di più e di meno
                     <lb/>per un poeta italiano? Si dirà che l’autore del Contrasto è
@@ -1159,7 +1218,7 @@
                 </p>
                 <p facs="#pag358-p4">
                     <lb/>Il medesimo è da notare per le Romanze. Anche qui il
-                    <lb/><persName ref="#de-ag"><surname>Gaspary</surname></persName> piglia la via di mezzo; 
+                    <lb/><persName><surname>Gaspary</surname></persName> piglia la via di mezzo; 
                     riconosce un’influenza fran<pc force="weak">-</pc>
                     <lb break="no"/>cese ma la vuole limitata alla forma. Ma la questione non
                     <lb/>è sulla maggiore o minore libertà con cui il poeta ha proce<pc force="weak">-</pc>
@@ -1180,7 +1239,7 @@
                     </quote>
                     <lb/>Come supporre che l’ultimo, scrivendo la sua romanza, non
                     <lb/>avesse in mente una consimile romanza francese? Quando il
-                    <lb/><persName ref="#de-ag"><surname>Gaspary</surname></persName> dice che non si può 
+                    <lb/><persName><surname>Gaspary</surname></persName> dice che non si può 
                     negare ai poeti italiani una
                     <lb/>certa originalità <quote>« effetto dell’influenza del sentimento po<pc force="weak">-</pc>
                     <lb break="no"/>polare, »</quote> non dice una novità. Anche noi scrivevamo: <quote>« Che in
@@ -1205,7 +1264,7 @@
                     <lb/><title><choice><abbr rend="italics">Volg. Eloq.</abbr><expan resp="#DDM">De Vulgari Eloquentia</expan></choice></title>, 
                     sulla determinazione degli elementi meridionali
                     <lb/>passati nella lingua comune, ecc., il 
-                    <persName ref="#de-ag"><surname>Gaspary</surname></persName> ha veduto e
+                    <persName><surname>Gaspary</surname></persName> ha veduto e
                     <lb/>studiato tutto quanto è stato scritto d’importante, e saputo
                     <lb/>vagliare, appurare e mettere nella loro luce i risultati finora
                     <lb/>conseguiti. Egli non è meno di noi incredulo alla teoria,
@@ -1237,7 +1296,7 @@
                     <lb break="no"/>dazione sicula dei nostri canzonieri è una canzone in sici<pc force="weak">-</pc>
                     <lb break="no"/>liano attribuita a <persName><forename>Stefano</forename> <surname>Protonotaro</surname></persName>, che il <persName>Barbieri</persName> copiò
                     <lb/>insieme con un frammento attribuito al <persName><roleName>re</roleName> Enzo</persName>, da un
-                    <lb/>suo codice ch’egli chiama <quote rend="italics" xml:id="ls">« libro siciliano. »</quote> Questo appel<pc force="weak">-</pc>
+                    <lb/>suo codice ch’egli chiama <quote rend="italics">« libro siciliano. »</quote> Questo appel<pc force="weak">-</pc>
                     <lb break="no"/>lativo non ci deve imporre troppo, poiché dallo stesso
                     <lb/>codice il <persName>Barbieri</persName> trasse canzoni provenzali e italiane, onde
                     <lb/>si vede che non era se non una raccolta miscellanea e com<pc force="weak">-</pc>
@@ -1246,7 +1305,7 @@
                     <lb/>talvolta poetando anche del dialetto (non però che se ne
                     <lb/>siano valsi sempre e tutti e che non esistesse una lingua
                     <lb/>illustre). Ma è veramente autentica? Si può ben dubitarne.
-                    <lb/>Il <persName ref="#de-ag"><surname>Gaspary</surname></persName> accenna alla possibilità che quella canzone non
+                    <lb/>Il <persName><surname>Gaspary</surname></persName> accenna alla possibilità che quella canzone non
                     <lb/>sia che una posteriore traduzione siciliana di altra in lin<pc force="weak">-</pc>
                     <lb break="no"/>gua illustre, ma rimane perplesso parendogli difficile spie<pc force="weak">-</pc>
                     <lb break="no"/>gare da chi e perchè quella traduzione si sarebbe fatta. Ma
@@ -1265,7 +1324,7 @@
                     <lb/>Basti il dire che un documento che i dotti siciliani fino a
                     <lb/>ieri spacciarono per appartenente al <date from="1101" to="1200">secolo XII</date>, si trovò
                     <lb/>ora dal <name>Döhmer</name> appartenere al <date from="1501" to="1600">secolo XVI</date>! Perchè anche
-                    <lb/>il famoso <ref target="#ls" rend="italics">libro siciliano</ref> non potrebb’essere una delle tante
+                    <lb/>il famoso <hi rend="italics">libro siciliano</hi> non potrebb’essere una delle tante
                     <lb/>falsificazioni del tempo? Questo sospetto è avvalorato da
                     <lb/>varie considerazioni che qui sottoponiamo al lettore.
 
@@ -1284,8 +1343,8 @@
                             <lb/>che ne’ suoi viaggi ebbe occasione di veder codici d’ogni
                             <lb/>fatta e di conoscere persone d’ogni parte d’<placeName><country>Italia</country></placeName>, e che
                             <lb/>visse in un periodo così vicino a quello del fiorire della
-                            <lb/>scuola sicula? Dov’erano allora tutte codeste canzoni in
-                            <lb/>siciliano, codesto <ref target="#ls" rend="italics">libro siciliano</ref>?
+                            <lb/><term ref="#lsps">scuola sicula</term>? Dov’erano allora tutte codeste canzoni in
+                            <lb/>siciliano, codesto <hi rend="italics">libro siciliano</hi>?
                         </item>
                         <item n="2°" facs="#pag358-p6.l2">
                             <lb/>La raccolta del <persName>Barbieri</persName> è in disaccordo con tutti
@@ -1294,7 +1353,7 @@
                             <lb/>Maraboto</persName><corr resp="#DDM"> e</corr> di <persName>Garibo</persName>, 
                             citati dal <persName>Barbieri</persName> insieme colla can<pc force="weak">-</pc>
                             <lb break="no"/>zone di <persName>Stefano</persName>, figurano in alcuna raccolta od elenco au<pc force="weak">-</pc>
-                            <lb break="no"/>tentico di poeti della scuola sicula, e sono parimente ignoti
+                            <lb break="no"/>tentico di poeti della <term ref="#lsps">scuola sicula</term>, e sono parimente ignoti
                             <lb/>a <persName>Dante</persName>. Anche il frammento attribuito al 
                             <persName><roleName>re</roleName> Ezio</persName> si cer<pc force="weak">-</pc>
                             <lb break="no"/>cherebbe invano in alcuno dei <choice><abbr>mss.</abbr><expan resp="#DDM">manoscritti</expan></choice> che ci danno le altre
@@ -1426,7 +1485,7 @@
                         afferma che <persName><forename>Alessandro</forename>
                         <lb/><surname>Dumas</surname></persName> lavora ad uno studio su <title rend="italics">Dafni e Cloe</title>.
                         Egli lo scriverebbe nel<pc force="weak">-</pc>
-                        <lb break="no"/>l’antico francese del traduttore della pastorale di <persName>Longo</persName>, <persName><forename>Jacques</forename>
+                        <lb break="no"/>l’antico francese del traduttore della pastoral<damage degree="medium">e</damage> di <persName>Longo</persName>, <persName><forename>Jacques</forename>
                         <lb/><surname>Amyot</surname></persName>.
                     </item>
                     <item n="2" facs="#not-l2" source="#l2" rend="font-size(small)">
@@ -1438,10 +1497,10 @@
                     </item>
                     <item n="3" facs="#not-l3" source="#l3" rend="font-size(small)">
                         <lb/>Il signor <persName>Parker</persName> nella seconda edizione della sua opera (<title rend="italics">Le for<pc force="weak">-</pc>
-                        <lb break="no"/>tificazioni primitive di <placeName><settlement>Roma</settlement></placeName></title>) ha aggiunto grandissima copia di nuovi
+                        <lb break="no"/>tificazioni primitive di <placeName><settlement>Roma</settlement></placeName></title>) h<damage degree="low" agent="ink">a</damage> aggiunto grandissima copia di nuovi
                         <lb/>materiali. Si afferma che l’<orgName>Istituto germanico</orgName>, nel celebrare nel <date>pros<pc force="weak">-</pc>
                         <lb break="no"/>simo aprile</date> l'anniversario della fondazione di <placeName><settlement>Roma</settlement></placeName>, celebrerà in pari
-                        <lb/>tempo il giubileo della sua esistenza in questa città. 
+                        <lb/>tempo il giubileo della sua <damage degree="medium">e</damage>sistenza in questa città. 
                         <seg rend="align(right)">(<title level="j" rend="italics" xml:id="l3" xml:lang="en">Academy</title>)</seg>
                     </item>
                     <item n="4" facs="#not-l4" source="#l4" rend="font-size(small)">
@@ -1460,7 +1519,7 @@
                         <lb break="no"/>gnor <persName>Edison</persName> per frazionare la luce elettrica, il signor <persName><forename>Richard</forename> <surname>Werder<pc force="weak">-</pc>
                         <lb break="no"/>mann</surname></persName>, ben noto in ciò che riguarda l’illuminazione elettrica, sembra
                         <lb/>avere sciolto il problema, almeno fino a un certo punto, ed egli crede
-                        <lb/>che dopo ulteriori esperienze potrà dividero la corrente in <num type="cardinal">50</num>, <num type="cardinal">100</num> e
+                        <lb/>che dopo ulteriori esperienze potrà divider<damage degree="medium">e</damage> la corrente in <num type="cardinal">50</num>, <num type="cardinal">100</num> e
                         <lb/>perfino <num type="cardinal">500</num> fiammelle. Sono state fatte esposizioni di prova della
                         <lb/>luce con resultati soddisfacenti alle officine della manifattura telegrafica
                         <lb/>inglese di <placeName type="street">Eusto<damage degree="low">n</damage> road</placeName>. 
@@ -1484,7 +1543,7 @@
                         <lb/>al governo francese tutti gli oggetti che quelle nazioni misero in mo<pc force="weak">-</pc>
                         <lb break="no"/>stra all’<eventName>Esposizione universale</eventName> riguardanti la etnografia e la pedagogia.
                         <lb/>Quelle collezioni di pregio grandissimo saranno esposte nel Museo etno<pc force="weak">-</pc>
-                        <lb break="no"/>grafico e pedagogico che il governo francese ha in animo di fondare,
+                        <lb break="no"/>grafico e pedagogico che il governo francese ha in animo di fondar<damage degree="medium">e</damage>,
                         <lb/>come in uno dei suoi ultimi discorsi annunciò il signor <persName>Bardoux</persName>.
                     </item>
                     <item n="8" facs="#not-l8" rend="font-size(small)">
@@ -1501,7 +1560,7 @@
                         ha ricevuto l'<date>11 novembre</date> la
                         <lb/>notizia dell’arrivo a <placeName><settlement>Ujiji</settlement></placeName> di una parte della sua spedizione 
                         di <placeName type="lake">Tanga<pc force="weak">-</pc>
-                        <lb break="no"/>nyika</placeName> sotto il comando del signor <persName>Thomson</persName> 
+                        <lb break="no"/>nyika</placeName> sotto il comando del signor <persName>Thomson</persName>. 
                         Il viaggio da <placeName><settlement>Urambo</settlement></placeName>, ca<pc force="weak">-</pc>
                         <lb break="no"/>pitale di <placeName><region>Unyamwesi</region></placeName>, al lago <placeName type="lake">Tanganyika</placeName> 
                         occupò <num type="cardinal" value="18">diciotto</num> giorni sol<pc force="weak">-</pc>

@@ -32,13 +32,18 @@ header a {
     /* font-weight: normal; */
 }
 
-a {
+:not(.term) > a {
     text-decoration: none;
     color: darkblue;
     font-weight: bold;
 } 
 
-.teiHeader {
+.term a {
+    text-decoration: none;
+    color: black;
+}
+
+.teiHeader, .gloss-div {
     margin: 1.8%;
     padding: 0.5% 2% 3% 3%;
     background-color: rgba(255, 255, 255, 0.383);
