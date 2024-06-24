@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI SYSTEM "tei_all.dtd" >
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esercizio 9</title>
+                <author>Diana De Marinis</author>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Diana De Marinis</distributor>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Cartolina</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <facsimile>
+        <surface>
+            <figure>
+                <graphic url="cartolina.jpg"/>
+                <figDesc>Una cartolina divisa in due parti: a sinistra c'è il testo della cartolina,
+                    mentre a destra ci sono le informazioni sul destinatario.
+                </figDesc>
+
+                    <cb/>
+                    <lb/>
+                    <p>
+                        <date>20 settembre '87</date>
+                    </p>
+                    <p>
+                        <lb/>L'<date>estate</date> purtroppo è
+                        <lb/>trascorsa molto velocemente
+                        <lb/>e così siamo di nuovo a
+                        <lb/>scuola... Speriamo che vada
+                        <lb/>bene, come sempre!!
+                    </p>
+                    <lb/>
+                    <closer>
+                        A prestissimo,
+                        <signed>Susi</signed>
+                    </closer>
+
+                    <cb/>
+                    <ab>
+                        <lb/>Alla signorina
+                        <lb/><persName>Claudia Carrera</persName>
+                        <lb/>
+                        <address>
+                            <placeName>Via Costantina 5</placeName>
+                            <lb/><postCode>24100</postCode>
+                            <lb/><placeName>Bergamo</placeName>
+                        </address>
+                    </ab>
+            </figure>
+        </surface>
+    </facsimile>
+</TEI>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI SYSTEM "tei_all.dtd" >
+
+<TEI xmlns="http://www.teic.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esercizio 8</title>
+                <author>Diana De Marinis</author>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Diana De Marinis</distributor>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title level="a">Se cercate le origini della grandeur di Freddie Mercury, riascoltate ‘Queen II’</title>
+                    <author>LUCA GARRÒ</author>
+                    <title level="j">Rolling Stone</title>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <head>Se cercate le origini della grandeur di <persName>Freddie Mercury</persName>, riascoltate <q>‘<title>Queen II</title>’</q></head>
+            <p>
+                Non si può certo dire che, alla fine del <date>1973</date>, 
+                i <orgName>Queen</orgName> siano la next big thing del panorama musicale britannico. 
+                Da lì a un paio d’anni entreranno nelle case di tutti grazie al successo 
+                di Bohemian Rhapsody e di <title>A Night at the Opera</title>, ma al momento si trovano 
+                senza una sterlina, con un album di debutto acerbo, 
+                snobbato dal pubblico e incompreso dalla critica. 
+                Eppure, la band non ha smesso di credere nelle proprie capacità, 
+                tanto da presentarsi al nuovo anno con rinnovato entusiasmo e 
+                un pugno di canzoni già pronte per un imminente seguito.
+            </p>
+            <p>
+                Le registrazioni di <title>Queen II</title> iniziano quindi poco dopo la pubblicazione del debutto e,
+                per certi versi, ne rappresentano la naturale evoluzione. 
+                Pur non essendo stato ideato per essere un <term>concept album</term> 
+                (le tematiche delle canzoni sono tutte slegate l’una dalle altre), 
+                invece di presentare i classici lati A e B, 
+                <title>Queen II</title> viene diviso in cromaticamente in due parti, 
+                una bianca composta da <persName>Brian May</persName> e una nera ad opera di 
+                <persName>Freddie Mercury</persName>, intervallate dall’unico brano 
+                composto da <persName>Roger Taylor</persName>.
+            </p>
+            <p>
+                Se le tematiche restano sostanzialmente quelle di sempre, 
+                più sentimentali quelle di <persName>May</persName> e più legate al mondo fantasy 
+                quelle del frontman, così come certi rimandi a <orgName>Who</orgName> e <orgName>Led Zeppelin</orgName>, 
+                quello che differenzia la band di <title>Queen II</title> da quella dell’esordio è 
+                la notevole consapevolezza nei propri mezzi che, unita alla maturazione 
+                di ogni membro, porta ad esprimersi su livelli 
+                inimmaginabili solo pochi mesi prima.
+            </p>
+            <p>
+                Se le canzoni concepite per il primo album provenivano in 
+                parte dalle loro esperienze musicali precedenti ed erano 
+                ancora strettamente connesse ai live durante i quali erano 
+                state perfezionate, con <title>Queen II</title> i musicisti iniziano a pensare 
+                allo studio come a un luogo in cui osare soluzioni non necessariamente
+                riproducibili dal vivo. L’idea di Mercury era quella di spingere le 
+                possibilità che la tecnologia offre fino a livelli che nessuno, 
+                nemmeno i <orgName>Beatles</orgName> <date>post ’67</date>, ha toccato in precedenza. 
+                Questa libertà creativa svincolata dalla dimensione live 
+                dà frutti immediati: brani come <title>Ogre Battle</title> e 
+                <title>The March of the Black Queen</title> rompono gli schemi dell’epoca 
+                e fanno intravedere il futuro di una band che <date>
+                    da lì ai
+                    dodici mesi successivi
+                </date> ribalterà tutte le regole del rock classico.
+            </p>
+        </body>
+    </text>
+</TEI>

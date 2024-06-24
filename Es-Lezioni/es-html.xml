@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- Inserire del codice HTML
+    file: es-html.xml
+    nome: Diana De Marinis
+-->
+<root>
+
+	<htmlCode> 
+		<![CDATA[ 	
+			<h1>Titolo</h1>
+			<p>Primo paragrafo</p>
+		]]> 
+	</htmlCode>
+
+</root>
