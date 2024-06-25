@@ -63,7 +63,7 @@
         <listPerson>
             <person xml:id="DDM" role="transcriber">
                 <persName>Diana De Marinis</persName>
-                <note>Studentessa del terzo anno del corso di Informatica Umanistica dell'Università di Pisa (matr. 597112). Responsabile della presente edizione digitale.</note>
+                <note>Studentessa del terzo anno del corso di Informatica Umanistica dell'Università di Pisa (MAT. 597112). Responsabile della presente edizione digitale.</note>
             </person>
             <person xml:id="aut-t" role="author">
                 <persName>Tiresias</persName>
