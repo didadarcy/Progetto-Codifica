@@ -28,8 +28,6 @@ header a {
     border-style: solid; 
     border-radius: 8px;
     border-color: rgba(1, 120, 224, 0.786);
-    /* width: 120px; */
-    /* font-weight: normal; */
 }
 
 :not(.term) > a {
@@ -190,7 +188,6 @@ div.page-header span.align-left,
 
 .note .note-text, .choice .expan, .cit .cit-bibl {
     visibility: hidden;
-    /* width: 50px; */
     background-color: rgb(187, 223, 255);
     border-style: solid;
     border-width: 0.5;

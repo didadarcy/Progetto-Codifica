@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Matilde Campanardi
+Date: 04/05/2024  -->
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Esercizio</title>
+                <respStmt xml:id="DDM">
+                    <resp>Trascrizione a cura di</resp>
+                    <persName>Diana De Marinis</persName>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>Diana De Marinis</distributor>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Preso dal <ref target="https://digital-library.cdec.it/cdec-web/viewer/cdecxDamsHist003/IT-CDEC-ST0003-000032#page/3/mode/1up">sito del CDEC</ref></p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <lb/><date>25 Apri<damage>le 1</damage>920</date> - <date>29 Luglio 1940</date> - 
+                Vent'anni: 
+                <lb/>appena il limitare della vita - <damage>ma</damage> breve e lumino<pc force="weak">-</pc>
+                <lb break="no"/>sa veramente, come dice il ricordo marmoreo 
+                - promessa,
+                <add place="above">Tenue trama di 
+                    <unclear reason="illegible"><gap extent="6" unit="chars"></gap></unclear> 
+                    che si svolgono tra casa e scuola, 
+                    <lb/>il formarsi e lo sbocciare di 
+                    <choice><sic>un</sic><corr resp="#DDM">un'</corr></choice>anima eletta, 
+                    di un'intelligenza 
+                    <lb/>eccezionale:
+                </add> 
+                speranza, strazio. Concedete a chi 
+                <lb/>l'ha conosciuto nella prima infanzia, di rievoca<pc force="weak">-</pc>
+                <lb break="no"/>re anche i ricordi di quei primi anni, <del>di</del> felici. 
+                <del rend="overstrike">quando si apriva giocondamente alla vita.</del>
+            </p>
+        </body>
+    </text>
+</TEI>

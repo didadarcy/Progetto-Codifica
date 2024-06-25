@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<!-- Radice e dichiarazione dei namespace TEI: -->
+<!-- Radice e dichiarazione dei namespace: -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:tei="http://www.tei-c.org/ns/1.0"
                 xmlns="http://www.w3.org/1999/xhtml"
@@ -89,25 +89,29 @@
             <!-- Informazioni sulla pubblicazione: -->
             <xsl:apply-templates select=".//tei:publicationStmt"/>
             <!-- Informazioni sulla fonte: -->
-            <xsl:apply-templates select=".//tei:bibl"/>
+            <xsl:apply-templates select=".//tei:sourceDesc/tei:bibl"/>
         </div>
     </xsl:template>
 
+    <!-- Template per la lista dei termini: -->
     <xsl:template match="tei:standOff/tei:list[@type='gloss']">
         <div class="gloss-div">
             <h2>Lista dei termini</h2>
             <xsl:for-each select="tei:label">
                 <div class="gloss-item">
+                    <!-- Per la label corrente, scrivo il nome in grassetto e le assegno il suo id: -->
                     <xsl:element name="b">
                         <xsl:attribute name="id" select="@xml:id"/>
                         <xsl:value-of select="."/>
                     </xsl:element><br/>
+                    <!-- Seleziono l'item che descrive il label corrente: -->
                     <p><xsl:value-of select="following-sibling::tei:item[1]"/></p>
                 </div>
             </xsl:for-each>
         </div>
     </xsl:template>
 
+    <!-- Template per la lista delle persone: -->
     <xsl:template match="tei:standOff/tei:listPerson">
         <div class="gloss-div">
             <h2>Lista delle persone</h2>
@@ -129,10 +133,12 @@
     <!-- Template per la citazione bibliografica alla fonte: -->
     <xsl:template match="tei:sourceDesc/tei:bibl">
         <div class="header-bibl">
-            <h3><span class="bold">Informazioni sulla fonte</span></h3> 
+            <h3><span class="bold">Informazioni sulla fonte</span></h3>
+            <!-- Se c'è un titolo di livello a, lo stampo: --> 
             <xsl:if test="tei:title[@level='a']">
                 <span class="bold">Titolo: </span> <xsl:value-of select="tei:title[@level='a']"/><br/>
             </xsl:if>
+             <!-- Se c'è un autore, lo stampo e rimando alla sua descrizione: -->
             <xsl:if test="tei:author">
                 <span class="bold">Autore: </span> 
                 <xsl:element name="a">
@@ -151,11 +157,13 @@
                 <span class="bold">Volume: </span> <xsl:value-of select="tei:biblScope[@unit='volume']"/><br/>
                 <span class="bold">Fascicolo: </span> <xsl:value-of select="tei:biblScope[@unit='issue']"/><br/>
             </xsl:if>
+            <!-- Rimando alla pagina con il pdf del documento: -->
             <xsl:element name="a">
                 <xsl:attribute name="href" select="tei:edition/@source"/>
                 Edizione digitale 
             </xsl:element> 
             a cura di: <ul>
+            <!-- Stampo i nomi delle organizzazioni: -->
                 <xsl:for-each select="tei:edition/*">
                     <li><xsl:value-of select="."/></li>
                 </xsl:for-each>
@@ -163,28 +171,30 @@
         </div>
     </xsl:template>
 
-        <!-- Template per il corpo del testo: -->
+    <!-- Template per il corpo del testo: -->
     <xsl:template match="tei:body">
         <xsl:variable name="curr-body" select="."/>
         <!-- Divido il testo in pagine, separandolo all'inizio di ogni tei:pb: -->
         <xsl:for-each-group select="descendant::node()" group-starting-with="tei:pb">
             <!-- Ignoro i gruppi che non contengono tei:pb: -->
+            <!-- (condizione inserita per evitare venga creato un gruppo vuoto all'inizio) -->
             <xsl:if test="current-group()[self::tei:pb]">
                 <div class="page">
                     <!-- Scrivo il numero della pagina: -->
-                        <h2>Pagina <xsl:value-of select="current-group()[self::tei:pb]/@n"/></h2>
+                    <h2>Pagina <xsl:value-of select="current-group()[self::tei:pb]/@n"/></h2>
                     <div class="pagecols">
                         <!-- Mostro l'immagine corrispondente: -->
                         <xsl:apply-templates select="current-group()[self::tei:pb]"/>
                         <!-- Mostro il testo della pagina, prendendo il contenuto dei paragrafi nella pagina: -->
                         <div class="pagebody">
-                            <!-- Mostro l'header della pagina, se presente -->
+                            <!-- Mostro l'header della pagina del gruppo corrente, se presente: -->
                             <xsl:apply-templates select="$curr-body//tei:fw[@type='header'] intersect current-group()"/>
                             <!-- Divido la pagina per colonne e mostro i contenuti della colonna: -->
                             <xsl:for-each-group select="current-group()" group-starting-with="tei:cb">
-                                <!-- Seleziono tutti i figli del body corrente che 
-                                        1) sono di tipo list|p|head|signed|bibl
-                                        2) sono contenuti nella colonna corrente, o hanno almeno un discendente che è contenuto nella colonna corrente
+                                <!-- 
+                                Seleziono i figli del body corrente per cui vale che: 
+                                    - sono di tipo list|p|head|signed|bibl
+                                    - sono contenuti nella colonna corrente, o hanno almeno un discendente che è contenuto nella colonna corrente
                                 -->
                                 <xsl:apply-templates select="$curr-body/(tei:list | tei:p | tei:head | tei:signed | tei:bibl)[descendant-or-self::node() intersect current-group()]"/>
                             </xsl:for-each-group>
@@ -208,12 +218,13 @@
                 </xsl:when>
                 <!-- Caso 2: L'attributo è contenuto in un tag tei:milestone: -->
                 <xsl:otherwise>
+                    <!-- Prendo l'attributo facs dentro il milestone che appartiene alla colonna (gruppo) corrente: -->
                     <xsl:attribute name="data-facs" select="(tei:milestone[@unit='paragraph-part'] intersect current-group())/@facs"/>
                 </xsl:otherwise>
             </xsl:choose>
 
+            <!-- Ignoro i tag tei:pb e tei:fw perché vengono gestiti dal template di tei:body: -->
             <!-- Seleziono solo i nodi nella colonna (gruppo) corrente: -->
-            <!-- Ignoro i tag tei:p e tei:fw perché vengono gestiti dal template di tei:body: -->
             <xsl:apply-templates select="node()[not(self::tei:pb | self::tei:fw)][descendant-or-self::node() intersect current-group()]"/>
         </xsl:element>  
     </xsl:template>
@@ -224,8 +235,8 @@
         <xsl:apply-templates select="tei:item intersect current-group()"/>
     </xsl:template>
 
-    <!-- Template per gli item delle liste contenute in body: -->
-    <xsl:template match="tei:body//tei:item">
+    <!-- Template per gli item delle liste contenute in body (non nel secondo articolo): -->
+    <xsl:template match="tei:TEI[@xml:id!='TEI-LSPS']//tei:body//tei:item">
         <xsl:element name="p">
             <!-- Se @rend contiene font-size(small) lo inserisco nella classe, altrimenti no: -->
             <xsl:choose>
@@ -240,8 +251,25 @@
             <!-- Inserisco il riferimento alla tei:zone: -->
             <xsl:attribute name="data-facs" select="@facs"/>
 
+            <!-- Ignoro i tag tei:pb e tei:fw perché vengono gestiti dal template di tei:body: -->
             <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
-            <!-- Ignoro i tag tei:p e tei:fw perché vengono gestiti dal template di tei:body: -->
+            <xsl:apply-templates select="node()[not(self::tei:pb | self::tei:fw)] intersect current-group()"/>
+        </xsl:element>
+    </xsl:template>
+
+     <!-- Template per gli item delle liste contenute nel body del testo "La Scuola Poetica Siciliana": -->
+    <xsl:template match="tei:TEI[@xml:id='TEI-LSPS']//tei:body//tei:item">
+        <xsl:element name="p">
+            <xsl:attribute name="class">list-item</xsl:attribute>
+
+            <!-- Inserisco il riferimento alla tei:zone: -->
+            <xsl:attribute name="data-facs" select="@facs"/>
+
+            <!-- Stampo il numero del paragrafo: -->
+            <b><xsl:value-of select="@n"/></b>
+            
+            <!-- Ignoro i tag tei:pb e tei:fw perché vengono gestiti dal template di tei:body: -->
+            <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
             <xsl:apply-templates select="node()[not(self::tei:pb | self::tei:fw)] intersect current-group()"/>
         </xsl:element>
     </xsl:template>
@@ -348,7 +376,7 @@
         <xsl:element name="div">
             <xsl:attribute name="class">page-header</xsl:attribute>
             <xsl:attribute name="data-facs" select="@facs"/>
-            
+            <!-- Applico i templates anche ai figli: -->
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
@@ -472,13 +500,16 @@
                 </xsl:otherwise>
             </xsl:choose>
 
+            <!-- Se il termine è inserito nel glossario, inserisco il link, altrimenti no: -->
             <xsl:choose>
+                <!-- Caso 1: il termine ha un collegamento (ad un'entrata del glossario): -->
                 <xsl:when test="@ref">
                     <xsl:element name="a">
                         <xsl:attribute name="href" select="@ref"/>
                         <xsl:apply-templates />
                     </xsl:element>
                 </xsl:when>
+                <!-- Caso 2: il termine non ha un collegamento ad un'entrata del glossario: -->
                 <xsl:otherwise>
                     <xsl:apply-templates />
                 </xsl:otherwise>

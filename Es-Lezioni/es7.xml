@@ -26,9 +26,12 @@
                     </person>
                     <person xml:id="verga">
                         <persName>Giovanni Verga</persName>
+                        <note place="bottom">
+                            <ref target="#verga">Quest'ultimo</ref> ha scritto <title>Il ciclo dei Malavoglia</title>.
+                        </note>
                     </person>
                 </listPerson>
-                <ref target="#verga">Quest'ultimo</ref> ha scritto <title>Il ciclo dei Malavoglia</title>.
+                
             </p>
         </body>
         <back>
