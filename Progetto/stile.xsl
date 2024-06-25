@@ -266,7 +266,7 @@
             <xsl:attribute name="data-facs" select="@facs"/>
 
             <!-- Stampo il numero del paragrafo: -->
-            <b><xsl:value-of select="@n"/></b>
+            <xsl:value-of select="@n"/>
             
             <!-- Ignoro i tag tei:pb e tei:fw perché vengono gestiti dal template di tei:body: -->
             <!-- Seleziono solo i nodi nella pagina (gruppo) corrente: -->
@@ -348,12 +348,14 @@
     </xsl:template>
 
     <!-- Template per non mostrare il tag br prima della nota: -->
-    <xsl:template match="tei:note//tei:lb[position() = 1]" />
+    <!-- (utilizzato per evitare di mostrare una riga vuota prima della nota nel secondo articolo) -->
+    <xsl:template match="tei:note//tei:lb[1]" />
 
     <!-- Template per posizionare il titolo dei testi: -->
     <xsl:template match="tei:head">
         <xsl:element name="h3">
             <xsl:attribute name="class">align-center allcaps</xsl:attribute>
+            <!-- Inserisco il riferimento alla tei:zone: -->
             <xsl:attribute name="data-facs" select="@facs"/>
 
             <xsl:apply-templates/>
@@ -362,7 +364,11 @@
 
     <!-- Template per le note: -->
     <xsl:template match="tei:note">
-        <span class="note">*<span class="note-text"><xsl:apply-templates/></span></span>
+        <span class="note">*
+            <span class="note-text">
+                <xsl:apply-templates/>
+            </span>
+        </span>
     </xsl:template>
 
     <!-- Template per il corsivo: -->
@@ -395,6 +401,7 @@
                     <xsl:attribute name="class">align-right</xsl:attribute>
                 </xsl:when>
             </xsl:choose>
+            <!-- Inserisco il riferimento alla tei:zone: -->
             <xsl:attribute name="data-facs" select="@facs"/>
             
             <xsl:apply-templates/>
@@ -427,13 +434,14 @@
     <xsl:template match="tei:signed">
         <xsl:element name="span">
             <xsl:attribute name="class">align-right allcaps</xsl:attribute>
+            <!-- Inserisco il riferimento alla tei:zone: -->
             <xsl:attribute name="data-facs" select="@facs"/>
 
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
 
-    <!-- Template per le firme: -->
+    <!-- Template per i tei:seg (usati per indicare i nomi delle riviste nelle notizie): -->
     <xsl:template match="tei:seg">
         <span class="align-right"><xsl:apply-templates/></span>
     </xsl:template>
@@ -454,6 +462,7 @@
     <xsl:template match="tei:body//tei:bibl">
         <xsl:element name="span">
             <xsl:attribute name="class">bibl</xsl:attribute>
+            <!-- Inserisco il riferimento alla tei:zone: -->
             <xsl:attribute name="data-facs" select="@facs"/>
 
             <xsl:apply-templates/>

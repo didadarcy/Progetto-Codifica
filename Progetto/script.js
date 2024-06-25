@@ -4,17 +4,21 @@ $().ready(function(){
     
     // Funzione che viene eseguita quando l'utente clicca sul pulsante per attivare l'highlighting:
     $("#highlight-button").click(function(){
-        if(highlight_active) { // se al momento gli elementi codificati sono evidenziati:
+        if(highlight_active) { 
+            // se al momento gli elementi codificati sono evidenziati, disattivo l'highlighting:
             highlight_active = false;
             // rimuovo la classe .active da tutti gli elementi che la hanno:
             $(".active").removeClass("active");
+            // aggiorno il testo del pulsante:
             $(this).text("Annotazioni (mostra)");
             // nascondo la legenda dei colori:
             $("#colors").css("display", "none");
-        } else { // se al momento gli elementi codificati non sono evidenziati:
+        } else { 
+            // se al momento gli elementi codificati non sono evidenziati, attivo l'highlighting:
             highlight_active = true;
             // aggiungo la classe active a tutti gli elementi codificati:
             $(".term, .eventName, .date, .persName, .placeName, .orgName").addClass("active");
+            // aggiorno il testo del pulsante:
             $(this).text("Annotazioni (nascondi)");
             // mostro la legenda dei colori:
             $("#colors").css("display", "block");
@@ -27,8 +31,8 @@ $().ready(function(){
         // ottengo l'id dell'elemento corrente e aggiungo all'elemento corrente la classe highlighted:
         var facs = $(this).attr('id');
         $(this).addClass("highlighted");
-        // aggiungo la classe highlighted anche all'elemento avente il campo data-facs uguale a #{facs}:
-        $('*[data-facs="#' + facs + '"]').addClass("highlighted");
+        // aggiungo la classe highlighted anche al paragrafo di testo codificato corrispondente:
+        $('*[ data-facs= "#'+facs+'" ]').addClass("highlighted");
     });
     
     // Funzione che toglie il colore dalle tei:zone sull'immagine (e dal corrispettivo paragrafo) 
@@ -37,8 +41,8 @@ $().ready(function(){
         // ottengo l'id dell'elemento corrente e rimuovo all'elemento corrente la classe highlighted:
         var facs = $(this).attr('id');
         $(this).removeClass("highlighted");
-        // rimuovo la classe highlighted anche all'elemento avente il campo data-facs uguale a #{facs}:
-        $('*[data-facs="#' + facs + '"]').removeClass("highlighted");  
+        // rimuovo la classe highlighted anche al paragrafo di testo codificato corrispondente:
+        $('*[ data-facs= "#'+facs+'" ]').removeClass("highlighted");  
     });
 
     // Funzione che colora i paragrafi (e la tei:zone corrispondente) 
@@ -50,10 +54,9 @@ $().ready(function(){
         // se facs è vuoto allora non bisogna evidenziare niente:
         if(facs == '') return;
 
-        // aggiungo a questo elemento e all'elemento avente id uguale a {facs} (ossia, la tei:zone corrispondente) 
-        // la classe highlighted:
+        // aggiungo all'elemento corrente e alla tei:zone corrispondente la classe highlighted:
         $(this).addClass("highlighted");
-        $('*[id="' + facs + '"]').addClass("highlighted");
+        $('*[ id="'+facs+'" ]').addClass("highlighted");
     });
 
     // Funzione che toglie il colore dai paragrafi (e dalla tei:zone corrispondente) 
@@ -65,10 +68,9 @@ $().ready(function(){
         // se facs è vuoto allora non bisogna evidenziare niente:
         if(facs == '') return;
         
-        // rimuovo da elemento e dall'elemento avente id uguale a {facs} (ossia, la tei:zone corrispondente) 
-        // la classe highlighted:
+        // rimuovo dall'elemento corrente e dalla tei:zone corrispondente la classe highlighted:
         $(this).removeClass("highlighted");
-        $('*[id="' + facs + '"]').removeClass("highlighted");  
+        $('*[ id="'+facs+'" ]').removeClass("highlighted");  
     });
 
     // Funzione che mostra/nasconde il tasto per attivare/disattivare l'highlighting se siamo prima/dopo la sezione dei testi:
